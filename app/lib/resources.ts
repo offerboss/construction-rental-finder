@@ -47,3 +47,16 @@ export const resourceTopics: ResourceTopic[] = [
     related: ["generator-rental", "forklift-rental"],
   },
 ];
+
+export type PublishedGuide = { slug: string; title: string };
+
+/**
+ * Guides with a live /resources/<slug> route. City pages link to a planned guide
+ * only once its slug is listed here, so no page links to a 404. Add each guide
+ * when its route ships (Resource Run).
+ */
+export const publishedGuides: PublishedGuide[] = [];
+
+export function getPublishedGuide(slug: string) {
+  return publishedGuides.find((guide) => guide.slug === slug);
+}
