@@ -7,10 +7,13 @@ Last updated: 2026-10-02
 | Batch | Pages | Built | Heroes | Shipped |
 |---|---|---|---|---|
 | 1 | /locations/texas/arlington, /locations/texas/irving, /locations/texas/plano | 2026-10-02 | Approved 2026-10-02 | Pushed `b3a73d6` 2026-10-02 |
-| 2 | /locations/texas/frisco, /locations/texas/mckinney | 2026-10-02 | Approved 2026-10-02 | Pushed 2026-10-02 |
+| 2 | /locations/texas/frisco, /locations/texas/mckinney | 2026-10-02 | Approved 2026-10-02 | Pushed `9ea4b30` 2026-10-02 |
+| Resource Run | /resources/skid-steer-vs-mini-excavator, /resources/what-size-excavator-do-i-need | 2026-10-02 | Approved 2026-10-02 | Pushed 2026-10-02 |
 
 Rendered `<main>` word counts at build: Arlington 1,234, Irving 1,251, Plano 1,223 (1,229 after Batch 2 nearby links).
 Batch 2: Frisco 1,368, McKinney 1,315. Sitemap: 44 URLs.
+Resource Run: skid-steer-vs-mini-excavator 2,398, what-size-excavator-do-i-need 2,397 (whole `<main>`, including
+tables, source labels and FAQs). Sitemap: 46 URLs. City pages grow slightly now that their guide links render.
 
 ## Link Map
 
@@ -37,8 +40,18 @@ Featured equipment links:
 | Frisco | excavator, wheel-loader, compactor, trencher, skid-steer, mini-excavator |
 | McKinney | mini-excavator, skid-steer, concrete-equipment, excavator, compactor, trencher |
 
-Guides (data only, not rendered until published in `publishedGuides`): every Batch 1 and Batch 2 page carries
-`skid-steer-vs-mini-excavator` and `what-size-excavator-do-i-need`.
+Guides: every Batch 1 and Batch 2 city page carries `skid-steer-vs-mini-excavator` and
+`what-size-excavator-do-i-need`; both render now that the guides are published.
+
+Guide links:
+
+| Guide | Links to |
+|---|---|
+| Skid Steer vs Mini Excavator | Equipment cards: mini-excavator, skid-steer, trencher, excavator. Inline: trencher, excavator, wheel-loader; Plano, McKinney, Frisco, Arlington, Irving. Related guide: excavator size |
+| What Size Excavator | Equipment cards: excavator, mini-excavator, trencher. Inline: trencher, compactor; Frisco, Plano, McKinney, Arlington, Irving. Related guide: skid steer vs mini excavator |
+
+Reciprocal guide blocks on equipment pages: excavator-rental (both), mini-excavator-rental (both), skid-steer-rental
+(skid steer vs mini excavator), trencher-rental (both). City pages link to both guides.
 
 ## Sources
 
@@ -94,6 +107,45 @@ Guides (data only, not rendered until published in `publishedGuides`): every Bat
 - McKinney Commercial Building Permit Guide (construction hours Mon–Fri 6 a.m.–9 p.m., Sat 8 a.m.–5 p.m., Sun 1–5 p.m.; overnight pours case by case; erosion control inspected before construction; cancel foundation and flatwork inspections in rain): https://www.mckinneytexas.org/DocumentCenter/View/361/New-Commercial-or-Additions-Submittal-Packet
 - McKinney ROW Construction and Permitting Procedures Manual, effective July 1, 2025 (ROW work 7 a.m.–4 p.m. Mon–Fri; peak-hour and school-zone restrictions; City marks its utilities through 811; 48-hour neighbor notice; bore concrete streets and driveways; 36-month new-pavement moratorium; tree fence outside the drip line; 8-inch lifts to 95% Standard Proctor; trench safety plan deeper than 5 ft): https://www.mckinneytexas.org/DocumentCenter/View/36331/ROW-Construction-and-Permitting-Procedures-Manual-v-7125
 
+### Resource Run: shared regulatory sources
+
+- OSHA 29 CFR 1926.651 (utilities located before opening an excavation and exact location found as digging approaches;
+  egress within 25 ft in trenches 4 ft or deeper; spoil and equipment 2 ft from the edge; no one under loads; warning
+  system near edges; daily competent-person inspections and after every rainstorm): https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-P/section-1926.651
+- OSHA 29 CFR 1926.652 (protective systems unless entirely in stable rock, or under 5 ft with no indication of cave-in
+  by a competent person): https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-P/section-1926.652
+- OSHA trenching fact sheet (20 ft and deeper: registered professional engineer design or tabulated data), reused.
+- OSHA 29 CFR 1926.600(a)(3) (end-loader buckets fully lowered or blocked when not in use or under repair): https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-O/section-1926.600
+- OSHA 29 CFR 1926.602(a) (seat belts on earthmoving equipment; reverse alarm or signal person with an obstructed rear view): https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-O/section-1926.602
+- TxDMV Texas size and weight limits (8 ft 6 in width for most vehicles and loads): https://www.txdmv.gov/motor-carriers/oversize-overweight-permits/texas-size-weight-limits
+- Reused: Utilities Code 251.151, Texas811, NWS DFW narrative, USDA Houston Black (state soil PDF: very high
+  shrink-swell; OSD: very sticky, very plastic), Plano Tomorrow FAQ, Frisco plan and line locates, McKinney Town Center
+  and ROW manual, Arlington ROW manual, Irving ROW code.
+
+### Resource Run: manufacturer specs (checked 2026-10-02)
+
+- Kubota U17-5 launch announcement, Jan. 21, 2025 (3,902 lb; 7 ft 6.2 in dig depth; 3,547 lb bucket breakout; track
+  gauge 3 ft 3 in to 4 ft 3.2 in): https://www.kubotausa.com/kubota-introduces-next-generation-zero-tail-swing-compact-excavator-to-its-lineup-meet-the-u17-5
+- Kubota U17-5 brochure (zero tail swing; overall width 4 ft 3.2 in standard, 3 ft 3.4 in narrow; lift ratings per
+  ISO 10567, at most 75% of static tilt load or 87% of hydraulic capacity, bucket and rigging excluded): https://www.kubotausa.com/docs/default-source/brochure-sheets/brochure_u17-5.pdf?sfvrsn=51aa9d9a_1
+- Kubota SVL75-3 brochure (ROC 2,490 lb at 35% and 3,557 lb at 50% of 7,112 lb tipping load; 9,190/9,420 lb; 65.9 in
+  wide on standard track; 122.7 in hinge pin; 5.8 psi standard and 4.7 psi wide track, open cab; 19.2/29.8 gpm aux): https://www.kubotausa.com/docs/default-source/brochure-sheets/svl_brochure.pdf?sfvrsn=2c35551c_1
+- John Deere compact excavator overview (compact line 3,790 to 13,620 lb; 35 P-Tier zero tail swing for urban and
+  residential areas): https://www.deere.ca/en/construction/excavators/compact-excavators/big-productivity-35-p-tier/
+- John Deere 35 P-Tier specs (8,135 lb; 10 ft dig depth; 6,085 lbf breakout; 5 ft 9 in; tail swing radius 2 ft 10 in;
+  10 ft 10 in dump height; backfill blade): https://www.deere.ca/en/excavators/compact-excavators/35-p-excavator/
+- John Deere 35 P-Tier spec sheet PDF (4.8 psi rubber track with cab; 2.7 mph high travel): https://www.deere.com/assets/pdfs/common/products/sync/ME35PAU-35-p-tier-compact-excavator.pdf
+- John Deere 60 P (13,620 lb; 12 ft 4 in; 9,240 lbf; 6 ft 7 in; 4 ft 3 in tail swing), 75 P (18,559–19,326 lb; 15 ft
+  3 in; 13,264 lbf; 8 ft 1 in; 4 ft 7 in), 85 P (19,238–20,296 lb; 14 ft 10 in; 13,264 lbf; 8 ft 1 in; 5 ft 3 in),
+  135 P (31,526–33,951 lb; 19 ft 8 in mono boom; 23,380 lbf; 8 ft 6 in; 4 ft 11 in, reduced tail swing), 210 P
+  (49,380–51,370 lb; 21 ft 10 in, 21 ft 2 in for an 8 ft flat bottom; 36,644 lbf; 10 ft 5 in; 9 ft 5 in), 350 P
+  (80,985 lb; 24 ft 3 in mono boom, up to 26 ft 10 in; 55,303 lbf; 11 ft 1 in; 11 ft 10 in): deere.ca model pages under
+  /en/excavators/compact-excavators/ and /en/excavators/mid-size-excavators/
+- John Deere 318 P skid steer (6,542 lb; ROC 1,945 lb; tipping 3,890 lb; 62.9 in; 120 in hinge pin; 316/318 under
+  63 in; two-speed to 10.1 mph; 316–318 trailer behind a standard pickup), 334 P (10,264 lb; ROC 4,000 lb with
+  counterweight; tipping 8,000 lb; 78.5 in; 132 in; high-flow cold planer), 317 P CTL (8,423 lb; ROC 2,125 lb; tipping
+  6,070 lb; 65.1 in; 121 in): deere.ca pages under /en/loaders/skid-steers/ and /en/loaders/compact-track-loaders/
+
 ## Open Notes
 
 - Plano soils: no city source confirms Plano sits on Blackland Prairie soils, so the page uses USDA's regional
@@ -104,3 +156,8 @@ Guides (data only, not rendered until published in `publishedGuides`): every Bat
   for direct verification.
 - Frisco and McKinney soils use the same USDA regional phrasing as Plano, pointing readers to the Web Soil Survey.
 - Batch 2 hero alt text was written from the supplied images, which Adam approved 2026-10-02.
+- Resource Run specs come from Deere (deere.ca model pages, same models as the US site, metric and imperial) and Kubota.
+  Bobcat and CAT spec pages blocked automated fetches (captcha and 403), so they aren't cited. Takeuchi's spec PDFs
+  returned 404.
+- NIOSH's skid-steer Alert (Pub. 2011-128) couldn't be fetched (403), so skid steer safety cites OSHA 1926.600/602.
+- The "midi" class has no formal definition; the guide says so and gives ranges only from its cited examples.

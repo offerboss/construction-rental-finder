@@ -14,12 +14,35 @@ city actually needs to know, instead of scaling thin template pages. Quality ove
 | 1 | Arlington, Irving, Plano | Shipped 2026-10-02 (`b3a73d6`) |
 | 2 | Frisco, McKinney | Shipped 2026-10-02 |
 
-Planned resources (the Resource Run): `/resources/skid-steer-vs-mini-excavator` and
-`/resources/what-size-excavator-do-i-need`. Every Batch 1 city already carries both as `guides` data. They render only
-once the slug is added to `publishedGuides` in `app/lib/resources.ts`, which keeps any city page from linking to a 404.
+## Phase 1 resources: the Resource Run
 
-Note: `resourceTopics` in `app/lib/resources.ts` lists an older planned slug, `mini-excavator-vs-skid-steer`. The
-approved plan uses `skid-steer-vs-mini-excavator`. Reconcile them during the Resource Run.
+| Guide | Status |
+|---|---|
+| `/resources/skid-steer-vs-mini-excavator` | Shipped 2026-10-02 |
+| `/resources/what-size-excavator-do-i-need` | Shipped 2026-10-02 |
+
+How a guide works (no CMS):
+
+- Types and the registry live in `app/lib/resources.ts` (`Guide`, `GuideSection`, `GuideBlock`, `guides`). Content
+  lives in `app/lib/guide-content.ts`, with its own `sources` map plus shared sources exported from `city-content.ts`.
+- `app/resources/[slug]/page.tsx` renders every guide (static params, metadata with canonical and OG/Twitter article
+  tags, Article + BreadcrumbList + FAQPage JSON-LD, "The Short Answer", "On This Page", sections with per-section
+  sources, related equipment, FAQs, related guides).
+- Block types: `p`, `list`, `columns` (two "Best for" cards) and `table`. Text can carry inline links written
+  `[label](/path)`, rendered by `components/RichText.tsx`. Keep FAQ answers plain text (they go into JSON-LD).
+- `publishedGuides` is derived from `guides`, so a city's `guides` links render as soon as a guide ships.
+- `relatedEquipment` drives both the guide's equipment cards and the reciprocal "Guides for Renting ..." block on those
+  equipment pages (`getGuidesForCategory`).
+- Sitemap entries come from `guides`.
+- Reconciled placeholders: the old `mini-excavator-vs-skid-steer` slug 308-redirects to
+  `/resources/skid-steer-vs-mini-excavator` (`next.config.ts`); the "Excavator Rental Cost Guide" placeholder was dropped
+  (no prices). The four remaining `resourceTopics` stay as "Coming soon" cards.
+
+Guide target: about 1,600 to 2,400 rendered words in `<main>`. Sizing and capability figures come from manufacturer
+spec pages or brochures, each cited in the section that uses it; tables are labeled illustrative and size-class ranges
+are drawn only from the cited examples. Safety points cite OSHA (29 CFR 1926 Subparts O and P), Texas Utilities Code
+ch. 251 and Texas811. Separate "best for" use cases instead of blanket claims. Link city pages only where a sourced city
+fact fits.
 
 ## How a rich city page works
 

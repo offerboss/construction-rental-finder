@@ -51,3 +51,33 @@ export function faqJsonLd(faqs: Faq[]) {
     })),
   };
 }
+
+type ArticleJsonLdInput = {
+  headline: string;
+  description: string;
+  path: string;
+  image: string;
+  datePublished: string;
+  dateModified: string;
+};
+
+export function articleJsonLd({ headline, description, path, image, datePublished, dateModified }: ArticleJsonLdInput) {
+  const organization = {
+    "@type": "Organization",
+    name: siteConfig.name,
+    url: siteConfig.url,
+    logo: { "@type": "ImageObject", url: absoluteUrl("/images/construction-rental-finder-logo.png") },
+  };
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline,
+    description,
+    image: [absoluteUrl(image)],
+    datePublished,
+    dateModified,
+    author: organization,
+    publisher: organization,
+    mainEntityOfPage: { "@type": "WebPage", "@id": absoluteUrl(path) },
+  };
+}

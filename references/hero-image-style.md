@@ -67,4 +67,12 @@ is also the page's Open Graph and Twitter image. Cities without `heroImage` keep
 | frisco | public/images/locations/frisco-tx-construction-equipment-rental.webp | 1080x720, 122 KB | Excavator loading an articulated dump truck, smooth-drum roller and wheel loader on a large graded dirt site, subdivision in the distance, two small workers in hi-vis, clear daylight | Excavator loading a dump truck beside a roller and wheel loader on a large graded development site in Frisco, Texas | 2026-10-02 |
 | mckinney | public/images/locations/mckinney-tx-construction-equipment-rental.webp | 1080x720, 148 KB | Mini excavator digging a trench beside wooden concrete forms, skid steer, one worker in hard hat and vest, historic red-brick buildings behind orange safety fence, gravel lane, daylight | Mini excavator trenching beside concrete forms and a skid steer next to historic brick buildings in McKinney, Texas | 2026-10-02 |
 
+| skid-steer-vs-mini-excavator | public/images/resources/skid-steer-vs-mini-excavator.webp | 1080x720, 177 KB | Compact track loader with a bucket of dirt beside a mini excavator digging next to a spoil pile, gravel pad, wood privacy fence and house behind, golden hour | Compact track loader with a loaded bucket beside a mini excavator digging in a fenced residential backyard | 2026-10-02 |
+| what-size-excavator-do-i-need | public/images/resources/what-size-excavator-do-i-need.webp | 1080x720, 98 KB | Three excavators of increasing size (mini, compact, full-size) lined up on a large graded dirt site, trees and homes in the distance, late-afternoon light | Three excavators, from mini to full-size, lined up on a graded dirt site with homes in the distance | 2026-10-02 |
+
+Resource guide heroes follow the same standard and spec, with path `public/images/resources/<guide-slug>.webp` and
+registration on the guide's `heroImage` in `app/lib/guide-content.ts`. The scene should illustrate the guide's subject
+(for comparisons, both machines in one believable jobsite). The hero also appears on the `/resources` index card and as
+the guide's Open Graph and Twitter image.
+
 The older state images (`/images/*.png` backgrounds) predate this standard. Don't use them as style references.

@@ -5,7 +5,7 @@ import type { City, CityGuideLink, SourceLink } from "./locations";
 
 type CityEntry = Omit<City, "stateSlug">;
 
-const sources = {
+export const sources = {
   texas811: { label: "Texas811: excavator notice requirements", url: "https://texas811.org/" },
   utilitiesCode251: { label: "Texas Utilities Code ch. 251, sec. 251.151", url: "https://statutes.capitol.texas.gov/Docs/UT/htm/UT.251.htm" },
   nwsDfwClimate: { label: "National Weather Service Fort Worth: Dallas/Fort Worth climate narrative", url: "https://www.weather.gov/fwd/dfw_narrative" },

@@ -1,4 +1,4 @@
-import { ArrowRight, Check, MapPin } from "lucide-react";
+import { ArrowRight, BookOpen, Check, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -11,6 +11,7 @@ import SectionHeading from "../../components/SectionHeading";
 import { equipmentCategories, getCategories, getCategory } from "../../lib/categories";
 import { categoryContent, rentalDurationConsideration } from "../../lib/category-content";
 import { states } from "../../lib/locations";
+import { getGuidesForCategory } from "../../lib/resources";
 import { pageMetadata } from "../../lib/seo";
 
 export const dynamicParams = false;
@@ -40,6 +41,7 @@ export default async function CategoryPage({ params }: PageProps<"/equipment/[sl
   const content = categoryContent[category.slug];
   const considerations = [...content.considerations, rentalDurationConsideration];
   const related = getCategories(content.related);
+  const guides = getGuidesForCategory(category.slug);
 
   return (
     <>
@@ -173,6 +175,27 @@ export default async function CategoryPage({ params }: PageProps<"/equipment/[sl
       {/* Related */}
       <section aria-labelledby="related-heading" className="bg-sand py-14 sm:py-16 lg:py-20">
         <div className="container-page">
+          {guides.length > 0 && (
+            <div className="mb-14">
+              <SectionHeading id="category-guides-heading" eyebrow="Rental Guides" title={`Guides for Renting ${category.name}`} />
+              <ul className="mt-8 grid gap-4 sm:grid-cols-2">
+                {guides.map((guide) => (
+                  <li key={guide.slug}>
+                    <Link
+                      href={`/resources/${guide.slug}`}
+                      className="group flex h-full gap-4 rounded-md border border-navy/10 bg-white p-5 shadow-sm transition hover:border-navy/25 hover:shadow-md"
+                    >
+                      <BookOpen aria-hidden className="size-6 shrink-0 text-navy" />
+                      <span>
+                        <span className="block font-heading text-lg font-bold text-navy">{guide.title}</span>
+                        <span className="mt-1 block leading-relaxed text-ink/75">{guide.summary}</span>
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
           <div className="flex flex-wrap items-end justify-between gap-4">
             <SectionHeading id="related-heading" eyebrow="Related Equipment" title="Other Equipment to Consider" />
             <Link href="/equipment" className="inline-flex items-center gap-2 font-heading text-sm font-bold text-navy hover:underline">

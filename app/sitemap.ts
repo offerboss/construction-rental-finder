@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { equipmentCategories } from "./lib/categories";
 import { states } from "./lib/locations";
+import { guides } from "./lib/resources";
 import { absoluteUrl } from "./lib/site";
 
 type Entry = MetadataRoute.Sitemap[number];
@@ -20,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       state.cities.map((city) => entry(`/locations/${state.slug}/${city.slug}`, "monthly", 0.7)),
     ),
     entry("/resources", "weekly", 0.6),
+    ...guides.map((guide) => entry(`/resources/${guide.slug}`, "monthly", 0.6)),
     entry("/providers", "monthly", 0.6),
     entry("/list-your-business", "monthly", 0.5),
     entry("/contact", "yearly", 0.3),

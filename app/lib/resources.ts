@@ -1,27 +1,89 @@
 import type { CategorySlug } from "./categories";
+import { excavatorSizeGuide, skidSteerVsMiniExcavator } from "./guide-content";
+import type { SourceLink } from "./locations";
+import type { Faq } from "./seo";
+
+/**
+ * Body content for a guide. Paragraph, list and table text may contain inline links written
+ * as [label](/path) or [label](https://...); see `components/RichText.tsx`.
+ */
+export type GuideBlock =
+  | { type: "p"; text: string }
+  | { type: "list"; items: string[] }
+  | { type: "columns"; columns: { title: string; items: string[] }[] }
+  | { type: "table"; caption: string; columns: string[]; rows: string[][]; note?: string };
+
+export type GuideSection = {
+  /** Anchor id, also used in the "On this page" list */
+  id: string;
+  heading: string;
+  blocks: GuideBlock[];
+  /** Official or manufacturer sources for this section, rendered as external links */
+  sources?: SourceLink[];
+};
+
+export type Guide = {
+  slug: string;
+  /** H1 and Article headline */
+  title: string;
+  /** Breadcrumb label */
+  shortTitle: string;
+  /** Shorter <title> (the layout template appends the site name) */
+  metaTitle: string;
+  metaDescription: string;
+  /** Card text on /resources and in related-guide blocks */
+  summary: string;
+  intro: string[];
+  heroImage: { src: string; alt: string };
+  /** ISO dates for Article structured data */
+  datePublished: string;
+  dateModified: string;
+  keyTakeaways: string[];
+  sections: GuideSection[];
+  faqs: Faq[];
+  /** Equipment pages this guide links to. Each of those pages links back (reciprocal). */
+  relatedEquipment: { slug: CategorySlug; reason: string }[];
+  /** Other guides to suggest at the end */
+  relatedGuides: string[];
+};
+
+/** Published guides, each with a live /resources/<slug> route and a sitemap entry. */
+export const guides: Guide[] = [skidSteerVsMiniExcavator, excavatorSizeGuide];
+
+export function getGuide(slug: string) {
+  return guides.find((guide) => guide.slug === slug);
+}
+
+/** Guides that list this equipment category, for the reciprocal block on equipment pages. */
+export function getGuidesForCategory(slug: CategorySlug) {
+  return guides.filter((guide) => guide.relatedEquipment.some((item) => item.slug === slug));
+}
+
+export type PublishedGuide = { slug: string; title: string };
+
+/**
+ * Guides with a live /resources/<slug> route. City pages link to a guide only once its slug
+ * is listed here, so no page links to a 404. Derived from `guides`.
+ */
+export const publishedGuides: PublishedGuide[] = guides.map(({ slug, title }) => ({ slug, title }));
+
+export function getPublishedGuide(slug: string) {
+  return publishedGuides.find((guide) => guide.slug === slug);
+}
 
 export type ResourceTopic = {
   title: string;
-  /** Reserved for the future /resources/<slug> article route */
+  /** Reserved for a future /resources/<slug> guide */
   slug: string;
   description: string;
   related: CategorySlug[];
 };
 
-// Planned launch guides. No article routes exist yet, so cards link to related equipment pages.
+// Guides not written yet. Cards link to related equipment pages until each guide ships.
+// "Mini Excavator vs Skid Steer" shipped as /resources/skid-steer-vs-mini-excavator (the old
+// slug redirects there; see next.config.ts). The "Excavator Rental Cost Guide" was dropped:
+// CRF doesn't publish prices, and sizing is covered by /resources/what-size-excavator-do-i-need.
 export const resourceTopics: ResourceTopic[] = [
-  {
-    title: "Excavator Rental Cost Guide",
-    slug: "excavator-rental-cost-guide",
-    description: "What affects the cost of renting an excavator, from machine size and rental length to delivery and attachments.",
-    related: ["excavator-rental", "mini-excavator-rental"],
-  },
-  {
-    title: "Mini Excavator vs Skid Steer",
-    slug: "mini-excavator-vs-skid-steer",
-    description: "How the two most-rented compact machines compare, and how to choose the right one for your project.",
-    related: ["mini-excavator-rental", "skid-steer-rental"],
-  },
   {
     title: "How to Choose the Right Boom Lift",
     slug: "how-to-choose-a-boom-lift",
@@ -47,16 +109,3 @@ export const resourceTopics: ResourceTopic[] = [
     related: ["generator-rental", "forklift-rental"],
   },
 ];
-
-export type PublishedGuide = { slug: string; title: string };
-
-/**
- * Guides with a live /resources/<slug> route. City pages link to a planned guide
- * only once its slug is listed here, so no page links to a 404. Add each guide
- * when its route ships (Resource Run).
- */
-export const publishedGuides: PublishedGuide[] = [];
-
-export function getPublishedGuide(slug: string) {
-  return publishedGuides.find((guide) => guide.slug === slug);
-}
