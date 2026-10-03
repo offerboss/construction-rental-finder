@@ -1,5 +1,5 @@
 import type { CategorySlug } from "./categories";
-import { arlington, irving, plano } from "./city-content";
+import { arlington, frisco, irving, mckinney, plano } from "./city-content";
 import type { Faq } from "./seo";
 
 export type SourceLink = { label: string; url: string };
@@ -161,7 +161,7 @@ export const states: State[] = [
     seasonTip:
       "Rain and summer heat can shift schedules, so it helps to confirm flexible delivery and pickup windows.",
     cities: cities("texas", [
-      { name: "Dallas", slug: "dallas", region: "the Dallas–Fort Worth area", shortDescription: "Dallas is a major North Texas city at the heart of the Dallas–Fort Worth metroplex.", nearbyCities: ["arlington", "irving", "plano", "fort-worth"] },
+      { name: "Dallas", slug: "dallas", region: "the Dallas–Fort Worth area", shortDescription: "Dallas is a major North Texas city at the heart of the Dallas–Fort Worth metroplex.", nearbyCities: ["arlington", "irving", "plano", "frisco", "mckinney", "fort-worth"] },
       { name: "Houston", slug: "houston", region: "the Greater Houston area", shortDescription: "Houston is the largest city in Texas, near the Gulf Coast." },
       { name: "Austin", slug: "austin", region: "Central Texas", shortDescription: "Austin is the Texas state capital, in the heart of Central Texas." },
       { name: "San Antonio", slug: "san-antonio", region: "the San Antonio area", shortDescription: "San Antonio is one of the largest cities in Texas, in South-Central Texas." },
@@ -169,6 +169,8 @@ export const states: State[] = [
       arlington,
       irving,
       plano,
+      frisco,
+      mckinney,
     ]),
     faqs: [
       { question: "What construction equipment is commonly rented in Texas?", answer: "Excavators, skid steers, telehandlers, aerial lifts and forklifts are common across residential, commercial and industrial projects. Compaction equipment and generators are frequent choices for site work." },

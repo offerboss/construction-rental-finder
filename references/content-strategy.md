@@ -11,8 +11,8 @@ city actually needs to know, instead of scaling thin template pages. Quality ove
 
 | Batch | Cities | Status |
 |---|---|---|
-| 1 | Arlington, Irving, Plano | Built locally 2026-10-02; heroes approved; awaiting push go-ahead |
-| 2 | Frisco, McKinney | Planned |
+| 1 | Arlington, Irving, Plano | Shipped 2026-10-02 (`b3a73d6`) |
+| 2 | Frisco, McKinney | Shipped 2026-10-02 |
 
 Planned resources (the Resource Run): `/resources/skid-steer-vs-mini-excavator` and
 `/resources/what-size-excavator-do-i-need`. Every Batch 1 city already carries both as `guides` data. They render only

@@ -13,8 +13,8 @@ setting. The equipment is the subject, and the place gives it context. Match the
 
 | Element | Rule |
 |---|---|
-| Subject | Realistic rental equipment (telehandler, boom or scissor lift, forklift, mini excavator, compact track loader, skid steer, compactor, generator) doing plausible work, set up as a real crew would set it up |
-| Setting | A believable DFW jobsite: clay subgrade, a suburban building pad, an infill lot between homes, a warehouse or logistics yard, a commercial site under construction |
+| Subject | Realistic rental equipment (telehandler, boom or scissor lift, forklift, mini excavator, excavator, wheel loader, roller or compactor, compact track loader, skid steer, generator) doing plausible work, set up as a real crew would set it up |
+| Setting | A believable DFW jobsite: clay subgrade, a suburban building pad, an infill lot between homes, a warehouse or logistics yard, a commercial site under construction, a large graded development site, a tight lot at the edge of a historic downtown |
 | Light | Daylight or golden hour |
 | Palette | Natural jobsite colors. Equipment in generic rental colors (yellow, white, blue, gray) |
 | Text | No text overlay, signage, lettering, decals or watermarks |
@@ -64,5 +64,7 @@ is also the page's Open Graph and Twitter image. Cities without `heroImage` keep
 | arlington | public/images/locations/arlington-tx-construction-equipment-rental.webp | 1080x720, 108 KB | Yellow telehandler placing a pallet beside a steel-frame commercial building on a clay pad, blue scissor lift nearby, late afternoon | Telehandler placing a pallet beside a steel-frame commercial building on a clay pad in Arlington, Texas | 2026-10-02 |
 | irving | public/images/locations/irving-tx-construction-equipment-rental.webp | 1080x720, 90 KB | Telehandler and forklift moving pallets in the gravel yard of a new tilt-wall warehouse with dock doors, scissor lift parked | Telehandler and forklift moving pallets in the gravel yard of a new tilt-wall warehouse in Irving, Texas | 2026-10-02 |
 | plano | public/images/locations/plano-tx-construction-equipment-rental.webp | 1080x720, 155 KB | Mini excavator digging a shallow footing trench and a compact track loader on a graded infill lot between brick homes and mature trees, golden hour | Mini excavator digging a footing trench beside a compact track loader on an infill lot between homes in Plano, Texas | 2026-10-02 |
+| frisco | public/images/locations/frisco-tx-construction-equipment-rental.webp | 1080x720, 122 KB | Excavator loading an articulated dump truck, smooth-drum roller and wheel loader on a large graded dirt site, subdivision in the distance, two small workers in hi-vis, clear daylight | Excavator loading a dump truck beside a roller and wheel loader on a large graded development site in Frisco, Texas | 2026-10-02 |
+| mckinney | public/images/locations/mckinney-tx-construction-equipment-rental.webp | 1080x720, 148 KB | Mini excavator digging a trench beside wooden concrete forms, skid steer, one worker in hard hat and vest, historic red-brick buildings behind orange safety fence, gravel lane, daylight | Mini excavator trenching beside concrete forms and a skid steer next to historic brick buildings in McKinney, Texas | 2026-10-02 |
 
 The older state images (`/images/*.png` backgrounds) predate this standard. Don't use them as style references.

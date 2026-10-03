@@ -24,6 +24,21 @@ const sources = {
   planoNoise: { label: "City of Plano Code ch. 14, art. V, Noise (ordinance passed Aug. 11, 2025)", url: "https://plano.novusagenda.com/Agendapublic/AttachmentViewer.ashx?AttachmentID=20487&ItemID=10194" },
   usdaHoustonBlack: { label: "USDA NRCS: Houston Black, the Texas state soil", url: "https://www.twdb.texas.gov/conservation/education/doc/tx_State_soil.pdf" },
   usdaOsd: { label: "USDA NRCS Official Series Description: Houston Black", url: "https://soilseries.sc.egov.usda.gov/OSD_Docs/H/HOUSTON_BLACK.html" },
+  oshaTrenching: { label: "OSHA trenching and excavation safety fact sheet", url: "https://www.osha.gov/sites/default/files/publications/TRENCH_EXCAVATION_FS.pdf" },
+  tceqConstructionStormwater: { label: "TCEQ Stormwater General Permit for Construction Activities (TXR150000)", url: "https://www.tceq.texas.gov/permitting/stormwater/construction" },
+  friscoPlan: { label: "City of Frisco 2040 Comprehensive Plan, Chapter 2: Land Use", url: "https://www.friscotexas.gov/DocumentCenter/View/36065/2040-Comp-Plan-Chapter-2PDF" },
+  friscoRow: { label: "City of Frisco Right-of-Way permits", url: "https://www.friscotexas.gov/167/Right-of-Way" },
+  friscoRowOrdinance: { label: "City of Frisco Ordinance No. 2025-05-30, Chapter 78 right-of-way amendments", url: "https://ecode360.com/FR6313/laws/LF2373258.pdf" },
+  friscoLineLocates: { label: "City of Frisco Line Locates", url: "https://www.friscotexas.gov/1478/Line-Locates" },
+  friscoGeneralNotes: { label: "City of Frisco Engineering Standards, General Notes (October 2025)", url: "https://www.friscotexas.gov/DocumentCenter/View/39415/2025-General-Notes-ONLY-PDF-Opens-in-New-Window" },
+  friscoNoise: { label: "City of Frisco Code ch. 54, art. IV, Noise, sec. 54-90", url: "https://ecode360.com/38351335" },
+  tshaFrisco: { label: "Handbook of Texas: Frisco, TX", url: "https://www.tshaonline.org/handbook/entries/frisco-tx" },
+  mckinneyHistory: { label: "City of McKinney: McKinney's History", url: "https://www.mckinneytexas.org/122/History" },
+  mckinneyPlan: { label: "City of McKinney, ONE McKinney 2040 Comprehensive Plan", url: "https://www.mckinneytexas.org/292/2040-Comprehensive-Plan" },
+  mckinneyTownCenter: { label: "ONE McKinney 2040, Town Center District strategy", url: "https://www.mckinneytexas.org/DocumentCenter/View/35443" },
+  mckinneyCoa: { label: "City of McKinney Historic Preservation: Certificate of Appropriateness FAQ", url: "https://www.mckinneytexas.org/faq.aspx?TID=50" },
+  mckinneyCommercialGuide: { label: "City of McKinney Commercial Building Permit Guide", url: "https://www.mckinneytexas.org/DocumentCenter/View/361/New-Commercial-or-Additions-Submittal-Packet" },
+  mckinneyRowManual: { label: "City of McKinney Right-of-Way Construction and Permitting Procedures Manual (effective July 1, 2025)", url: "https://www.mckinneytexas.org/DocumentCenter/View/36331/ROW-Construction-and-Permitting-Procedures-Manual-v-7125" },
 } satisfies Record<string, SourceLink>;
 
 // Both guides are planned for the Resource Run. They render only once published.
@@ -243,10 +258,154 @@ export const plano: CityEntry = {
     { question: "How does clay soil affect equipment in Plano-area projects?", answer: "Expansive clay like Houston Black is very hard when dry and sticky when wet. Rubber tracks keep traction better than tires on soft ground, ground mats protect drives and lawns, and padfoot rollers are a common choice for compacting clay fill." },
     { question: "Should I rent a mini excavator or a full-size excavator for a teardown?", answer: "For most residential teardowns, utility tie-ins and footing work, a mini excavator fits the lot and leaves less surface damage. A larger excavator makes sense for commercial demolition or deep cuts where there's room to stage it and load trucks. Share the depth, access width and what has to be hauled off." },
   ],
-  nearbyCities: ["dallas"],
+  nearbyCities: ["frisco", "mckinney", "dallas"],
   heroImage: {
     src: "/images/locations/plano-tx-construction-equipment-rental.webp",
     alt: "Mini excavator digging a footing trench beside a compact track loader on an infill lot between homes in Plano, Texas",
+  },
+  guides: [compactGuide, excavatorSizeGuide],
+};
+
+export const frisco: CityEntry = {
+  name: "Frisco",
+  slug: "frisco",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Frisco sits in western Collin County, extending into Denton County, about 30 miles north of Dallas, with roughly 13% of its land still undeveloped.",
+  metaDescription:
+    "Construction equipment rentals in Frisco, TX: excavators, wheel loaders, compactors and trenchers for grading and site work on new development, plus local rules.",
+  localIntro: [
+    "Frisco sits in western Collin County, with part of the city extending into Denton County, about 30 miles north of Dallas. The City's 2040 Comprehensive Plan says roughly 13% of its land is still undeveloped, which keeps a lot of Frisco construction focused on new ground: mass grading, utilities, streets and building pads.",
+    "That work runs on larger earthmoving and compaction equipment. Use this page to match machines to Frisco site work, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "According to the comprehensive plan, Frisco's undeveloped land is concentrated around Grand Park, northeast of the Preston Road and Main Street intersection, and in other parts of northern Frisco, where City Council has made activating the north a priority by building roads and infrastructure ahead of development. The plan's available-land map shows about 71% of the city already developed and another 5.5% in the construction phase, so many active sites border finished neighborhoods and busy thoroughfares.",
+    "New development follows a familiar sequence: clearing and mass grading, storm drain, water and sewer lines, then street subgrade and paving. Excavators dig and load, wheel loaders move stockpiles and feed trucks, trenchers cut utility and conduit runs, and rollers compact fill and subgrade. Frisco's engineering general notes add a timing wrinkle: earthwork, lime application or other subgrade preparation for streets, alleys and fire lanes can't start until the City authorizes it after utility trench backfill testing, so plan compaction equipment around those tests rather than a fixed date.",
+    "Soil and weather drive the schedule. USDA describes the Blackland Prairie, home of the expansive Houston Black clay, as extending from north of Dallas south to San Antonio. Check your parcel in the USDA Web Soil Survey and your geotechnical report before you choose compaction equipment. The National Weather Service office in Fort Worth notes that spring and fall are the wettest seasons in the Metroplex, which is when grading crews lose days to mud, and Frisco's general notes require contractors to keep adjacent streets and driveways free of mud and debris and to control dust.",
+    "The plan also looks ahead. As vacant land is used up, it expects a “second wave” of redevelopment on existing sites. Redevelopment and infill sites come with tighter access and finished surfaces nearby, which is where compact machines earn their place alongside the big iron.",
+  ],
+  featuredEquipment: [
+    { slug: "excavator-rental", reason: "Mass excavation, detention ponds, storm drain and deep utility trenches, and loading trucks on open development sites. Size the machine to your deepest cut and the trucks it will load." },
+    { slug: "wheel-loader-rental", reason: "Moving stockpiles, loading trucks, spreading base and keeping material flowing on large sites where a skid steer would make too many trips." },
+    { slug: "compactor-rental", reason: "Smooth drum and padfoot rollers for fill, subgrade and base under streets and pads, and plate compactors or rammers for trench backfill around utilities." },
+    { slug: "trencher-rental", reason: "Long, narrow runs for conduit, irrigation and small utilities across graded lots, cutting a consistent trench faster than a bucket." },
+    { slug: "skid-steer-rental", reason: "Fine grading, cleanup, moving pallets and keeping construction entrances and adjacent streets clear of mud and spoil." },
+    { slug: "mini-excavator-rental", reason: "Service connections, footings and utility work on individual lots and infill sites where a full-size excavator would be more machine than the job needs." },
+  ],
+  siteConsiderations: [
+    {
+      title: "City line locates are separate from 811",
+      text: "Texas law requires excavators to notify a one-call center at least 48 hours before digging, not counting weekends and holidays. Frisco's own water, sewer and traffic line locates in City right-of-way and easements aren't part of the 811 process; they're required when digging deeper than 18 inches and need an active ROW, TxDOT or irrigation permit number. The City doesn't locate lines on private property.",
+      sources: [sources.utilitiesCode251, sources.friscoLineLocates],
+    },
+    {
+      title: "Right-of-way permits and hours",
+      text: "Contractors must register with the City and get a ROW permit before working in Frisco right-of-way or easements; the City asks for 5 business days for review. Under the 2025 ordinance, excavation and boring in the right-of-way run 7 a.m. to 3:30 p.m. weekdays and 8 a.m. to 5 p.m. Saturdays, with no Sunday or holiday work unless the ROW manager approves it in writing.",
+      sources: [sources.friscoRow, sources.friscoRowOrdinance],
+    },
+    {
+      title: "Street closures run 9 a.m. to 3:30 p.m.",
+      text: "Frisco's engineering general notes require road closures to be requested through the City Traffic Division at least 48 hours ahead, and don't allow closures before 9 a.m. or after 3:30 p.m. on weekdays unless the City approves. The right-of-way ordinance also requires 24 hours' notice to police and fire before any lane closure.",
+      sources: [sources.friscoGeneralNotes, sources.friscoRowOrdinance],
+    },
+    {
+      title: "Erosion control before you grade",
+      text: "Frisco requires erosion control devices on all projects before construction begins, including wire-reinforced silt fence and construction entrances built on geotextile fabric. At the state level, TCEQ's construction general permit covers sites that disturb one acre or more and discharge stormwater to surface waters, and it requires a stormwater pollution prevention plan before construction starts.",
+      sources: [sources.friscoGeneralNotes, sources.tceqConstructionStormwater],
+    },
+    {
+      title: "Trench safety plans",
+      text: "For storm drain, water and wastewater work, Frisco's general notes require a trench safety plan before the pre-construction meeting. OSHA requires a protective system for trenches 5 feet deep or more, spoil piles at least 2 feet back from the edge, and an inspection after rain.",
+      sources: [sources.friscoGeneralNotes, sources.oshaTrenching],
+    },
+    {
+      title: "Night work near homes",
+      text: "Frisco's noise ordinance treats construction equipment operating within 500 feet of a residence or quiet zone, such as a school or hospital, as a noise disturbance per se between 10 p.m. and 7 a.m. On sites bordering finished neighborhoods, plan early starts and long pours with that window in mind.",
+      sources: [sources.friscoNoise],
+    },
+  ],
+  faqs: [
+    { question: "Do I need a Frisco line locate as well as Texas 811?", answer: "For digging deeper than 18 inches in City right-of-way or easements, yes. Frisco's water, sewer and traffic locates are requested through the City's online form with an active ROW, TxDOT or irrigation permit number, separate from your 811 ticket. On private property, the City doesn't locate lines, so 811 and your own plans are the starting point." },
+    { question: "What equipment does a typical Frisco site prep job need?", answer: "On open development sites, a common lineup is an excavator for digging and loading, a wheel loader for stockpiles, a roller for fill and subgrade, and a trencher or mini excavator for utilities. Share the site acreage, cut and fill depths, and the soil report with the provider so machine sizes match the work." },
+    { question: "When can I close a lane in Frisco to deliver equipment?", answer: "Frisco's engineering general notes limit road closures to 9 a.m. to 3:30 p.m. on weekdays unless the City approves otherwise, with requests made through the Traffic Division at least 48 hours ahead. Lane closures in the right-of-way also need 24 hours' notice to police and fire." },
+    { question: "Does my Frisco grading project need a stormwater permit?", answer: "If the project disturbs one acre or more, or is part of a larger plan of development that will, and its stormwater reaches surface waters, it falls under TCEQ's construction general permit, which requires a stormwater pollution prevention plan before construction. Frisco also requires erosion controls to be in place before any construction begins." },
+  ],
+  nearbyCities: ["plano", "mckinney", "dallas"],
+  heroImage: {
+    src: "/images/locations/frisco-tx-construction-equipment-rental.webp",
+    alt: "Excavator loading a dump truck beside a roller and wheel loader on a large graded development site in Frisco, Texas",
+  },
+  guides: [excavatorSizeGuide, compactGuide],
+};
+
+export const mckinney: CityEntry = {
+  name: "McKinney",
+  slug: "mckinney",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "McKinney is the Collin County seat, pairing a largely built-out historic Town Center with new construction on its growing edges.",
+  metaDescription:
+    "Construction equipment rentals in McKinney, TX: mini excavators, skid steers, excavators and concrete equipment for historic downtown infill and edge-of-city builds.",
+  localIntro: [
+    "McKinney has been the Collin County seat since 1848, and construction here splits into two very different kinds of jobs. Around the historic downtown square, work means infill and adaptive reuse on tight, established blocks. On the city's edges, it means new subdivisions, streets and commercial sites on open ground.",
+    "The right rental depends on which McKinney you're building in. Use this page to match equipment to the job, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "The ONE McKinney 2040 Comprehensive Plan describes the Town Center District as the historic commercial core and its surrounding neighborhoods west of State Highway 5. Because it's the oldest part of McKinney, the plan calls it largely developed, with future investment coming through adaptive reuse of existing buildings and infill on vacant or underutilized parcels. Work there happens beside occupied buildings, on narrow lots and alleys, and inside the City's historic overlay, so mini excavators, skid steers and careful staging fit better than a full-size fleet.",
+    "The same plan expects McKinney to keep growing in every direction outward from the Town Center, and it covers the city plus its extraterritorial jurisdiction, roughly 51 square miles of surrounding area, for about 116 square miles in all. That is where the larger work is: grading new neighborhoods, building streets and laying water, sewer and storm lines, with excavators, trenchers and rollers doing most of it.",
+    "Ground conditions are part of local history. The City's own history notes that early settlers found the soil fertile but a quagmire when it rained. USDA describes the Blackland Prairie, with its expansive Houston Black clay, as extending from north of Dallas to San Antonio, so check your parcel in the USDA Web Soil Survey. McKinney's commercial permit guide asks contractors to cancel foundation, flatwork and similar inspections when it rains, a reminder to build weather days into any concrete schedule.",
+    "Concrete is its own planning item. National Weather Service data shows Metroplex summer highs consistently in the 90s and often reaching 100 degrees, which pushes many pours into early morning. McKinney allows construction from 6 a.m. on weekdays, and the City considers overnight concrete pours case by case.",
+  ],
+  featuredEquipment: [
+    { slug: "mini-excavator-rental", reason: "Footings, utility tie-ins and drainage on downtown infill lots and older neighborhoods, where the machine has to work between existing buildings, fences and trees." },
+    { slug: "skid-steer-rental", reason: "Grading, spreading base and moving material on tight sites, plus breakers, augers and forks for demolition cleanup and flatwork prep." },
+    { slug: "concrete-equipment-rental", reason: "Mixers, saws and power trowels for foundations, sidewalks and flatwork, from storefront rebuilds downtown to new slabs at the edge of town." },
+    { slug: "excavator-rental", reason: "Mass grading, detention, and deep sewer and storm drain work on new subdivisions and commercial sites with room to stage and load trucks." },
+    { slug: "compactor-rental", reason: "Plate compactors and rammers for trench backfill in tight spaces, and rollers for subgrade and base on new streets and pads." },
+    { slug: "trencher-rental", reason: "Irrigation, conduit and small utility runs across new lots and commercial sites, with a narrow trench and less spoil to manage." },
+  ],
+  siteConsiderations: [
+    {
+      title: "Historic overlay approvals",
+      text: "In McKinney's Historic Overlay District, new construction, alterations, additions and demolition visible from the public right-of-way need a Certificate of Appropriateness before work starts and before a permit is issued. In the commercial area, paint color changes need one too. Build that review into the schedule before booking equipment for downtown exterior work.",
+      sources: [sources.mckinneyCoa],
+    },
+    {
+      title: "Construction hours",
+      text: "McKinney's commercial permit guide lists permitted construction hours of 6 a.m. to 9 p.m. Monday through Friday, 8 a.m. to 5 p.m. Saturday and 1 p.m. to 5 p.m. Sunday. Overnight concrete pours may be allowed case by case, and if the pour area is at least 500 feet from residential property, contractors can apply for a noise exception.",
+      sources: [sources.mckinneyCommercialGuide],
+    },
+    {
+      title: "Right-of-way hours and peak traffic",
+      text: "Permitted work in McKinney's right-of-way runs 7 a.m. to 4 p.m. weekdays unless the Director approves otherwise in writing. Work can't interfere with traffic on major thoroughfares from 6 to 9 a.m. or 4 to 6 p.m., lane closures on those streets are limited to two hours per daylight period, and streets near schools are restricted from 6 to 9 a.m. and 3 to 6 p.m. when school is in session.",
+      sources: [sources.mckinneyRowManual],
+    },
+    {
+      title: "811 covers City lines here",
+      text: "Texas law requires a one-call notice at least 48 hours before digging, not counting weekends and holidays. The City of McKinney is a member of the One Call system and marks its water, wastewater, drainage and traffic or fiber lines through Texas 811. For right-of-way work, the City's manual also requires notifying adjacent property owners at least 48 hours before requesting locates.",
+      sources: [sources.utilitiesCode251, sources.mckinneyRowManual],
+    },
+    {
+      title: "Streets, driveways and trees",
+      text: "In the right-of-way, McKinney requires concrete driveways and streets to be bored rather than open cut, and doesn't allow pavement cuts in streets built or resurfaced within the past 36 months. Protected trees near the work get a construction fence 12 inches outside the drip line, with no equipment or materials inside it.",
+      sources: [sources.mckinneyRowManual],
+    },
+    {
+      title: "Erosion control, backfill and trenches",
+      text: "McKinney requires erosion control measures to be inspected and approved before construction begins. For right-of-way work, backfill goes in lifts no deeper than 8 inches, compacted to at least 95% of Standard Proctor density, and any excavation deeper than 5 feet needs a City-accepted trench safety plan on site, consistent with OSHA's 5-foot protective system rule.",
+      sources: [sources.mckinneyCommercialGuide, sources.mckinneyRowManual, sources.oshaTrenching],
+    },
+  ],
+  faqs: [
+    { question: "Do I need approval for exterior work in downtown McKinney?", answer: "If the property is in the Historic Overlay District and the work is visible from the street, you generally need a Certificate of Appropriateness before work starts and before a permit is issued. Ordinary in-kind maintenance usually doesn't, but the Historic Preservation Office recommends checking first." },
+    { question: "What equipment fits a downtown McKinney infill lot?", answer: "Start compact: a mini excavator for footings and utility connections, a skid steer or compact track loader for grading and material, and a plate compactor for backfill. Measure alley and gate widths, check overhead lines, and plan staging so you don't block neighboring businesses." },
+    { question: "Can I pour concrete at night in McKinney?", answer: "Standard construction hours start at 6 a.m. on weekdays. The City considers overnight pours case by case, and a noise exception can be requested when the pour area is at least 500 feet from residential property. Confirm before you schedule a truck and a finishing crew." },
+    { question: "Does the City mark its own lines when I call 811 in McKinney?", answer: "Yes. McKinney participates in the One Call system and marks City water, wastewater, drainage and traffic or fiber lines through Texas 811 requests. The City's right-of-way manual notes that the customer's section of a service line typically runs from the water meter or sewer cleanout to the building." },
+  ],
+  nearbyCities: ["plano", "frisco", "dallas"],
+  heroImage: {
+    src: "/images/locations/mckinney-tx-construction-equipment-rental.webp",
+    alt: "Mini excavator trenching beside concrete forms and a skid steer next to historic brick buildings in McKinney, Texas",
   },
   guides: [compactGuide, excavatorSizeGuide],
 };
