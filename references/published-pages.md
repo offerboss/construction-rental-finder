@@ -234,7 +234,7 @@ so Richardson took its slot.
 
 ### Resource Run 2: manufacturer specs (checked 2026-10-08)
 
-- Genie Z-30/20N, 2022 en-US spec (30 ft platform, 36 ft working; 21 ft 5 in reach; 500 lb; 3 ft 11 in; zero tailswing; 14,183 lb): https://www.genielift.com/docs/default-source/product-specifications/articulated-boom-lift/en/2022/zboomspec_z30_20n_z30_20n_rj_en-us_na_lrec42dc61-4a3d-4937-a372-497615db2242.pdf?sfvrsn=6db84fd1_3
+- Genie Z-30/20N, 2026 en-US spec (30 ft platform, 36 ft working; 21 ft 5 in reach; 500 lb; 3 ft 11 in; zero tailswing; 14,421 lb): https://www.genielift.com/docs/default-source/product-specifications/articulated-boom-lift/en/2026/z-3020n-z-3020n-rj---product-specifications-2026.pdf?sfvrsn=75ce7f68_4 (replaced the 2022 sheet on 2026-10-09; only the weight changed, 14,183 lb to 14,421 lb)
 - Genie Z-45 XC, 2026 (45 ft 6 in platform, 51 ft 6 in working; 24 ft 9 in reach; 24 ft 5 in up and over; 660/1,000 lb; 7 ft 6 in; zero tailswing; 16,360 lb; 80 psi tire contact; 231 psf; tilt 4.5°; working height = platform + 6 ft): https://www.genielift.com/docs/default-source/product-specifications/articulated-boom-lift/en/2026/z-45-xc-z-45-hf-product-specifications-2026.pdf?sfvrsn=72e5cd45_2
 - JLG 600S (59 ft 8 in platform; 50 ft 2 in outreach; 600/1,000 lb; 21,647 lb; 83 psi max ground bearing; 8 ft 2 in; 4 ft tailswing; 5° tilt cutout): https://www.jlg.com/dfsmedia/e4042b10c9ce4595b4cc059f1299f079/125485-source
 - Genie S-85 XC FE/E, 2026 (85 ft platform; 74 ft 6 in reach; 8 ft 8 in below ground; 660/1,000 lb; 8 ft 2 in; 5 ft 9 in tailswing; electric 38,908 lb; 198 psi tire contact): https://www.genielift.com/docs/default-source/product-specifications/telescopic-booms/en/2026/s-85-xc-fe-s-85-xc-e---product-specifications---2026---en-us.pdf?sfvrsn=9015f83f_1
@@ -268,7 +268,7 @@ so Richardson took its slot.
   the page states neither ROW work-hours figure. The 7 a.m.–8 p.m. figure is from Ordinance 7079 (work next to homes).
 - Mesquite's ROW ordinance dates from 2001; its noise page garbles the weekend line, so the page cites only the weekday
   hours and says weekend and holiday hours differ.
-- The Genie Z-30/20N spec sheet is the 2022 edition (the newest US sheet found); other Genie sheets are 2026.
+- All Genie spec sheets cited are now 2026 editions (Z-30/20N updated from 2022 on 2026-10-09).
 - Batch 3 and Resource Run 2 heroes were supplied 2026-10-08. The boom lift guide hero has a tiny unreadable decal on the
   boom chassis (not legible at display size); replace it if a cleaner version is made.
 - The resources page "Coming soon" grid now shows two cards in a 4-column layout; no template change was made.

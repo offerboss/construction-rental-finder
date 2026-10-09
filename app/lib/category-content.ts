@@ -144,7 +144,7 @@ export const categoryContent: Record<CategorySlug, CategoryContent> = {
       { title: "Platform vs. working height", text: "Platform height is lower than working height. Listings often show both, so confirm which one you're comparing." },
       { title: "Indoor or outdoor", text: "Electric slab lifts are made for smooth, level floors. Choose a rough-terrain model for gravel, dirt or uneven ground." },
       { title: "Width and weight", text: "For indoor work, check doorway widths, elevator dimensions and floor load limits." },
-      { title: "Platform capacity", text: "Account for workers, tools and materials on the deck, and whether you need an extension deck." },
+      { title: "Platform capacity", text: "Account for workers, tools and materials on the deck, and decide if you need an extension deck." },
       { title: "Operator training", text: "Aerial work platform operators are generally expected to be trained. Ask the provider about familiarization and follow your site requirements." },
     ],
     faqs: [
@@ -277,7 +277,7 @@ export const categoryContent: Record<CategorySlug, CategoryContent> = {
     uses: ["Power tools and equipment", "Job trailers and site offices", "Temporary lighting", "Pumps and dewatering", "Welding and heavy loads", "Backup power during outages"],
     considerations: [
       { title: "Load sizing", text: "Add up the running watts of everything you'll power at once, and account for the higher starting load of motors and compressors." },
-      { title: "Voltage and phase", text: "Confirm whether you need single-phase or three-phase power and the voltages your equipment requires." },
+      { title: "Voltage and phase", text: "Confirm the phase your equipment needs, single-phase or three-phase, and the voltages it requires." },
       { title: "Fuel and runtime", text: "Ask about fuel type, tank size and expected runtime, and who is responsible for refueling." },
       { title: "Noise", text: "Sound-attenuated generators are useful near occupied buildings and residential areas." },
       { title: "Building connections", text: "Connecting a generator to a building's electrical system typically requires a transfer switch installed by a qualified electrician." },

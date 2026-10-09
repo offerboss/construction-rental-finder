@@ -74,7 +74,9 @@ export default function ResourcesPage() {
             These guides are being written now. In the meantime, each topic links to the equipment
             pages that cover it.
           </p>
-          <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <ul
+            className={`mt-10 grid gap-5 sm:grid-cols-2 ${resourceTopics.length > 2 ? "lg:grid-cols-4" : ""}`}
+          >
             {resourceTopics.map((topic) => (
               <li key={topic.slug}>
                 <article className="flex h-full flex-col rounded-md border border-navy/10 bg-white p-6 shadow-sm">

@@ -26,7 +26,7 @@ const sources = {
   osha600: { label: "OSHA 29 CFR 1926.600 (equipment)", url: "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-O/section-1926.600" },
   osha602: { label: "OSHA 29 CFR 1926.602 (earthmoving equipment)", url: "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-O/section-1926.602" },
   txdmvSize: { label: "TxDMV: Texas size and weight limits", url: "https://www.txdmv.gov/motor-carriers/oversize-overweight-permits/texas-size-weight-limits" },
-  genieZ3020n: { label: "Genie Z-30/20N and Z-30/20N RJ specifications (PDF)", url: "https://www.genielift.com/docs/default-source/product-specifications/articulated-boom-lift/en/2022/zboomspec_z30_20n_z30_20n_rj_en-us_na_lrec42dc61-4a3d-4937-a372-497615db2242.pdf?sfvrsn=6db84fd1_3" },
+  genieZ3020n: { label: "Genie Z-30/20N and Z-30/20N RJ specifications, 2026 (PDF)", url: "https://www.genielift.com/docs/default-source/product-specifications/articulated-boom-lift/en/2026/z-3020n-z-3020n-rj---product-specifications-2026.pdf?sfvrsn=75ce7f68_4" },
   genieZ45xc: { label: "Genie Z-45 XC and Z-45 HF specifications, 2026 (PDF)", url: "https://www.genielift.com/docs/default-source/product-specifications/articulated-boom-lift/en/2026/z-45-xc-z-45-hf-product-specifications-2026.pdf?sfvrsn=72e5cd45_2" },
   jlg600s: { label: "JLG 600S specifications (PDF)", url: "https://www.jlg.com/dfsmedia/e4042b10c9ce4595b4cc059f1299f079/125485-source" },
   genieS85xc: { label: "Genie S-85 XC FE and S-85 XC E specifications, 2026 (PDF)", url: "https://www.genielift.com/docs/default-source/product-specifications/telescopic-booms/en/2026/s-85-xc-fe-s-85-xc-e---product-specifications---2026---en-us.pdf?sfvrsn=9015f83f_1" },
@@ -502,7 +502,7 @@ export const boomLiftGuide: Guide = {
           caption: "Boom lifts",
           columns: ["Model", "Type", "Platform height", "Horizontal reach", "Platform capacity", "Width", "Weight"],
           rows: [
-            ["Genie Z-30/20N (electric)", "Articulating, narrow", "30 ft", "21 ft 5 in", "500 lb", "3 ft 11 in", "14,183 lb"],
+            ["Genie Z-30/20N (electric)", "Articulating, narrow", "30 ft", "21 ft 5 in", "500 lb", "3 ft 11 in", "14,421 lb"],
             ["Genie Z-45 XC (diesel)", "Articulating", "45 ft 6 in", "24 ft 9 in", "660 lb unrestricted; 1,000 lb restricted", "7 ft 6 in", "16,360 lb"],
             ["JLG 600S", "Telescopic", "59 ft 8 in", "50 ft 2 in", "600 lb unrestricted; 1,000 lb restricted", "8 ft 2 in", "21,647 lb"],
             ["Genie S-85 XC (electric)", "Telescopic", "85 ft", "74 ft 6 in", "660 lb unrestricted; 1,000 lb restricted", "8 ft 2 in", "38,908 lb"],
