@@ -1,5 +1,5 @@
 import type { CategorySlug } from "./categories";
-import { excavatorSizeGuide, skidSteerVsMiniExcavator } from "./guide-content";
+import { boomLiftGuide, excavatorSizeGuide, sitePrepGuide, skidSteerVsMiniExcavator } from "./guide-content";
 import type { SourceLink } from "./locations";
 import type { Faq } from "./seo";
 
@@ -48,7 +48,7 @@ export type Guide = {
 };
 
 /** Published guides, each with a live /resources/<slug> route and a sitemap entry. */
-export const guides: Guide[] = [skidSteerVsMiniExcavator, excavatorSizeGuide];
+export const guides: Guide[] = [skidSteerVsMiniExcavator, excavatorSizeGuide, boomLiftGuide, sitePrepGuide];
 
 export function getGuide(slug: string) {
   return guides.find((guide) => guide.slug === slug);
@@ -83,24 +83,14 @@ export type ResourceTopic = {
 // "Mini Excavator vs Skid Steer" shipped as /resources/skid-steer-vs-mini-excavator (the old
 // slug redirects there; see next.config.ts). The "Excavator Rental Cost Guide" was dropped:
 // CRF doesn't publish prices, and sizing is covered by /resources/what-size-excavator-do-i-need.
+// "How to Choose the Right Boom Lift" and "Renting Equipment for Site Preparation" shipped on
+// 2026-10-08 as /resources/how-to-choose-a-boom-lift and /resources/site-preparation-equipment.
 export const resourceTopics: ResourceTopic[] = [
-  {
-    title: "How to Choose the Right Boom Lift",
-    slug: "how-to-choose-a-boom-lift",
-    description: "Working height, outreach, articulating vs telescopic, and other factors to weigh before you rent.",
-    related: ["boom-lift-rental", "scissor-lift-rental"],
-  },
   {
     title: "Construction Equipment Rental Checklist",
     slug: "equipment-rental-checklist",
     description: "Questions to ask and details to confirm before, during and after an equipment rental.",
     related: ["excavator-rental", "telehandler-rental"],
-  },
-  {
-    title: "Renting Equipment for Site Preparation",
-    slug: "site-preparation-equipment",
-    description: "The machines commonly used to clear, dig, grade and compact a site before building starts.",
-    related: ["skid-steer-rental", "compactor-rental"],
   },
   {
     title: "Short-Term vs Long-Term Equipment Rentals",

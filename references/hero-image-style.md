@@ -1,6 +1,6 @@
 # CRF Hero Image Style
 
-Last updated: 2026-10-02 (standard approved by Adam; first used for Arlington, Irving and Plano in Batch 1)
+Last updated: 2026-10-08 (standard approved by Adam; first used for Arlington, Irving and Plano in Batch 1)
 
 **Approval status:** Every new hero needs Adam's approval before it ships, until he says otherwise.
 
@@ -69,6 +69,18 @@ is also the page's Open Graph and Twitter image. Cities without `heroImage` keep
 
 | skid-steer-vs-mini-excavator | public/images/resources/skid-steer-vs-mini-excavator.webp | 1080x720, 177 KB | Compact track loader with a bucket of dirt beside a mini excavator digging next to a spoil pile, gravel pad, wood privacy fence and house behind, golden hour | Compact track loader with a loaded bucket beside a mini excavator digging in a fenced residential backyard | 2026-10-02 |
 | what-size-excavator-do-i-need | public/images/resources/what-size-excavator-do-i-need.webp | 1080x720, 98 KB | Three excavators of increasing size (mini, compact, full-size) lined up on a large graded dirt site, trees and homes in the distance, late-afternoon light | Three excavators, from mini to full-size, lined up on a graded dirt site with homes in the distance | 2026-10-02 |
+
+Batch 3 and Resource Run 2 heroes (supplied by Adam 2026-10-08; alt text written from the delivered images):
+
+| Slug | File | Size | Scene | Alt text | Approved |
+|---|---|---|---|---|---|
+| garland | public/images/locations/garland-tx-construction-equipment-rental.webp | 1080x720, 107 KB | Gray forklift carrying a pallet of panels and a raised scissor lift at the open bay of an older block-and-brick warehouse, worker in vest, dumpster at right, cracked concrete apron, daylight | Forklift carrying a pallet beside a scissor lift at the open warehouse bay of an older masonry building in Garland, Texas | 2026-10-08 |
+| grand-prairie | public/images/locations/grand-prairie-tx-construction-equipment-rental.webp | 1080x720, 99 KB | White telescopic boom lift with a worker in the basket and a yellow telehandler holding panels at a new tilt-wall concrete warehouse on a dirt pad, golden hour | Telescopic boom lift and telehandler at a new tilt-wall concrete warehouse on a dirt pad in Grand Prairie, Texas | 2026-10-08 |
+| mesquite | public/images/locations/mesquite-tx-construction-equipment-rental.webp | 1080x720, 158 KB | Yellow padfoot soil compactor on a prepared dirt pad, excavator working a soil pile behind, silt fence and tree line, daylight | Padfoot soil compactor on a prepared dirt pad with an excavator on a soil pile behind it in Mesquite, Texas | 2026-10-08 |
+| carrollton | public/images/locations/carrollton-tx-construction-equipment-rental.webp | 1080x720, 157 KB | Yellow telehandler lifting a lumber bundle to a wood-frame mid-rise on a concrete podium, orange barriers and sidewalk, daylight | Telehandler lifting lumber to a wood-frame mid-rise building behind orange barriers in Carrollton, Texas | 2026-10-08 |
+| richardson | public/images/locations/richardson-tx-construction-equipment-rental.webp | 1080x720, 199 KB | White articulating boom lift with a worker at a glass office facade, cones in the parking lot, live oaks, golden hour | Articulating boom lift behind safety cones at a glass office building at golden hour in Richardson, Texas | 2026-10-08 |
+| how-to-choose-a-boom-lift | public/images/resources/how-to-choose-a-boom-lift.webp | 1080x720, 102 KB | White telescopic boom lift and scissor lift, each with a worker, at a panel-and-steel-frame commercial building on a gravel lot, clear daylight | Telescopic boom lift and scissor lift with workers at the wall of a steel-frame building on a gravel lot | 2026-10-08 |
+| site-preparation-equipment | public/images/resources/site-preparation-equipment.webp | 1080x720, 217 KB | Yellow compact track loader moving dirt and a smooth-drum roller on a graded pad, staked flags and rock pile behind, daylight | Compact track loader moving dirt beside a smooth-drum roller on a graded building pad | 2026-10-08 |
 
 Resource guide heroes follow the same standard and spec, with path `public/images/resources/<guide-slug>.webp` and
 registration on the guide's `heroImage` in `app/lib/guide-content.ts`. The scene should illustrate the guide's subject

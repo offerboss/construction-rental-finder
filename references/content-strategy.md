@@ -1,6 +1,6 @@
 # CRF Content Strategy
 
-Last updated: 2026-10-02 (CRF approved plan, 2026-10-02)
+Last updated: 2026-10-08 (CRF approved plan, 2026-10-02; Batch 3 and Resource Run 2 built 2026-10-08)
 
 ## Goal
 
@@ -13,6 +13,7 @@ city actually needs to know, instead of scaling thin template pages. Quality ove
 |---|---|---|
 | 1 | Arlington, Irving, Plano | Shipped 2026-10-02 (`b3a73d6`) |
 | 2 | Frisco, McKinney | Shipped 2026-10-02 |
+| 3 | Garland, Grand Prairie, Mesquite, Carrollton, Richardson | Shipped 2026-10-08 |
 
 ## Phase 1 resources: the Resource Run
 
@@ -20,6 +21,8 @@ city actually needs to know, instead of scaling thin template pages. Quality ove
 |---|---|
 | `/resources/skid-steer-vs-mini-excavator` | Shipped 2026-10-02 |
 | `/resources/what-size-excavator-do-i-need` | Shipped 2026-10-02 |
+| `/resources/how-to-choose-a-boom-lift` | Shipped 2026-10-08 |
+| `/resources/site-preparation-equipment` | Shipped 2026-10-08 |
 
 How a guide works (no CMS):
 
@@ -28,7 +31,7 @@ How a guide works (no CMS):
 - `app/resources/[slug]/page.tsx` renders every guide (static params, metadata with canonical and OG/Twitter article
   tags, Article + BreadcrumbList + FAQPage JSON-LD, "The Short Answer", "On This Page", sections with per-section
   sources, related equipment, FAQs, related guides).
-- Block types: `p`, `list`, `columns` (two "Best for" cards) and `table`. Text can carry inline links written
+- Block types: `p`, `list`, `columns` ("Best for" cards; two to four columns) and `table`. Text can carry inline links written
   `[label](/path)`, rendered by `components/RichText.tsx`. Keep FAQ answers plain text (they go into JSON-LD).
 - `publishedGuides` is derived from `guides`, so a city's `guides` links render as soon as a guide ships.
 - `relatedEquipment` drives both the guide's equipment cards and the reciprocal "Guides for Renting ..." block on those
@@ -36,12 +39,13 @@ How a guide works (no CMS):
 - Sitemap entries come from `guides`.
 - Reconciled placeholders: the old `mini-excavator-vs-skid-steer` slug 308-redirects to
   `/resources/skid-steer-vs-mini-excavator` (`next.config.ts`); the "Excavator Rental Cost Guide" placeholder was dropped
-  (no prices). The four remaining `resourceTopics` stay as "Coming soon" cards.
+  (no prices). The boom lift and site preparation topics shipped 2026-10-08; the two remaining `resourceTopics`
+  (rental checklist, short-term vs long-term) stay as "Coming soon" cards.
 
 Guide target: about 1,600 to 2,400 rendered words in `<main>`. Sizing and capability figures come from manufacturer
 spec pages or brochures, each cited in the section that uses it; tables are labeled illustrative and size-class ranges
 are drawn only from the cited examples. Safety points cite OSHA (29 CFR 1926 Subparts O and P), Texas Utilities Code
-ch. 251 and Texas811. Separate "best for" use cases instead of blanket claims. Link city pages only where a sourced city
+ch. 251 and Texas811 (lift guides also cite Subpart L and Texas Health and Safety Code ch. 752). Separate "best for" use cases instead of blanket claims. Link city pages only where a sourced city
 fact fits.
 
 ## How a rich city page works
@@ -69,6 +73,13 @@ template unchanged.
   - Arlington: commercial and infill work between Dallas and Fort Worth, the Entertainment District; lifts, telehandlers, generators.
   - Irving: Las Colinas offices and warehouse/logistics work next to DFW Airport; forklifts, telehandlers, scissor lifts.
   - Plano: a built-out suburb (about 6% of land left) redeveloping on tight lots; compact equipment.
+- Batch 2: Frisco (new ground in the north: grading, utilities, pads); McKinney (historic downtown infill and growth at the edges).
+- Batch 3 (chosen by 2020 Census size among uncovered DFW cities; Denton skipped because its site couldn't be verified):
+  - Garland: a largely built-out first-ring suburb converting older industrial buildings and repositioning aging retail; forklifts, scissor lifts, compact equipment.
+  - Grand Prairie: Great Southwest Industrial District warehouse and distribution builds plus Joe Pool Lake residential; telehandlers, booms, rollers; TxDOT, floodplain and airport rules.
+  - Mesquite: new ground south of Cartwright Road and along I-20 versus aging north; excavators, rollers, trenchers; creeks and airport.
+  - Carrollton: transit-oriented infill around the Downtown Carrollton and Trinity Mills DART stations; telehandlers, lifts, compact equipment; strict noise and generator hours.
+  - Richardson: modernizing existing buildings in the Innovation District and older Enhancement Area corridors; scissor and boom lifts, forklifts, generators.
 
 ## Sourcing rules
 

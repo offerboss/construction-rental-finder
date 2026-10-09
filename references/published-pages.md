@@ -1,6 +1,6 @@
 # CRF Published Pages
 
-Last updated: 2026-10-02
+Last updated: 2026-10-08
 
 ## Batch Log
 
@@ -9,11 +9,17 @@ Last updated: 2026-10-02
 | 1 | /locations/texas/arlington, /locations/texas/irving, /locations/texas/plano | 2026-10-02 | Approved 2026-10-02 | Pushed `b3a73d6` 2026-10-02 |
 | 2 | /locations/texas/frisco, /locations/texas/mckinney | 2026-10-02 | Approved 2026-10-02 | Pushed `9ea4b30` 2026-10-02 |
 | Resource Run | /resources/skid-steer-vs-mini-excavator, /resources/what-size-excavator-do-i-need | 2026-10-02 | Approved 2026-10-02 | Pushed 2026-10-02 |
+| 3 | /locations/texas/garland, /locations/texas/grand-prairie, /locations/texas/mesquite, /locations/texas/carrollton, /locations/texas/richardson | 2026-10-08 | Supplied 2026-10-08 | Pushed 2026-10-08 |
+| Resource Run 2 | /resources/how-to-choose-a-boom-lift, /resources/site-preparation-equipment | 2026-10-08 | Supplied 2026-10-08 | Pushed 2026-10-08 |
 
 Rendered `<main>` word counts at build: Arlington 1,234, Irving 1,251, Plano 1,223 (1,229 after Batch 2 nearby links).
 Batch 2: Frisco 1,368, McKinney 1,315. Sitemap: 44 URLs.
 Resource Run: skid-steer-vs-mini-excavator 2,398, what-size-excavator-do-i-need 2,397 (whole `<main>`, including
 tables, source labels and FAQs). Sitemap: 46 URLs. City pages grow slightly now that their guide links render.
+Batch 3 (2026-10-08): Garland 1,357, Grand Prairie 1,357, Mesquite 1,341, Carrollton 1,266, Richardson 1,256.
+Resource Run 2: how-to-choose-a-boom-lift 2,541, site-preparation-equipment 2,456 (both slightly above the 2,400 target,
+mostly from spec tables and source labels). Existing pages after new links: Arlington 1,304, Irving 1,324, Plano 1,282,
+Frisco 1,431, McKinney 1,378. Sitemap: 53 URLs.
 
 ## Link Map
 
@@ -21,12 +27,17 @@ Nearby links (reciprocal, built pages only):
 
 | Page | Links to |
 |---|---|
-| Arlington | Irving, Dallas, Fort Worth |
-| Irving | Arlington, Dallas, Fort Worth |
-| Plano | Frisco, McKinney, Dallas |
+| Arlington | Irving, Grand Prairie, Dallas, Fort Worth |
+| Irving | Arlington, Grand Prairie, Carrollton, Dallas, Fort Worth |
+| Plano | Frisco, McKinney, Richardson, Carrollton, Dallas |
 | Frisco | Plano, McKinney, Dallas |
 | McKinney | Plano, Frisco, Dallas |
-| Dallas | Arlington, Irving, Plano, Frisco, McKinney, Fort Worth |
+| Garland | Richardson, Mesquite, Dallas |
+| Grand Prairie | Arlington, Irving, Dallas |
+| Mesquite | Garland, Dallas |
+| Carrollton | Irving, Plano, Dallas |
+| Richardson | Plano, Garland, Dallas |
+| Dallas | Arlington, Irving, Plano, Frisco, McKinney, Garland, Grand Prairie, Mesquite, Carrollton, Richardson, Fort Worth |
 | Fort Worth | Arlington, Irving, Dallas |
 | Houston, Austin, San Antonio | Every other Texas city (unchanged same-state behavior; now includes all five new cities) |
 
@@ -39,19 +50,41 @@ Featured equipment links:
 | Plano | mini-excavator, skid-steer, compactor, trencher, concrete-equipment, excavator |
 | Frisco | excavator, wheel-loader, compactor, trencher, skid-steer, mini-excavator |
 | McKinney | mini-excavator, skid-steer, concrete-equipment, excavator, compactor, trencher |
+| Garland | forklift, scissor-lift, telehandler, skid-steer, mini-excavator, concrete-equipment |
+| Grand Prairie | telehandler, boom-lift, forklift, compactor, wheel-loader, excavator |
+| Mesquite | excavator, compactor, telehandler, trencher, boom-lift, mini-excavator |
+| Carrollton | telehandler, scissor-lift, boom-lift, mini-excavator, skid-steer, generator |
+| Richardson | scissor-lift, boom-lift, forklift, generator, mini-excavator, concrete-equipment |
 
 Guides: every Batch 1 and Batch 2 city page carries `skid-steer-vs-mini-excavator` and
-`what-size-excavator-do-i-need`; both render now that the guides are published.
+`what-size-excavator-do-i-need`. Batch 3 / Resource Run 2 additions (2026-10-08):
+
+| City | Guides |
+|---|---|
+| Arlington | excavator size, skid steer vs mini excavator, boom lift |
+| Irving | skid steer vs mini excavator, excavator size, boom lift |
+| Plano | skid steer vs mini excavator, excavator size |
+| Frisco | excavator size, skid steer vs mini excavator, site preparation |
+| McKinney | skid steer vs mini excavator, excavator size, site preparation |
+| Garland | boom lift, skid steer vs mini excavator |
+| Grand Prairie | boom lift, site preparation |
+| Mesquite | site preparation, excavator size |
+| Carrollton | boom lift, skid steer vs mini excavator |
+| Richardson | boom lift, skid steer vs mini excavator |
 
 Guide links:
 
 | Guide | Links to |
 |---|---|
 | Skid Steer vs Mini Excavator | Equipment cards: mini-excavator, skid-steer, trencher, excavator. Inline: trencher, excavator, wheel-loader; Plano, McKinney, Frisco, Arlington, Irving. Related guide: excavator size |
-| What Size Excavator | Equipment cards: excavator, mini-excavator, trencher. Inline: trencher, compactor; Frisco, Plano, McKinney, Arlington, Irving. Related guide: skid steer vs mini excavator |
+| What Size Excavator | Equipment cards: excavator, mini-excavator, trencher. Inline: trencher, compactor; Frisco, Plano, McKinney, Arlington, Irving. Related guides: skid steer vs mini excavator, site preparation (added 2026-10-08) |
+| How to Choose a Boom Lift | Equipment cards: boom-lift, scissor-lift, telehandler. Inline: telehandler, boom-lift, scissor-lift; Grand Prairie, Richardson, Garland, Arlington, Carrollton, Irving. Related guide: site preparation |
+| Site Preparation Equipment | Equipment cards: skid-steer, wheel-loader, excavator, compactor, trencher. Inline: skid-steer, wheel-loader, excavator, compactor, trencher, mini-excavator; excavator size and skid steer guides; Frisco, Grand Prairie, McKinney, Mesquite, Garland. Related guides: excavator size, skid steer vs mini excavator |
 
-Reciprocal guide blocks on equipment pages: excavator-rental (both), mini-excavator-rental (both), skid-steer-rental
-(skid steer vs mini excavator), trencher-rental (both). City pages link to both guides.
+Reciprocal guide blocks on equipment pages: excavator-rental (both original guides + site preparation),
+mini-excavator-rental (both original guides), skid-steer-rental (skid steer vs mini excavator + site preparation),
+trencher-rental (both original guides + site preparation), wheel-loader-rental and compactor-rental (site preparation),
+boom-lift-rental, scissor-lift-rental and telehandler-rental (boom lift). All generated from `relatedEquipment`.
 
 ## Sources
 
@@ -146,6 +179,74 @@ Reciprocal guide blocks on equipment pages: excavator-rental (both), mini-excava
   counterweight; tipping 8,000 lb; 78.5 in; 132 in; high-flow cold planer), 317 P CTL (8,423 lb; ROC 2,125 lb; tipping
   6,070 lb; 65.1 in; 121 in): deere.ca pages under /en/loaders/skid-steers/ and /en/loaders/compact-track-loaders/
 
+### Batch 3 city selection
+
+The strategy names no cities after Batch 2, so Batch 3 continues the DFW cluster with the largest uncovered cities by
+2020 Census population (Census QuickFacts): Garland 246,018; Grand Prairie 196,100; Mesquite 150,108; Denton 139,869;
+Carrollton 133,434; Richardson 119,469. Denton was skipped because cityofdenton.com blocked every fetch (see Open Notes),
+so Richardson took its slot.
+
+### Garland
+
+- Envision Garland 2030 Comprehensive Plan (first-ring suburb, among the first Dallas County suburbs to boom; nearly all vacant land developed; general industry about 9% of land; vacant industrial facilities could be converted and existing industries expand; about 15% undeveloped, much of it floodplain, remaining large tracts in the SH 190 and I-30 corridors; about 60% of housing built before 1980; Duck Creek settlers and black soil): https://www.garlandtx.gov/DocumentCenter/View/23463/Envision-Garland-2012
+- Garland on the Rise Strategic Plan 2026–2036 (largely built out; reinvesting in aging commercial corridors and older neighborhoods; Economic Focus Areas including aging retail centers ready for repositioning): https://garlandtx.gov/DocumentCenter/View/24242/Garland-on-the-Rise-Community-Brochure
+- Garland Right-of-Way Permit Process page: https://www.garlandtx.gov/348/Permit-Process
+- Garland Directives, Utility Registration, Permits and Construction, rev. 01/30/2006 (registration and permit; complete requests at least 10 working days ahead; locates from all affected utilities 48 h before excavation and potholing or hand digging to verify; cement-treated sand or flowable fill under paving; pavement restored within 14 days; no cuts in surfaces under 5 years old without Director approval): https://garlandtx.gov/DocumentCenter/View/591/Utility-Registration-Permits-and-Construction-PDF
+- Garland Utility Construction Checklist (storm drains not located, verify with plans and potholing; no lane closures in school zones; non-residential streets after 8 a.m. and before 4 p.m., Fridays until noon; no work on City holidays, the weekend of or day before a City holiday): https://www.garlandtx.gov/DocumentCenter/View/20358/Utility-Construction-checklist
+- Garland Ordinance 7079, 2019 (outside work adjacent to an occupied residential subdivision or residential use, including multifamily, only 7 a.m.–8 p.m., every day): https://ecode360.com/GA6318/laws/LF2220209.pdf
+- Garland Power & Light, Line Locations (call 811 at least two days before digging): https://www.gpltexas.org/residential/line-locations-call-811
+
+### Grand Prairie
+
+- About Grand Prairie (about 26 miles long, about 8 miles at its widest; three counties and six school districts; northern border minutes south of DFW Airport; much of the Great Southwest Industrial District's ~80 million sq ft; continuing warehouse, distribution and manufacturing construction; land remaining in and near the north GSID and to the south; hill country–like terrain and high-end residential near Joe Pool Lake; municipal airport with a 4,000-ft runway): https://www.gptx.org/About-Grand-Prairie
+- Grand Prairie Engineering Permits (Clearing, Grubbing and Earthwork Permit allows erosion controls and earth disturbance, issued after an SWP3 is submitted and released; Floodplain Development Permit within 200 ft of an SFHA or floodplain; TxDOT permits issued to the City and processed by Engineering, separate Dallas and Fort Worth District processes, obtained before construction): https://www.gptx.org/Departments/Engineering/Engineering-Development-Services/Permit-Forms
+- Grand Prairie Franchise Utility Permit standards (City water, sewer, signal and fiber locates with 72 h notice; City-released TCP for lane closures; mechanical tamping to 95% Standard Proctor; no boring on Fridays; street cuts not open overnight without approval; bore pits fenced, open no more than 48 h): https://www.gptx.org/files/sharedassets/public/v/6/departments/engineering/documents/franchise-utility-permit-form.pdf
+- Grand Prairie New Commercial Construction Project Guide (construction hours 6 a.m.–10 p.m. within 300 ft of residential, Code sec. 13-277): https://www.gptx.org/files/sharedassets/public/v/1/departments/building-inspections/documents/new-commercial-const-packet.pdf
+- TxDOT district permit PDFs blocked automated fetches, so the page cites the Engineering Permits page only.
+
+### Mesquite
+
+- Mesquite Comprehensive Plan, adopted Oct. 7, 2019 (first-ring suburb; about 69% developed, 31% undeveloped, 9% flood hazard, about 22% developable; largest contiguous tracts south of Cartwright Road and along I-20; homes built before 1980 mostly in the north, newest in the south; structures aging, redevelopment and infill to reinvigorate older areas; North and South Mesquite Creeks and the East Fork of the Trinity, which divides the city between Dallas and Kaufman counties along I-20; railroad splits the city north/south, buffered by industrial uses; Union Pacific Intermodal Facility; I-30, I-635, I-20, US 80): https://cityofmesquite.com/DocumentCenter/View/14187/Mesquite-Comprehensive-Plan-Adopted-October-7-2019
+- Mesquite Code ch. 15, art. III, ROW rules, 2001 (work from one hour after sunrise to sunset Mon–Fri; Saturday with 48 h approval; no Sundays or City holidays; lane closures on major thoroughfares 8:30 a.m.–4 p.m.; City-owned utility locates requested 48 h ahead; GIS and plans of record don't satisfy the locate requirement; verify horizontal and vertical location): https://apps.cityofmesquite.com/city_secweb/ordinances/3422.pdf
+- Mesquite Noise Ordinance page (adopted 2021; construction-related activity 7 a.m.–8 p.m. Mon–Fri is an affirmative defense; separate weekend and holiday hours): https://cityofmesquite.com/3475/Noise-Ordinance
+- Mesquite Metro Airport pilot information (runway 18/36, 6,000 x 100 ft; control tower): https://www.cityofmesquite.com/651/Pilot-Information
+
+### Carrollton
+
+- Transit Center (TC) Zoning District (created April 19, 2005 around the Downtown Carrollton and Trinity Mills DART LRT stations; buildings close to sidewalk and street, continuous frontage, mid-block and on-street parking; build on Downtown Carrollton's character; urban street standards prioritize pedestrians over vehicles in all cases): https://www.carrolltontxdevelopment.com/development/transit-oriented-development/transit-center-zoning-district
+- Carrollton Transit Oriented Development page: https://www.carrolltontxdevelopment.com/development/transit-oriented-development
+- Carrollton Code ch. 57, ROW management (permit applications 10 working days ahead; 24 h notice with one-call number; locates 48 h ahead and potholing; fill and compact within 24 h, restore within 14 days; no cuts in surfaces under 3 years old without approval; lane closures in school zones and on non-residential streets 8:30 a.m.–4 p.m.; work 7 a.m.–6 p.m. weekdays; no City holidays): https://ecode360.com/45833391
+- Carrollton Code sec. 130.18 (construction equipment within 1,000 ft of a residence only 6 a.m.–8 p.m. weekdays and 8 a.m.–7 p.m. Saturdays; none on Sundays or listed holidays; engine-generators 10 p.m.–7 a.m. unlawful, with a power-outage affirmative defense): https://ecode360.com/45836750
+
+### Richardson
+
+- Richardson Enhancement Areas (first-tier suburb with limited undeveloped land and aging development; Enhancement Areas since 2009; Envision Richardson designates five for study along Campbell, Arapaho, Spring Valley and Belt Line roads; Collins/Arapaho TOD and Innovation District study, ~1,200 acres, Dec. 2018, strategies include building upgrades and modernization; form-based code Dec. 2019 encourages reuse, reinvestment and activation of existing buildings): https://www.cor.net/departments/development-services/comprehensive-planning/enhancement-areas
+- Richardson Comprehensive Planning (Envision Richardson approved Nov. 2024; TOD near DART stations; 28 sq mi): https://www.cor.net/departments/development-services/comprehensive-planning-6014
+- Richardson Right-of-Way Permits (permit for any work in ROW or easements; TMUTCD traffic control plan; lane closures 9 a.m.–3:30 p.m.): https://www.cor.net/departments/capital-projects-engineering/right-of-way-permits
+- Richardson Ordinance 4153, 2016, sec. 13-75(9) (construction in a residential district or within 300 ft of an occupied residence before 7 a.m. or after 6 p.m. weekdays, or any time on weekends, violates the ordinance when noise exceeds the zoning ordinance's octave-band limits; urgent-necessity permit from the city manager's office): https://mcclibraryfunctions.azurewebsites.us/api/ordinanceDownload/10221/783255/pdf
+
+### Resource Run 2: regulatory sources
+
+- OSHA standard interpretation, Aug. 1, 2000 (scissor lifts are mobile scaffolds under Subpart L, not aerial lifts; guardrails provide fall protection): https://www.osha.gov/laws-regs/standardinterpretations/2000-08-01-0
+- OSHA 29 CFR 1926.454 (scaffold training by a qualified person: electrical and fall hazards, load capacity): https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-L/section-1926.454
+- Texas Health and Safety Code ch. 752 (high voltage over 600 V; 6-ft rule; 48 h notice to the operator; de-energize, relocate or barriers; responsible party pays): https://statutes.capitol.texas.gov/Docs/HS/htm/HS.752.htm
+- Reused: OSHA 1926.453, 651, 652; Utilities Code 251; Texas811; NWS; USDA Houston Black; TCEQ CGP; Frisco general notes; McKinney ROW manual; FAA 77.9 and Form 7460-1.
+
+### Resource Run 2: manufacturer specs (checked 2026-10-08)
+
+- Genie Z-30/20N, 2022 en-US spec (30 ft platform, 36 ft working; 21 ft 5 in reach; 500 lb; 3 ft 11 in; zero tailswing; 14,183 lb): https://www.genielift.com/docs/default-source/product-specifications/articulated-boom-lift/en/2022/zboomspec_z30_20n_z30_20n_rj_en-us_na_lrec42dc61-4a3d-4937-a372-497615db2242.pdf?sfvrsn=6db84fd1_3
+- Genie Z-45 XC, 2026 (45 ft 6 in platform, 51 ft 6 in working; 24 ft 9 in reach; 24 ft 5 in up and over; 660/1,000 lb; 7 ft 6 in; zero tailswing; 16,360 lb; 80 psi tire contact; 231 psf; tilt 4.5°; working height = platform + 6 ft): https://www.genielift.com/docs/default-source/product-specifications/articulated-boom-lift/en/2026/z-45-xc-z-45-hf-product-specifications-2026.pdf?sfvrsn=72e5cd45_2
+- JLG 600S (59 ft 8 in platform; 50 ft 2 in outreach; 600/1,000 lb; 21,647 lb; 83 psi max ground bearing; 8 ft 2 in; 4 ft tailswing; 5° tilt cutout): https://www.jlg.com/dfsmedia/e4042b10c9ce4595b4cc059f1299f079/125485-source
+- Genie S-85 XC FE/E, 2026 (85 ft platform; 74 ft 6 in reach; 8 ft 8 in below ground; 660/1,000 lb; 8 ft 2 in; 5 ft 9 in tailswing; electric 38,908 lb; 198 psi tire contact): https://www.genielift.com/docs/default-source/product-specifications/telescopic-booms/en/2026/s-85-xc-fe-s-85-xc-e---product-specifications---2026---en-us.pdf?sfvrsn=9015f83f_1
+- Genie GS-1930, 2026 (platform 19 ft 3 in indoor, 14 ft 8 in outdoor; 500 lb; 2 ft 6.2 in; 3,209 lb): https://www.genielift.com/docs/default-source/product-specifications/slab-scissor-lifts-(ansi)-or-electric-and-bi-energy-lifts-(ce)/en/2026/gs-1930-and-gs-1932-product-specifications---2026.pdf?sfvrsn=4ee5bca7_1
+- Genie GS-3246, 2026 (platform 32 ft 1 in indoor, 22 ft outdoor; 700 lb; 3 ft 10 in; 5,218 lb): https://www.genielift.com/docs/default-source/product-specifications/slab-scissor-lifts-(ansi)-or-electric-and-bi-energy-lifts-(ce)/en/2026/gs-3232-gs-3246-product-specifications---2026---en-us.pdf?sfvrsn=dfff77a9_1
+- John Deere 344 P (19,533 lb; 2.0–2.6 cu yd; 7 ft 9 in over tires; 12 ft 2 in hinge pin): https://www.deere.ca/en/loaders/wheel-loaders/compact-wheel-loaders/344-p-wheel-loader/
+- John Deere 644 P (41,246–41,324 lb; 4.0–4.75 cu yd; 9 ft 5 in; 13 ft 5 in): https://www.deere.ca/en/loaders/wheel-loaders/mid-size-wheel-loaders/644-p-wheel-loader/
+- BOMAG BW 211 D-5 SL (10,630 kg; 2,130 mm; 82 kW; smooth drum ideal for sand, gravel, crushed rock and weakly cohesive soils; PD padfoot for highly cohesive soils; padfoot segment kit): https://www.bomag.com/ww-en/machinery/categories/single-drum-rollers-soil-compactors/single-drum-rollers/bw-211-d-5-sl-93504/
+- Wacker Neuson BS60-4As 11in rammer (72 kg; 18.0 kN; 280 mm shoe; 656 blows/min; 148 m²/h): https://cdn.mediapool.wackerneusongroup.com/asset/491085414967/document_8e46uv6vi51l198o2t7evg8l7r
+- Wacker Neuson WP1550A plate (198.4 lb; 19.7 x 22.9 in plate; 3,372 lbf; 9,365 sq ft/h; designed for tight corners and confined areas): https://cdn.mediapool.wackerneusongroup.com/asset/491085414967/document_rfl1tjoc6h2in3n9glg6hf8g33
+- Reused: Deere 317 P and Kubota SVL75-3 (Resource Run).
+
 ## Open Notes
 
 - Plano soils: no city source confirms Plano sits on Blackland Prairie soils, so the page uses USDA's regional
@@ -161,3 +262,13 @@ Reciprocal guide blocks on equipment pages: excavator-rental (both), mini-excava
   returned 404.
 - NIOSH's skid-steer Alert (Pub. 2011-128) couldn't be fetched (403), so skid steer safety cites OSHA 1926.600/602.
 - The "midi" class has no formal definition; the guide says so and gives ranges only from its cited examples.
+- Batch 3 (2026-10-08): Denton, the next-largest uncovered DFW city, was skipped because cityofdenton.com returned a
+  Cloudflare 403 to every automated fetch (box, Mac and fetch tool), so its rules couldn't be verified. Revisit later.
+- Garland's ROW directives are dated rev. 01/30/2006 and its checklist gives different ROW working hours (7–6 vs 8–6), so
+  the page states neither ROW work-hours figure. The 7 a.m.–8 p.m. figure is from Ordinance 7079 (work next to homes).
+- Mesquite's ROW ordinance dates from 2001; its noise page garbles the weekend line, so the page cites only the weekday
+  hours and says weekend and holiday hours differ.
+- The Genie Z-30/20N spec sheet is the 2022 edition (the newest US sheet found); other Genie sheets are 2026.
+- Batch 3 and Resource Run 2 heroes were supplied 2026-10-08. The boom lift guide hero has a tiny unreadable decal on the
+  boom chassis (not legible at display size); replace it if a cleaner version is made.
+- The resources page "Coming soon" grid now shows two cards in a 4-column layout; no template change was made.

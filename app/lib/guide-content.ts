@@ -3,7 +3,8 @@ import type { SourceLink } from "./locations";
 import type { Guide } from "./resources";
 
 // Manufacturer spec pages and regulations cited by the guides. Spec figures are as published
-// for the listed configuration on the date checked (2026-10-02).
+// for the listed configuration on the date checked (2026-10-02; boom lift and site preparation
+// sources 2026-10-08).
 const sources = {
   kubotaU175Launch: { label: "Kubota U17-5 launch announcement (Jan. 2025)", url: "https://www.kubotausa.com/kubota-introduces-next-generation-zero-tail-swing-compact-excavator-to-its-lineup-meet-the-u17-5" },
   kubotaU175Brochure: { label: "Kubota U17-5 brochure", url: "https://www.kubotausa.com/docs/default-source/brochure-sheets/brochure_u17-5.pdf?sfvrsn=51aa9d9a_1" },
@@ -25,6 +26,18 @@ const sources = {
   osha600: { label: "OSHA 29 CFR 1926.600 (equipment)", url: "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-O/section-1926.600" },
   osha602: { label: "OSHA 29 CFR 1926.602 (earthmoving equipment)", url: "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-O/section-1926.602" },
   txdmvSize: { label: "TxDMV: Texas size and weight limits", url: "https://www.txdmv.gov/motor-carriers/oversize-overweight-permits/texas-size-weight-limits" },
+  genieZ3020n: { label: "Genie Z-30/20N and Z-30/20N RJ specifications (PDF)", url: "https://www.genielift.com/docs/default-source/product-specifications/articulated-boom-lift/en/2022/zboomspec_z30_20n_z30_20n_rj_en-us_na_lrec42dc61-4a3d-4937-a372-497615db2242.pdf?sfvrsn=6db84fd1_3" },
+  genieZ45xc: { label: "Genie Z-45 XC and Z-45 HF specifications, 2026 (PDF)", url: "https://www.genielift.com/docs/default-source/product-specifications/articulated-boom-lift/en/2026/z-45-xc-z-45-hf-product-specifications-2026.pdf?sfvrsn=72e5cd45_2" },
+  jlg600s: { label: "JLG 600S specifications (PDF)", url: "https://www.jlg.com/dfsmedia/e4042b10c9ce4595b4cc059f1299f079/125485-source" },
+  genieS85xc: { label: "Genie S-85 XC FE and S-85 XC E specifications, 2026 (PDF)", url: "https://www.genielift.com/docs/default-source/product-specifications/telescopic-booms/en/2026/s-85-xc-fe-s-85-xc-e---product-specifications---2026---en-us.pdf?sfvrsn=9015f83f_1" },
+  genieGs1930: { label: "Genie GS-1930 and GS-1932 specifications, 2026 (PDF)", url: "https://www.genielift.com/docs/default-source/product-specifications/slab-scissor-lifts-(ansi)-or-electric-and-bi-energy-lifts-(ce)/en/2026/gs-1930-and-gs-1932-product-specifications---2026.pdf?sfvrsn=4ee5bca7_1" },
+  genieGs3246: { label: "Genie GS-3232 and GS-3246 specifications, 2026 (PDF)", url: "https://www.genielift.com/docs/default-source/product-specifications/slab-scissor-lifts-(ansi)-or-electric-and-bi-energy-lifts-(ce)/en/2026/gs-3232-gs-3246-product-specifications---2026---en-us.pdf?sfvrsn=dfff77a9_1" },
+  osha454: { label: "OSHA 29 CFR 1926.454 (scaffold training)", url: "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-L/section-1926.454" },
+  deere344p: { label: "John Deere 344 P compact wheel loader specs", url: "https://www.deere.ca/en/loaders/wheel-loaders/compact-wheel-loaders/344-p-wheel-loader/" },
+  deere644p: { label: "John Deere 644 P wheel loader specs", url: "https://www.deere.ca/en/loaders/wheel-loaders/mid-size-wheel-loaders/644-p-wheel-loader/" },
+  bomagBw211: { label: "BOMAG BW 211 D-5 SL single-drum roller", url: "https://www.bomag.com/ww-en/machinery/categories/single-drum-rollers-soil-compactors/single-drum-rollers/bw-211-d-5-sl-93504/" },
+  wackerBs60: { label: "Wacker Neuson BS60-4As 11in rammer technical data (PDF)", url: "https://cdn.mediapool.wackerneusongroup.com/asset/491085414967/document_8e46uv6vi51l198o2t7evg8l7r" },
+  wackerWp1550: { label: "Wacker Neuson single-direction vibratory plates, WP1550A (PDF)", url: "https://cdn.mediapool.wackerneusongroup.com/asset/491085414967/document_rfl1tjoc6h2in3n9glg6hf8g33" },
 } satisfies Record<string, SourceLink>;
 
 const shared = {
@@ -41,6 +54,23 @@ const shared = {
   friscoPlan: citySources.friscoPlan,
   mckinneyTownCenter: citySources.mckinneyTownCenter,
   mckinneyRow: citySources.mckinneyRowManual,
+  tceq: citySources.tceqConstructionStormwater,
+  friscoGeneralNotes: citySources.friscoGeneralNotes,
+  oshaAerialLifts: citySources.oshaAerialLifts,
+  oshaScissorLifts: citySources.oshaScissorLifts,
+  texasHighVoltage: citySources.texasHighVoltage,
+  faaPart77: citySources.faaPart77,
+  garlandStrategicPlan: citySources.garlandStrategicPlan,
+  garlandRowChecklist: citySources.garlandRowChecklist,
+  grandPrairieAbout: citySources.grandPrairieAbout,
+  grandPrairieEngineeringPermits: citySources.grandPrairieEngineeringPermits,
+  grandPrairieFranchisePermit: citySources.grandPrairieFranchisePermit,
+  mesquitePlan: citySources.mesquitePlan,
+  mesquiteRow: citySources.mesquiteRow,
+  carrolltonTransitCenter: citySources.carrolltonTransitCenter,
+  carrolltonNoise: citySources.carrolltonNoise,
+  richardsonEnhancementAreas: citySources.richardsonEnhancementAreas,
+  richardsonRow: citySources.richardsonRow,
 };
 
 export const skidSteerVsMiniExcavator: Guide = {
@@ -379,5 +409,392 @@ export const excavatorSizeGuide: Guide = {
     { slug: "mini-excavator-rental", reason: "Compact machines for residential lots, footings and utility connections." },
     { slug: "trencher-rental", reason: "A narrower option for long, shallow utility and irrigation runs." },
   ],
-  relatedGuides: ["skid-steer-vs-mini-excavator"],
+  relatedGuides: ["skid-steer-vs-mini-excavator", "site-preparation-equipment"],
+};
+
+export const boomLiftGuide: Guide = {
+  slug: "how-to-choose-a-boom-lift",
+  title: "How to Choose the Right Boom Lift",
+  shortTitle: "How to Choose a Boom Lift",
+  metaTitle: "How to Choose the Right Boom Lift",
+  metaDescription:
+    "Compare articulating and telescopic boom lifts and scissor lifts with manufacturer specs: working height, reach, capacity, ground pressure, power lines and OSHA rules.",
+  summary:
+    "Articulating vs telescopic booms, when a scissor lift fits better, and how to read working height, reach, capacity and ground specs before you rent.",
+  intro: [
+    "A boom lift puts workers and their tools on a platform at the end of an arm that can reach up, out and sometimes over obstacles. The two main types, articulating and telescopic, solve different problems, and for a lot of work directly overhead a scissor lift does the job with a simpler machine.",
+    "This guide compares them using published manufacturer specifications, separates what each type is best for, and covers the ground, power-line and OSHA rules that decide whether a lift can be set up safely where you need it.",
+  ],
+  heroImage: {
+    src: "/images/resources/how-to-choose-a-boom-lift.webp",
+    alt: "Telescopic boom lift and scissor lift with workers at the wall of a steel-frame building on a gravel lot",
+  },
+  datePublished: "2026-10-08",
+  dateModified: "2026-10-08",
+  keyTakeaways: [
+    "Start with the working height and horizontal distance to the actual work point, not the building height. Genie's US spec sheets define working height as platform height plus 6 feet.",
+    "Choose an articulating boom to reach up and over obstacles in tight spaces, a telescopic boom for the most height and straight-line outreach, and a scissor lift when the work is directly overhead on firm, level ground.",
+    "Add up people, tools and materials against platform capacity. Many booms carry more in a restricted zone close to the machine than across their full range.",
+    "Check weight, width, tailswing and ground pressure against the route and the surface, and keep every part of the lift at least 6 feet from high voltage overhead lines unless the line's operator has made safety arrangements.",
+  ],
+  sections: [
+    {
+      id: "types",
+      heading: "Three Types of Lift",
+      blocks: [
+        { type: "p", text: "An articulating boom, sometimes called a knuckle boom, has an arm that bends at one or more joints. That lets the platform rise, reach out and come back down over an obstacle such as a canopy, a parapet or a run of rooftop equipment. Genie lists this as up-and-over clearance; on its Z-45 XC it's 24 ft 5 in." },
+        { type: "p", text: "A telescopic boom, or straight boom, extends in a straight line. It trades some of that flexibility for more height and much more horizontal outreach from one setup: Genie's S-85 XC reaches 74 ft 6 in out at its maximum, and it can also reach 8 ft 8 in below the level the machine sits on." },
+        { type: "p", text: "A scissor lift raises a wide platform straight up on crossed supports. It has little or no outreach, but its deck holds a worker alongside materials, and it's often the simplest machine for ceiling and wall work above a level floor. OSHA classifies scissor lifts differently from booms, as the safety section explains." },
+      ],
+      sources: [sources.genieZ45xc, sources.genieS85xc, shared.oshaScissorLifts],
+    },
+    {
+      id: "best-for",
+      heading: "What Each Type Is Best For",
+      blocks: [
+        {
+          type: "columns",
+          columns: [
+            {
+              title: "Articulating boom",
+              items: [
+                "Reaching up and over canopies, parapets, piping and other obstacles",
+                "Working around building features in tight areas",
+                "Zero-tailswing models beside walls, traffic or other trades",
+                "Narrow electric models for indoor work and finished floors",
+                "Facades, lighting, signs and roof edges at low to mid heights",
+              ],
+            },
+            {
+              title: "Telescopic boom",
+              items: [
+                "Maximum height and straight-line outreach from one setup",
+                "Reaching across landscaping, trenches or setbacks to a building face",
+                "Tall walls, steel and glazing on large commercial and industrial buildings",
+                "Covering a long elevation with fewer moves",
+                "Some models reach below grade, such as over an excavation edge",
+              ],
+            },
+            {
+              title: "Scissor lift",
+              items: [
+                "Ceilings, lighting, sprinklers, HVAC and drywall directly overhead",
+                "Work that needs room for a worker plus materials on the deck",
+                "Level slabs and finished floors, with electric slab models",
+                "Long runs along a wall or ceiling, driving between tasks",
+                "Rough-terrain models for outdoor work on firm, graded ground",
+              ],
+            },
+          ],
+        },
+        { type: "p", text: "Aerial lifts are built to carry workers and their tools. To lift and place pallets, bundles or roofing, a [telehandler](/equipment/telehandler-rental) is the machine designed for the job. For configurations and sizes, see the [boom lift](/equipment/boom-lift-rental) and [scissor lift](/equipment/scissor-lift-rental) pages." },
+      ],
+    },
+    {
+      id: "height-reach",
+      heading: "Working Height, Platform Height and Reach",
+      blocks: [
+        { type: "p", text: "Manufacturers publish two heights. Platform height is how high the floor of the platform goes; working height adds an allowance for a person standing on it. Genie's US spec sheets add 6 feet to platform height, so its Z-45 XC lists 45 ft 6 in of platform height and 51 ft 6 in of working height." },
+        { type: "p", text: "Measure to the actual work point, then measure the horizontal distance from the closest spot the machine can safely sit. A boom's maximum height and maximum outreach aren't available at the same time, so check the manufacturer's range-of-motion chart, which shows where the platform can reach at each height, rather than the headline numbers." },
+        { type: "p", text: "The specs below are illustrative, not a ranking; confirm the exact machine with your provider." },
+        {
+          type: "table",
+          caption: "Boom lifts",
+          columns: ["Model", "Type", "Platform height", "Horizontal reach", "Platform capacity", "Width", "Weight"],
+          rows: [
+            ["Genie Z-30/20N (electric)", "Articulating, narrow", "30 ft", "21 ft 5 in", "500 lb", "3 ft 11 in", "14,183 lb"],
+            ["Genie Z-45 XC (diesel)", "Articulating", "45 ft 6 in", "24 ft 9 in", "660 lb unrestricted; 1,000 lb restricted", "7 ft 6 in", "16,360 lb"],
+            ["JLG 600S", "Telescopic", "59 ft 8 in", "50 ft 2 in", "600 lb unrestricted; 1,000 lb restricted", "8 ft 2 in", "21,647 lb"],
+            ["Genie S-85 XC (electric)", "Telescopic", "85 ft", "74 ft 6 in", "660 lb unrestricted; 1,000 lb restricted", "8 ft 2 in", "38,908 lb"],
+          ],
+          note: "Standard configurations as published; options and country standards can change weight. Genie's working heights add 6 ft to platform height.",
+        },
+        {
+          type: "table",
+          caption: "Electric slab scissor lifts",
+          columns: ["Model", "Platform height, indoor", "Platform height, outdoor", "Capacity", "Width", "Weight"],
+          rows: [
+            ["Genie GS-1930", "19 ft 3 in", "14 ft 8 in", "500 lb", "2 ft 6.2 in", "3,209 lb"],
+            ["Genie GS-3246", "32 ft 1 in", "22 ft", "700 lb", "3 ft 10 in", "5,218 lb"],
+          ],
+        },
+        { type: "p", text: "Note the scissor rows: Genie rates these slab scissors for less height outdoors than indoors. If a scissor will work outside, check the outdoor rating, not the bigger indoor number." },
+      ],
+      sources: [sources.genieZ3020n, sources.genieZ45xc, sources.jlg600s, sources.genieS85xc, sources.genieGs1930, sources.genieGs3246],
+    },
+    {
+      id: "capacity",
+      heading: "Platform Capacity",
+      blocks: [
+        { type: "p", text: "Platform capacity is the total weight of people, tools and materials the platform is rated to carry, so add it up before you book." },
+        { type: "p", text: "Many booms publish two ratings. Genie's Z-45 XC and S-85 XC carry 660 lb anywhere in their working range and up to 1,000 lb in a restricted zone closer to the machine, and JLG lists 600 lb and 1,000 lb for the 600S. If the job needs the higher rating, confirm on the range chart that the work point sits inside that zone. Narrow electric booms are rated lower; the Z-30/20N carries 500 lb." },
+        { type: "p", text: "OSHA prohibits exceeding the boom and basket load limits specified by the manufacturer." },
+      ],
+      sources: [sources.genieZ45xc, sources.genieS85xc, sources.jlg600s, sources.genieZ3020n, shared.oshaAerialLifts],
+    },
+    {
+      id: "ground-access",
+      heading: "Weight, Ground and Access",
+      blocks: [
+        { type: "p", text: "In the table above, booms run from about 14,000 lb for a narrow 30-foot electric model to nearly 39,000 lb for an 85-foot telescopic, and that weight has to rest on whatever is under the tires." },
+        { type: "p", text: "Manufacturers publish pressure figures to help. Genie lists the Z-45 XC at 80 psi tire contact pressure and 231 psf occupied floor pressure, and the S-85 XC at 198 psi tire contact pressure; JLG lists a maximum ground bearing pressure of 83 psi for the 600S. Compare those numbers with the slab, deck or soil you'll drive on, and get an engineer's answer before driving onto a suspended slab, a parking deck or fresh backfill." },
+        { type: "p", text: "Check width and tailswing for access. The Z-30/20N is 3 ft 11 in wide with zero tailswing, so it fits openings the 7 ft 6 in Z-45 XC can't. Telescopic booms swing wider: JLG lists 4 ft of tailswing on the 600S and Genie 5 ft 9 in on the S-85 XC, so mark off the swing area from traffic and other trades." },
+        { type: "p", text: "Slope matters too. Genie lists tilt sensor activation at 4.5 degrees for the Z-45 XC, and JLG a 5-degree tilt cutout for the 600S. North Texas clay, which USDA describes as very sticky and very plastic when wet, can turn a firm pad soft after rain, so plan mats or wait for the ground to dry before driving a loaded boom across it." },
+      ],
+      sources: [sources.genieZ45xc, sources.genieS85xc, sources.jlg600s, sources.genieZ3020n, shared.usdaHoustonBlack],
+    },
+    {
+      id: "power-lines",
+      heading: "Power Lines",
+      blocks: [
+        { type: "p", text: "Overhead lines are one of the most serious hazards for any lift. Texas Health and Safety Code chapter 752 covers lines carrying more than 600 volts, and unless the danger is guarded against as the chapter prescribes, it bars anyone from bringing any part of a tool, machine or equipment within 6 feet of such a line." },
+        { type: "p", text: "Getting closer starts with notice. Whoever is responsible for the work must notify the line's operator at least 48 hours before it begins and can't start until both sides agree on temporary de-energizing and grounding, relocating or raising the line, or mechanical barriers. The person or business responsible for the work pays the operator's actual cost." },
+      ],
+      sources: [shared.texasHighVoltage],
+    },
+    {
+      id: "safety",
+      heading: "OSHA Rules and Safe Use",
+      blocks: [
+        {
+          type: "list",
+          items: [
+            "Boom lifts are aerial lifts under OSHA 29 CFR 1926.453. Lift controls must be tested each day before use, and only authorized persons may operate the lift.",
+            "Workers must stand firmly on the floor of the basket, and may not sit or climb on the edge or use planks, ladders or other devices to gain a working position.",
+            "A lanyard must be attached to the boom or basket, and belting off to an adjacent pole, structure or equipment isn't allowed.",
+            "Brakes must be set and outriggers, when used, positioned on pads or a solid surface; wheel chocks go in place before using a lift on an incline.",
+            "Scissor lifts are treated differently. In a 2000 interpretation letter, OSHA said scissor lifts aren't aerial lifts but mobile scaffolds covered by its scaffold standards, and that properly maintained guardrails provide the fall protection, so tie-off isn't required by that standard.",
+            "Everyone working from a scaffold, including a scissor lift, must be trained by a qualified person in its hazards, including electrical hazards, fall hazards and the platform's load capacity.",
+          ],
+        },
+        { type: "p", text: "Weather sets limits as well. Check the operator's manual for the machine's rated wind speed and bring the platform down for storms; the National Weather Service in Fort Worth notes that thunderstorms and severe weather peak in spring. This summary doesn't replace the regulations, the manufacturer's manual or your site's safety plan." },
+      ],
+      sources: [shared.oshaAerialLifts, shared.oshaScissorLifts, sources.osha454, shared.nwsDfw],
+    },
+    {
+      id: "dfw",
+      heading: "Choosing a Lift for DFW Work",
+      blocks: [
+        { type: "p", text: "The building stock decides a lot. [Grand Prairie](/locations/texas/grand-prairie) says new warehouse, distribution and manufacturing buildings continue to go up in and around the Great Southwest Industrial District, work that calls for telescopic booms on tall walls and roof edges and scissor lifts inside." },
+        { type: "p", text: "In older, built-out cities, renovation is the norm. [Richardson](/locations/texas/richardson) encourages reuse, reinvestment and activation of existing buildings in its Collins/Arapaho Innovation District, and [Garland's](/locations/texas/garland) strategic plan describes a largely built-out city reinvesting in aging commercial corridors. Both point to electric scissors and narrow booms inside occupied buildings, as do renovations of open retail and office buildings in [Arlington](/locations/texas/arlington). On [Carrollton's](/locations/texas/carrollton) transit-oriented sites, buildings sit close to the sidewalk, which favors articulating booms that can work up and over from a narrow strip." },
+        { type: "p", text: "Local rules shape the schedule. Richardson limits lane closures to 9 a.m. to 3:30 p.m., and Carrollton's noise ordinance limits construction equipment within 1,000 feet of a residence to set hours. [Irving](/locations/texas/irving) borders DFW Airport and Grand Prairie has a municipal airport, and near runways federal rules can require FAA notice for tall equipment, including temporary cranes. Each city page has the details and sources." },
+      ],
+      sources: [shared.grandPrairieAbout, shared.richardsonEnhancementAreas, shared.garlandStrategicPlan, shared.carrolltonTransitCenter, shared.richardsonRow, shared.carrolltonNoise, shared.faaPart77],
+    },
+  ],
+  faqs: [
+    { question: "What's the difference between an articulating and a telescopic boom lift?", answer: "An articulating boom has an arm that bends at joints, so it can reach up and over obstacles and work in tight spaces. A telescopic boom extends in a straight line, giving more height and horizontal outreach from one spot. In this guide's examples, Genie's articulating Z-45 XC reaches 24 ft 9 in out, while its telescopic S-85 XC reaches 74 ft 6 in." },
+    { question: "How high a boom lift do I need?", answer: "Measure to the actual work point and the horizontal distance from where the machine can sit, then check the manufacturer's range-of-motion chart. Genie's US spec sheets list working height as platform height plus 6 feet, so a lift with a 45 ft 6 in platform height reaches a 51 ft 6 in working height." },
+    { question: "Do I need to tie off in a scissor lift?", answer: "Under a 2000 OSHA interpretation, scissor lifts are mobile scaffolds, not aerial lifts, and properly maintained guardrails provide the required fall protection, so that standard doesn't require tie-off. The manufacturer, your employer or the site may still require it. On a boom lift, OSHA requires a lanyard attached to the boom or basket." },
+    { question: "Can I use a boom lift near power lines in Texas?", answer: "Not within 6 feet of a line over 600 volts unless the danger is guarded against under state law. That means notifying the line's operator at least 48 hours ahead and agreeing on de-energizing, relocating or raising the line, or barriers before the work starts, with the person responsible for the work paying the operator's cost." },
+  ],
+  relatedEquipment: [
+    { slug: "boom-lift-rental", reason: "Articulating and telescopic booms for work at height with reach." },
+    { slug: "scissor-lift-rental", reason: "Slab and rough-terrain scissors for work directly overhead." },
+    { slug: "telehandler-rental", reason: "Lifting and placing materials, rather than people, at height." },
+  ],
+  relatedGuides: ["site-preparation-equipment"],
+};
+
+export const sitePrepGuide: Guide = {
+  slug: "site-preparation-equipment",
+  title: "Renting Equipment for Site Preparation",
+  shortTitle: "Site Preparation Equipment",
+  metaTitle: "Site Preparation Equipment: What to Rent and When",
+  metaDescription:
+    "What to rent to clear, grade, compact and trench a site, in order, with manufacturer specs for loaders and compactors and the permit steps that come first.",
+  summary:
+    "The machines used to clear, grade, compact and trench a site, the order they usually arrive in, and the permits and checks that come before the first scrape.",
+  intro: [
+    "Site preparation turns raw or cleared ground into a buildable pad. Erosion controls go in, vegetation and debris come out, soil is cut, filled and compacted to grade, and utility trenches are dug and backfilled. Each step has its own machines, and renting them in order keeps equipment from sitting idle while it waits on the step before.",
+    "This guide walks through those steps, separates what each machine is best for using published manufacturer specifications, and points to local permit and compaction rules in Dallas–Fort Worth cities.",
+  ],
+  heroImage: {
+    src: "/images/resources/site-preparation-equipment.webp",
+    alt: "Compact track loader moving dirt beside a smooth-drum roller on a graded building pad",
+  },
+  datePublished: "2026-10-08",
+  dateModified: "2026-10-08",
+  keyTakeaways: [
+    "Permits and erosion controls come before equipment. TCEQ's construction general permit covers sites disturbing an acre or more, and some cities, such as Grand Prairie, won't issue an earthwork permit until a stormwater plan is released.",
+    "Match the loader to the volume: a compact track loader or skid steer for small pads and tight sites, a wheel loader for big stockpiles and truck loading, and an excavator for cuts, ponds and trenches.",
+    "Match the compactor to the space and the soil: rammers for narrow trenches, vibratory plates for wider small areas, and single-drum rollers for pads and subgrade, with padfoot drums for cohesive clay.",
+    "Call 811, check local right-of-way rules and plan the trench protective system before any trenching starts.",
+  ],
+  sections: [
+    {
+      id: "sequence",
+      heading: "The Usual Order of Work",
+      blocks: [
+        {
+          type: "list",
+          items: [
+            "Permits and plans: a stormwater pollution prevention plan where required, plus local grading, floodplain and right-of-way permits.",
+            "Erosion controls: silt fence, construction entrances and inlet protection before soil is disturbed.",
+            "Clearing: vegetation, debris, old paving and topsoil stripping.",
+            "Earthwork: cutting, filling and rough grading to the plan.",
+            "Underground utilities: trenching, laying pipe and conduit, and backfilling.",
+            "Compaction and fine grading: building pads, paving subgrade and trench backfill brought to the specified density.",
+          ],
+        },
+        { type: "p", text: "Real projects overlap these steps, and the plans and specs set the order. The point is to have each machine on site when its work is ready." },
+        { type: "p", text: "Erosion controls come first for a reason. TCEQ's construction general permit covers sites that disturb one acre or more and discharge stormwater to surface waters, and it requires a stormwater pollution prevention plan before construction starts. [Frisco](/locations/texas/frisco) requires erosion control devices on all projects before construction begins, and [Grand Prairie](/locations/texas/grand-prairie) won't issue its Clearing, Grubbing and Earthwork Permit, which allows earth-disturbing work to begin, until a stormwater plan has been submitted and released." },
+      ],
+      sources: [shared.tceq, shared.friscoGeneralNotes, shared.grandPrairieEngineeringPermits],
+    },
+    {
+      id: "best-for",
+      heading: "What Each Machine Is Best For",
+      blocks: [
+        {
+          type: "columns",
+          columns: [
+            {
+              title: "Track loader or skid steer",
+              items: [
+                "Clearing brush, debris and topsoil on small and mid-size sites",
+                "Spreading and leveling fill, base and topsoil",
+                "Fine grading pads, walks and drives",
+                "Loading spoil into trucks on small jobs",
+                "Running attachments such as brush cutters, augers and trenchers",
+              ],
+            },
+            {
+              title: "Wheel loader",
+              items: [
+                "Moving large stockpiles across the site",
+                "Loading a steady line of trucks",
+                "Spreading base and select fill on large pads",
+                "Carrying material across firm ground and haul roads",
+              ],
+            },
+            {
+              title: "Excavator",
+              items: [
+                "Mass excavation and deep cuts",
+                "Detention ponds and swales",
+                "Storm, water and sewer trenches",
+                "Loading trucks from a cut or pile",
+                "Removing stumps, old foundations and buried debris",
+              ],
+            },
+            {
+              title: "Compaction equipment",
+              items: [
+                "Rammers for narrow trenches and around pipes and footings",
+                "Vibratory plates for base and small open areas",
+                "Single-drum rollers for building pads and paving subgrade",
+                "Padfoot drums for cohesive clay",
+              ],
+            },
+          ],
+        },
+        { type: "p", text: "Clearing heavily wooded tracts can call for larger forestry or dozer equipment than this guide covers; ask providers what they carry for your site." },
+      ],
+    },
+    {
+      id: "earthmoving",
+      heading: "Loaders: Track Loader or Wheel Loader",
+      blocks: [
+        { type: "p", text: "Both carry material in a bucket. A compact track loader spreads its weight on rubber tracks, which helps on soft ground, fits tight sites and runs a wide range of attachments. A wheel loader is a bigger machine on tires that carries far more per trip." },
+        { type: "p", text: "These published specs for a few representative models are illustrative, not a ranking. Confirm the exact machine and bucket with your provider." },
+        {
+          type: "table",
+          caption: "Loaders",
+          columns: ["Model", "Type", "Operating weight", "Capacity", "Width", "Hinge pin height"],
+          rows: [
+            ["John Deere 317 P-Tier", "Compact track loader", "8,423 lb", "2,125 lb rated operating capacity", "65.1 in", "121 in"],
+            ["Kubota SVL75-3", "Compact track loader", "9,190 lb (open cab)", "2,490 lb rated operating capacity at 35% of tipping load", "65.9 in (standard track)", "122.7 in"],
+            ["John Deere 344 P", "Compact wheel loader", "19,533 lb", "2.0 to 2.6 cu yd bucket", "7 ft 9 in over tires", "12 ft 2 in"],
+            ["John Deere 644 P", "Mid-size wheel loader", "41,246 to 41,324 lb", "4.0 to 4.75 cu yd bucket", "9 ft 5 in over tires", "13 ft 5 in"],
+          ],
+          note: "Track loaders are rated by operating capacity and wheel loaders by bucket volume, so the capacity column isn't a direct comparison. Kubota's weight includes a 165 lb operator.",
+        },
+        { type: "p", text: "Pick by volume, distance and ground. On a house pad or small commercial lot, a [track loader or skid steer](/equipment/skid-steer-rental) can strip, spread and fine grade. When the job is moving big stockpiles or loading trucks all day, a [wheel loader](/equipment/wheel-loader-rental) earns its size: the 644 P's bucket is roughly twice the 344 P's. Wheel loaders also weigh far more, which matters on soft ground and for delivery." },
+        { type: "p", text: "Loaders don't dig deep. Cuts, detention ponds and truck loading from a bank are [excavator](/equipment/excavator-rental) work; our [excavator sizing guide](/resources/what-size-excavator-do-i-need) covers classes, and the [skid steer vs mini excavator guide](/resources/skid-steer-vs-mini-excavator) compares the compact pair." },
+      ],
+      sources: [sources.deere317p, sources.kubotaSvl753, sources.deere344p, sources.deere644p],
+    },
+    {
+      id: "compaction",
+      heading: "Compaction: Rammer, Plate or Roller",
+      blocks: [
+        {
+          type: "table",
+          caption: "Compaction equipment",
+          columns: ["Model", "Type", "Operating weight", "Force or power", "Working width", "Area per hour"],
+          rows: [
+            ["Wacker Neuson BS60-4As 11in", "Rammer", "72 kg (about 159 lb)", "18.0 kN impact (about 4,050 lbf)", "280 mm shoe (about 11 in)", "148 m² (about 1,600 sq ft)"],
+            ["Wacker Neuson WP1550A", "Vibratory plate", "198.4 lb", "3,372 lbf centrifugal", "19.7 in", "9,365 sq ft"],
+            ["BOMAG BW 211 D-5 SL", "Single-drum roller, smooth drum", "10,630 kg (about 23,400 lb)", "82 kW (about 110 hp) engine", "2,130 mm (about 84 in)", "Not listed"],
+          ],
+          note: "Illustrative published figures; conversions are rounded. Area figures are the manufacturer's rated output, not a field production estimate.",
+        },
+        { type: "p", text: "Rammers deliver hard, rapid blows through a small shoe; Wacker lists 656 blows a minute for the BS60-4As. The narrow shoe fits trenches and works around pipes, structures and footings. Plates vibrate a wider base and cover far more ground per hour, and Wacker says its single-direction plates are designed to maneuver around tight corners and into confined areas. Rollers take over on building pads, streets and parking subgrade." },
+        { type: "p", text: "Drum type follows the soil. BOMAG describes its smooth-drum single-drum rollers as ideal for sand, gravel, crushed rock and weakly cohesive soils, and its padfoot models as designed for highly cohesive soils, with a padfoot segment kit available for the smooth drum. Much of North Texas sits on Blackland Prairie clay that USDA describes as very sticky and very plastic when wet, with very high shrink-swell potential, so check the geotechnical report for the specified fill, lift thickness and moisture before choosing a drum." },
+        { type: "p", text: "Local specs set the target. [McKinney's](/locations/texas/mckinney) right-of-way manual requires backfill in lifts no deeper than 8 inches, compacted to at least 95% of Standard Proctor density, and [Grand Prairie](/locations/texas/grand-prairie) requires mechanical tamping of utility ditch lines in the right-of-way to the same 95% density. Thin lifts and density tests favor a compactor matched to the trench width. See [compactor rentals](/equipment/compactor-rental) for the range of sizes." },
+      ],
+      sources: [sources.wackerBs60, sources.wackerWp1550, sources.bomagBw211, shared.usdaHoustonBlack, shared.mckinneyRow, shared.grandPrairieFranchisePermit],
+    },
+    {
+      id: "trenching",
+      heading: "Trenching for Utilities",
+      blocks: [
+        { type: "p", text: "For long, narrow, shallow runs such as irrigation, conduit and small water lines, a [trencher](/equipment/trencher-rental) cuts a consistent trench with less spoil to handle. Deeper lines, larger pipe and trenches that need a trench box call for a [mini excavator](/equipment/mini-excavator-rental) or a full-size excavator." },
+        { type: "p", text: "OSHA requires the estimated location of underground utilities to be determined before an excavation is opened, and a protective system such as sloping, shoring or a trench box for excavations 5 feet deep or more unless they're entirely in stable rock. Spoil has to stay at least 2 feet from the edge, and trenches 4 feet or deeper need a ladder, stairway or ramp within 25 feet of lateral travel." },
+        { type: "p", text: "In Texas, notice to the one-call system is due at least 48 hours before excavating, not counting weekends and holidays. Some cities add their own steps for right-of-way work: [Mesquite](/locations/texas/mesquite) requires City utility locates to be requested at least 48 hours ahead and says GIS maps and plans of record don't count as a locate, and [Garland](/locations/texas/garland) notes that storm drains aren't located and must be verified from plans and by potholing." },
+      ],
+      sources: [sources.osha651, sources.osha652, shared.utilitiesCode251, shared.texas811, shared.mesquiteRow, shared.garlandRowChecklist],
+    },
+    {
+      id: "weather",
+      heading: "Weather and Ground Conditions",
+      blocks: [
+        { type: "p", text: "Earthwork runs on moisture. The National Weather Service in Fort Worth notes that spring and fall are the wettest seasons in Dallas–Fort Worth, and that July and August highs are consistently in the 90s and often reach 100 degrees. Wet, sticky clay slows machines and can push fill outside the moisture range your spec calls for." },
+        { type: "p", text: "Build weather days into the schedule, shape stockpiles to shed water, and check silt fence and construction entrances after storms. Tracked machines spread their weight better on soft ground; ask the provider about tracks and mats when the site is wet." },
+      ],
+      sources: [shared.nwsDfw, shared.usdaHoustonBlack],
+    },
+    {
+      id: "jobs",
+      heading: "Starting Points by Site Type",
+      blocks: [
+        {
+          type: "table",
+          caption: "Starting points by site type",
+          columns: ["Site", "Clearing and grading", "Compaction", "Trenching"],
+          rows: [
+            ["Residential lot or small addition", "Compact track loader or skid steer", "Rammer and plate", "Mini excavator or trencher"],
+            ["Small commercial pad", "Track loader plus a mini or midi excavator", "Plate and a single-drum roller", "Mini or midi excavator"],
+            ["Subdivision or large commercial site", "Excavators and wheel loaders, track loaders for fine grading", "Single-drum rollers, padfoot for clay", "Excavator with a trench box"],
+            ["Industrial building pad and truck court", "Excavators and wheel loaders, track loaders for fine grading", "Smooth-drum and padfoot rollers", "Excavator; trencher for conduit runs"],
+          ],
+          note: "Starting points only. The geotechnical report, plans and specs decide the final equipment.",
+        },
+      ],
+    },
+    {
+      id: "dfw",
+      heading: "Site Preparation Across DFW",
+      blocks: [
+        { type: "p", text: "Where the open land is shapes the work. [Mesquite's](/locations/texas/mesquite) 2019 comprehensive plan places its largest contiguous undeveloped tracts south of Cartwright Road and along the I-20 corridor, and puts about 9 percent of the city in flood hazard areas. [Frisco's](/locations/texas/frisco) plan says roughly 13% of its land is still undeveloped, and [Grand Prairie](/locations/texas/grand-prairie) says land remains in and around the Great Southwest Industrial District and to the south, where hill country–like terrain around Joe Pool Lake is drawing residential development." },
+        { type: "p", text: "Permits differ by city. Grand Prairie requires a Floodplain Development Permit for development within 200 feet of a special flood hazard area or floodplain, and [McKinney](/locations/texas/mckinney) requires erosion control measures to be inspected and approved before construction begins. Each city page has the details and sources." },
+      ],
+      sources: [shared.mesquitePlan, shared.friscoPlan, shared.grandPrairieAbout, shared.grandPrairieEngineeringPermits, shared.mckinneyRow],
+    },
+  ],
+  faqs: [
+    { question: "What equipment do I need to prepare a small building pad?", answer: "For a residential or small commercial pad, a compact track loader or skid steer handles clearing, spreading and fine grading, a mini excavator digs footings and utility trenches, and a rammer, plate or small roller compacts fill and backfill. Larger sites add excavators, wheel loaders and single-drum rollers. The geotechnical report and plans decide the final list." },
+    { question: "Should I rent a rammer or a vibratory plate?", answer: "It depends on the space and the soil. A rammer's narrow shoe fits trenches and tight spots around pipes and footings, while a plate covers far more area: Wacker rates its WP1550A at 9,365 sq ft an hour against about 1,600 sq ft for its BS60-4As rammer. For cohesive clay over larger areas, a padfoot roller is designed for the job." },
+    { question: "Do I need a permit before grading a site in Texas?", answer: "Often, yes. TCEQ's construction general permit covers sites disturbing one acre or more that discharge stormwater to surface waters, and cities have their own grading, floodplain and right-of-way permits. Grand Prairie, for example, requires a released stormwater plan before it issues the permit that allows earth-disturbing work. Check with your city before booking equipment." },
+    { question: "Is a wheel loader or a compact track loader better for site work?", answer: "A compact track loader suits small and tight sites, soft ground and attachment work. A wheel loader suits big stockpiles and truck loading: in this guide's examples, Deere's 344 P carries a 2.0 to 2.6 cu yd bucket and its 644 P a 4.0 to 4.75 cu yd bucket. Many large sites use both." },
+  ],
+  relatedEquipment: [
+    { slug: "skid-steer-rental", reason: "Clearing, spreading and fine grading on small and tight sites." },
+    { slug: "wheel-loader-rental", reason: "Moving stockpiles and loading trucks on large sites." },
+    { slug: "excavator-rental", reason: "Cuts, detention ponds, utilities and truck loading." },
+    { slug: "compactor-rental", reason: "Rammers, plates and rollers for trenches, pads and subgrade." },
+    { slug: "trencher-rental", reason: "Long, narrow utility and conduit runs." },
+  ],
+  relatedGuides: ["what-size-excavator-do-i-need", "skid-steer-vs-mini-excavator"],
 };
