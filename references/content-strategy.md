@@ -104,3 +104,18 @@ template unchanged.
 - Each rich page links to its six featured equipment categories and "View All Equipment".
 - Nearby links are reciprocal and point only at built pages (see the link map in `published-pages.md`).
 - Guides link only once published.
+
+## Friday QA — 2026-10-09
+
+**Fixed** (`4037b89`)
+
+- banned-phrase wording removed from `app/lib/category-content.ts`.
+- Genie Z-30/20N citation updated to the 2026 US spec sheet (weight 14,421 lb).
+- `/resources` Coming Soon grid now uses 4 columns only when there are more than two cards.
+
+**Open / not fixed**
+
+- The Garland and Mesquite source discrepancies are still unresolved (report only; see the notes in `published-pages.md`).
+- Guide word counts run slightly over target (report only).
+- Denton's city site (cityofdenton.com) still returns Cloudflare 403 to automated fetches, so its content can't be verified. Don't build the page until the sources can be checked manually.
+- The GitHub connection on the old duplicate Vercel project `construction-rental-finder` is being handled separately. Don't touch Vercel from QA.
