@@ -9,6 +9,13 @@ const nextConfig: NextConfig = {
         destination: "/resources/skid-steer-vs-mini-excavator",
         permanent: true,
       },
+      // The old front-end-only listing form was replaced by the featured
+      // placement application (GHL form) on /for-rental-companies.
+      {
+        source: "/list-your-business",
+        destination: "/for-rental-companies",
+        permanent: true,
+      },
     ];
   },
 };

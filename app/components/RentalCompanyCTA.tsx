@@ -1,6 +1,6 @@
 import { Eye, Globe, HardHat } from "lucide-react";
 import Link from "next/link";
-import { listBusinessLink } from "../lib/navigation";
+import { featuredCtaLabel, forRentalCompaniesLink } from "../lib/navigation";
 import SectionHeading from "./SectionHeading";
 
 const supportingItems = [
@@ -22,15 +22,15 @@ export default function RentalCompanyCTA() {
             title="Get Your Equipment Rentals in Front of More Local Customers"
           />
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/80">
-            List your business on Construction Rental Finder and connect with
-            contractors, builders and DIYers looking for equipment rentals in
-            your area.
+            Apply for featured placement on Construction Rental Finder and put
+            your company in front of contractors, builders and property owners
+            looking for construction rentals and jobsite services in your area.
           </p>
           <Link
-            href={listBusinessLink.href}
+            href={forRentalCompaniesLink.href}
             className="mt-8 inline-flex rounded-sm bg-yellow px-7 py-3.5 font-heading text-base font-bold text-navy transition-colors hover:bg-yellow-dark"
           >
-            {listBusinessLink.label}
+            {featuredCtaLabel}
           </Link>
         </div>
 

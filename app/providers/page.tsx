@@ -2,20 +2,20 @@ import { ArrowRight, ClipboardList, MapPin, Wrench } from "lucide-react";
 import Link from "next/link";
 import PageHeader from "../components/PageHeader";
 import SectionHeading from "../components/SectionHeading";
-import { listBusinessLink } from "../lib/navigation";
+import { featuredCtaLabel, forRentalCompaniesLink } from "../lib/navigation";
 import { pageMetadata } from "../lib/seo";
 
 export const metadata = pageMetadata({
   title: "Construction Equipment Rental Providers",
   description:
-    "Construction Rental Finder is building a directory of local equipment rental providers. Browse by equipment or location, or apply to list your business.",
+    "Construction Rental Finder is building a directory of local equipment rental providers. Browse by equipment or location, or apply for featured placement.",
   path: "/providers",
 });
 
 const steps = [
   { icon: Wrench, title: "Browse by equipment", text: "Start with the machine you need and learn what to consider before you rent.", href: "/equipment", cta: "Browse Equipment" },
   { icon: MapPin, title: "Browse by location", text: "Explore our launch markets in Colorado, Arizona and Texas, down to the city level.", href: "/locations", cta: "Browse Locations" },
-  { icon: ClipboardList, title: "Rental companies apply", text: "Equipment rental companies can apply to be listed in the categories and cities they serve.", href: listBusinessLink.href, cta: listBusinessLink.label },
+  { icon: ClipboardList, title: "Rental companies apply", text: "Rental companies and jobsite service providers can apply for featured placement in the markets they serve.", href: forRentalCompaniesLink.href, cta: featuredCtaLabel },
 ];
 
 export default function ProvidersPage() {
@@ -82,10 +82,10 @@ export default function ProvidersPage() {
             <div aria-hidden className="absolute inset-x-0 top-0 h-1.5 bg-hazard" />
             <h2 className="font-heading text-2xl font-extrabold text-white sm:text-3xl">Rent Out Construction Equipment?</h2>
             <p className="mt-3 text-lg leading-relaxed text-white/80">
-              Apply to list your rental company in the equipment categories and cities you serve.
+              Apply for featured placement to reach customers searching for construction rentals in the markets you serve.
             </p>
-            <Link href={listBusinessLink.href} className="mt-6 inline-flex items-center justify-center gap-2 rounded-sm bg-yellow px-6 py-3 font-heading text-sm font-bold text-navy transition-colors hover:bg-yellow-dark">
-              {listBusinessLink.label}
+            <Link href={forRentalCompaniesLink.href} className="mt-6 inline-flex items-center justify-center gap-2 rounded-sm bg-yellow px-6 py-3 font-heading text-sm font-bold text-navy transition-colors hover:bg-yellow-dark">
+              {featuredCtaLabel}
               <ArrowRight aria-hidden className="size-4" />
             </Link>
           </div>

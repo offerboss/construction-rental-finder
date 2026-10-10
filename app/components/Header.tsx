@@ -3,7 +3,7 @@
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { listBusinessLink, primaryNav } from "../lib/navigation";
+import { primaryCta, primaryNav } from "../lib/navigation";
 import Logo from "./Logo";
 
 export default function Header() {
@@ -42,10 +42,10 @@ export default function Header() {
 
         <div className="flex items-center gap-3">
           <Link
-            href={listBusinessLink.href}
+            href={primaryCta.href}
             className="hidden rounded-sm bg-yellow px-5 py-2.5 font-heading text-sm font-bold text-navy transition-colors hover:bg-yellow-dark sm:inline-flex"
           >
-            {listBusinessLink.label}
+            {primaryCta.label}
           </Link>
           <button
             type="button"
@@ -80,11 +80,11 @@ export default function Header() {
           ))}
           <li className="pt-4 pb-2">
             <Link
-              href={listBusinessLink.href}
+              href={primaryCta.href}
               onClick={closeMenu}
               className="flex justify-center rounded-sm bg-yellow px-5 py-3 font-heading font-bold text-navy hover:bg-yellow-dark"
             >
-              {listBusinessLink.label}
+              {primaryCta.label}
             </Link>
           </li>
         </ul>

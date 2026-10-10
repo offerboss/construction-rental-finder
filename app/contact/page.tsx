@@ -13,7 +13,7 @@ export const metadata = pageMetadata({
 });
 
 const shortcuts = [
-  { title: "Rental companies", text: "Want your business listed in the directory?", href: "/list-your-business", cta: "List Your Business" },
+  { title: "Rental companies", text: "Interested in featured placement for your company?", href: "/for-rental-companies", cta: "Get Featured on Construction Rental Finder" },
   { title: "Looking for equipment", text: "Start with the machine you need or your location.", href: "/equipment", cta: "Browse Equipment" },
 ];
 

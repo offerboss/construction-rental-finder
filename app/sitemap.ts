@@ -23,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/resources", "weekly", 0.6),
     ...guides.map((guide) => entry(`/resources/${guide.slug}`, "monthly", 0.6)),
     entry("/providers", "monthly", 0.6),
-    entry("/list-your-business", "monthly", 0.5),
+    entry("/for-rental-companies", "monthly", 0.5),
     entry("/contact", "yearly", 0.3),
     entry("/privacy", "yearly", 0.2),
     entry("/terms", "yearly", 0.2),

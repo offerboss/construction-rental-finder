@@ -34,7 +34,7 @@ export default function PrivacyPage() {
         <p>We collect information you provide directly, such as when you:</p>
         <ul>
           <li>send us a message through our contact form (name, email address, subject and message);</li>
-          <li>apply to list a rental business (company name, contact name, email, phone, website, city, state, equipment categories and any message you include);</li>
+          <li>apply for featured placement as a rental company or jobsite service provider (company and contact details, service area, service categories and any other information the form requests);</li>
           <li>enter an equipment type or location into the site search.</li>
         </ul>
         <p>Please don&apos;t include sensitive personal information in form messages.</p>
@@ -74,6 +74,12 @@ export default function PrivacyPage() {
           We may rely on third-party service providers, such as website hosting, email and form
           handling services, to operate the site. These providers may process information on our
           behalf only as needed to provide their services to us.
+        </p>
+        <p>
+          The featured placement application on our For Rental Companies page is provided by a
+          third-party form and customer relationship management service. Information you submit
+          there is collected and stored by that service on our behalf, and the embedded form may
+          use cookies needed for it to function.
         </p>
         <p>
           We may also share information if required by law, to protect our rights or the safety
