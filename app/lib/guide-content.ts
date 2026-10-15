@@ -798,3 +798,249 @@ export const sitePrepGuide: Guide = {
   ],
   relatedGuides: ["what-size-excavator-do-i-need", "skid-steer-vs-mini-excavator"],
 };
+
+export const rentalChecklistGuide: Guide = {
+  slug: "equipment-rental-checklist",
+  title: "Construction Equipment Rental Checklist",
+  shortTitle: "Rental Checklist",
+  metaTitle: "Construction Equipment Rental Checklist",
+  metaDescription:
+    "A practical checklist for renting construction equipment: site access, locating utilities, operator rules, delivery, fuel and return, with OSHA and Texas 811 sources.",
+  summary:
+    "What to confirm before the truck arrives, while the machine is on site, and when it goes back, so the rental matches the job.",
+  intro: [
+    "A construction equipment rental goes smoothly when the site, the machine and the paperwork line up before delivery. Missed gate measurements, unmarked utilities and unclear operator requirements cause more delays than the wrong attachment.",
+    "This checklist walks through what to confirm before you book, on delivery day and at return. It cites OSHA rules and Texas locate law where they apply, and it links to related equipment and city pages. It does not include prices.",
+  ],
+  datePublished: "2026-10-15",
+  dateModified: "2026-10-15",
+  keyTakeaways: [
+    "Measure access first: gate width, overhead clearance, surface bearing and where the delivery truck can turn around.",
+    "Call 811 at least 48 hours before digging, excluding weekends and holidays, and complete any city locate or ROW steps your permit requires.",
+    "Match the machine to the task and the operator rules: aerial lifts and powered industrial trucks have specific OSHA training and daily inspection requirements.",
+    "Agree in writing on delivery window, fuel policy, damage expectations and who can operate before the truck leaves the yard.",
+  ],
+  sections: [
+    {
+      id: "before-you-book",
+      heading: "Before You Book",
+      blocks: [
+        {
+          type: "list",
+          items: [
+            "Job description: digging, lifting people, lifting materials, compacting, generating power or moving pallets.",
+            "Work height, dig depth, reach and capacity you actually need, not the marketing maximum.",
+            "Site access: gate width, overhead lines and trees, curb cuts, truck turning radius and whether the machine must be tracked or rubber-tired.",
+            "Ground conditions: soft clay, finished slabs, slopes and whether outriggers or mats are required.",
+            "Schedule: start date, expected duration, weekend or night work limits in your city, and who accepts delivery.",
+            "Attachments: buckets, forks, augers, breakers, non-marking tires, or a trench box sized to the excavation.",
+          ],
+        },
+        { type: "p", text: "For compact digging and material handling, compare machines with the [skid steer vs mini excavator](/resources/skid-steer-vs-mini-excavator) guide. For dig depth and machine class, use [what size excavator do I need](/resources/what-size-excavator-do-i-need). For work at height, see [how to choose a boom lift](/resources/how-to-choose-a-boom-lift)." },
+        {
+          type: "columns",
+          columns: [
+            { title: "Access questions", items: ["Can a flatbed or trailer reach the pad?", "Will the machine fit the gate and any tunnels or garage doors?", "Are there height limits under trees, canopies or lines?"] },
+            { title: "Site questions", items: ["Is the work on private property, City ROW, or both?", "Do you need mats for lawns, sidewalks or finished floors?", "Where will spoil, fuel and the delivery truck stage?"] },
+          ],
+        },
+      ],
+    },
+    {
+      id: "utilities-permits",
+      heading: "Utilities, Permits and Hours",
+      blocks: [
+        { type: "p", text: "Texas Utilities Code chapter 251 requires excavators to notify a one-call center no earlier than 14 days and no later than 48 hours before excavation, excluding weekends and legal holidays. Texas811 asks you to call 811 or submit online at least two business days before digging." },
+        { type: "p", text: "City rules often add a second step. [Frisco](/locations/texas/frisco) and [Allen](/locations/texas/allen) both require separate City utility locates for municipal lines. [Denton](/locations/texas/denton) requires 48-hour notice to the inspector and affected neighbors before ROW work starts. [Flower Mound](/locations/texas/flower-mound) requires a permit for excavation in Town easements or right-of-way." },
+        { type: "p", text: "Confirm construction hours before you plan early deliveries. Flower Mound limits construction to 7 a.m.–7 p.m. weekdays and 9 a.m.–5 p.m. weekends. Denton's hours start at 6 a.m. on summer weekdays and 7 a.m. the rest of the year. Right-of-way lane closures often have their own peak-hour bans." },
+        {
+          type: "list",
+          items: [
+            "Pull or confirm grading, floodplain and ROW permits before earthwork.",
+            "For sites disturbing one acre or more that discharge to surface water, confirm TCEQ construction stormwater coverage and a SWP3.",
+            "Photograph existing site conditions before the machine arrives.",
+          ],
+        },
+      ],
+      sources: [shared.utilitiesCode251, shared.texas811, shared.tceq, citySources.flowerMoundFaq, citySources.dentonNoise, citySources.allenRow],
+    },
+    {
+      id: "operators-safety",
+      heading: "Operators and Safety",
+      blocks: [
+        { type: "p", text: "OSHA treats different machines differently. Aerial lifts under 29 CFR 1926.453 require daily control tests, authorized operators and a lanyard attached to the boom or basket. Construction forklifts follow powered industrial truck training under 1926.602(d). Excavations five feet deep or more generally need a protective system unless in stable rock, with spoils kept at least two feet from the edge." },
+        { type: "p", text: "Texas Health and Safety Code chapter 752 bars bringing tools or equipment within six feet of a high-voltage overhead line over 600 volts unless the line operator has been notified at least 48 hours ahead and protections such as de-energizing, relocating or barriers are arranged." },
+        {
+          type: "list",
+          items: [
+            "Name who is authorized to operate, and confirm training cards the provider requires.",
+            "Plan a competent person for excavations and daily trench inspections.",
+            "Keep the operator's manual and load chart with the machine.",
+            "Stop work for storms; NWS Fort Worth notes severe weather peaks in spring across the Metroplex.",
+          ],
+        },
+      ],
+      sources: [shared.oshaAerialLifts, citySources.oshaMaterialHandling, shared.oshaTrenching, shared.texasHighVoltage, shared.nwsDfw],
+    },
+    {
+      id: "delivery-return",
+      heading: "Delivery, On-Site Use and Return",
+      blocks: [
+        {
+          type: "table",
+          caption: "Checklist by phase",
+          columns: ["Phase", "Confirm"],
+          rows: [
+            ["Before delivery", "Access route, contact on site, placement spot, attachments, fuel starting level, rental period and after-hours contacts"],
+            ["At delivery", "Walk-around photos, hour meter, existing damage, function of controls, presence of manuals and safety devices"],
+            ["During rental", "Daily inspections, fuel and DEF, secure overnight storage, unauthorized-use rules, weather delays"],
+            ["At pickup", "Cleanliness expectations, fuel level, hour meter, missing attachments, final photos, off-rent time"],
+          ],
+          note: "Providers differ on fuel and cleaning policies. Get the written terms for your rental.",
+        },
+        { type: "p", text: "If the job is mostly clearing, grading and compaction, the [site preparation equipment](/resources/site-preparation-equipment) guide covers machine order. For longer commercial builds that keep generators or forklifts on site for weeks, see [short-term vs long-term rentals](/resources/short-term-vs-long-term-rentals)." },
+      ],
+    },
+    {
+      id: "dfw",
+      heading: "DFW Notes",
+      blocks: [
+        { type: "p", text: "North Texas clay, summer heat and city-by-city hours shape rentals as much as the machine list. [Mansfield](/locations/texas/mansfield), [Allen](/locations/texas/allen) and [Lewisville](/locations/texas/lewisville) still have active pad and corridor work, while built-out first-ring suburbs lean on renovations and compact equipment. Always read the city page for the site you are on." },
+      ],
+      sources: [shared.nwsDfw, shared.usdaHoustonBlack],
+    },
+  ],
+  faqs: [
+    { question: "How far ahead should I call 811 in Texas?", answer: "State law requires notice no earlier than 14 days and no later than 48 hours before excavating, excluding weekends and legal holidays. Texas811 recommends calling or submitting online at least two business days ahead. Some cities also require separate municipal locates." },
+    { question: "What should I photograph at delivery?", answer: "Walk around the machine and photograph existing scratches, tire or track wear, glass, lights, attachments, hour meter and fuel level. Note anything missing from the agreed attachment list before you sign the delivery ticket." },
+    { question: "Who can operate a rented boom lift or forklift?", answer: "Only authorized, trained people. OSHA requires aerial lift operators to be authorized and to test controls each day, and construction forklift training follows the powered industrial truck rules. Ask the provider what documentation they require." },
+    { question: "What delays a delivery most often?", answer: "Gates that are too narrow, overhead lines, soft ground that will not support the truck, missing on-site contacts, and incomplete locate or permit steps. Measure access and finish locates before you lock a delivery window." },
+  ],
+  relatedEquipment: [
+    { slug: "excavator-rental", reason: "Confirm dig depth, transport width and trench protection before delivery." },
+    { slug: "telehandler-rental", reason: "Check load charts at the reach you need and overhead clearance on site." },
+    { slug: "boom-lift-rental", reason: "Verify platform height, outrigger space and operator authorization." },
+    { slug: "skid-steer-rental", reason: "Match width, tracks versus tires and attachments to the gate and ground." },
+  ],
+  relatedGuides: ["short-term-vs-long-term-rentals", "site-preparation-equipment", "how-to-choose-a-boom-lift"],
+};
+
+export const shortVsLongGuide: Guide = {
+  slug: "short-term-vs-long-term-rentals",
+  title: "Short-Term vs Long-Term Equipment Rentals",
+  shortTitle: "Short-Term vs Long-Term",
+  metaTitle: "Short-Term vs Long-Term Equipment Rentals",
+  metaDescription:
+    "How to plan daily, weekly and monthly construction equipment rentals around schedule, utilization, delivery and site rules, without rate tables.",
+  summary:
+    "How to choose a rental length around your schedule, how hard the machine will work each day, and what changes when a rental stretches from days into weeks.",
+  intro: [
+    "Rental length is a scheduling decision, not just a line on a quote. A machine that works six hours a day for three days is a different rental from one that sits as backup power for a month, even if both come from the same yard.",
+    "This guide explains how to plan daily, weekly and monthly rentals around utilization, delivery, operators and site rules. It does not publish prices or rate ranges. Ask providers for current terms for your dates and locations.",
+  ],
+  datePublished: "2026-10-15",
+  dateModified: "2026-10-15",
+  keyTakeaways: [
+    "Estimate working hours per day and calendar days on site before you ask for a quote, so the provider can propose a coherent term.",
+    "Delivery, pickup and mobilization often dominate very short rentals; longer terms shift the focus to utilization, fuel, storage and who operates day to day.",
+    "City construction hours, weather and permit windows can force idle days that still count on the rental calendar.",
+    "Generators, forklifts and lifts often stay longer on commercial fit-outs; excavators and compactors more often track short site-prep bursts.",
+  ],
+  sections: [
+    {
+      id: "how-length-works",
+      heading: "How Rental Length Usually Works",
+      blocks: [
+        { type: "p", text: "Providers commonly quote by the day, week and month, with definitions that vary by company. Some count a day as a calendar day, others as a working shift. Weekly and monthly terms may include a set number of hours, with overtime billed separately. Get the written definition for your quote." },
+        {
+          type: "columns",
+          columns: [
+            { title: "Short-term fits", items: ["A defined task with a clear end: a trench, a pour, a weekend facade job", "One operator and one attachment list", "Sites that will not store equipment overnight securely"] },
+            { title: "Longer terms fit", items: ["Multi-week commercial or industrial builds", "Backup power or material handling that stays on site between tasks", "Projects where remobilizing would cost more time than leaving the machine"] },
+          ],
+        },
+        { type: "p", text: "Use the [equipment rental checklist](/resources/equipment-rental-checklist) to lock access, locates and operator rules before you debate length." },
+      ],
+    },
+    {
+      id: "utilization",
+      heading: "Utilization Beats Calendar Guesswork",
+      blocks: [
+        { type: "p", text: "Ask how many hours the machine will actually work each day it is on rent. A skid steer that runs all day on a pad is highly utilized. A generator that idles overnight for temporary power is a different pattern. Share both the calendar span and the expected hours with the provider." },
+        {
+          type: "table",
+          caption: "Planning prompts by equipment type",
+          columns: ["Equipment", "Short burst clues", "Longer stay clues"],
+          rows: [
+            ["Excavator / mini excavator", "One trench, one footing package, one demo day", "Phased utilities across a subdivision or industrial park"],
+            ["Skid steer / track loader", "Backfill and final grade in a few days", "Ongoing site support across multiple trades"],
+            ["Boom / scissor lift", "A weekend facade or ceiling package", "Multi-week tenant finish or warehouse racking"],
+            ["Forklift", "A delivery day or short warehouse move", "Fit-out and stocking across weeks"],
+            ["Generator", "A pour or short outage bridge", "Temp power until permanent service is live"],
+          ],
+          note: "Illustrative planning only. Your schedule and the provider's terms decide the term.",
+        },
+      ],
+    },
+    {
+      id: "delivery-idle",
+      heading: "Delivery, Idle Days and City Hours",
+      blocks: [
+        { type: "p", text: "Every rental pays a mobilization cost in time, if not as a separate fee: loading, transit, unloading and pickup. On a one-day rental those steps can consume a large share of the working window. On a four-week rental they matter less than keeping the machine fueled, secure and assigned to trained operators." },
+        { type: "p", text: "Idle days still sit on the calendar. [Flower Mound](/locations/texas/flower-mound) limits construction to set daytime hours seven days a week. [Denton](/locations/texas/denton) shifts weekday starts between summer and the rest of the year. Rain, heat and permit holds can strand earthmoving gear even when the crew is ready. Build contingency into the term instead of assuming every rented day is a working day." },
+        { type: "p", text: "NWS Fort Worth notes Metroplex summer highs consistently in the 90s and often 100 degrees, with spring and fall the wettest seasons. Open pads in [Mansfield](/locations/texas/mansfield), [Allen](/locations/texas/allen) and [Frisco](/locations/texas/frisco) lose grading days after storms." },
+      ],
+      sources: [shared.nwsDfw],
+    },
+    {
+      id: "operators-care",
+      heading: "Operators, Care and Change Orders",
+      blocks: [
+        {
+          type: "list",
+          items: [
+            "Name every authorized operator before a long rental starts; turnover is a common source of misuse claims.",
+            "Set a daily inspection routine for longer stays: fluids, leaks, safety devices, hour meter.",
+            "Decide who buys fuel and DEF, and whether the machine must return full.",
+            "If the scope grows, call the provider before the term expires instead of keeping the machine past the off-rent time.",
+            "For lifts and forklifts, keep training documentation available for the whole rental, not only day one.",
+          ],
+        },
+        { type: "p", text: "OSHA still applies for the full duration: aerial lift daily control tests, excavation protective systems, and powered industrial truck rules do not relax because the rental is monthly." },
+      ],
+      sources: [shared.oshaAerialLifts, citySources.oshaMaterialHandling, shared.oshaTrenching],
+    },
+    {
+      id: "choosing",
+      heading: "Choosing a Term Without a Rate Card",
+      blocks: [
+        { type: "p", text: "Because this site does not publish rental rates, treat length as a planning input you bring to providers:" },
+        {
+          type: "list",
+          items: [
+            "Write down first need date, last need date and expected hours per working day.",
+            "Note blackout times from city hours, inspections and concrete schedules.",
+            "Ask for day, week and month options on the same machine and attachment list.",
+            "Compare remobilizing for a second short rental against leaving the machine through a gap in the schedule.",
+            "Confirm off-rent notice rules so pickup timing is under your control.",
+          ],
+        },
+        { type: "p", text: "Related reading: [site preparation equipment](/resources/site-preparation-equipment) for sequencing earthwork machines, and [how to choose a boom lift](/resources/how-to-choose-a-boom-lift) when aerial work spans multiple weeks of a commercial build." },
+      ],
+    },
+  ],
+  faqs: [
+    { question: "Should I rent by the day or the week?", answer: "Estimate working hours and calendar days first, then ask the provider for both options on the same machine. Very short jobs can be dominated by delivery and pickup time, while multi-day tasks often fit a weekly term better. Get the written definition of a day and any hour caps." },
+    { question: "What makes a long-term rental harder to manage?", answer: "Operator turnover, fuel and maintenance routines, overnight security, and city hours that create idle calendar days. Assign authorized operators and a daily inspection habit before the first week ends." },
+    { question: "Do weather delays extend my rental automatically?", answer: "Not unless your agreement says so. Rain and heat commonly idle earthmoving equipment in North Texas, but the rental calendar usually keeps running. Ask about weather terms when you book." },
+    { question: "Which machines are often kept longer on commercial jobs?", answer: "Generators for temporary power, forklifts for material handling, and boom or scissor lifts during extended finish-out. Excavators and compactors more often track shorter site-prep windows. Your schedule decides." },
+  ],
+  relatedEquipment: [
+    { slug: "generator-rental", reason: "Often stays through temporary power needs on multi-week builds." },
+    { slug: "forklift-rental", reason: "Common on longer commercial fit-outs and warehouse stocking." },
+    { slug: "boom-lift-rental", reason: "May stay for multi-week facade or interior height work." },
+    { slug: "excavator-rental", reason: "Often tracks shorter earthwork packages with clearer end dates." },
+  ],
+  relatedGuides: ["equipment-rental-checklist", "site-preparation-equipment", "how-to-choose-a-boom-lift"],
+};
+

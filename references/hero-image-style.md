@@ -1,8 +1,8 @@
 # CRF Hero Image Style
 
-Last updated: 2026-10-08 (standard approved by Adam; first used for Arlington, Irving and Plano in Batch 1)
+Last updated: 2026-10-15 (standard unchanged; Batch 4/Resource Run 3 heroes deferred)
 
-**Approval status:** Every new hero needs Adam's approval before it ships, until he says otherwise.
+**Approval status:** Unattended mode (2026-10-05) allows publishing heroes that pass this standard without per-image approval. Batch 4 city and Resource Run 3 guide heroes are not shipped yet — GenerateImage was unavailable to the Grok Bot executor on 2026-10-15; regenerate and add `heroImage` when compliant WebPs are ready.
 
 ---
 
@@ -88,3 +88,7 @@ registration on the guide's `heroImage` in `app/lib/guide-content.ts`. The scene
 the guide's Open Graph and Twitter image.
 
 The older state images (`/images/*.png` backgrounds) predate this standard. Don't use them as style references.
+
+### Deferred (2026-10-15)
+
+Denton, Lewisville, Allen, Flower Mound, Mansfield, equipment-rental-checklist, short-term-vs-long-term-rentals — pages live with navy headers until heroes pass QA.

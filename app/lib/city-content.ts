@@ -64,6 +64,23 @@ export const sources = {
   richardsonNoise: { label: "City of Richardson Ordinance No. 4153 (2016), construction noise, sec. 13-75(9)", url: "https://mcclibraryfunctions.azurewebsites.us/api/ordinanceDownload/10221/783255/pdf" },
   oshaScissorLifts: { label: "OSHA interpretation letter (Aug. 1, 2000): scissor lifts are covered by the scaffold standards", url: "https://www.osha.gov/laws-regs/standardinterpretations/2000-08-01-0" },
   texasHighVoltage: { label: "Texas Health and Safety Code ch. 752, High Voltage Overhead Lines", url: "https://statutes.capitol.texas.gov/Docs/HS/htm/HS.752.htm" },
+
+  denton2040: { label: "City of Denton: Denton 2040 Comprehensive Plan", url: "https://www.cityofdenton.com/772/Denton-2040-Comprehensive-Plan" },
+  dentonNoise: { label: "City of Denton: Noise Ordinance Special Permit (construction hours, Code sec. 17-20(c)(3)(f))", url: "https://www.cityofdenton.com/1271/Noise-Ordinance-Special-Permit" },
+  dentonRow: { label: "City of Denton: Right-of-Way Permits", url: "https://www.cityofdenton.com/937/Right-of-Way-Permits" },
+  dentonDevHandbook: { label: "City of Denton Development Handbook (May 2026)", url: "https://www.cityofdenton.com/DocumentCenter/View/13997/Development-Handbook-PDF" },
+  dentonDowntown: { label: "City of Denton: Design Downtown Denton Final Report", url: "https://www.cityofdenton.com/DocumentCenter/View/10959/Design-Downtown-Denton-Final-Report?bidId=" },
+  lewisvilleLongRange: { label: "City of Lewisville: Long Range Plans", url: "https://www.cityoflewisville.com/city-hall/city-departments/planning/long-range-plans" },
+  lewisvilleOldTown: { label: "City of Lewisville: Old Town Development", url: "https://www.ecodevlewisville.com/old-town/development" },
+  lewisvilleRow: { label: "City of Lewisville: How to Apply for Right-of-Way Permit", url: "https://www.cityoflewisville.com/city-hall/city-departments/engineering/how-to-apply-for-right-of-way-permit" },
+  allen2045: { label: "City of Allen: Allen 2045 Comprehensive Plan", url: "https://www.cityofallen.org/departments/community_development/planning_and_development/allen_2045_comprehensive_plan.php" },
+  allenRow: { label: "City of Allen: Right-of-Way Management", url: "https://www.cityofallen.org/departments/engineering_and_traffic/right_of_way_management.php" },
+  flowerMoundFaq: { label: "Town of Flower Mound Building Inspections FAQ (construction hours)", url: "https://www.flower-mound.com/167/FAQs" },
+  flowerMoundLocates: { label: "Town of Flower Mound: Utility Line Locates", url: "https://www.flower-mound.com/2446/RowUtility-Locates" },
+  flowerMoundLakeside: { label: "Town of Flower Mound: Lakeside Business District area plan", url: "https://www.flowermound.gov/DocumentCenter/View/8311/20-Area-Plans?bidId=" },
+  mansfieldLandUse: { label: "City of Mansfield 2012 Land Use Plan", url: "https://www.mansfieldtexas.gov/DocumentCenter/View/766/Comprehensive-Land-Use-Plan-PDF" },
+  mansfieldEngineering: { label: "City of Mansfield Engineering Services (ROW, grading and floodplain permits)", url: "https://www.mansfieldtexas.gov/364/Engineering-Services" },
+  mansfieldElectricRow: { label: "City of Mansfield Electric and Street Light Design and Installation Guidelines (2021)", url: "https://www.mansfieldtexas.gov/DocumentCenter/View/9388/Electric-Design-Install-Guidelines---2021-PDF?bidId=" },
 } satisfies Record<string, SourceLink>;
 
 // Guide links render only once the guide is published in resources.ts.
@@ -82,6 +99,14 @@ const boomLiftGuide: CityGuideLink = {
 const sitePrepGuide: CityGuideLink = {
   slug: "site-preparation-equipment",
   reason: "Plan clearing, grading, compaction and trenching equipment in the right order.",
+};
+const rentalChecklistGuideLink: CityGuideLink = {
+  slug: "equipment-rental-checklist",
+  reason: "Confirm access, locates, operators and delivery details before the machine arrives.",
+};
+const shortVsLongGuideLink: CityGuideLink = {
+  slug: "short-term-vs-long-term-rentals",
+  reason: "Plan daily, weekly or monthly rental length around schedule and utilization.",
 };
 
 export const arlington: CityEntry = {
@@ -147,12 +172,12 @@ export const arlington: CityEntry = {
     { question: "What lift should I rent for storefront and facade work?", answer: "If the lift can sit on level pavement directly below the work, a scissor lift is often simplest. If you need to reach over landscaping, a canopy or a lower roof, an articulating boom lift is the usual choice. Give the provider your working height, the outreach you need and the surface the lift will sit on." },
     { question: "When should I schedule equipment deliveries in Arlington?", answer: "If a delivery needs a lane on a city thoroughfare, avoid the weekday 7 to 9 a.m. and 4 to 6 p.m. windows when right-of-way work can't interfere with traffic, and avoid event days near the Entertainment District. Confirm the delivery window and the unloading spot with the provider." },
   ],
-  nearbyCities: ["irving", "grand-prairie", "dallas", "fort-worth"],
+  nearbyCities: ["irving", "grand-prairie", "mansfield", "dallas", "fort-worth"],
   heroImage: {
     src: "/images/locations/arlington-tx-construction-equipment-rental.webp",
     alt: "Telehandler placing a pallet beside a steel-frame commercial building on a clay pad in Arlington, Texas",
   },
-  guides: [excavatorSizeGuide, compactGuide, boomLiftGuide],
+  guides: [excavatorSizeGuide, compactGuide, boomLiftGuide, rentalChecklistGuideLink],
 };
 
 export const irving: CityEntry = {
@@ -224,7 +249,7 @@ export const irving: CityEntry = {
     src: "/images/locations/irving-tx-construction-equipment-rental.webp",
     alt: "Telehandler and forklift moving pallets in the gravel yard of a new tilt-wall warehouse in Irving, Texas",
   },
-  guides: [compactGuide, excavatorSizeGuide, boomLiftGuide],
+  guides: [compactGuide, excavatorSizeGuide, boomLiftGuide, shortVsLongGuideLink],
 };
 
 export const plano: CityEntry = {
@@ -291,7 +316,7 @@ export const plano: CityEntry = {
     { question: "How does clay soil affect equipment in Plano-area projects?", answer: "Expansive clay like Houston Black is very hard when dry and sticky when wet. Rubber tracks keep traction better than tires on soft ground, ground mats protect drives and lawns, and padfoot rollers are a common choice for compacting clay fill." },
     { question: "Should I rent a mini excavator or a full-size excavator for a teardown?", answer: "For most residential teardowns, utility tie-ins and footing work, a mini excavator fits the lot and leaves less surface damage. A larger excavator makes sense for commercial demolition or deep cuts where there's room to stage it and load trucks. Share the depth, access width and what has to be hauled off." },
   ],
-  nearbyCities: ["frisco", "mckinney", "richardson", "carrollton", "dallas"],
+  nearbyCities: ["frisco", "mckinney", "richardson", "carrollton", "allen", "dallas"],
   heroImage: {
     src: "/images/locations/plano-tx-construction-equipment-rental.webp",
     alt: "Mini excavator digging a footing trench beside a compact track loader on an infill lot between homes in Plano, Texas",
@@ -363,12 +388,12 @@ export const frisco: CityEntry = {
     { question: "When can I close a lane in Frisco to deliver equipment?", answer: "Frisco's engineering general notes limit road closures to 9 a.m. to 3:30 p.m. on weekdays unless the City approves otherwise, with requests made through the Traffic Division at least 48 hours ahead. Lane closures in the right-of-way also need 24 hours' notice to police and fire." },
     { question: "Does my Frisco grading project need a stormwater permit?", answer: "If the project disturbs one acre or more, or is part of a larger plan of development that will, and its stormwater reaches surface waters, it falls under TCEQ's construction general permit, which requires a stormwater pollution prevention plan before construction. Frisco also requires erosion controls to be in place before any construction begins." },
   ],
-  nearbyCities: ["plano", "mckinney", "dallas"],
+  nearbyCities: ["plano", "mckinney", "allen", "lewisville", "denton", "dallas"],
   heroImage: {
     src: "/images/locations/frisco-tx-construction-equipment-rental.webp",
     alt: "Excavator loading a dump truck beside a roller and wheel loader on a large graded development site in Frisco, Texas",
   },
-  guides: [excavatorSizeGuide, compactGuide, sitePrepGuide],
+  guides: [excavatorSizeGuide, compactGuide, sitePrepGuide, shortVsLongGuideLink],
 };
 
 export const mckinney: CityEntry = {
@@ -435,7 +460,7 @@ export const mckinney: CityEntry = {
     { question: "Can I pour concrete at night in McKinney?", answer: "Standard construction hours start at 6 a.m. on weekdays. The City considers overnight pours case by case, and a noise exception can be requested when the pour area is at least 500 feet from residential property. Confirm before you schedule a truck and a finishing crew." },
     { question: "Does the City mark its own lines when I call 811 in McKinney?", answer: "Yes. McKinney participates in the One Call system and marks City water, wastewater, drainage and traffic or fiber lines through Texas 811 requests. The City's right-of-way manual notes that the customer's section of a service line typically runs from the water meter or sewer cleanout to the building." },
   ],
-  nearbyCities: ["plano", "frisco", "dallas"],
+  nearbyCities: ["plano", "frisco", "allen", "dallas"],
   heroImage: {
     src: "/images/locations/mckinney-tx-construction-equipment-rental.webp",
     alt: "Mini excavator trenching beside concrete forms and a skid steer next to historic brick buildings in McKinney, Texas",
@@ -579,7 +604,7 @@ export const grandPrairie: CityEntry = {
     { question: "What equipment does a new warehouse build in Grand Prairie use?", answer: "Site work usually starts with excavators, wheel loaders and rollers for the pad and utilities. As the building goes up, telehandlers and boom lifts take over for walls and roofing, and forklifts handle racking and materials once the slab is in. Share the building height, yard surface and schedule with the provider." },
     { question: "Do I need FAA notice to use a boom lift or crane near the Grand Prairie airport?", answer: "It depends on height and distance. Because the municipal airport's runway is longer than 3,200 feet, FAA notice is required for anything that would exceed a 100:1 surface extending 20,000 feet from the runway, or that is more than 200 feet tall, and temporary cranes count. If you need to file, do it at least 45 days before work starts." },
   ],
-  nearbyCities: ["arlington", "irving", "dallas"],
+  nearbyCities: ["arlington", "irving", "mansfield", "dallas"],
   heroImage: {
     src: "/images/locations/grand-prairie-tx-construction-equipment-rental.webp",
     alt: "Telescopic boom lift and telehandler at a new tilt-wall concrete warehouse on a dirt pad in Grand Prairie, Texas",
@@ -723,7 +748,7 @@ export const carrollton: CityEntry = {
     { question: "What equipment fits a transit-oriented infill site in Carrollton?", answer: "Expect tight staging and buildings set close to the sidewalk. A telehandler for upper-floor materials, boom and scissor lifts for exterior and interior work, and a mini excavator and skid steer for utilities and grading cover most jobs. Measure staging space and overhead lines before choosing sizes." },
     { question: "How quickly do I have to restore a street cut in Carrollton?", answer: "In the right-of-way, excavations have to be filled and compacted within 24 hours and pavement fully restored within 14 days unless the City allows otherwise in writing. Streets, alleys and sidewalks less than three years old can't be cut without approval." },
   ],
-  nearbyCities: ["irving", "plano", "dallas"],
+  nearbyCities: ["irving", "plano", "lewisville", "flower-mound", "dallas"],
   heroImage: {
     src: "/images/locations/carrollton-tx-construction-equipment-rental.webp",
     alt: "Telehandler lifting lumber to a wood-frame mid-rise building behind orange barriers in Carrollton, Texas",
@@ -802,3 +827,339 @@ export const richardson: CityEntry = {
   },
   guides: [boomLiftGuide, compactGuide],
 };
+
+export const denton: CityEntry = {
+  name: "Denton",
+  slug: "denton",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Denton is the Denton County seat north of the Metroplex, home to two major universities and a downtown square that the City is redesigning for walkable reinvestment.",
+  metaDescription:
+    "Construction equipment rentals in Denton, TX: lifts, telehandlers, excavators and compact machines for university-area, downtown and growth-corridor work, plus local rules.",
+  localIntro: [
+    "Denton sits at the north end of the Dallas–Fort Worth area as the Denton County seat, with the University of North Texas and Texas Woman's University shaping a large share of the city's housing, commercial and campus-adjacent construction. The City's Denton 2040 Comprehensive Plan, approved March 22, 2022, frames the next decades around growth, reinvestment and quality-of-life investments as demographics and housing preferences shift.",
+    "That mix puts lifts and compact earthmoving near the top of many rental lists here: renovations around the Square and campus edges, new multi-family and commercial pads on the edges, and utility work throughout. Use this page to match equipment to Denton work, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Downtown and the universities set the denser jobs. The City's Design Downtown Denton plan (adopted September 17, 2024) updates priorities around the Square, the transit center and connections toward the campuses, so facade work, tenant finish-outs and mid-rise wood-frame construction call for articulating boom lifts, scissor lifts and telehandlers that fit tight staging strips.",
+    "Away from downtown, Denton 2040 and the Development Handbook point applicants toward a structured civil and building process: Pre-Application Conferences, Zoning Compliance Plans, Civil Engineering Plans and Notice to Proceed before private building work begins on projects with public improvements. Larger pads need excavators, rollers and loaders; smaller infill lots lean on mini excavators and skid steers.",
+    "Weather and hours matter. The National Weather Service office in Fort Worth notes Metroplex summer highs consistently in the 90s and often 100 degrees, with spring and fall the wettest seasons. Denton's noise ordinance sets construction hours that start earlier in summer (6 a.m. weekdays from June through September) than in the cooler months (7 a.m. weekdays from October through May), with Saturday and Sunday windows that close at 8:30 p.m.",
+  ],
+  featuredEquipment: [
+    { slug: "boom-lift-rental", reason: "Facade, canopy and upper-floor work on downtown and campus-adjacent buildings, where an articulating boom reaches up and over sidewalks, landscaping or a lower roof." },
+    { slug: "scissor-lift-rental", reason: "Interior ceilings, lighting and sprinkler work in renovated commercial and multi-family buildings on finished slabs. Electric slab scissors keep exhaust out of occupied floors." },
+    { slug: "telehandler-rental", reason: "Placing lumber, roofing and materials on mid-rise wood-frame and mixed-use buildings when staging space is a narrow strip of street or lot." },
+    { slug: "excavator-rental", reason: "Detention, utilities and mass grading on growth-corridor pads where Denton's civil process and stormwater rules apply before earthwork starts." },
+    { slug: "mini-excavator-rental", reason: "Service connections, footings and short trenches on infill lots near the Square and older neighborhoods, where existing lines have to be found first." },
+    { slug: "skid-steer-rental", reason: "Clearing, fine grading and material handling on tight lots where a larger loader cannot turn between buildings and curbs." },
+  ],
+  siteConsiderations: [
+    {
+      title: "Seasonal construction hours",
+      text: "Denton's Code sec. 17-20(c)(3)(f) limits erection, excavation, demolition, alteration or repair work on any building to 6 a.m.–8:30 p.m. Monday–Friday from June 1 to September 30; 7 a.m.–8:30 p.m. Monday–Friday from October 1 to May 31; 8 a.m.–8:30 p.m. Saturday; and 1 p.m.–8:30 p.m. Sunday. Work outside those hours needs a City Council–approved Noise Ordinance Special Permit.",
+      sources: [sources.dentonNoise],
+    },
+    {
+      title: "Right-of-way permits and 48-hour notice",
+      text: "ROW work in Denton requires registration and a permit through e-TRAKiT. Properly submitted applications are reviewed within 10 business days. After issuance, and before a Texas 811 ticket, the utility or contractor must notify the city inspector and affected adjacent landowners and residents at least 48 hours before starting, or as the permit specifies.",
+      sources: [sources.dentonRow],
+    },
+    {
+      title: "Call 811, then confirm City expectations",
+      text: "Texas law requires one-call notice at least 48 hours before excavating, excluding weekends and holidays. Denton's ROW process also requires a ROW Safety Inspection request in e-TRAKiT with 48 hours' notice before commencing work on an issued permit, so build both into the schedule.",
+      sources: [sources.utilitiesCode251, sources.texas811, sources.dentonRow],
+    },
+    {
+      title: "Restoration clocks on ROW work",
+      text: "For permitted ROW work, Denton expects rubbish and spoil kept clear of the ROW and private property, backfill and compaction of voids within seven business days of excavation, temporary traffic control removed within three business days, and full restoration to City standards within 20 business days after substantial completion of the permitted scope.",
+      sources: [sources.dentonRow],
+    },
+    {
+      title: "Public improvements before private building",
+      text: "The Development Handbook requires public improvements to be installed, inspected and accepted before private improvement work or building permits on projects that include them, and a Notice to Proceed before construction begins. Line up civil approval and NTP before booking large earthmoving fleets.",
+      sources: [sources.dentonDevHandbook],
+    },
+    {
+      title: "Heat and wet seasons",
+      text: "NWS Fort Worth notes July and August highs consistently in the 90s and often 100 degrees, with spring and fall the wettest seasons. Plan exterior lift work and open excavations around storms, and use Denton's earlier summer weekday start when heat pushes crews to cooler hours.",
+      sources: [sources.nwsDfwClimate, sources.dentonNoise],
+    },
+  ],
+  faqs: [
+    { question: "What hours can I run construction equipment in Denton?", answer: "Under Denton's noise ordinance, building construction work is limited to 6 a.m.–8:30 p.m. weekdays from June through September, 7 a.m.–8:30 p.m. weekdays from October through May, 8 a.m.–8:30 p.m. Saturday, and 1 p.m.–8:30 p.m. Sunday. Outside those hours you need a City Council–approved special permit." },
+    { question: "Do I need a Denton ROW permit to dig in the street?", answer: "Yes. Denton processes right-of-way permits online through e-TRAKiT after registration, generally reviews complete applications within 10 business days, and requires 48 hours' notice to the inspector and affected adjacent residents before work starts." },
+    { question: "What equipment suits downtown Denton renovations?", answer: "Plan for lifts and compact handlers first: articulating boom lifts and scissor lifts for facades and interiors, and telehandlers for materials on tight lots. Measure gate width, overhead lines and staging space before you book." },
+    { question: "When can I start grading a Denton site with public improvements?", answer: "After Civil Engineering Plans are approved, pre-construction steps are complete and the City issues Notice to Proceed. Public improvements generally have to be accepted before private building work proceeds. Confirm the sequence with your Development Project Facilitator." },
+  ],
+  nearbyCities: ["lewisville", "frisco", "carrollton", "dallas"],
+  guides: [boomLiftGuide, compactGuide, excavatorSizeGuide, rentalChecklistGuideLink],
+};
+
+export const lewisville: CityEntry = {
+  name: "Lewisville",
+  slug: "lewisville",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Lewisville sits along I-35E in Denton County, with a historic Old Town core, corridor redevelopment plans and gateway mixed-use sites at the north and south ends of the city.",
+  metaDescription:
+    "Construction equipment rentals in Lewisville, TX: telehandlers, lifts, excavators and compact machines for Old Town infill and I-35E corridor work, plus local ROW rules.",
+  localIntro: [
+    "Lewisville stretches along Interstate 35E in southern Denton County, between older neighborhoods around Old Town and larger redevelopment and gateway sites the City has planned in detail. City long-range plans cover Old Town revitalization and transit-oriented development, an I-35E corridor identity and redevelopment framework, and Northern and Southern Gateway mixed-use guides covering hundreds of acres.",
+    "That means two rental patterns: compact equipment for brick-and-infill work near Old Town, and heavier earthmoving and lifts for corridor and gateway pads. Use this page to match equipment to the part of Lewisville you're in, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Old Town is bounded by I-35E, College Street, Railroad Street and Purnell Street. The City regulates development there under the Old Town Development Ordinance with Old Town Design Review Committee review, and it describes the district as retaining early commercial character that new work is expected to respect. Facade, interior and tight-lot builds favor telehandlers, scissor lifts and mini excavators over large earthmovers.",
+    "Along I-35E, the City's corridor plans split the eight-mile frontage into zones and aim for new private investment with a clearer identity. North and south gateways (about 300 and 325 acres in the City's planning documents) target mixed-use urban development. Those sites need excavators, rollers, boom lifts and telehandlers as buildings rise from graded pads.",
+    "Right-of-way utility work runs through MyGovernmentOnline. The City's engineering division reviews ROW use permit applications for completeness within 30 days and can require missing information within 180 days before an incomplete filing is treated as withdrawn.",
+  ],
+  featuredEquipment: [
+    { slug: "telehandler-rental", reason: "Lifting materials to upper floors on Old Town infill and corridor commercial buildings where street-side staging is narrow." },
+    { slug: "scissor-lift-rental", reason: "Interior renovations and exterior wall work on older commercial buildings in Old Town and along the corridor, especially on finished floors." },
+    { slug: "boom-lift-rental", reason: "Facade and roof-edge work on taller corridor and gateway buildings, with articulating booms for obstacles and telescopic booms for straight reach." },
+    { slug: "mini-excavator-rental", reason: "Utility ties and footings on tight Old Town lots where a full-size excavator cannot stage." },
+    { slug: "excavator-rental", reason: "Mass grading, detention and utilities on Northern and Southern Gateway pads and larger I-35E redevelopment sites." },
+    { slug: "compactor-rental", reason: "Pad and trench compaction on new mixed-use and commercial sites, including padfoot drums for cohesive North Texas clay." },
+  ],
+  siteConsiderations: [
+    {
+      title: "ROW permits through MyGovernmentOnline",
+      text: "Lewisville issues right-of-way use permits online. Applications must identify the facility owner, applicant and contractor. Engineering reviews completeness within 30 days and notifies the contractor in writing if information is missing; missing items not supplied within 180 days cause the application to be deemed withdrawn.",
+      sources: [sources.lewisvilleRow],
+    },
+    {
+      title: "Call 811 before excavating",
+      text: "Texas law requires notice to a one-call center at least 48 hours before excavating, excluding weekends and holidays. On older Old Town lots, allow extra time to find private service lines that franchise locates will not mark.",
+      sources: [sources.utilitiesCode251, sources.texas811],
+    },
+    {
+      title: "Old Town design review",
+      text: "Development inside the Old Town boundaries is regulated by the Old Town Development Ordinance and reviewed by the Old Town Design Review Committee. Plan equipment and staging that fit the district's tight lots and streetscape expectations, not only the building plans.",
+      sources: [sources.lewisvilleOldTown],
+    },
+    {
+      title: "Stormwater on larger sites",
+      text: "Sites disturbing one acre or more that discharge stormwater to surface waters generally need coverage under TCEQ's construction general permit, with a stormwater pollution prevention plan before earthwork. Confirm City grading and erosion expectations with Engineering when you apply for related permits.",
+      sources: [sources.tceqConstructionStormwater],
+    },
+    {
+      title: "Heat and wet seasons",
+      text: "NWS Fort Worth notes Metroplex summer highs in the 90s and often 100 degrees, with spring and fall the wettest seasons. Open corridor pads lose grading days after storms; schedule exterior lift work around heat and wind.",
+      sources: [sources.nwsDfwClimate],
+    },
+    {
+      title: "Clay soils",
+      text: "Much of North Texas sits on expansive clay described regionally by USDA as Houston Black and related Blackland Prairie soils. Check your parcel in the USDA Web Soil Survey and your geotechnical report before choosing compaction equipment and track versus tire machines.",
+      sources: [sources.usdaHoustonBlack, sources.usdaOsd],
+    },
+  ],
+  faqs: [
+    { question: "How do I get a Lewisville right-of-way permit?", answer: "Apply online through MyGovernmentOnline for a ROW Use Permit under Engineering. Include the facility owner, applicant and contractor. The City reviews completeness within 30 days and can require additional information; if the missing items are not supplied within 180 days, the application is treated as withdrawn." },
+    { question: "What equipment fits Old Town Lewisville work?", answer: "Tight lots and occupied neighbors favor telehandlers, scissor lifts and mini excavators over large earthmovers. Confirm gate width, overhead lines and whether Old Town Design Review applies before you book." },
+    { question: "Where is larger site work happening in Lewisville?", answer: "City long-range plans focus larger mixed-use and redevelopment energy on the I-35E corridor and on Northern and Southern Gateway sites of roughly 300 and 325 acres. Those pads typically need excavators, rollers, boom lifts and telehandlers as buildings rise." },
+    { question: "Do I need 811 before digging in Lewisville?", answer: "Yes. Texas law requires one-call notice at least 48 hours before excavating, excluding weekends and holidays. Private service lines on older lots are not marked by franchise locates, so plan to find them with plans or potholing." },
+  ],
+  nearbyCities: ["denton", "carrollton", "frisco", "dallas"],
+  guides: [boomLiftGuide, sitePrepGuide, compactGuide, rentalChecklistGuideLink],
+};
+
+export const allen: CityEntry = {
+  name: "Allen",
+  slug: "allen",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Allen is a Collin County suburb north of Plano, guided by the Allen 2045 Comprehensive Plan as it continues to grow and reinvest across housing, commercial and infrastructure work.",
+  metaDescription:
+    "Construction equipment rentals in Allen, TX: excavators, compact track loaders, mini excavators and lifts for residential and commercial growth, plus City ROW locate rules.",
+  localIntro: [
+    "Allen sits in Collin County north of Plano and has spent decades converting open land into neighborhoods, schools and commercial centers along its major thoroughfares. On April 29, 2025, City Council adopted the Allen 2045 Comprehensive Plan as the policy guide for land use, transportation, housing, economic development, parks and infrastructure over the next fifteen to twenty years.",
+    "Most Allen rentals support new residential pads, school and civic sites, and commercial nodes at arterial intersections. Use this page to match equipment to that work, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Allen 2045 replaces the prior 2030 plan and keeps the focus on managed growth rather than unchecked strip development. New subdivisions and commercial pads still need clearing, grading, utilities and compaction before vertical work starts, so excavators, compact track loaders, trenchers and rollers dominate early phases.",
+    "As buildings rise, the list shifts to telehandlers, boom lifts and concrete equipment for framing, masonry and exterior finishes. Infill and renovation jobs closer to established neighborhoods favor mini excavators and skid steers that fit between homes.",
+    "Utility protection is a City priority. Allen's Right-of-Way Management program reviews and inspects work in City ROW so City utilities stay protected, and it asks applicants to review the interactive GIS utility map before filing.",
+  ],
+  featuredEquipment: [
+    { slug: "excavator-rental", reason: "Mass grading, detention ponds and utility mains on new residential and commercial pads across Allen's remaining developable tracts." },
+    { slug: "skid-steer-rental", reason: "Fine grading, backfill and material handling on smaller lots and between existing homes where a larger loader will not fit." },
+    { slug: "mini-excavator-rental", reason: "Footings, service connections and short trenches on residential and light commercial sites." },
+    { slug: "compactor-rental", reason: "Padfoot and smooth-drum rollers for building pads and pavement subgrade, plus rammers and plates for trench backfill in clay." },
+    { slug: "telehandler-rental", reason: "Placing framing, masonry and roofing materials on two-story residential and commercial buildings." },
+    { slug: "boom-lift-rental", reason: "Exterior finishes, roof edges and lighting on commercial buildings at arterial nodes." },
+  ],
+  siteConsiderations: [
+    {
+      title: "Two locates for City utilities",
+      text: "Call Texas 811 for franchise utilities (electric, gas and telecom). For City water, sanitary sewer, storm, signals and street lights, email Locates@allentx.gov at least 48 hours before digging and include the ROW permit number, 811 ticket and a location map. City locates run Monday through Friday. Allen does not locate private water beyond the meter, private sanitary sewer or irrigation.",
+      sources: [sources.allenRow, sources.utilitiesCode251, sources.texas811],
+    },
+    {
+      title: "When a ROW permit is required",
+      text: "Allen requires a construction permit when you dig in City ROW; in state ROW where the City has utilities; on private property where you encroach on City or North Texas Municipal Water District utilities; or on private property when tying into facilities the City has already accepted (permit covers the tie-in area).",
+      sources: [sources.allenRow],
+    },
+    {
+      title: "Allow 10 business days",
+      text: "Before applying, review Allen's interactive GIS utility map and email RecordPlans@allentx.gov if you need more detail. Plan on about 10 business days for ROW permit processing. As of March 3, 2026, ROW permits are submitted through the City's FY2027 application link on the ROW Management page.",
+      sources: [sources.allenRow],
+    },
+    {
+      title: "Stormwater coverage",
+      text: "Sites disturbing one acre or more that discharge stormwater to surface waters generally need TCEQ construction general permit coverage and a stormwater pollution prevention plan before earthwork. Allen notes it will not accept operational control under that permit for franchise utility projects in public ROW.",
+      sources: [sources.tceqConstructionStormwater, sources.allenRow],
+    },
+    {
+      title: "Heat and wet seasons",
+      text: "NWS Fort Worth notes Metroplex summer highs consistently in the 90s and often 100 degrees, with spring and fall the wettest seasons. Expect lost grading days after storms and plan exterior lift work around heat.",
+      sources: [sources.nwsDfwClimate],
+    },
+    {
+      title: "Clay soils",
+      text: "USDA describes Houston Black and related Blackland Prairie soils across much of North Texas, with very high shrink-swell. Verify your parcel in the Web Soil Survey and follow the geotechnical report when choosing rollers and track machines.",
+      sources: [sources.usdaHoustonBlack, sources.usdaOsd],
+    },
+  ],
+  faqs: [
+    { question: "How do I get City utility locates in Allen?", answer: "Email Locates@allentx.gov at least 48 hours before digging, include your ROW permit number, 811 ticket and a location map, and call 811 separately for franchise utilities. Allen locates City water, sewer, storm, signals and street lights on weekdays and does not locate private service lines past the meter or irrigation." },
+    { question: "Do I need an Allen ROW permit for work on private property?", answer: "Sometimes. A permit is required when you encroach on City or NTMWD utilities on private property, or when you tie into City-accepted facilities (for the tie-in area). Digging only in City or applicable state ROW also requires a permit." },
+    { question: "What equipment is common on new Allen subdivision pads?", answer: "Early work usually needs excavators, compact track loaders or skid steers, trenchers and rollers. As homes and commercial buildings rise, telehandlers and boom lifts take over for materials and exterior finishes." },
+    { question: "How long does an Allen ROW permit take?", answer: "Allen asks applicants to allow about 10 business days after reviewing the GIS utility map. Confirm current intake steps on the City's Right-of-Way Management page, which notes the FY2027 online application path." },
+  ],
+  nearbyCities: ["plano", "mckinney", "frisco", "dallas"],
+  guides: [sitePrepGuide, excavatorSizeGuide, compactGuide, shortVsLongGuideLink],
+};
+
+export const flowerMound: CityEntry = {
+  name: "Flower Mound",
+  slug: "flower-mound",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Flower Mound is a Denton County town between Denton and the Metroplex lakes, known for master-planned growth, Cross Timbers conservation areas and the Lakeside Business District.",
+  metaDescription:
+    "Construction equipment rentals in Flower Mound, TX: boom lifts, telehandlers, excavators and compact machines for Lakeside commercial and residential work, plus Town construction hours.",
+  localIntro: [
+    "Flower Mound sits in southern Denton County as a largely master-planned town, with residential neighborhoods, Cross Timbers conservation areas and a Lakeside Business District planned for larger commercial and light-industrial campuses. Town documents describe Lakeside for corporate offices, office and industrial parks, clean manufacturing, hotels and compatible retail, while Cross Timbers areas emphasize low-density housing and preservation.",
+    "Commercial campus builds and careful residential work drive most rentals here. Use this page to match equipment to Flower Mound's rules and site types, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Lakeside and similar commercial pads need the full site-prep-to-vertical sequence: excavators and rollers for the pad, then telehandlers and boom lifts as tilt-wall or low-rise office buildings rise. Landscaped campuses leave limited staging, so machine width and ground protection matter.",
+    "Residential and Cross Timbers-adjacent lots favor compact equipment. Mini excavators, skid steers and plate compactors handle service lines, drainage and additions without disturbing more tree cover than the plans allow.",
+    "The Town is strict about construction noise. Building Inspections FAQ states construction working hours are limited to 7 a.m. to 7 p.m. Monday through Friday and 9 a.m. to 5 p.m. Saturday and Sunday, enforced by the police department with a zero-tolerance policy for violations.",
+  ],
+  featuredEquipment: [
+    { slug: "boom-lift-rental", reason: "Exterior finishes, curtain wall and roof-edge work on Lakeside low-rise office and light-industrial buildings." },
+    { slug: "telehandler-rental", reason: "Moving materials across campus pads and placing loads on upper walls when crane time is limited." },
+    { slug: "forklift-rental", reason: "Warehouse and light-industrial fit-out once slabs and truck courts are in, including racking and palletized materials." },
+    { slug: "excavator-rental", reason: "Pads, detention and utilities for commercial sites and larger residential sections." },
+    { slug: "mini-excavator-rental", reason: "Service lines, drainage and footings on residential lots where tree protection and tight side yards limit machine size." },
+    { slug: "skid-steer-rental", reason: "Fine grading, backfill and landscape site work around finished homes and commercial entries." },
+  ],
+  siteConsiderations: [
+    {
+      title: "Construction hours with zero tolerance",
+      text: "Flower Mound limits construction working hours to 7 a.m.–7 p.m. Monday through Friday and 9 a.m.–5 p.m. Saturday and Sunday. The police department enforces those hours, and the Town's Building Inspections FAQ describes a zero-tolerance policy for violations.",
+      sources: [sources.flowerMoundFaq],
+    },
+    {
+      title: "811 plus Town ROW permits",
+      text: "Call Texas 811 at least two business days before digging for franchise utilities. For private development or residential excavation in a Town easement or right-of-way, a permit is required; contact Development Engineering at 972-874-6313. CIP projects use CIP Engineering instead.",
+      sources: [sources.flowerMoundLocates, sources.utilitiesCode251, sources.texas811],
+    },
+    {
+      title: "Stormwater on acre-plus sites",
+      text: "Sites disturbing one acre or more that discharge stormwater to surface waters generally need TCEQ construction general permit coverage and a stormwater pollution prevention plan before earthwork begins.",
+      sources: [sources.tceqConstructionStormwater],
+    },
+    {
+      title: "Heat and wet seasons",
+      text: "NWS Fort Worth notes Metroplex summer highs in the 90s and often 100 degrees, with spring and fall the wettest seasons. Flower Mound's 7 a.m. weekday start helps crews work cooler hours in summer, but open pads still lose days after heavy rain.",
+      sources: [sources.nwsDfwClimate, sources.flowerMoundFaq],
+    },
+    {
+      title: "Clay soils and tree cover",
+      text: "USDA's regional Blackland Prairie description applies across much of North Texas; verify your parcel in the Web Soil Survey. Cross Timbers and landscaped campus sites also add tree and drip-line protection that can constrain where excavators and stockpiles sit.",
+      sources: [sources.usdaHoustonBlack, sources.usdaOsd],
+    },
+    {
+      title: "OSHA excavation basics",
+      text: "Federal rules still apply on every trench: protective systems for trenches five feet or deeper unless in stable rock, spoils and equipment at least two feet from the edge, and daily competent-person inspections.",
+      sources: [sources.oshaTrenching],
+    },
+  ],
+  faqs: [
+    { question: "What are Flower Mound construction hours?", answer: "7 a.m. to 7 p.m. Monday through Friday, and 9 a.m. to 5 p.m. Saturday and Sunday. The police department enforces those hours, and the Town describes a zero-tolerance policy for violations." },
+    { question: "Do I need a permit to dig in a Flower Mound easement?", answer: "Yes for private development or residential excavation in a Town easement or right-of-way. Contact Development Engineering at 972-874-6313. Still call 811 at least two business days ahead for franchise utilities." },
+    { question: "What equipment suits a Lakeside Business District build?", answer: "Plan excavators and rollers for the pad, then telehandlers, boom lifts and forklifts as the building and warehouse areas come online. Confirm gate width, slab capacity and delivery routes on landscaped campuses." },
+    { question: "Can I start early to beat the summer heat in Flower Mound?", answer: "Weekday work may start at 7 a.m., which is the Town's limit. Earlier starts are not allowed under the published construction hours, even in summer heat." },
+  ],
+  nearbyCities: ["lewisville", "carrollton", "denton", "dallas"],
+  guides: [boomLiftGuide, sitePrepGuide, shortVsLongGuideLink],
+};
+
+export const mansfield: CityEntry = {
+  name: "Mansfield",
+  slug: "mansfield",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Mansfield sits southeast of Fort Worth near Joe Pool Lake along US 287 and SH 360, balancing residential growth, highway commercial nodes and an industrial sector in the southwest.",
+  metaDescription:
+    "Construction equipment rentals in Mansfield, TX: excavators, rollers, telehandlers and lifts for residential and US 287/SH 360 commercial work, plus City grading and ROW permits.",
+  localIntro: [
+    "Mansfield lies about 18 miles southeast of downtown Fort Worth and 26 miles from downtown Dallas, along US Highway 287 and State Highway 360 near Joe Pool Lake, spanning parts of Tarrant, Johnson and Ellis counties. The City's 2012 Land Use Plan describes a community that wants quality residential and commercial growth while keeping a hometown character, with regional commercial nodes along the two highways and industrial land concentrated south of downtown.",
+    "New neighborhoods, highway commercial and southwest industrial jobs drive most equipment rentals. Use this page to match machines to Mansfield work, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "When the Land Use Plan was written, roughly 58 percent of Mansfield's land was developed, with single-family housing the largest use. Remaining growth still means subdivision pads, schools and neighborhood commercial nodes, so excavators, rollers, trenchers and compact track loaders handle early site work.",
+    "Along US 287 and SH 360, the plan identifies regional commercial centers with big-box, hotel and restaurant uses that draw from beyond the city. Those sites need telehandlers, boom lifts and forklifts as buildings and parking fields go up. Southwest industrial tracts support warehousing and manufacturing, with the plan noting remaining industrial acreage that depends on water and sewer readiness.",
+    "Engineering Services reviews public infrastructure for private development and lists ROW, floodplain, grading and fill, and public infrastructure connection permits. Non-emergency utility installations in ROW require a no-cost ROW permit and plan submittal.",
+  ],
+  featuredEquipment: [
+    { slug: "excavator-rental", reason: "Subdivision grading, detention and utilities, plus industrial pad work in the southwest sector." },
+    { slug: "compactor-rental", reason: "Building pads and pavement subgrade on residential and commercial sites; Mansfield's electric/ROW guidelines also call for 95 percent Standard Proctor trench compaction in ROW work." },
+    { slug: "telehandler-rental", reason: "Framing, masonry and roofing materials on residential and highway commercial buildings." },
+    { slug: "boom-lift-rental", reason: "Exterior finishes and roof edges on commercial buildings at US 287 and SH 360 nodes." },
+    { slug: "wheel-loader-rental", reason: "Moving stockpiles and loading trucks on larger residential and industrial pads." },
+    { slug: "skid-steer-rental", reason: "Fine grading, backfill and site cleanup on smaller lots and between phases of a subdivision." },
+  ],
+  siteConsiderations: [
+    {
+      title: "Grading, floodplain and ROW permits",
+      text: "Mansfield Engineering lists Grading and Fill, Floodplain Development, ROW, Public Infrastructure Connection and Temporary Batch Plant permits. Confirm which apply before the first scrape, especially near mapped floodplain or when tying into public water, sewer or streets.",
+      sources: [sources.mansfieldEngineering],
+    },
+    {
+      title: "ROW permit for non-emergency utility work",
+      text: "The City's electric and street-light design guidelines state that non-emergency installations require a Right-of-Way Permit at no cost, with plans submitted on all projects. Wet utilities are field-located by Field Operations under normal locate standards, and trench compaction must meet a minimum 95 percent Standard Proctor.",
+      sources: [sources.mansfieldElectricRow],
+    },
+    {
+      title: "Call 811 before digging",
+      text: "Texas law requires one-call notice at least 48 hours before excavating, excluding weekends and holidays. Coordinate City water and sewer locates with Field Operations as Engineering directs for your permit type.",
+      sources: [sources.utilitiesCode251, sources.texas811, sources.mansfieldElectricRow],
+    },
+    {
+      title: "Stormwater on acre-plus sites",
+      text: "Sites disturbing one acre or more that discharge stormwater to surface waters generally need TCEQ construction general permit coverage and a stormwater pollution prevention plan before earthwork.",
+      sources: [sources.tceqConstructionStormwater],
+    },
+    {
+      title: "Heat and wet seasons",
+      text: "NWS Fort Worth notes Metroplex summer highs in the 90s and often 100 degrees, with spring and fall the wettest seasons. Open subdivision pads along the southern growth edge lose grading days after storms.",
+      sources: [sources.nwsDfwClimate],
+    },
+    {
+      title: "Clay soils",
+      text: "USDA's Houston Black and Blackland Prairie descriptions cover much of North Texas, with high shrink-swell that affects footings and compaction. Check the Web Soil Survey and the geotechnical report before choosing padfoot versus smooth-drum rollers.",
+      sources: [sources.usdaHoustonBlack, sources.usdaOsd],
+    },
+  ],
+  faqs: [
+    { question: "Do I need a Mansfield permit before grading?", answer: "Often yes. Engineering lists Grading and Fill and Floodplain Development permits among others. Confirm the right permit set before mobilizing excavators and rollers, especially near floodplain or when connecting to public infrastructure." },
+    { question: "Is a Mansfield ROW permit free for utility work?", answer: "The City's electric and street-light guidelines say non-emergency installations require a Right-of-Way Permit at no cost, with plans submitted. Emergency rules differ; follow Engineering's current application links." },
+    { question: "What equipment suits a new Mansfield subdivision?", answer: "Early phases usually need excavators, wheel loaders or skid steers, trenchers and rollers. Telehandlers and boom lifts arrive when framing and exterior finishes start. Share pad size, soil report and schedule with the provider." },
+    { question: "Where is industrial construction concentrated in Mansfield?", answer: "The 2012 Land Use Plan places most industrial land south of downtown along S. Main Street and notes remaining industrial acreage whose readiness depends on water and sewer infrastructure. Confirm current zoning and utilities with the City before planning heavy equipment." },
+  ],
+  nearbyCities: ["arlington", "grand-prairie", "dallas", "fort-worth"],
+  guides: [sitePrepGuide, excavatorSizeGuide, rentalChecklistGuideLink],
+};
+

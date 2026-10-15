@@ -56,7 +56,7 @@ type ArticleJsonLdInput = {
   headline: string;
   description: string;
   path: string;
-  image: string;
+  image?: string;
   datePublished: string;
   dateModified: string;
 };
@@ -73,7 +73,7 @@ export function articleJsonLd({ headline, description, path, image, datePublishe
     "@type": "Article",
     headline,
     description,
-    image: [absoluteUrl(image)],
+    ...(image ? { image: [absoluteUrl(image)] } : {}),
     datePublished,
     dateModified,
     author: organization,

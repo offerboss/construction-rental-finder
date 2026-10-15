@@ -1,6 +1,6 @@
 # CRF Content Strategy
 
-Last updated: 2026-10-08 (CRF approved plan, 2026-10-02; Batch 3 and Resource Run 2 built 2026-10-08)
+Last updated: 2026-10-15 (Batch 4 + Resource Run 3; heroes deferred — GenerateImage unavailable to Grok Bot executor)
 
 ## Goal
 
@@ -14,6 +14,7 @@ city actually needs to know, instead of scaling thin template pages. Quality ove
 | 1 | Arlington, Irving, Plano | Shipped 2026-10-02 (`b3a73d6`) |
 | 2 | Frisco, McKinney | Shipped 2026-10-02 |
 | 3 | Garland, Grand Prairie, Mesquite, Carrollton, Richardson | Shipped 2026-10-08 |
+| 4 | Denton, Lewisville, Allen, Flower Mound, Mansfield | Shipped 2026-10-15 (navy headers; heroes deferred) |
 
 ## Phase 1 resources: the Resource Run
 
@@ -23,6 +24,8 @@ city actually needs to know, instead of scaling thin template pages. Quality ove
 | `/resources/what-size-excavator-do-i-need` | Shipped 2026-10-02 |
 | `/resources/how-to-choose-a-boom-lift` | Shipped 2026-10-08 |
 | `/resources/site-preparation-equipment` | Shipped 2026-10-08 |
+| `/resources/equipment-rental-checklist` | Shipped 2026-10-15 (hero deferred) |
+| `/resources/short-term-vs-long-term-rentals` | Shipped 2026-10-15 (hero deferred) |
 
 How a guide works (no CMS):
 
@@ -39,8 +42,7 @@ How a guide works (no CMS):
 - Sitemap entries come from `guides`.
 - Reconciled placeholders: the old `mini-excavator-vs-skid-steer` slug 308-redirects to
   `/resources/skid-steer-vs-mini-excavator` (`next.config.ts`); the "Excavator Rental Cost Guide" placeholder was dropped
-  (no prices). The boom lift and site preparation topics shipped 2026-10-08; the two remaining `resourceTopics`
-  (rental checklist, short-term vs long-term) stay as "Coming soon" cards.
+  (no prices). The boom lift and site preparation topics shipped 2026-10-08; the rental checklist and short-term vs long-term guides shipped 2026-10-15; `resourceTopics` is empty.
 
 Guide target: about 1,600 to 2,400 rendered words in `<main>`. Sizing and capability figures come from manufacturer
 spec pages or brochures, each cited in the section that uses it; tables are labeled illustrative and size-class ranges
@@ -117,5 +119,5 @@ template unchanged.
 
 - The Garland and Mesquite source discrepancies are still unresolved (report only; see the notes in `published-pages.md`).
 - Guide word counts run slightly over target (report only).
-- Denton's city site (cityofdenton.com) still returns Cloudflare 403 to automated fetches, so its content can't be verified. Don't build the page until the sources can be checked manually.
+- Denton was built 2026-10-15 after cityofdenton.com became readable via WebFetch (Mac curl still hits Cloudflare). Heroes for Batch 4 and Resource Run 3 are deferred to Friday QA / GenerateImage.
 - The GitHub connection on the old duplicate Vercel project `construction-rental-finder` is being handled separately. Don't touch Vercel from QA.

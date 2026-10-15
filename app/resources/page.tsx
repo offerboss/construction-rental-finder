@@ -43,13 +43,15 @@ export default function ResourcesPage() {
                   className="group flex h-full flex-col overflow-hidden rounded-md border border-navy/10 bg-white shadow-sm transition hover:border-navy/25 hover:shadow-md"
                 >
                   <span className="relative block aspect-[3/2] bg-navy-deep">
-                    <Image
-                      src={guide.heroImage.src}
-                      alt={guide.heroImage.alt}
-                      fill
-                      sizes="(min-width: 1280px) 600px, (min-width: 768px) 48vw, 100vw"
-                      className="object-cover"
-                    />
+                    {guide.heroImage ? (
+                      <Image
+                        src={guide.heroImage.src}
+                        alt={guide.heroImage.alt}
+                        fill
+                        sizes="(min-width: 1280px) 600px, (min-width: 768px) 48vw, 100vw"
+                        className="object-cover"
+                      />
+                    ) : null}
                   </span>
                   <span className="flex flex-1 flex-col p-6">
                     <span className="font-heading text-xs font-bold tracking-[0.18em] text-steel uppercase">Rental Guide</span>

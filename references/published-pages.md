@@ -1,6 +1,6 @@
 # CRF Published Pages
 
-Last updated: 2026-10-08
+Last updated: 2026-10-15
 
 ## Batch Log
 
@@ -11,6 +11,8 @@ Last updated: 2026-10-08
 | Resource Run | /resources/skid-steer-vs-mini-excavator, /resources/what-size-excavator-do-i-need | 2026-10-02 | Approved 2026-10-02 | Pushed 2026-10-02 |
 | 3 | /locations/texas/garland, /locations/texas/grand-prairie, /locations/texas/mesquite, /locations/texas/carrollton, /locations/texas/richardson | 2026-10-08 | Supplied 2026-10-08 | Pushed 2026-10-08 |
 | Resource Run 2 | /resources/how-to-choose-a-boom-lift, /resources/site-preparation-equipment | 2026-10-08 | Supplied 2026-10-08 | Pushed 2026-10-08 |
+| 4 | /locations/texas/denton, /locations/texas/lewisville, /locations/texas/allen, /locations/texas/flower-mound, /locations/texas/mansfield | 2026-10-15 | Deferred (GenerateImage unavailable; Pollinations failed QA) | Pushed 2026-10-15 |
+| Resource Run 3 | /resources/equipment-rental-checklist, /resources/short-term-vs-long-term-rentals | 2026-10-15 | Deferred | Pushed 2026-10-15 |
 
 Rendered `<main>` word counts at build: Arlington 1,234, Irving 1,251, Plano 1,223 (1,229 after Batch 2 nearby links).
 Batch 2: Frisco 1,368, McKinney 1,315. Sitemap: 44 URLs.
@@ -21,25 +23,34 @@ Resource Run 2: how-to-choose-a-boom-lift 2,541, site-preparation-equipment 2,45
 mostly from spec tables and source labels). Existing pages after new links: Arlington 1,304, Irving 1,324, Plano 1,282,
 Frisco 1,431, McKinney 1,378. Sitemap: 53 URLs.
 
+Batch 4 + Resource Run 3 (2026-10-15): Denton, Lewisville, Allen, Flower Mound, Mansfield; equipment-rental-checklist and short-term-vs-long-term-rentals.
+Hero images deferred: Cursor GenerateImage is not available to the Grok Bot executor (cursor MCP namespace missing); Pollinations Flux outputs failed the hero QA checklist (machine distortion, watermarks, hybrid/impossible machines). Pages ship with navy headers until compliant 1080x720 WebP heroes are generated.
+Sitemap: 60 URLs. Texas cities: 20 (15 rich DFW). Guides: 6. Coming Soon resourceTopics: empty.
+
 ## Link Map
 
 Nearby links (reciprocal, built pages only):
 
 | Page | Links to |
 |---|---|
-| Arlington | Irving, Grand Prairie, Dallas, Fort Worth |
+| Arlington | Irving, Grand Prairie, Mansfield, Dallas, Fort Worth |
 | Irving | Arlington, Grand Prairie, Carrollton, Dallas, Fort Worth |
-| Plano | Frisco, McKinney, Richardson, Carrollton, Dallas |
-| Frisco | Plano, McKinney, Dallas |
-| McKinney | Plano, Frisco, Dallas |
+| Plano | Frisco, McKinney, Richardson, Carrollton, Allen, Dallas |
+| Frisco | Plano, McKinney, Allen, Lewisville, Denton, Dallas |
+| McKinney | Plano, Frisco, Allen, Dallas |
 | Garland | Richardson, Mesquite, Dallas |
-| Grand Prairie | Arlington, Irving, Dallas |
+| Grand Prairie | Arlington, Irving, Mansfield, Dallas |
 | Mesquite | Garland, Dallas |
-| Carrollton | Irving, Plano, Dallas |
+| Carrollton | Irving, Plano, Lewisville, Flower Mound, Dallas |
 | Richardson | Plano, Garland, Dallas |
-| Dallas | Arlington, Irving, Plano, Frisco, McKinney, Garland, Grand Prairie, Mesquite, Carrollton, Richardson, Fort Worth |
-| Fort Worth | Arlington, Irving, Dallas |
-| Houston, Austin, San Antonio | Every other Texas city (unchanged same-state behavior; now includes all five new cities) |
+| Dallas | Arlington, Irving, Plano, Frisco, McKinney, Garland, Grand Prairie, Mesquite, Carrollton, Richardson, Denton, Lewisville, Allen, Flower Mound, Mansfield, Fort Worth |
+| Fort Worth | Arlington, Irving, Mansfield, Dallas |
+| Denton | Lewisville, Frisco, Carrollton, Dallas |
+| Lewisville | Denton, Carrollton, Frisco, Dallas |
+| Allen | Plano, McKinney, Frisco, Dallas |
+| Flower Mound | Lewisville, Carrollton, Denton, Dallas |
+| Mansfield | Arlington, Grand Prairie, Dallas, Fort Worth |
+| Houston, Austin, San Antonio | Every other Texas city (unchanged same-state behavior; includes Batch 4 cities) |
 
 Featured equipment links:
 
@@ -55,6 +66,11 @@ Featured equipment links:
 | Mesquite | excavator, compactor, telehandler, trencher, boom-lift, mini-excavator |
 | Carrollton | telehandler, scissor-lift, boom-lift, mini-excavator, skid-steer, generator |
 | Richardson | scissor-lift, boom-lift, forklift, generator, mini-excavator, concrete-equipment |
+| Denton | boom-lift, scissor-lift, telehandler, excavator, mini-excavator, skid-steer |
+| Lewisville | telehandler, scissor-lift, boom-lift, mini-excavator, excavator, compactor |
+| Allen | excavator, skid-steer, mini-excavator, compactor, telehandler, boom-lift |
+| Flower Mound | boom-lift, telehandler, forklift, excavator, mini-excavator, skid-steer |
+| Mansfield | excavator, compactor, telehandler, boom-lift, wheel-loader, skid-steer |
 
 Guides: every Batch 1 and Batch 2 city page carries `skid-steer-vs-mini-excavator` and
 `what-size-excavator-do-i-need`. Batch 3 / Resource Run 2 additions (2026-10-08):
@@ -80,6 +96,8 @@ Guide links:
 | What Size Excavator | Equipment cards: excavator, mini-excavator, trencher. Inline: trencher, compactor; Frisco, Plano, McKinney, Arlington, Irving. Related guides: skid steer vs mini excavator, site preparation (added 2026-10-08) |
 | How to Choose a Boom Lift | Equipment cards: boom-lift, scissor-lift, telehandler. Inline: telehandler, boom-lift, scissor-lift; Grand Prairie, Richardson, Garland, Arlington, Carrollton, Irving. Related guide: site preparation |
 | Site Preparation Equipment | Equipment cards: skid-steer, wheel-loader, excavator, compactor, trencher. Inline: skid-steer, wheel-loader, excavator, compactor, trencher, mini-excavator; excavator size and skid steer guides; Frisco, Grand Prairie, McKinney, Mesquite, Garland. Related guides: excavator size, skid steer vs mini excavator |
+| Equipment Rental Checklist | Equipment cards: excavator, telehandler, boom-lift, skid-steer. Inline: skid/mini, excavator size, boom lift, site prep, short-term; Frisco, Allen, Denton, Flower Mound. Related: short-term, site prep, boom lift |
+| Short-Term vs Long-Term | Equipment cards: generator, forklift, boom-lift, excavator. Inline: checklist, site prep, boom lift; Flower Mound, Denton, Mansfield, Allen, Frisco. Related: checklist, site prep, boom lift |
 
 Reciprocal guide blocks on equipment pages: excavator-rental (both original guides + site preparation),
 mini-excavator-rental (both original guides), skid-steer-rental (skid steer vs mini excavator + site preparation),
@@ -247,6 +265,47 @@ so Richardson took its slot.
 - Wacker Neuson WP1550A plate (198.4 lb; 19.7 x 22.9 in plate; 3,372 lbf; 9,365 sq ft/h; designed for tight corners and confined areas): https://cdn.mediapool.wackerneusongroup.com/asset/491085414967/document_rfl1tjoc6h2in3n9glg6hf8g33
 - Reused: Deere 317 P and Kubota SVL75-3 (Resource Run).
 
+
+### Batch 4 city selection
+
+Next uncovered DFW cities by 2020 Census after Batch 3: Denton 139,869 (retry); Lewisville 111,822; Allen 104,627; Flower Mound 75,956; Mansfield 72,602 (Census QuickFacts / state rankings).
+
+### Denton
+
+- Denton 2040 Comprehensive Plan (approved March 22, 2022): https://www.cityofdenton.com/772/Denton-2040-Comprehensive-Plan
+- Noise Ordinance Special Permit / Code sec. 17-20(c)(3)(f) construction hours: https://www.cityofdenton.com/1271/Noise-Ordinance-Special-Permit
+- Right-of-Way Permits (e-TRAKiT, 10 business day review, 48 h neighbor/inspector notice): https://www.cityofdenton.com/937/Right-of-Way-Permits
+- Development Handbook (May 2026): https://www.cityofdenton.com/DocumentCenter/View/13997/Development-Handbook-PDF
+- Design Downtown Denton Final Report: https://www.cityofdenton.com/DocumentCenter/View/10959/Design-Downtown-Denton-Final-Report?bidId=
+
+### Lewisville
+
+- Long Range Plans (Old Town, I-35E, Northern/Southern Gateway): https://www.cityoflewisville.com/city-hall/city-departments/planning/long-range-plans
+- Old Town Development Ordinance / Design Review: https://www.ecodevlewisville.com/old-town/development
+- How to Apply for Right-of-Way Permit (MyGovernmentOnline; 30-day completeness; 180-day missing-info window): https://www.cityoflewisville.com/city-hall/city-departments/engineering/how-to-apply-for-right-of-way-permit
+
+### Allen
+
+- Allen 2045 Comprehensive Plan (adopted April 29, 2025): https://www.cityofallen.org/departments/community_development/planning_and_development/allen_2045_comprehensive_plan.php
+- Right-of-Way Management (GIS map, 10 business days, Locates@allentx.gov, 811): https://www.cityofallen.org/departments/engineering_and_traffic/right_of_way_management.php
+
+### Flower Mound
+
+- Building Inspections FAQ (construction hours 7 a.m.–7 p.m. M–F, 9 a.m.–5 p.m. weekends; zero tolerance): https://www.flower-mound.com/167/FAQs
+- Utility Line Locates (811 + Town easement/ROW permit): https://www.flower-mound.com/2446/RowUtility-Locates
+- Lakeside Business District area plan: https://www.flowermound.gov/DocumentCenter/View/8311/20-Area-Plans?bidId=
+
+### Mansfield
+
+- 2012 Land Use Plan (location, US 287/SH 360, industrial south of downtown): https://www.mansfieldtexas.gov/DocumentCenter/View/766/Comprehensive-Land-Use-Plan-PDF
+- Engineering Services (ROW, grading/fill, floodplain permits): https://www.mansfieldtexas.gov/364/Engineering-Services
+- Electric and Street Light Design Guidelines 2021 (non-emergency ROW permit at no cost; 95% Standard Proctor): https://www.mansfieldtexas.gov/DocumentCenter/View/9388/Electric-Design-Install-Guidelines---2021-PDF?bidId=
+
+### Resource Run 3
+
+- Reused: Utilities Code 251, Texas811, OSHA 1926.453/602/trenching, Texas High Voltage ch. 752, NWS DFW, USDA Houston Black, TCEQ CGP, plus Batch 4 city sources above.
+- No manufacturer price content; no rate tables (standing no-prices rule).
+
 ## Open Notes
 
 - Plano soils: no city source confirms Plano sits on Blackland Prairie soils, so the page uses USDA's regional
@@ -262,8 +321,8 @@ so Richardson took its slot.
   returned 404.
 - NIOSH's skid-steer Alert (Pub. 2011-128) couldn't be fetched (403), so skid steer safety cites OSHA 1926.600/602.
 - The "midi" class has no formal definition; the guide says so and gives ranges only from its cited examples.
-- Batch 3 (2026-10-08): Denton, the next-largest uncovered DFW city, was skipped because cityofdenton.com returned a
-  Cloudflare 403 to every automated fetch (box, Mac and fetch tool), so its rules couldn't be verified. Revisit later.
+- Denton shipped in Batch 4 (2026-10-15) after WebFetch could read cityofdenton.com (Mac curl still sees Cloudflare).
+- Batch 4 / Resource Run 3 heroes deferred: GenerateImage not available to Grok Bot executor; Pollinations outputs failed QA.
 - Garland's ROW directives are dated rev. 01/30/2006 and its checklist gives different ROW working hours (7–6 vs 8–6), so
   the page states neither ROW work-hours figure. The 7 a.m.–8 p.m. figure is from Ordinance 7079 (work next to homes).
 - Mesquite's ROW ordinance dates from 2001; its noise page garbles the weekend line, so the page cites only the weekday

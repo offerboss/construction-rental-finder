@@ -1,11 +1,16 @@
 import type { CategorySlug } from "./categories";
 import {
+  allen,
   arlington,
   carrollton,
+  denton,
+  flowerMound,
   frisco,
   garland,
   grandPrairie,
   irving,
+  lewisville,
+  mansfield,
   mckinney,
   mesquite,
   plano,
@@ -172,11 +177,11 @@ export const states: State[] = [
     seasonTip:
       "Rain and summer heat can shift schedules, so it helps to confirm flexible delivery and pickup windows.",
     cities: cities("texas", [
-      { name: "Dallas", slug: "dallas", region: "the Dallas–Fort Worth area", shortDescription: "Dallas is a major North Texas city at the heart of the Dallas–Fort Worth metroplex.", nearbyCities: ["arlington", "irving", "plano", "frisco", "mckinney", "garland", "grand-prairie", "mesquite", "carrollton", "richardson", "fort-worth"] },
+      { name: "Dallas", slug: "dallas", region: "the Dallas–Fort Worth area", shortDescription: "Dallas is a major North Texas city at the heart of the Dallas–Fort Worth metroplex.", nearbyCities: ["arlington", "irving", "plano", "frisco", "mckinney", "garland", "grand-prairie", "mesquite", "carrollton", "richardson", "denton", "lewisville", "allen", "flower-mound", "mansfield", "fort-worth"] },
       { name: "Houston", slug: "houston", region: "the Greater Houston area", shortDescription: "Houston is the largest city in Texas, near the Gulf Coast." },
       { name: "Austin", slug: "austin", region: "Central Texas", shortDescription: "Austin is the Texas state capital, in the heart of Central Texas." },
       { name: "San Antonio", slug: "san-antonio", region: "the San Antonio area", shortDescription: "San Antonio is one of the largest cities in Texas, in South-Central Texas." },
-      { name: "Fort Worth", slug: "fort-worth", region: "the Dallas–Fort Worth area", shortDescription: "Fort Worth anchors the western side of the Dallas–Fort Worth metroplex.", nearbyCities: ["arlington", "irving", "dallas"] },
+      { name: "Fort Worth", slug: "fort-worth", region: "the Dallas–Fort Worth area", shortDescription: "Fort Worth anchors the western side of the Dallas–Fort Worth metroplex.", nearbyCities: ["arlington", "irving", "mansfield", "dallas"] },
       arlington,
       irving,
       plano,
@@ -187,6 +192,11 @@ export const states: State[] = [
       mesquite,
       carrollton,
       richardson,
+      denton,
+      lewisville,
+      allen,
+      flowerMound,
+      mansfield,
     ]),
     faqs: [
       { question: "What construction equipment is commonly rented in Texas?", answer: "Excavators, skid steers, telehandlers, aerial lifts and forklifts are common across residential, commercial and industrial projects. Compaction equipment and generators are frequent choices for site work." },

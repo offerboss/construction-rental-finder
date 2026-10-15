@@ -1,5 +1,5 @@
 import type { CategorySlug } from "./categories";
-import { boomLiftGuide, excavatorSizeGuide, sitePrepGuide, skidSteerVsMiniExcavator } from "./guide-content";
+import { boomLiftGuide, excavatorSizeGuide, rentalChecklistGuide, shortVsLongGuide, sitePrepGuide, skidSteerVsMiniExcavator } from "./guide-content";
 import type { SourceLink } from "./locations";
 import type { Faq } from "./seo";
 
@@ -34,7 +34,7 @@ export type Guide = {
   /** Card text on /resources and in related-guide blocks */
   summary: string;
   intro: string[];
-  heroImage: { src: string; alt: string };
+  heroImage?: { src: string; alt: string };
   /** ISO dates for Article structured data */
   datePublished: string;
   dateModified: string;
@@ -48,7 +48,7 @@ export type Guide = {
 };
 
 /** Published guides, each with a live /resources/<slug> route and a sitemap entry. */
-export const guides: Guide[] = [skidSteerVsMiniExcavator, excavatorSizeGuide, boomLiftGuide, sitePrepGuide];
+export const guides: Guide[] = [skidSteerVsMiniExcavator, excavatorSizeGuide, boomLiftGuide, sitePrepGuide, rentalChecklistGuide, shortVsLongGuide];
 
 export function getGuide(slug: string) {
   return guides.find((guide) => guide.slug === slug);
@@ -85,17 +85,6 @@ export type ResourceTopic = {
 // CRF doesn't publish prices, and sizing is covered by /resources/what-size-excavator-do-i-need.
 // "How to Choose the Right Boom Lift" and "Renting Equipment for Site Preparation" shipped on
 // 2026-10-08 as /resources/how-to-choose-a-boom-lift and /resources/site-preparation-equipment.
-export const resourceTopics: ResourceTopic[] = [
-  {
-    title: "Construction Equipment Rental Checklist",
-    slug: "equipment-rental-checklist",
-    description: "Questions to ask and details to confirm before, during and after an equipment rental.",
-    related: ["excavator-rental", "telehandler-rental"],
-  },
-  {
-    title: "Short-Term vs Long-Term Equipment Rentals",
-    slug: "short-term-vs-long-term-rentals",
-    description: "How daily, weekly and monthly rentals differ, and how to plan rental length around your schedule.",
-    related: ["generator-rental", "forklift-rental"],
-  },
-];
+// Both remaining Coming Soon topics shipped 2026-10-15 as /resources/equipment-rental-checklist
+// and /resources/short-term-vs-long-term-rentals.
+export const resourceTopics: ResourceTopic[] = [];

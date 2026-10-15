@@ -27,7 +27,9 @@ export async function generateMetadata({ params }: PageProps<"/resources/[slug]"
 
   const path = `/resources/${guide.slug}`;
   const socialTitle = `${guide.metaTitle} | ${siteConfig.name}`;
-  const image = { url: guide.heroImage.src, alt: guide.heroImage.alt };
+  const image = guide.heroImage
+    ? { url: guide.heroImage.src, alt: guide.heroImage.alt }
+    : undefined;
   return {
     title: guide.metaTitle,
     description: guide.metaDescription,
@@ -40,13 +42,13 @@ export async function generateMetadata({ params }: PageProps<"/resources/[slug]"
       siteName: siteConfig.name,
       publishedTime: guide.datePublished,
       modifiedTime: guide.dateModified,
-      images: [image],
+      ...(image ? { images: [image] } : {}),
     },
     twitter: {
-      card: "summary_large_image",
+      card: image ? "summary_large_image" : "summary",
       title: socialTitle,
       description: guide.metaDescription,
-      images: [image],
+      ...(image ? { images: [image] } : {}),
     },
   };
 }
@@ -191,7 +193,7 @@ export default async function GuidePage({ params }: PageProps<"/resources/[slug]
           headline: guide.title,
           description: guide.metaDescription,
           path,
-          image: guide.heroImage.src,
+          image: guide.heroImage?.src,
           datePublished: guide.datePublished,
           dateModified: guide.dateModified,
         })}
