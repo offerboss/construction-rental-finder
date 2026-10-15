@@ -812,6 +812,10 @@ export const rentalChecklistGuide: Guide = {
     "A construction equipment rental goes smoothly when the site, the machine and the paperwork line up before delivery. Missed gate measurements, unmarked utilities and unclear operator requirements cause more delays than the wrong attachment.",
     "This checklist walks through what to confirm before you book, on delivery day and at return. It cites OSHA rules and Texas locate law where they apply, and it links to related equipment and city pages. It does not include prices.",
   ],
+  heroImage: {
+    src: "/images/resources/equipment-rental-checklist.webp",
+    alt: "Worker in hi-vis with a clipboard inspecting a delivered track loader on a trailer next to a scissor lift",
+  },
   datePublished: "2026-10-15",
   dateModified: "2026-10-15",
   keyTakeaways: [
@@ -938,6 +942,10 @@ export const shortVsLongGuide: Guide = {
     "Rental length is a scheduling decision, not just a line on a quote. A machine that works six hours a day for three days is a different rental from one that sits as backup power for a month, even if both come from the same yard.",
     "This guide explains how to plan daily, weekly and monthly rentals around utilization, delivery, operators and site rules. It does not publish prices or rate ranges. Ask providers for current terms for your dates and locations.",
   ],
+  heroImage: {
+    src: "/images/resources/short-term-vs-long-term-rentals.webp",
+    alt: "Telehandler, boom lift and mini excavator at a steel-frame commercial building site at golden hour",
+  },
   datePublished: "2026-10-15",
   dateModified: "2026-10-15",
   keyTakeaways: [

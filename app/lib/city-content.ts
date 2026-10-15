@@ -892,6 +892,10 @@ export const denton: CityEntry = {
     { question: "When can I start grading a Denton site with public improvements?", answer: "After Civil Engineering Plans are approved, pre-construction steps are complete and the City issues Notice to Proceed. Public improvements generally have to be accepted before private building work proceeds. Confirm the sequence with your Development Project Facilitator." },
   ],
   nearbyCities: ["lewisville", "frisco", "carrollton", "dallas"],
+  heroImage: {
+    src: "/images/locations/denton-tx-construction-equipment-rental.webp",
+    alt: "Compact track loader and scissor lift on a gravel lot beside an old red-brick building under oak trees in Denton, Texas",
+  },
   guides: [boomLiftGuide, compactGuide, excavatorSizeGuide, rentalChecklistGuideLink],
 };
 
@@ -959,6 +963,10 @@ export const lewisville: CityEntry = {
     { question: "Do I need 811 before digging in Lewisville?", answer: "Yes. Texas law requires one-call notice at least 48 hours before excavating, excluding weekends and holidays. Private service lines on older lots are not marked by franchise locates, so plan to find them with plans or potholing." },
   ],
   nearbyCities: ["denton", "carrollton", "frisco", "dallas"],
+  heroImage: {
+    src: "/images/locations/lewisville-tx-construction-equipment-rental.webp",
+    alt: "Excavator loading a dump truck next to a wheel loader on a red clay pad by a frontage road in Lewisville, Texas",
+  },
   guides: [boomLiftGuide, sitePrepGuide, compactGuide, rentalChecklistGuideLink],
 };
 
@@ -1026,6 +1034,10 @@ export const allen: CityEntry = {
     { question: "How long does an Allen ROW permit take?", answer: "Allen asks applicants to allow about 10 business days after reviewing the GIS utility map. Confirm current intake steps on the City's Right-of-Way Management page, which notes the FY2027 online application path." },
   ],
   nearbyCities: ["plano", "mckinney", "frisco", "dallas"],
+  heroImage: {
+    src: "/images/locations/allen-tx-construction-equipment-rental.webp",
+    alt: "Mini excavator trenching along a new curb with utility flags, a skid steer and new brick homes in Allen, Texas",
+  },
   guides: [sitePrepGuide, excavatorSizeGuide, compactGuide, shortVsLongGuideLink],
 };
 
@@ -1093,6 +1105,10 @@ export const flowerMound: CityEntry = {
     { question: "Can I start early to beat the summer heat in Flower Mound?", answer: "Weekday work may start at 7 a.m., which is the Town's limit. Earlier starts are not allowed under the published construction hours, even in summer heat." },
   ],
   nearbyCities: ["lewisville", "carrollton", "denton", "dallas"],
+  heroImage: {
+    src: "/images/locations/flower-mound-tx-construction-equipment-rental.webp",
+    alt: "Telehandler lifting lumber at a wood-frame house with tree-protection fencing around oaks in Flower Mound, Texas",
+  },
   guides: [boomLiftGuide, sitePrepGuide, shortVsLongGuideLink],
 };
 
@@ -1160,6 +1176,10 @@ export const mansfield: CityEntry = {
     { question: "Where is industrial construction concentrated in Mansfield?", answer: "The 2012 Land Use Plan places most industrial land south of downtown along S. Main Street and notes remaining industrial acreage whose readiness depends on water and sewer infrastructure. Confirm current zoning and utilities with the City before planning heavy equipment." },
   ],
   nearbyCities: ["arlington", "grand-prairie", "dallas", "fort-worth"],
+  heroImage: {
+    src: "/images/locations/mansfield-tx-construction-equipment-rental.webp",
+    alt: "Motor grader and smooth-drum roller working a large graded clay site with two workers in hi-vis in Mansfield, Texas",
+  },
   guides: [sitePrepGuide, excavatorSizeGuide, rentalChecklistGuideLink],
 };
 
