@@ -121,3 +121,17 @@ template unchanged.
 - Guide word counts run slightly over target (report only).
 - Denton was built 2026-10-15 after cityofdenton.com became readable via WebFetch (Mac curl still hits Cloudflare). Heroes for Batch 4 and Resource Run 3 are deferred to Friday QA / GenerateImage.
 - The GitHub connection on the old duplicate Vercel project `construction-rental-finder` is being handled separately. Don't touch Vercel from QA.
+
+## Friday QA — 2026-10-16
+
+**Checked, no content change**
+
+- Garland and Mesquite discrepancies re-checked. Garland: the ROW directives (rev. 2006) and the utility checklist still give different ROW work hours, so the page keeps stating neither. The only hours figure it gives is 7 a.m.–8 p.m. from Ordinance 7079 (work next to homes). Mesquite: the City's Noise Ordinance page (fetched 2026-10-16) still reads "8:00 P.M. until 9:00 A.M. Saturday–Sunday & Holidays", which is garbled, so the page keeps only the weekday 7 a.m.–8 p.m. figure and says weekend and holiday hours differ. Both are handled; the open item is closed unless the City corrects its page.
+- Lewisville noise hours: the live page states no construction hours. Sources disagree. The municode copy of Code § 9-5 (Ord. 3741-02-2010, as of 2016) gives 6 a.m.–8:30 p.m. weekdays June–September, 7 a.m.–8:30 p.m. weekdays October–May, 8 a.m.–8:30 p.m. Saturday and 10 a.m.–8:30 p.m. Sunday. A 2026 third-party summary says 7 a.m.–8 p.m. Mon–Sat under "Ch. 18". The current official code couldn't be loaded (municode is JavaScript-only), so no hours were added. Add them only after reading current § 9-5 on library.municode.com/tx/lewisville.
+- Batch 4 and Resource Run 3 heroes (24d3020) are all 1080x720 WebP files between 108 and 218 KB.
+- Crawl of the live sitemap (60 URLs): all 200, titles, descriptions and canonicals present, no duplicate titles, no broken internal links. 41 titles run over 65 characters because of the " | Construction Rental Finder" suffix (template; not changed).
+
+**Open / not fixed**
+
+- Guide word counts still run slightly over target (report only).
+- Boom lift guide hero decal is still open (minor).
