@@ -1067,6 +1067,10 @@ export const telehandlerVsForkliftGuide: Guide = {
     "Telehandlers and forklifts both lift and carry palletized loads, and both show up on the same commercial jobs. They solve different problems. A forklift lifts straight up on a mast and is happiest on firm, level, paved ground. A telehandler extends a boom up and out, so it can set a load over an obstacle or onto an upper floor, and it is built for unfinished ground.",
     "This guide compares the two by the questions that decide a rental: where the load has to go, what the ground is like, which attachments the job needs, and who will operate. It does not publish prices. Ask providers for current terms for your dates and location.",
   ],
+  heroImage: {
+    src: "/images/resources/telehandler-vs-forklift.webp",
+    alt: "Telehandler and forklift side by side at a slab edge in a steel-framed building",
+  },
   datePublished: "2026-10-22",
   dateModified: "2026-10-22",
   keyTakeaways: [
@@ -1203,6 +1207,10 @@ export const utilityLocatesGuide: Guide = {
     "Renting an excavator, mini excavator or trencher starts a clock. If the locate marks aren't on the ground when the machine arrives, it sits idle, or worse, someone digs anyway. Texas law sets the minimum notice, but many North Texas cities add their own locate step for City-owned water, sewer and signal lines.",
     "This guide walks through the statewide rule, the city layer, and how to schedule both around a rental. It does not give legal advice; confirm requirements with Texas811 and the city for your site.",
   ],
+  heroImage: {
+    src: "/images/resources/utility-locates-before-digging.webp",
+    alt: "Mini excavator on a lawn with colored utility locate paint lines and flags, houses behind",
+  },
   datePublished: "2026-10-22",
   dateModified: "2026-10-22",
   keyTakeaways: [

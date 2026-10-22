@@ -1279,6 +1279,10 @@ export const northRichlandHills: CityEntry = {
     { question: "What equipment suits work near the TEXRail station districts?", answer: "Compact machines for utilities and flatwork, plus telehandlers and boom lifts for multi-story mixed-use buildings. Share lot size, staging space and street access with the provider, since both station areas are planned around pedestrians." },
   ],
   nearbyCities: ["fort-worth", "euless", "arlington", "dallas"],
+  heroImage: {
+    src: "/images/locations/north-richland-hills-tx-construction-equipment-rental.webp",
+    alt: "Yellow telehandler lifting a lumber pallet onto a 3-story wood-framed building, mini excavator by a new sidewalk",
+  },
   guides: [utilityLocatesGuideLink, compactGuide, telehandlerForkliftGuideLink],
 };
 
@@ -1346,6 +1350,10 @@ export const rowlett: CityEntry = {
     { question: "What equipment fits Rowlett's form-based districts?", answer: "Downtown and gateway districts lean toward telehandlers, boom lifts and compact utility equipment for mixed-use buildings. Larger North Shore and commerce district sites add excavators, wheel loaders and rollers." },
   ],
   nearbyCities: ["garland", "wylie", "dallas"],
+  heroImage: {
+    src: "/images/locations/rowlett-tx-construction-equipment-rental.webp",
+    alt: "Excavator and smooth-drum roller on a graded clay pad with silt fence, lake and tree line behind, overcast sky",
+  },
   guides: [sitePrepGuide, utilityLocatesGuideLink, excavatorSizeGuide],
 };
 
@@ -1413,6 +1421,10 @@ export const euless: CityEntry = {
     { question: "What equipment suits commercial work near DFW Airport?", answer: "Telehandlers, boom lifts and forklifts for shell and fit-out work, plus scissor lifts inside. Share building height, lot layout and airport proximity with the provider." },
   ],
   nearbyCities: ["irving", "arlington", "north-richland-hills", "dallas"],
+  heroImage: {
+    src: "/images/locations/euless-tx-construction-equipment-rental.webp",
+    alt: "Telehandler and forklift staging materials at a steel building frame on a paved lot, jet overhead",
+  },
   guides: [telehandlerForkliftGuideLink, boomLiftGuide, utilityLocatesGuideLink],
 };
 
@@ -1480,6 +1492,10 @@ export const wylie: CityEntry = {
     { question: "What equipment suits a new Wylie subdivision?", answer: "Excavators, trenchers, rollers and compact track loaders for early site work, then telehandlers for framing and roofing. Share pad size, soil report and delivery windows with the provider." },
   ],
   nearbyCities: ["allen", "rowlett", "garland", "dallas"],
+  heroImage: {
+    src: "/images/locations/wylie-tx-construction-equipment-rental.webp",
+    alt: "Trencher and compact track loader beside a fresh utility trench in a subdivision with framed houses at golden hour",
+  },
   guides: [sitePrepGuide, utilityLocatesGuideLink, shortVsLongGuideLink],
 };
 
@@ -1547,5 +1563,9 @@ export const desoto: CityEntry = {
     { question: "How much notice does DeSoto need for City line locates?", answer: "The ROW application asks for 48 hours' notice for City water, sewer and sign or signal locates, with all locates complete before the project starts. You still need to contact the one-call system separately." },
   ],
   nearbyCities: ["grand-prairie", "mansfield", "dallas"],
+  heroImage: {
+    src: "/images/locations/desoto-tx-construction-equipment-rental.webp",
+    alt: "Excavator loading a dump truck and wheel loader on a graded pad, concrete tilt-wall panels behind",
+  },
   guides: [sitePrepGuide, utilityLocatesGuideLink, telehandlerForkliftGuideLink],
 };
