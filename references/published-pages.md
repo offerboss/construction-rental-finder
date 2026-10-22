@@ -331,3 +331,44 @@ Next uncovered DFW cities by 2020 Census after Batch 3: Denton 139,869 (retry); 
 - Batch 3 and Resource Run 2 heroes were supplied 2026-10-08. The boom lift guide hero has a tiny unreadable decal on the
   boom chassis (not legible at display size); replace it if a cleaner version is made.
 - The resources page "Coming soon" grid now shows two cards in a 4-column layout; no template change was made.
+
+
+## Batch 5 + Resource Run 4 (2026-10-22)
+
+Cities (next uncovered DFW by 2020 Census, QuickFacts): North Richland Hills 69,917; Rowlett 62,535; Euless 61,032; Wylie 57,526; DeSoto 56,145.
+Guides: telehandler-vs-forklift, utility-locates-before-digging. Heroes deferred (no image generation in executor); pages render navy headers.
+Sitemap: 67 URLs. Texas cities: 25 (20 rich DFW). Guides: 8.
+
+Nearby additions (reciprocal): NRH ↔ Fort Worth, Euless, Arlington, Dallas; Euless ↔ Irving, Arlington, NRH, Dallas; Rowlett ↔ Garland, Wylie, Dallas; Wylie ↔ Allen, Rowlett, Garland, Dallas; DeSoto ↔ Grand Prairie, Mansfield, Dallas.
+New guide links on existing pages: Arlington and Frisco (utility locates); Irving and Grand Prairie (telehandler vs forklift).
+
+### Sources (fetched 2026-10-22)
+
+- NRH Permit Information (ROW permit for any ROW construction/maintenance/excavation; 2–3 business day review; valid 30 days; 811 does not mark City water/sewer; ROW permit = City locate request; paving permits; contractor registration): https://www.nrhtx.com/1310/Permit-Information
+- NRH Authorized Construction Hours, Code 98-61(b) (no outdoor construction 7 p.m.–7 a.m. CST, 8 p.m.–6 a.m. DST, Sundays, six holidays): https://www.nrhtx.com/618/Authorized-Construction-Hours
+- NRH Transportation Plan ch. B (HomeTown, Smithfield TOD, Iron Horse TOD; network near build-out): https://www.nrhtx.com/DocumentCenter/View/9065/03---Chapter-B_Current-Context
+- Handbook of Texas: North Richland Hills, Rowlett, Euless, Wylie (Collin County), DeSoto entries (location and growth history).
+- Rowlett Realize Rowlett 2020 (plan adopted 9/20/2011; Form Based Code 2012; seven form-based districts): https://www.rowletttx.gov/1090/Realize-Rowlett-2020
+- Rowlett Development Engineering (ROW permit, grading permit for moving dirt, contractor registration, floodplain and stormwater): https://www.rowletttx.gov/1318/Development-Engineering
+- Euless Code 46-172(9) (building work outside 7 a.m.–6 p.m. weekdays is a nuisance absent Council permit): https://ecode360.com/39084057
+- Euless Building Construction and Permitting (permit list; no attic/confined-space inspections after noon May–Sept): https://www.eulesstx.gov/departments/planning-and-economic-development/building-construction-and-permitting
+- Euless Engineering (31 control monuments, tie to two; UDC design criteria; water/sewer locator maps): https://www.eulesstx.gov/departments/public-works-and-engineering/engineering
+- Wylie Construction Hours (7 a.m.–9 p.m. Mon–Sat; no Sundays/11 federal holidays; Ord. 2024-31; deliveries limited; stop work orders): https://www.wylietexas.gov/departments/building_inspection/construction_hours.php
+- Wylie Engineering Applications (Saturday work needs permit + inspector; email preceding Thursday morning; fee by noon Thursday): https://www.wylietexas.gov/departments/engineering/applications_fees_reports.php
+- Wylie Right of Way and Engineering pages (CitizenServe; registration one year; ROW email discontinued).
+- DeSoto Building Inspections (hours M–F 7–6, Sat 8–6, Sun 9–5 no heavy equipment without written consent): https://www.desototexas.gov/462/Building-Inspections
+- DeSoto Grading Permit (plans, erosion control, construction entrance, TCP, tree survey; Ch. 8 sec. 8.402 hours): https://www.desototexas.gov/DocumentCenter/View/1138/Grading-Permit-PDF
+- DeSoto ROW Permit Application and Conditions (48 h City locates; sealed TCP; mechanical compaction and tests; daily sweeping; overnight fencing; 24 h resident notice): https://www.desototexas.gov/DocumentCenter/View/1125/ROW-Application-Form-PDF
+- DeSoto Comprehensive Plan page (adopted Feb. 2024): https://www.desototexas.gov/495/Comprehensive-Plan
+- OSHA 29 CFR 1910.178 (operator training (l), operations (m)–(o), stability appendix) and 1926.602(c)–(d).
+
+### Source conflicts (omitted from pages)
+
+- Rowlett construction hours: City FAQ says construction "may begin at 7:00am - 10:00pm daily"; MyGov ROW permit conditions require Saturday ROW work pre-approved by noon the preceding Thursday; Chapter 54 (municode) could not be loaded. Page states no hours.
+- DeSoto Sunday heavy-equipment approval: Building Inspections says written consent of the Building Official; FAQ says Building Inspections Department; Grading Permit says a separate permit from the City Manager or designee. Page says "written consent" without naming the approver.
+- DeSoto ROW minimum fee: application page says greater of 3.5% or $100; special conditions page says 3.5% or $50. Fees not stated.
+- Wylie grading permit details (municode sec. 42-92/42-95) not loadable directly; omitted.
+
+### Word counts (rendered <main>)
+
+NRH 1,201; Rowlett 977; Euless 1,015; Wylie 975; DeSoto 1,053 (four below the 1,200 target; not padded without sources). Telehandler vs forklift 2,021; utility locates 1,579.

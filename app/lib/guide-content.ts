@@ -37,6 +37,8 @@ const sources = {
   deere644p: { label: "John Deere 644 P wheel loader specs", url: "https://www.deere.ca/en/loaders/wheel-loaders/mid-size-wheel-loaders/644-p-wheel-loader/" },
   bomagBw211: { label: "BOMAG BW 211 D-5 SL single-drum roller", url: "https://www.bomag.com/ww-en/machinery/categories/single-drum-rollers-soil-compactors/single-drum-rollers/bw-211-d-5-sl-93504/" },
   wackerBs60: { label: "Wacker Neuson BS60-4As 11in rammer technical data (PDF)", url: "https://cdn.mediapool.wackerneusongroup.com/asset/491085414967/document_8e46uv6vi51l198o2t7evg8l7r" },
+  osha1910178: { label: "OSHA 29 CFR 1910.178, powered industrial trucks (operator training, operations and stability appendix)", url: "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-N/section-1910.178" },
+  osha602c: { label: "OSHA 29 CFR 1926.602(c), lifting and hauling equipment", url: "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-O/section-1926.602" },
   wackerWp1550: { label: "Wacker Neuson single-direction vibratory plates, WP1550A (PDF)", url: "https://cdn.mediapool.wackerneusongroup.com/asset/491085414967/document_rfl1tjoc6h2in3n9glg6hf8g33" },
 } satisfies Record<string, SourceLink>;
 
@@ -1052,3 +1054,266 @@ export const shortVsLongGuide: Guide = {
   relatedGuides: ["equipment-rental-checklist", "site-preparation-equipment", "how-to-choose-a-boom-lift"],
 };
 
+export const telehandlerVsForkliftGuide: Guide = {
+  slug: "telehandler-vs-forklift",
+  title: "Telehandler vs Forklift: Which Material Handler to Rent",
+  shortTitle: "Telehandler vs Forklift",
+  metaTitle: "Telehandler vs Forklift: Which to Rent",
+  metaDescription:
+    "Compare telehandlers and forklifts for construction: reach, ground conditions, attachments, load charts and OSHA operator training, without rate tables.",
+  summary:
+    "When a telehandler's reach and rough-terrain ability beat a forklift's simplicity on paved ground, and what OSHA expects of operators of either machine.",
+  intro: [
+    "Telehandlers and forklifts both lift and carry palletized loads, and both show up on the same commercial jobs. They solve different problems. A forklift lifts straight up on a mast and is happiest on firm, level, paved ground. A telehandler extends a boom up and out, so it can set a load over an obstacle or onto an upper floor, and it is built for unfinished ground.",
+    "This guide compares the two by the questions that decide a rental: where the load has to go, what the ground is like, which attachments the job needs, and who will operate. It does not publish prices. Ask providers for current terms for your dates and location.",
+  ],
+  datePublished: "2026-10-22",
+  dateModified: "2026-10-22",
+  keyTakeaways: [
+    "Choose a forklift when loads move on firm, level, paved surfaces and only need vertical lift: docks, slabs, warehouses and paved staging yards.",
+    "Choose a telehandler when loads have to go up and out, over a wall, onto a roof or an upper floor, or across rough and unfinished ground.",
+    "Read the load chart, not the headline capacity. A telehandler's capacity falls as the boom extends; a forklift's rating depends on the load center.",
+    "OSHA requires trained, evaluated and certified operators for powered industrial trucks in construction, with an evaluation at least every three years.",
+  ],
+  sections: [
+    {
+      id: "how-they-differ",
+      heading: "How the Two Machines Differ",
+      blocks: [
+        { type: "p", text: "A forklift carries the load on forks attached to a vertical mast at the front of the machine, with a counterweight at the back. It lifts straight up and drives with the load low. Most of its stability comes from the counterweight and the machine's three-point stability triangle." },
+        { type: "p", text: "A telehandler, or telescopic handler, mounts the forks or another attachment on the end of a telescoping boom. The boom can lift and reach forward, which lets the operator place a load beyond the front wheels: over a fence, onto a second-story deck, or across a trench. Larger units use stabilizers or frame leveling to stay stable at full reach." },
+        {
+          type: "columns",
+          columns: [
+            { title: "Forklift is best for", items: ["Unloading trucks on paved lots and docks", "Moving pallets on finished slabs and in warehouses", "Tight indoor aisles where a boom would not fit", "Repeated short cycles at low lift heights"] },
+            { title: "Telehandler is best for", items: ["Placing loads on roofs, upper floors and scaffold landings", "Reaching over walls, trenches or landscaping", "Rough, sloped or unpaved construction ground", "Jobs that need buckets, jibs or other boom attachments"] },
+          ],
+        },
+      ],
+      sources: [sources.osha1910178],
+    },
+    {
+      id: "where-the-load-goes",
+      heading: "Start With Where the Load Has to Go",
+      blocks: [
+        { type: "p", text: "Sketch the delivery point before you call a provider. If the load only needs to come off a truck and move across a slab, a forklift usually does the job with less machine. If it has to land on a roof, a balcony, or the far side of a wall or excavation, you need forward reach, which a forklift's mast cannot provide." },
+        { type: "list", items: [
+          "Height: the highest point a load must reach, plus clearance over parapets or guardrails.",
+          "Forward reach: horizontal distance from where the machine can safely stand to where the load lands.",
+          "Load: weight and dimensions of the heaviest pick, including pallets and packaging.",
+          "Path: the route from the delivery truck to the set point, including gates, grades and overhead lines.",
+        ] },
+        { type: "p", text: "Multi-story mixed-use projects around the TEXRail station districts in [North Richland Hills](/locations/texas/north-richland-hills) and in the form-based districts of [Rowlett](/locations/texas/rowlett) are typical telehandler jobs: materials have to go up, often over finished streetscape. Paved commercial and distribution sites in [DeSoto](/locations/texas/desoto) and [Euless](/locations/texas/euless) are more often forklift territory once slabs and lots are in." },
+      ],
+    },
+    {
+      id: "load-charts",
+      heading: "Load Charts and Load Centers",
+      blocks: [
+        { type: "p", text: "Every forklift must have its rated capacity clearly posted where the operator can see it, and that rating must not be exceeded. If the manufacturer offers removable counterweights, the alternate ratings must be shown too. Modifications that affect capacity need the manufacturer's written approval." },
+        { type: "p", text: "Forklift ratings are tied to a load center, the distance from the face of the forks to the load's center of gravity. OSHA's stability appendix explains that trucks rated at 30,000 pounds or less are normally rated at a 24-inch load center. A longer or off-center load moves its center of gravity forward and lowers the weight the truck can safely carry." },
+        { type: "p", text: "Telehandler capacity depends on boom angle and extension as well as load center, so the number in a brochure is only the starting point. Ask the provider for the load chart for the exact model and attachment, and check the pick at the reach you actually need." },
+        {
+          type: "table",
+          caption: "Questions to ask before you book",
+          columns: ["Question", "Why it matters"],
+          rows: [
+            ["What is the heaviest load, and how long is it?", "Long loads push the center of gravity out and cut rated capacity."],
+            ["How far forward and how high must it go?", "Telehandler capacity drops as the boom extends; a forklift cannot reach forward at all."],
+            ["Which attachment will be on the machine?", "Attachments change the rating; non-factory attachments must be marked with the combined weight."],
+            ["What surface will the machine work on?", "Soft, sloped or rutted ground calls for a rough-terrain machine and ground prep."],
+          ],
+          note: "Illustrative planning only. The manufacturer's load chart for the exact machine and attachment governs.",
+        },
+      ],
+      sources: [sources.osha602c, sources.osha1910178],
+    },
+    {
+      id: "ground-conditions",
+      heading: "Ground, Slopes and Weather",
+      blocks: [
+        { type: "p", text: "Ground conditions decide many of these rentals. Industrial forklifts are built for firm, level floors. Rough-terrain forklifts and telehandlers have larger tires and more clearance for construction sites, but every machine needs a surface that can carry it with the load raised." },
+        { type: "p", text: "OSHA's truck rules require loaded trucks to travel with the load upgrade on grades over 10 percent, with the load tilted back and raised only enough to clear the surface. No one may stand or pass under an elevated load. Operators should slow down for wet and slippery surfaces." },
+        { type: "p", text: "North Texas clay complicates this. USDA describes Houston Black, the Blackland Prairie's signature soil, as very high in shrink-swell, and NWS Fort Worth notes spring and fall are the region's wettest seasons. After rain, an unpaved staging area that carried a telehandler last week may not carry it today. Plan gravel, mats or a paved setup point." },
+      ],
+      sources: [sources.osha1910178, shared.usdaHoustonBlack, shared.nwsDfw],
+    },
+    {
+      id: "attachments",
+      heading: "Attachments and Lifting People",
+      blocks: [
+        { type: "p", text: "Forks handle most work for both machines. Telehandlers commonly take a wider range of boom attachments, such as buckets, truss booms or jibs, which is part of why they show up on framing and roofing jobs. Ask which attachments are approved for the model, and whether the provider supplies the matching load charts." },
+        { type: "p", text: "OSHA requires trucks with front-end attachments other than factory installed ones to be marked with the attachment and the approximate weight of the combination at maximum elevation. When a truck is used to lift personnel, OSHA requires a safety platform firmly secured to the carriage or forks, a way for the people on the platform to shut off power, and protection from falling objects where conditions call for it." },
+        { type: "p", text: "For regular work at height, an aerial lift is usually the better rental. See [how to choose a boom lift](/resources/how-to-choose-a-boom-lift)." },
+      ],
+      sources: [sources.osha1910178, sources.osha602c],
+    },
+    {
+      id: "operators",
+      heading: "Operator Training and Certification",
+      blocks: [
+        { type: "p", text: "OSHA's construction rule for powered industrial truck operator training (29 CFR 1926.602(d)) is identical to the general industry rule at 1910.178(l). Before anyone operates a truck outside of training, the employer must make sure they have completed training and an evaluation." },
+        { type: "list", items: [
+          "Training combines formal instruction, practical exercises and an evaluation of the operator's performance in the workplace.",
+          "Topics include the specific truck type, its capacity and stability, and workplace conditions such as surfaces, ramps, pedestrian traffic and ventilation.",
+          "Refresher training is required after unsafe operation, an accident or near miss, a poor evaluation, a change of truck type, or a change in workplace conditions.",
+          "Each operator's performance must be evaluated at least once every three years.",
+          "The employer must certify each operator's training and evaluation with names and dates.",
+        ] },
+        { type: "p", text: "Ask the provider for the operator's manual and any machine-specific familiarization before the first lift, especially when moving operators from a forklift to a telehandler. A change of truck type is one of the triggers for refresher training." },
+      ],
+      sources: [citySources.oshaMaterialHandling, sources.osha1910178],
+    },
+    {
+      id: "site-rules",
+      heading: "Site Rules That Affect Material Handling",
+      blocks: [
+        { type: "p", text: "Local rules decide when deliveries and lifts can happen. [Wylie](/locations/texas/wylie) prohibits deliveries outside its 7 a.m. to 9 p.m. Monday-through-Saturday construction hours. [DeSoto](/locations/texas/desoto) bars heavy equipment on Sundays without written consent. [North Richland Hills](/locations/texas/north-richland-hills) shifts its outdoor construction hours between standard and daylight saving time." },
+        { type: "p", text: "Near airports, tall booms can raise FAA notice questions. [Euless](/locations/texas/euless) sits on the southwest side of DFW Airport, where federal rules can require FAA notice for tall equipment, including temporary cranes, near runways. Overhead power lines matter on every site; Texas law restricts work near high-voltage lines." },
+        { type: "p", text: "Use the [equipment rental checklist](/resources/equipment-rental-checklist) to confirm access, delivery windows and operators before the machine arrives." },
+      ],
+      sources: [shared.faaPart77, shared.texasHighVoltage],
+    },
+  ],
+  faqs: [
+    { question: "Is a telehandler a forklift?", answer: "Both lift palletized loads on forks, but a telehandler uses a telescoping boom that reaches up and forward, while a forklift lifts straight up on a mast. Telehandlers suit rough ground and placing loads on roofs or upper floors; forklifts suit firm, level, paved surfaces." },
+    { question: "Do I need training to operate a rented telehandler or forklift?", answer: "Yes. OSHA requires powered industrial truck operators in construction to be trained, evaluated and certified by the employer, with a performance evaluation at least every three years and refresher training when the truck type changes." },
+    { question: "Why is the capacity lower than the brochure number?", answer: "Rated capacity depends on the load center and, for a telehandler, on boom angle and extension. Long or off-center loads and extended reach reduce the safe load. Check the load chart for the exact machine and attachment." },
+    { question: "Can I use a forklift or telehandler to lift workers?", answer: "Only with a safety platform firmly secured to the carriage or forks, a way for the people on the platform to shut off power, and falling-object protection where needed. For regular work at height, an aerial lift is usually the better choice." },
+  ],
+  relatedEquipment: [
+    { slug: "telehandler-rental", reason: "Reach up and out over obstacles and onto upper floors on rough ground." },
+    { slug: "forklift-rental", reason: "Vertical lifting and pallet moves on firm, level, paved surfaces." },
+    { slug: "boom-lift-rental", reason: "Better choice than a material handler when crews work at height." },
+    { slug: "scissor-lift-rental", reason: "Interior work at height on finished slabs." },
+  ],
+  relatedGuides: ["how-to-choose-a-boom-lift", "equipment-rental-checklist", "short-term-vs-long-term-rentals"],
+};
+
+export const utilityLocatesGuide: Guide = {
+  slug: "utility-locates-before-digging",
+  title: "Utility Locates Before Digging: Texas811, City Lines and Permits",
+  shortTitle: "Utility Locates Before Digging",
+  metaTitle: "Utility Locates Before Digging in Texas",
+  metaDescription:
+    "How to line up Texas811 notice, city water and sewer locates and right-of-way permits before you dig with rented excavators, trenchers or mini excavators.",
+  summary:
+    "What Texas law requires before excavation, why many DFW cities locate their own water and sewer lines separately, and how to fit both into a rental schedule.",
+  intro: [
+    "Renting an excavator, mini excavator or trencher starts a clock. If the locate marks aren't on the ground when the machine arrives, it sits idle, or worse, someone digs anyway. Texas law sets the minimum notice, but many North Texas cities add their own locate step for City-owned water, sewer and signal lines.",
+    "This guide walks through the statewide rule, the city layer, and how to schedule both around a rental. It does not give legal advice; confirm requirements with Texas811 and the city for your site.",
+  ],
+  datePublished: "2026-10-22",
+  dateModified: "2026-10-22",
+  keyTakeaways: [
+    "Texas Utilities Code sec. 251.151 requires notice through the one-call system no earlier than 14 days and no later than 48 hours before excavating, excluding weekends and legal holidays.",
+    "Many cities locate their own water and sewer lines separately; some state plainly that 811 does not mark them.",
+    "Work in the public right-of-way usually needs a city permit too, and some cities tie their locate request to that permit.",
+    "Schedule the excavator's delivery after the marks are confirmed, and keep OSHA trench rules in the plan once digging starts.",
+  ],
+  sections: [
+    {
+      id: "state-rule",
+      heading: "The Texas Rule: Notice Before You Excavate",
+      blocks: [
+        { type: "p", text: "Texas Utilities Code chapter 251 requires an excavator to notify the one-call notification system before excavating. Under section 251.151, notice must be given no earlier than the 14th day and no later than 48 hours before the excavation starts, not counting Saturdays, Sundays and legal holidays." },
+        { type: "p", text: "Texas811 is the one-call center most contractors use. It accepts requests by calling 811 or online, and it asks for at least two business days before digging. The ticket goes to member utility operators, who mark their lines." },
+        { type: "list", items: [
+          "Count only business days: a Friday afternoon request does not clear a Monday morning dig.",
+          "Describe the dig area precisely so operators mark the right place.",
+          "Keep the ticket number on site; some city permits ask for it.",
+          "Wait for every notified operator to respond before digging.",
+        ] },
+      ],
+      sources: [shared.utilitiesCode251, shared.texas811],
+    },
+    {
+      id: "city-lines",
+      heading: "City-Owned Lines Often Need a Separate Request",
+      blocks: [
+        { type: "p", text: "The statewide system does not always reach City-owned infrastructure. Several DFW cities spell out a separate step:" },
+        {
+          type: "table",
+          caption: "How some DFW cities handle their own locates",
+          columns: ["City", "What the City says"],
+          rows: [
+            ["[North Richland Hills](/locations/texas/north-richland-hills)", "811 does not mark City-owned water or sewer lines; an approved ROW permit serves as the request for City locates, and excavation begins only after 811 clears the site and the permit is issued."],
+            ["[DeSoto](/locations/texas/desoto)", "The ROW application requires 48 hours' notice for City water, sewer and sign or signal locates, all complete before the project starts, and the permit does not replace contacting the one-call system."],
+            ["[Arlington](/locations/texas/arlington)", "Separate City locates are requested at least two working days ahead; private services and storm pipes are not marked."],
+            ["[Frisco](/locations/texas/frisco)", "City lines are not part of 811; City locates are needed for digging deeper than 18 inches, require an active ROW, TxDOT or irrigation permit, and are not done on private property."],
+          ],
+          note: "Summaries of each City's published material as checked for this guide. Confirm current procedures with the City before digging.",
+        },
+        { type: "p", text: "Private lines are another gap. Arlington's manual notes that private services are not marked by the City. Service lines on private property, irrigation, site lighting and private storm drains may need a private locator." },
+      ],
+      sources: [citySources.nrhPermits, citySources.desotoRowApplication, shared.arlingtonRow, shared.friscoLineLocates],
+    },
+    {
+      id: "row-permits",
+      heading: "Right-of-Way Permits Come First",
+      blocks: [
+        { type: "p", text: "Digging in a street, alley, sidewalk or utility easement usually needs a city right-of-way permit in addition to locates. The details vary by city:" },
+        { type: "list", items: [
+          "North Richland Hills requires a ROW permit for any construction, maintenance or excavation in the right-of-way, asks for two to three business days of review, and requires the permit to be displayed on site.",
+          "DeSoto requires plans and a traffic control plan sealed by a Texas professional engineer, mechanical compaction of all ROW excavations with test reports, and temporary security fencing around open excavations overnight.",
+          "Rowlett will not issue ROW permits to contractors that are not registered with the City.",
+          "Wylie takes right-of-way construction permits and contractor registration online through its CitizenServe portal.",
+        ] },
+        { type: "p", text: "See the city pages for [Rowlett](/locations/texas/rowlett) and [Wylie](/locations/texas/wylie) for links to each City's process." },
+      ],
+      sources: [citySources.nrhPermits, citySources.desotoRowApplication, citySources.rowlettDevEngineering, citySources.wylieRow],
+    },
+    {
+      id: "schedule",
+      heading: "Fitting Locates Into a Rental Schedule",
+      blocks: [
+        { type: "p", text: "The most common scheduling mistake is booking the machine for the day the ticket is filed. Work backward from the first dig:" },
+        {
+          type: "table",
+          caption: "Example sequence for a utility tie-in",
+          columns: ["Step", "What to confirm"],
+          rows: [
+            ["Permit", "ROW or grading permit applied for and issued, with any traffic control plan approved."],
+            ["Texas811 ticket", "Filed at least two business days ahead, within the 14-day window."],
+            ["City locates", "Requested as the City directs, sometimes through the permit itself."],
+            ["Marks verified", "Every operator responded; private lines located if needed."],
+            ["Machine delivery", "Excavator, trencher or mini excavator arrives after marks are verified."],
+          ],
+          note: "Illustrative sequence. Lead times vary by city, permit type and season.",
+        },
+        { type: "p", text: "City hours can push the window further. [Euless](/locations/texas/euless) treats building excavation outside 7 a.m. to 6 p.m. on weekdays as a noise nuisance, and [Wylie](/locations/texas/wylie) requires a permit and a City inspector for Saturday work on engineering permits. A ticket that clears on a Friday may not mean a Saturday dig." },
+        { type: "p", text: "For choosing the right machine once the marks are in, see [what size excavator do I need](/resources/what-size-excavator-do-i-need) and [skid steer vs mini excavator](/resources/skid-steer-vs-mini-excavator)." },
+      ],
+      sources: [shared.utilitiesCode251, shared.texas811, citySources.eulessNoise, citySources.wylieEngineeringApplications],
+    },
+    {
+      id: "digging",
+      heading: "Once Digging Starts",
+      blocks: [
+        { type: "p", text: "Locates tell you where lines are, not how deep. Expose marked lines carefully near the marks, and stop to call the operator if you find an unmarked line or damage one." },
+        { type: "p", text: "OSHA's trenching rules apply as soon as a trench gets deep enough. OSHA's fact sheet calls for protective systems in trenches 5 feet deep or more unless the excavation is in stable rock, a design by a registered professional engineer for trenches 20 feet deep or more, spoils and other loads kept at least 2 feet from the edge, and daily inspection by a competent person." },
+        { type: "list", items: [
+          "Keep the excavator's spoil pile back from the trench edge.",
+          "Plan access and egress before the trench is open.",
+          "Backfill and compact to the City's specification; DeSoto requires mechanical compaction and test reports for ROW excavations.",
+          "Restore pavement, sod and sprinklers as the permit requires.",
+        ] },
+        { type: "p", text: "The [site preparation equipment](/resources/site-preparation-equipment) guide covers trenchers, compactors and loaders for the rest of the job." },
+      ],
+      sources: [shared.oshaTrenching, citySources.desotoRowApplication],
+    },
+  ],
+  faqs: [
+    { question: "How far ahead do I have to call 811 in Texas?", answer: "Texas Utilities Code section 251.151 requires notice no earlier than 14 days and no later than 48 hours before excavating, not counting weekends and legal holidays. Texas811 asks for at least two business days." },
+    { question: "Does 811 mark city water and sewer lines?", answer: "Not always. North Richland Hills, for example, states that 811 does not mark City-owned water or sewer lines, and DeSoto requires a separate City locate request with 48 hours' notice. Check the city's process for your site." },
+    { question: "Do I need a permit to dig in the right-of-way?", answer: "Usually. Cities such as North Richland Hills, DeSoto, Rowlett and Wylie require a right-of-way permit for work in streets, alleys and easements, in addition to locates." },
+    { question: "When should the rental excavator arrive?", answer: "After the permit is issued and every locate is marked and verified. Booking the machine for the day the ticket is filed often means paying for idle days." },
+  ],
+  relatedEquipment: [
+    { slug: "mini-excavator-rental", reason: "Common for service line and tie-in work around marked utilities." },
+    { slug: "excavator-rental", reason: "Larger utility trenches and tie-ins once locates and permits are in place." },
+    { slug: "trencher-rental", reason: "Long, narrow utility runs that need clear locate marks along the route." },
+    { slug: "compactor-rental", reason: "Trench backfill to City specification after the line is installed." },
+  ],
+  relatedGuides: ["site-preparation-equipment", "what-size-excavator-do-i-need", "equipment-rental-checklist"],
+};

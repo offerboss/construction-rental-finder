@@ -15,6 +15,7 @@ city actually needs to know, instead of scaling thin template pages. Quality ove
 | 2 | Frisco, McKinney | Shipped 2026-10-02 |
 | 3 | Garland, Grand Prairie, Mesquite, Carrollton, Richardson | Shipped 2026-10-08 |
 | 4 | Denton, Lewisville, Allen, Flower Mound, Mansfield | Shipped 2026-10-15 (navy headers; heroes deferred) |
+| 5 | North Richland Hills, Rowlett, Euless, Wylie, DeSoto | Shipped 2026-10-22 (navy headers; heroes deferred) |
 
 ## Phase 1 resources: the Resource Run
 
@@ -26,6 +27,8 @@ city actually needs to know, instead of scaling thin template pages. Quality ove
 | `/resources/site-preparation-equipment` | Shipped 2026-10-08 |
 | `/resources/equipment-rental-checklist` | Shipped 2026-10-15 (hero deferred) |
 | `/resources/short-term-vs-long-term-rentals` | Shipped 2026-10-15 (hero deferred) |
+| `/resources/telehandler-vs-forklift` | Shipped 2026-10-22 (hero deferred) |
+| `/resources/utility-locates-before-digging` | Shipped 2026-10-22 (hero deferred) |
 
 How a guide works (no CMS):
 

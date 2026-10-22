@@ -81,6 +81,28 @@ export const sources = {
   mansfieldLandUse: { label: "City of Mansfield 2012 Land Use Plan", url: "https://www.mansfieldtexas.gov/DocumentCenter/View/766/Comprehensive-Land-Use-Plan-PDF" },
   mansfieldEngineering: { label: "City of Mansfield Engineering Services (ROW, grading and floodplain permits)", url: "https://www.mansfieldtexas.gov/364/Engineering-Services" },
   mansfieldElectricRow: { label: "City of Mansfield Electric and Street Light Design and Installation Guidelines (2021)", url: "https://www.mansfieldtexas.gov/DocumentCenter/View/9388/Electric-Design-Install-Guidelines---2021-PDF?bidId=" },
+  nrhPermits: { label: "City of North Richland Hills: Permit Information (ROW, paving and contractor registration)", url: "https://www.nrhtx.com/1310/Permit-Information" },
+  nrhConstructionHours: { label: "City of North Richland Hills: Authorized Construction Hours (Code sec. 98-61(b))", url: "https://www.nrhtx.com/618/Authorized-Construction-Hours" },
+  nrhTransportationContext: { label: "City of North Richland Hills Transportation Plan, Chapter B: Current Context (HomeTown, Smithfield and Iron Horse TOD)", url: "https://www.nrhtx.com/DocumentCenter/View/9065/03---Chapter-B_Current-Context" },
+  tshaRowlett: { label: "Handbook of Texas: Rowlett, TX", url: "https://www.tshaonline.org/handbook/entries/rowlett-tx" },
+  rowlettRealize: { label: "City of Rowlett: Realize Rowlett 2020 Comprehensive Plan", url: "https://www.rowletttx.gov/1090/Realize-Rowlett-2020" },
+  rowlettDevEngineering: { label: "City of Rowlett: Development Engineering (ROW, grading and floodplain)", url: "https://www.rowletttx.gov/1318/Development-Engineering" },
+  tshaEuless: { label: "Handbook of Texas: Euless, TX", url: "https://www.tshaonline.org/handbook/entries/euless-tx" },
+  eulessNoise: { label: "City of Euless Code ch. 46, art. VI, Noise, sec. 46-172(9)", url: "https://ecode360.com/39084057" },
+  eulessBuilding: { label: "City of Euless: Building Construction and Permitting", url: "https://www.eulesstx.gov/departments/planning-and-economic-development/building-construction-and-permitting" },
+  eulessEngineering: { label: "City of Euless: Engineering Division", url: "https://www.eulesstx.gov/departments/public-works-and-engineering/engineering" },
+  tshaWylie: { label: "Handbook of Texas: Wylie, TX (Collin County)", url: "https://www.tshaonline.org/handbook/entries/wylie-tx-collin-county" },
+  wylieConstructionHours: { label: "City of Wylie: Construction Hours (Ordinance No. 2024-31)", url: "https://www.wylietexas.gov/departments/building_inspection/construction_hours.php" },
+  wylieEngineeringApplications: { label: "City of Wylie Engineering: Applications, Fees & Reports (Saturday work)", url: "https://www.wylietexas.gov/departments/engineering/applications_fees_reports.php" },
+  wylieRow: { label: "City of Wylie Engineering: Right of Way", url: "https://www.wylietexas.gov/departments/engineering/right_of_way.php" },
+  wylieEngineering: { label: "City of Wylie Engineering Department", url: "https://www.wylietexas.gov/departments/engineering/index.php" },
+  wyliePlanning: { label: "City of Wylie Planning and Zoning (Envision Wylie Comprehensive Plan)", url: "https://www.wylietexas.gov/departments/planning/index.php" },
+  tshaDesoto: { label: "Handbook of Texas: DeSoto, TX", url: "https://www.tshaonline.org/handbook/entries/desoto-tx" },
+  desotoComprehensivePlan: { label: "City of DeSoto: Comprehensive Plan (adopted February 2024)", url: "https://www.desototexas.gov/495/Comprehensive-Plan" },
+  desotoBuilding: { label: "City of DeSoto: Building Inspections (construction hours)", url: "https://www.desototexas.gov/462/Building-Inspections" },
+  desotoGradingPermit: { label: "City of DeSoto Engineering Division Grading Permit (PDF)", url: "https://www.desototexas.gov/DocumentCenter/View/1138/Grading-Permit-PDF" },
+  desotoRowApplication: { label: "City of DeSoto R.O.W. Permit Application and Conditions (PDF)", url: "https://www.desototexas.gov/DocumentCenter/View/1125/ROW-Application-Form-PDF" },
+  desotoRow: { label: "City of DeSoto: Right of Way", url: "https://www.desototexas.gov/489/Right-of-Way" },
 } satisfies Record<string, SourceLink>;
 
 // Guide links render only once the guide is published in resources.ts.
@@ -107,6 +129,14 @@ const rentalChecklistGuideLink: CityGuideLink = {
 const shortVsLongGuideLink: CityGuideLink = {
   slug: "short-term-vs-long-term-rentals",
   reason: "Plan daily, weekly or monthly rental length around schedule and utilization.",
+};
+const utilityLocatesGuideLink: CityGuideLink = {
+  slug: "utility-locates-before-digging",
+  reason: "Line up Texas811 notice, City water and sewer locates and permits before the first dig.",
+};
+const telehandlerForkliftGuideLink: CityGuideLink = {
+  slug: "telehandler-vs-forklift",
+  reason: "Compare reach, ground conditions and operator rules for material handling.",
 };
 
 export const arlington: CityEntry = {
@@ -172,12 +202,12 @@ export const arlington: CityEntry = {
     { question: "What lift should I rent for storefront and facade work?", answer: "If the lift can sit on level pavement directly below the work, a scissor lift is often simplest. If you need to reach over landscaping, a canopy or a lower roof, an articulating boom lift is the usual choice. Give the provider your working height, the outreach you need and the surface the lift will sit on." },
     { question: "When should I schedule equipment deliveries in Arlington?", answer: "If a delivery needs a lane on a city thoroughfare, avoid the weekday 7 to 9 a.m. and 4 to 6 p.m. windows when right-of-way work can't interfere with traffic, and avoid event days near the Entertainment District. Confirm the delivery window and the unloading spot with the provider." },
   ],
-  nearbyCities: ["irving", "grand-prairie", "mansfield", "dallas", "fort-worth"],
+  nearbyCities: ["irving", "grand-prairie", "mansfield", "euless", "north-richland-hills", "dallas", "fort-worth"],
   heroImage: {
     src: "/images/locations/arlington-tx-construction-equipment-rental.webp",
     alt: "Telehandler placing a pallet beside a steel-frame commercial building on a clay pad in Arlington, Texas",
   },
-  guides: [excavatorSizeGuide, compactGuide, boomLiftGuide, rentalChecklistGuideLink],
+  guides: [excavatorSizeGuide, compactGuide, boomLiftGuide, rentalChecklistGuideLink, utilityLocatesGuideLink],
 };
 
 export const irving: CityEntry = {
@@ -244,12 +274,12 @@ export const irving: CityEntry = {
     { question: "Do I need to call 811 for yard and dock work in Irving?", answer: "Yes, if you'll dig, trench or set anything below grade. Texas law requires notice to a one-call center no later than 48 hours before excavation, not counting weekends and holidays, and no earlier than 14 days before. Texas811 takes requests by phone at 811 or online." },
     { question: "Can I get a lift into a finished office or retail space?", answer: "Usually, with the right machine. Ask for an electric slab scissor or compact boom with non-marking tires, check door widths, ramp or elevator limits and floor load ratings, and plan delivery around tenant hours." },
   ],
-  nearbyCities: ["arlington", "grand-prairie", "carrollton", "dallas", "fort-worth"],
+  nearbyCities: ["arlington", "grand-prairie", "carrollton", "euless", "dallas", "fort-worth"],
   heroImage: {
     src: "/images/locations/irving-tx-construction-equipment-rental.webp",
     alt: "Telehandler and forklift moving pallets in the gravel yard of a new tilt-wall warehouse in Irving, Texas",
   },
-  guides: [compactGuide, excavatorSizeGuide, boomLiftGuide, shortVsLongGuideLink],
+  guides: [compactGuide, excavatorSizeGuide, boomLiftGuide, shortVsLongGuideLink, telehandlerForkliftGuideLink],
 };
 
 export const plano: CityEntry = {
@@ -393,7 +423,7 @@ export const frisco: CityEntry = {
     src: "/images/locations/frisco-tx-construction-equipment-rental.webp",
     alt: "Excavator loading a dump truck beside a roller and wheel loader on a large graded development site in Frisco, Texas",
   },
-  guides: [excavatorSizeGuide, compactGuide, sitePrepGuide, shortVsLongGuideLink],
+  guides: [excavatorSizeGuide, compactGuide, sitePrepGuide, shortVsLongGuideLink, utilityLocatesGuideLink],
 };
 
 export const mckinney: CityEntry = {
@@ -532,7 +562,7 @@ export const garland: CityEntry = {
     { question: "What hours can I work next to homes in Garland?", answer: "Garland's building code amendments allow outside work adjacent to occupied homes or apartments from 7 a.m. to 8 p.m., seven days a week. Right-of-way work has its own limits on lane closures and holidays, so check your permit as well." },
     { question: "What equipment suits converting an older industrial building in Garland?", answer: "Plan for material handling and work at height first: a forklift or telehandler for materials, electric scissor lifts for ceilings and overhead systems, and concrete saws and a mini excavator if new utilities go under the slab. Measure door openings and check the floor before choosing machine sizes." },
   ],
-  nearbyCities: ["richardson", "mesquite", "dallas"],
+  nearbyCities: ["richardson", "mesquite", "rowlett", "wylie", "dallas"],
   heroImage: {
     src: "/images/locations/garland-tx-construction-equipment-rental.webp",
     alt: "Forklift carrying a pallet beside a scissor lift at the open warehouse bay of an older masonry building in Garland, Texas",
@@ -604,12 +634,12 @@ export const grandPrairie: CityEntry = {
     { question: "What equipment does a new warehouse build in Grand Prairie use?", answer: "Site work usually starts with excavators, wheel loaders and rollers for the pad and utilities. As the building goes up, telehandlers and boom lifts take over for walls and roofing, and forklifts handle racking and materials once the slab is in. Share the building height, yard surface and schedule with the provider." },
     { question: "Do I need FAA notice to use a boom lift or crane near the Grand Prairie airport?", answer: "It depends on height and distance. Because the municipal airport's runway is longer than 3,200 feet, FAA notice is required for anything that would exceed a 100:1 surface extending 20,000 feet from the runway, or that is more than 200 feet tall, and temporary cranes count. If you need to file, do it at least 45 days before work starts." },
   ],
-  nearbyCities: ["arlington", "irving", "mansfield", "dallas"],
+  nearbyCities: ["arlington", "irving", "mansfield", "desoto", "dallas"],
   heroImage: {
     src: "/images/locations/grand-prairie-tx-construction-equipment-rental.webp",
     alt: "Telescopic boom lift and telehandler at a new tilt-wall concrete warehouse on a dirt pad in Grand Prairie, Texas",
   },
-  guides: [boomLiftGuide, sitePrepGuide],
+  guides: [boomLiftGuide, sitePrepGuide, telehandlerForkliftGuideLink],
 };
 
 export const mesquite: CityEntry = {
@@ -1033,7 +1063,7 @@ export const allen: CityEntry = {
     { question: "What equipment is common on new Allen subdivision pads?", answer: "Early work usually needs excavators, compact track loaders or skid steers, trenchers and rollers. As homes and commercial buildings rise, telehandlers and boom lifts take over for materials and exterior finishes." },
     { question: "How long does an Allen ROW permit take?", answer: "Allen asks applicants to allow about 10 business days after reviewing the GIS utility map. Confirm current intake steps on the City's Right-of-Way Management page, which notes the FY2027 online application path." },
   ],
-  nearbyCities: ["plano", "mckinney", "frisco", "dallas"],
+  nearbyCities: ["plano", "mckinney", "frisco", "wylie", "dallas"],
   heroImage: {
     src: "/images/locations/allen-tx-construction-equipment-rental.webp",
     alt: "Mini excavator trenching along a new curb with utility flags, a skid steer and new brick homes in Allen, Texas",
@@ -1175,7 +1205,7 @@ export const mansfield: CityEntry = {
     { question: "What equipment suits a new Mansfield subdivision?", answer: "Early phases usually need excavators, wheel loaders or skid steers, trenchers and rollers. Telehandlers and boom lifts arrive when framing and exterior finishes start. Share pad size, soil report and schedule with the provider." },
     { question: "Where is industrial construction concentrated in Mansfield?", answer: "The 2012 Land Use Plan places most industrial land south of downtown along S. Main Street and notes remaining industrial acreage whose readiness depends on water and sewer infrastructure. Confirm current zoning and utilities with the City before planning heavy equipment." },
   ],
-  nearbyCities: ["arlington", "grand-prairie", "dallas", "fort-worth"],
+  nearbyCities: ["arlington", "grand-prairie", "desoto", "dallas", "fort-worth"],
   heroImage: {
     src: "/images/locations/mansfield-tx-construction-equipment-rental.webp",
     alt: "Motor grader and smooth-drum roller working a large graded clay site with two workers in hi-vis in Mansfield, Texas",
@@ -1183,3 +1213,339 @@ export const mansfield: CityEntry = {
   guides: [sitePrepGuide, excavatorSizeGuide, rentalChecklistGuideLink],
 };
 
+// Batch 5 (2026-10-22): next uncovered DFW cities by 2020 Census size.
+
+export const northRichlandHills: CityEntry = {
+  name: "North Richland Hills",
+  slug: "north-richland-hills",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "North Richland Hills is a northeast Tarrant County city on SH 26, SH 183 and IH 820, with two TEXRail station districts and a nearly built-out street network.",
+  metaDescription:
+    "Construction equipment rentals in North Richland Hills, TX: compact loaders, mini excavators, lifts and telehandlers for TOD infill and redevelopment, plus City ROW and hours rules.",
+  localIntro: [
+    "North Richland Hills sits in northeastern Tarrant County on State Highways 26 and 183 and Interstate 820, northeast of downtown Fort Worth and west of DFW Airport. The City's transportation plan describes a roadway network that is nearly at build-out, aging infrastructure, and a community maturing through redevelopment and more intense land uses.",
+    "That makes much of the work here infill, utility replacement and mixed-use building around the two TEXRail station districts. Use this page to match machines to North Richland Hills work, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "The City's plan names three districts that shape future development: HomeTown, a master-planned mixed-use neighborhood bounded by Mid-Cities Boulevard, Davis Boulevard and Boulevard 26; the Smithfield TOD, planned as a walkable neighborhood around its TEXRail station; and the Iron Horse TOD next to IH 820, planned for mixed use with park-and-ride and regional retail. Both station areas are governed by a form-based Transit Oriented Development Code.",
+    "Station-area and HomeTown projects tend to be multi-story buildings on lots with streets, trails and neighbors already in place. Telehandlers and boom lifts handle the vertical work, while compact track loaders and mini excavators fit tight utility and flatwork phases. Vacant parcels along Iron Horse Boulevard and big-box frontage on IH 820 are expected to develop or intensify, which brings larger site-prep packages.",
+    "Older parts of the city were built before sidewalks were always required, and the plan points to gaps and aging infrastructure. Expect sidewalk, driveway approach and utility replacement work in the public right-of-way, which needs a City ROW permit and separate locates for City water and sewer.",
+  ],
+  featuredEquipment: [
+    { slug: "skid-steer-rental", reason: "Flatwork prep, backfill and cleanup on infill lots and driveway approach replacements where space is tight." },
+    { slug: "mini-excavator-rental", reason: "Water, sewer and service line work in older neighborhoods and around TOD streetscapes." },
+    { slug: "telehandler-rental", reason: "Placing framing and masonry materials on multi-story mixed-use buildings in HomeTown and the station districts." },
+    { slug: "boom-lift-rental", reason: "Facade and canopy work on mixed-use and retail buildings that front finished streets and trails." },
+    { slug: "concrete-equipment-rental", reason: "Sidewalk, approach and flatwork replacement, which the City permits as paving work." },
+    { slug: "compactor-rental", reason: "Trench and subgrade compaction under restored pavement and new flatwork." },
+  ],
+  siteConsiderations: [
+    {
+      title: "ROW permit before any work in the right-of-way",
+      text: "The City requires a Right-of-Way Permit for any construction, maintenance or excavation in the public right-of-way, for private contractors, residents and franchise utilities. Applications need a project description, scope, site plan, proof of insurance and a traffic control plan when traffic or pedestrians are affected. The City asks for two to three business days of review; work may not start until the permit is issued and displayed on site, and permits are valid for 30 days unless extended.",
+      sources: [sources.nrhPermits],
+    },
+    {
+      title: "Texas811 plus City water and sewer locates",
+      text: "The City states that 811 does not mark City-owned water or sewer lines. Notify Texas811 for franchise utilities, and note that an approved NRH ROW permit serves as the request for the City to mark its water and sewer mains. Excavation may begin only after 811 has cleared the site and the ROW permit is issued.",
+      sources: [sources.nrhPermits, sources.utilitiesCode251, sources.texas811],
+    },
+    {
+      title: "Outdoor construction hours change with daylight saving time",
+      text: "Code sec. 98-61(b) prohibits outdoor construction from 7 p.m. to 7 a.m. during Central Standard Time and from 8 p.m. to 6 a.m. during daylight saving time, on Sundays, and on New Year's Day, Memorial Day, July 4, Labor Day, Thanksgiving and Christmas. Appeals go to the building official in writing. Schedule deliveries and early starts around the current season.",
+      sources: [sources.nrhConstructionHours],
+    },
+    {
+      title: "Paving permits for approaches and sidewalks",
+      text: "Rebuilding driveway approaches, driveways and sidewalks needs a Paving Permit with a traffic control plan, site plan and insurance. New approaches and sidewalks are tied to civil and building plans. Contractors must register with the City before permits are issued.",
+      sources: [sources.nrhPermits],
+    },
+    {
+      title: "Station districts and form-based code",
+      text: "Smithfield and Iron Horse are governed by the Transit Oriented Development Code, which sets street types and building standards. Confirm staging, street closures and access early on these sites, because both districts prioritize pedestrians and trail users.",
+      sources: [sources.nrhTransportationContext],
+    },
+    {
+      title: "Heat, storms and clay",
+      text: "NWS Fort Worth notes Metroplex summer highs in the 90s and often 100 degrees, with spring and fall the wettest seasons. USDA's Houston Black description covers much of North Texas; check the geotechnical report and Web Soil Survey before choosing compaction equipment.",
+      sources: [sources.nwsDfwClimate, sources.usdaHoustonBlack],
+    },
+  ],
+  faqs: [
+    { question: "Do I need a permit to work in a North Richland Hills street or easement?", answer: "Yes. The City requires a Right-of-Way Permit for any construction, maintenance or excavation in the public right-of-way, and the permit must be issued and displayed on site before work starts. Allow two to three business days for review." },
+    { question: "Will 811 mark North Richland Hills water and sewer lines?", answer: "No. The City says 811 does not mark City-owned water or sewer lines. Notify Texas811 for franchise utilities; the approved City ROW permit serves as the request for City water and sewer locates." },
+    { question: "What are construction hours in North Richland Hills?", answer: "Outdoor construction is not allowed from 7 p.m. to 7 a.m. during Central Standard Time or 8 p.m. to 6 a.m. during daylight saving time, on Sundays, or on six listed holidays. Appeals go to the building official in writing." },
+    { question: "What equipment suits work near the TEXRail station districts?", answer: "Compact machines for utilities and flatwork, plus telehandlers and boom lifts for multi-story mixed-use buildings. Share lot size, staging space and street access with the provider, since both station areas are planned around pedestrians." },
+  ],
+  nearbyCities: ["fort-worth", "euless", "arlington", "dallas"],
+  guides: [utilityLocatesGuideLink, compactGuide, telehandlerForkliftGuideLink],
+};
+
+export const rowlett: CityEntry = {
+  name: "Rowlett",
+  slug: "rowlett",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Rowlett lies in northeastern Dallas County and western Rockwall County, bordered by Lake Ray Hubbard on the east and south and Rowlett Creek on the west.",
+  metaDescription:
+    "Construction equipment rentals in Rowlett, TX: excavators, loaders, rollers and lifts for lakeside and form-based district work, plus City grading, ROW and floodplain rules.",
+  localIntro: [
+    "Rowlett is in northeastern Dallas County and western Rockwall County, east of Garland, with Lake Ray Hubbard along its east and south edges and Rowlett Creek on the west. The Handbook of Texas ties the city's building boom to the lake's completion in 1971.",
+    "Its comprehensive plan, Realize Rowlett 2020, steers growth into a set of form-based districts, so equipment needs swing between lakeside and greenfield site work and denser mixed-use building. Use this page to match machines to Rowlett work, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Realize Rowlett 2020 was adopted in 2011, followed in 2012 by a Form Based Code and Strategic Downtown Plan. The City lists seven areas rezoned to form-based districts: Woodside Living, Healthy Living, Signature Gateway, Downtown, Center for Commerce and Industry, and North Shore (north and south). Each comes with its own zoning document, so check the district before planning staging and building height.",
+    "Downtown and gateway districts point to multi-story mixed-use buildings, where telehandlers and boom lifts do most of the lifting and compact equipment handles utilities. North Shore and the commerce and industry district involve larger pads and roadway work, which call for excavators, wheel loaders and rollers.",
+    "Water shapes many sites. Development Engineering handles floodplain management under FEMA and City rules, administers the stormwater program, and issues grading and right-of-way permits. Lake- and creek-adjacent work often needs extra planning for drainage, erosion control and wet-weather access.",
+  ],
+  featuredEquipment: [
+    { slug: "excavator-rental", reason: "Pad grading, detention and utility work on North Shore and commerce district sites." },
+    { slug: "wheel-loader-rental", reason: "Moving stockpiles and loading trucks on larger graded sites and roadway packages." },
+    { slug: "compactor-rental", reason: "Building pads and pavement subgrade, plus trench backfill in City right-of-way." },
+    { slug: "telehandler-rental", reason: "Material placement on multi-story buildings in the Downtown and Signature Gateway districts." },
+    { slug: "boom-lift-rental", reason: "Exterior finishes on mixed-use and commercial buildings in form-based districts." },
+    { slug: "skid-steer-rental", reason: "Fine grading, erosion-control installation and cleanup on residential and lakeside lots." },
+  ],
+  siteConsiderations: [
+    {
+      title: "Grading permit for moving dirt",
+      text: "Rowlett requires a Grading Permit to add, remove or move dirt on a lot or subdivision. Apply through the City's MyGov portal before the first load of fill arrives or leaves.",
+      sources: [sources.rowlettDevEngineering],
+    },
+    {
+      title: "ROW permit and contractor registration",
+      text: "A Right-of-Way Permit is required for work in the City's right-of-way. A complete application includes a valid DCAD or RCAD address, a map or site plan with street names, and any fee due; complex or long projects may need a full set of drawings. The City will not issue ROW permits or authorize civil plans for contractors that are not registered.",
+      sources: [sources.rowlettDevEngineering],
+    },
+    {
+      title: "Floodplain and stormwater",
+      text: "Development Engineering manages floodplain development under FEMA and City ordinances and administers the stormwater program. Sites disturbing one acre or more that discharge to surface waters generally need TCEQ construction general permit coverage and a stormwater pollution prevention plan.",
+      sources: [sources.rowlettDevEngineering, sources.tceqConstructionStormwater],
+    },
+    {
+      title: "Call 811 before digging",
+      text: "Texas law requires notice through the one-call system at least 48 hours before excavating, excluding weekends and holidays. Ask Rowlett Development Engineering how City-owned lines are located for your permit.",
+      sources: [sources.utilitiesCode251, sources.texas811],
+    },
+    {
+      title: "Construction hours: confirm with the City",
+      text: "City sources publish different construction hours, so this page does not state a schedule. Confirm current hours for your permit type with Rowlett Development Engineering or Building Inspections before planning early starts, Saturday work or deliveries.",
+      sources: [sources.rowlettDevEngineering],
+    },
+    {
+      title: "Storms and wet ground",
+      text: "NWS Fort Worth notes that spring and fall are the wettest seasons and that hail, damaging winds and flooding occur nearly every year. Lakeside and creek-adjacent pads can lose working days after storms, so plan tracked machines and ground protection.",
+      sources: [sources.nwsDfwClimate],
+    },
+  ],
+  faqs: [
+    { question: "Do I need a permit to grade a lot in Rowlett?", answer: "Yes. Rowlett requires a Grading Permit to add, remove or move dirt on a lot or subdivision. Apply through the City's MyGov portal before mobilizing excavators or loaders." },
+    { question: "Can an unregistered contractor get a Rowlett ROW permit?", answer: "No. The City says it will not issue Right-of-Way Permits or authorize civil plans unless the contractor is registered. Register through MyGov before you schedule equipment delivery." },
+    { question: "What are Rowlett's construction hours?", answer: "City sources give different figures, so confirm current hours for your permit type with Development Engineering or Building Inspections before planning early, late or Saturday work." },
+    { question: "What equipment fits Rowlett's form-based districts?", answer: "Downtown and gateway districts lean toward telehandlers, boom lifts and compact utility equipment for mixed-use buildings. Larger North Shore and commerce district sites add excavators, wheel loaders and rollers." },
+  ],
+  nearbyCities: ["garland", "wylie", "dallas"],
+  guides: [sitePrepGuide, utilityLocatesGuideLink, excavatorSizeGuide],
+};
+
+export const euless: CityEntry = {
+  name: "Euless",
+  slug: "euless",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Euless is in Tarrant County at State Highways 10 and 183, on the southwest side of DFW Airport and north of the West Fork of the Trinity River.",
+  metaDescription:
+    "Construction equipment rentals in Euless, TX: telehandlers, lifts, forklifts and compact equipment near DFW Airport, plus City work hours, permits and FAA notice rules.",
+  localIntro: [
+    "Euless sits at State Highways 10 and 183 in Tarrant County, on the southwest side of Dallas-Fort Worth International Airport and north of the West Fork of the Trinity River. The Handbook of Texas traces much of its postwar growth to the airfield on its eastern edge and to aviation employers that moved in.",
+    "Airport-adjacent commercial work, highway frontage and established neighborhoods drive most rentals here. Use this page to match machines to Euless work, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Commercial buildings, hotels and service businesses near the airport and along SH 183 and SH 10 call for telehandlers, boom lifts and forklifts during shell and fit-out work. Tall equipment near the airport also raises FAA notice questions that most suburban sites never face.",
+    "Neighborhood projects such as room additions, driveway approaches and utility repairs are on the City's list of work that needs a permit. Compact track loaders, mini excavators and plate compactors fit those lots.",
+    "Euless Engineering reviews public and private projects, and the paving, drainage, water and wastewater design criteria live in the Unified Development Code. Private development work must tie into at least two of the City's 31 horizontal and vertical control monuments, and Engineering keeps water and sewer locator maps showing the general location of mains.",
+  ],
+  featuredEquipment: [
+    { slug: "telehandler-rental", reason: "Placing materials on commercial and hospitality buildings along SH 183 and near the airport." },
+    { slug: "boom-lift-rental", reason: "Facade, signage-structure and roofline work on commercial buildings; check FAA notice needs near runways." },
+    { slug: "forklift-rental", reason: "Unloading and staging materials on paved commercial lots and in warehouse fit-outs." },
+    { slug: "skid-steer-rental", reason: "Driveway approach, flatwork and backfill work on established residential lots." },
+    { slug: "mini-excavator-rental", reason: "Service line and drainage repairs where Engineering's locator maps show nearby mains." },
+    { slug: "scissor-lift-rental", reason: "Interior ceiling, sprinkler and electrical work during commercial finish-outs." },
+  ],
+  siteConsiderations: [
+    {
+      title: "Weekday building-work hours",
+      text: "The Euless noise article lists building erection, excavation, demolition, alteration or repair outside 7 a.m. to 6 p.m. on weekdays among prohibited nuisances, unless the City Council issues a permit for urgent necessity in the interest of public safety. Plan deliveries and noisy work inside that window.",
+      sources: [sources.eulessNoise],
+    },
+    {
+      title: "FAA notice for tall equipment near DFW Airport",
+      text: "Federal rules require FAA notice for construction or alteration above 200 feet, or above a 100-to-1 surface within 20,000 feet of runways longer than 3,200 feet. Temporary structures such as cranes count. Euless sits on the southwest side of DFW Airport, so check boom and crane heights before booking.",
+      sources: [sources.faaPart77, sources.faaForm7460, sources.tshaEuless],
+    },
+    {
+      title: "Permits and control monuments",
+      text: "Euless requires permits for new construction, room additions, remodels with structural changes, driveway approaches and other listed work. Private development must tie into at least two City control monuments, and design criteria for paving, drainage, water and wastewater are in the Unified Development Code.",
+      sources: [sources.eulessBuilding, sources.eulessEngineering],
+    },
+    {
+      title: "Locate mains before digging",
+      text: "Texas law requires one-call notice at least 48 hours before excavating, excluding weekends and holidays. Euless Engineering also provides water and sanitary sewer locator maps showing the size and general location of mains; use them for planning, not as a substitute for locates.",
+      sources: [sources.utilitiesCode251, sources.texas811, sources.eulessEngineering],
+    },
+    {
+      title: "Summer inspection limits",
+      text: "From May through September, the Building Inspections Division does not inspect confined spaces or attics after noon because of heat. Book those inspections in the morning so lifts and crews aren't idle waiting.",
+      sources: [sources.eulessBuilding],
+    },
+    {
+      title: "Heat and storms",
+      text: "NWS Fort Worth notes Metroplex summer highs in the 90s and often 100 degrees, with severe weather peaking in spring. Plan lift work around wind and storms.",
+      sources: [sources.nwsDfwClimate],
+    },
+  ],
+  faqs: [
+    { question: "What hours can construction run in Euless?", answer: "The City's noise article treats building erection, excavation, demolition, alteration or repair outside 7 a.m. to 6 p.m. on weekdays as a nuisance, unless the City Council grants a permit for urgent necessity. Plan noisy work and deliveries within that window." },
+    { question: "Do I need FAA approval to use a tall boom or crane in Euless?", answer: "Possibly. Federal rules require FAA notice for structures above 200 feet or above a slope surface near runways longer than 3,200 feet, including temporary cranes. Euless sits on the southwest side of DFW Airport, so check heights early and file Form 7460-1 if required." },
+    { question: "Can I use Euless utility maps instead of calling 811?", answer: "No. Engineering's water and sewer locator maps show general locations for planning. Texas law still requires one-call notice before excavating, at least 48 hours ahead excluding weekends and holidays." },
+    { question: "What equipment suits commercial work near DFW Airport?", answer: "Telehandlers, boom lifts and forklifts for shell and fit-out work, plus scissor lifts inside. Share building height, lot layout and airport proximity with the provider." },
+  ],
+  nearbyCities: ["irving", "arlington", "north-richland-hills", "dallas"],
+  guides: [telehandlerForkliftGuideLink, boomLiftGuide, utilityLocatesGuideLink],
+};
+
+export const wylie: CityEntry = {
+  name: "Wylie",
+  slug: "wylie",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Wylie is on State Highway 78 in south central Collin County, south of Lake Lavon, and has spread into Rockwall and Dallas counties.",
+  metaDescription:
+    "Construction equipment rentals in Wylie, TX: excavators, rollers, trenchers and telehandlers for residential and SH 78 work, plus City hours, grading and Saturday permit rules.",
+  localIntro: [
+    "Wylie sits on State Highway 78 sixteen miles south of McKinney in south central Collin County, with Lake Lavon five miles north of the original town and city limits that now reach into Rockwall and Dallas counties. The Handbook of Texas ties its growth to the railroads, the Blackland Prairie farm economy, the lake, and later the expansion of the Dallas urban area.",
+    "Residential growth and commercial work along SH 78 drive most equipment rentals. Use this page to match machines to Wylie work, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "New neighborhoods mean grading, utilities and pads, so excavators, trenchers, rollers and compact track loaders handle early phases. Telehandlers arrive with framing and roofing materials, and skid steers come back for final grade and flatwork.",
+    "The City guides development through its adopted Envision Wylie Comprehensive Plan. Commercial pads along SH 78 and around the historic downtown add lifts and material handlers to the mix, often on sites next to existing homes.",
+    "Wylie enforces construction hours firmly. Building Inspections states that stop work orders are issued on the spot for violations, and deliveries are prohibited outside the approved hours, so delivery windows matter as much as machine choice.",
+  ],
+  featuredEquipment: [
+    { slug: "excavator-rental", reason: "Subdivision grading, detention and utility installation on new residential ground." },
+    { slug: "trencher-rental", reason: "Long utility and irrigation runs across new phases." },
+    { slug: "compactor-rental", reason: "Building pads, street subgrade and trench backfill on Blackland Prairie clay." },
+    { slug: "skid-steer-rental", reason: "Final grade, flatwork prep and erosion-control installation on residential lots." },
+    { slug: "telehandler-rental", reason: "Framing, roofing and masonry materials on houses and SH 78 commercial buildings." },
+    { slug: "boom-lift-rental", reason: "Exterior work on commercial buildings along SH 78 and downtown." },
+  ],
+  siteConsiderations: [
+    {
+      title: "Construction and delivery hours",
+      text: "Wylie allows construction from 7 a.m. to 9 p.m. Monday through Saturday, with no work on Sundays or the eleven federal holidays (Ordinance No. 2024-31). Deliveries are prohibited outside those hours, stop work orders are issued on the spot, and continued violations draw citations.",
+      sources: [sources.wylieConstructionHours],
+    },
+    {
+      title: "Saturday work on engineering permits",
+      text: "Engineering says Saturday work is not guaranteed. Construction on Saturday requires a permit and a City inspector on site; email Engineering the preceding Thursday morning to confirm an inspector and pay the Saturday fee by noon that Thursday. Utility contractors must notify Engineering for Saturday work by the preceding Thursday.",
+      sources: [sources.wylieEngineeringApplications, sources.wylieConstructionHours],
+    },
+    {
+      title: "Stormwater on acre-plus sites",
+      text: "Sites disturbing one acre or more that discharge stormwater to surface waters generally need TCEQ construction general permit coverage and a stormwater pollution prevention plan before earthwork. Ask Wylie Engineering which City grading and erosion-control submittals apply; engineering plans and permits are filed through CitizenServe.",
+      sources: [sources.tceqConstructionStormwater, sources.wylieEngineeringApplications],
+    },
+    {
+      title: "ROW construction permits and registration",
+      text: "Construction Permit and Contractor Registration applications for the right-of-way are submitted online through the City's CitizenServe portal; registration is good for one year. The former ROW permit email has been discontinued.",
+      sources: [sources.wylieRow, sources.wylieEngineering],
+    },
+    {
+      title: "Call 811 before digging",
+      text: "Texas law requires one-call notice at least 48 hours before excavating, excluding weekends and holidays.",
+      sources: [sources.utilitiesCode251, sources.texas811],
+    },
+    {
+      title: "Clay soils and wet seasons",
+      text: "The Handbook of Texas places Wylie in the Blackland Prairie, and USDA describes Houston Black, the signature Blackland Prairie soil, as very high in shrink-swell. NWS Fort Worth notes spring and fall are the wettest seasons. Check the geotechnical report before choosing padfoot or smooth-drum rollers.",
+      sources: [sources.tshaWylie, sources.usdaHoustonBlack, sources.nwsDfwClimate],
+    },
+  ],
+  faqs: [
+    { question: "What are construction hours in Wylie?", answer: "7 a.m. to 9 p.m. Monday through Saturday, with no work on Sundays or the eleven federal holidays. Deliveries are also prohibited outside those hours, and the City issues stop work orders on the spot for violations." },
+    { question: "Can I work on a Saturday under a Wylie engineering permit?", answer: "Only with approval. Engineering says Saturday construction requires a permit and a City inspector on site. Email Engineering the preceding Thursday morning and pay the fee by noon Thursday; Saturday work is not guaranteed." },
+    { question: "Where do I file engineering and ROW permits in Wylie?", answer: "Online through the City's CitizenServe portal. Construction Permit and Contractor Registration applications for the right-of-way are filed there, registration is good for one year, and the old ROW permit email has been discontinued." },
+    { question: "What equipment suits a new Wylie subdivision?", answer: "Excavators, trenchers, rollers and compact track loaders for early site work, then telehandlers for framing and roofing. Share pad size, soil report and delivery windows with the provider." },
+  ],
+  nearbyCities: ["allen", "rowlett", "garland", "dallas"],
+  guides: [sitePrepGuide, utilityLocatesGuideLink, shortVsLongGuideLink],
+};
+
+export const desoto: CityEntry = {
+  name: "DeSoto",
+  slug: "desoto",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "DeSoto is twelve miles south of Dallas in southern Dallas County, served by Interstates 35 and 20 and US 67, with Ten Mile Creek running through it.",
+  metaDescription:
+    "Construction equipment rentals in DeSoto, TX: excavators, loaders, compactors and telehandlers for residential and I-35E corridor work, plus City hours, grading and ROW rules.",
+  localIntro: [
+    "DeSoto is twelve miles south of Dallas on Interstate highways 35 and 20, US Highway 67 and Ten Mile Creek in southern Dallas County. It is bordered by Lancaster, Glenn Heights, Cedar Hill, Duncanville and Dallas, and the Handbook of Texas describes steady residential, commercial and industrial construction as Dallas expanded south.",
+    "The City adopted a new comprehensive plan in February 2024 to guide future land use, transportation and urban design. Use this page to match machines to DeSoto work, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Residential neighborhoods, highway commercial sites and industrial and distribution buildings all appear in DeSoto's mix. Larger pads call for excavators, wheel loaders and rollers, while commercial shells and warehouses bring telehandlers, boom lifts and forklifts.",
+    "Grading here is closely managed. Before move-in on any new residential, commercial or industrial grading, or on redevelopment of an existing site, the City's Engineering Division reviews grading and drainage plans, an erosion control plan with perimeter control in place, the construction entrance and any traffic control plan.",
+    "Right-of-way work comes with detailed conditions: sealed traffic control plans, mechanical compaction with test reports, daily street sweeping and temporary security fencing around open excavations at the end of each day. Plan compactors and fencing into the rental list.",
+  ],
+  featuredEquipment: [
+    { slug: "excavator-rental", reason: "Pad grading, detention and utility work on residential and industrial sites." },
+    { slug: "wheel-loader-rental", reason: "Stockpile handling and truck loading on larger graded pads." },
+    { slug: "compactor-rental", reason: "Mechanical compaction of every excavation in City right-of-way, plus pads and subgrade." },
+    { slug: "telehandler-rental", reason: "Material placement on commercial shells and residential framing." },
+    { slug: "forklift-rental", reason: "Unloading and staging on paved commercial and distribution sites." },
+    { slug: "skid-steer-rental", reason: "Cleanup behind excavation crews, sod and topsoil restoration, and daily street cleaning." },
+  ],
+  siteConsiderations: [
+    {
+      title: "Construction hours and Sunday heavy equipment",
+      text: "City Building Inspections lists construction hours of 7 a.m. to 6 p.m. Monday through Friday, 8 a.m. to 6 p.m. Saturday and 9 a.m. to 5 p.m. Sunday, with no heavy equipment on Sundays without written consent. The grading permit cites Chapter 8, Section 8.402 for the same hours. Plan Sunday work for hand crews and quiet tasks.",
+      sources: [sources.desotoBuilding, sources.desotoGradingPermit],
+    },
+    {
+      title: "Grading permit requirements",
+      text: "Before grading or excavation starts, Engineering reviews grading and drainage plans, an erosion control plan with perimeter control in place, construction entrance design and any traffic control plan. A tree survey approved by the Planning and Zoning Commission may be required. Streets, alleys and neighboring property must be kept free of mud and spoil.",
+      sources: [sources.desotoGradingPermit],
+    },
+    {
+      title: "ROW permit conditions",
+      text: "A ROW permit must be approved before work starts, with plans and a traffic control plan sealed by a Texas professional engineer. Excavations in City right-of-way require mechanical compaction with test reports, streets must be swept at the end of each working day, and open excavations need temporary security fencing overnight. Contractors must notify residents in the construction area 24 hours ahead.",
+      sources: [sources.desotoRowApplication, sources.desotoRow],
+    },
+    {
+      title: "City line locates and 811",
+      text: "The ROW application requires 48 hours' notice for City line locates of water and sewer and of signs and signals, with all locates complete before the project starts. The permit does not relieve the contractor of contacting the one-call system and other utility owners. Texas law requires notice at least 48 hours before excavating, excluding weekends and holidays.",
+      sources: [sources.desotoRowApplication, sources.utilitiesCode251, sources.texas811],
+    },
+    {
+      title: "Stormwater on larger sites",
+      text: "ROW permits require erosion controls under NCTCOG stormwater practices. Sites disturbing one acre or more that discharge to surface waters generally also need TCEQ construction general permit coverage and a stormwater pollution prevention plan.",
+      sources: [sources.desotoRowApplication, sources.tceqConstructionStormwater],
+    },
+    {
+      title: "Clay soils and storms",
+      text: "USDA's Houston Black description covers Blackland Prairie soils from north of Dallas to San Antonio, with very high shrink-swell. NWS Fort Worth notes spring and fall are the wettest seasons; open pads lose grading days after storms.",
+      sources: [sources.usdaHoustonBlack, sources.nwsDfwClimate],
+    },
+  ],
+  faqs: [
+    { question: "Can I run heavy equipment on a Sunday in DeSoto?", answer: "Not without written consent. City Building Inspections lists Sunday hours of 9 a.m. to 5 p.m. with no heavy equipment unless approved. Weekday hours are 7 a.m. to 6 p.m. and Saturday hours are 8 a.m. to 6 p.m." },
+    { question: "What does DeSoto require before grading starts?", answer: "Engineering reviews grading and drainage plans, an erosion control plan with perimeter control in place, the construction entrance and any traffic control plan before move-in. A tree survey may also be required." },
+    { question: "What compaction is required in DeSoto right-of-way?", answer: "The ROW permit conditions require mechanical compaction of all excavation in City right-of-way, with compaction test reports submitted to the Construction Management Division." },
+    { question: "How much notice does DeSoto need for City line locates?", answer: "The ROW application asks for 48 hours' notice for City water, sewer and sign or signal locates, with all locates complete before the project starts. You still need to contact the one-call system separately." },
+  ],
+  nearbyCities: ["grand-prairie", "mansfield", "dallas"],
+  guides: [sitePrepGuide, utilityLocatesGuideLink, telehandlerForkliftGuideLink],
+};
