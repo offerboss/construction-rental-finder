@@ -103,6 +103,28 @@ export const sources = {
   desotoGradingPermit: { label: "City of DeSoto Engineering Division Grading Permit (PDF)", url: "https://www.desototexas.gov/DocumentCenter/View/1138/Grading-Permit-PDF" },
   desotoRowApplication: { label: "City of DeSoto R.O.W. Permit Application and Conditions (PDF)", url: "https://www.desototexas.gov/DocumentCenter/View/1125/ROW-Application-Form-PDF" },
   desotoRow: { label: "City of DeSoto: Right of Way", url: "https://www.desototexas.gov/489/Right-of-Way" },
+  tshaGrapevine: { label: "Handbook of Texas: Grapevine, TX (Tarrant County)", url: "https://www.tshaonline.org/handbook/entries/grapevine-tx-tarrant-county" },
+  grapevineRowFaq: { label: "City of Grapevine Public Works: Right-of-Way permit FAQ", url: "https://www.grapevinetexas.gov/FAQ.aspx?QID=141" },
+  grapevineRowNotes: { label: "City of Grapevine Right-of-Way Permitting Notes & Requirements (PDF)", url: "https://www.grapevinetexas.gov/DocumentCenter/View/45" },
+  grapevineGeneralNotes: { label: "City of Grapevine Construction Standard Details, General Notes (PDF)", url: "https://www.grapevinetexas.gov/DocumentCenter/View/5621/Construction-Standard-Details" },
+  tshaBedford: { label: "Handbook of Texas: Bedford, TX", url: "https://www.tshaonline.org/handbook/entries/bedford-tx" },
+  bedfordGeneralNotes: { label: "City of Bedford General Construction Notes (PDF)", url: "https://www.bedfordtx.gov/DocumentCenter/View/10989/General-Construction-Notes" },
+  bedfordRowOrdinance: { label: "City of Bedford Ordinance No. 17-3204 (2017), Chapter 96 Right-of-Way Management", url: "https://mcclibraryfunctions.azurewebsites.us/api/ordinanceDownload/14937/845485/pdf" },
+  bedfordPermits: { label: "City of Bedford: Permits, Applications, and Information", url: "https://www.bedfordtx.gov/185/Permits-Applications-and-Information" },
+  tshaCedarHill: { label: "Handbook of Texas: Cedar Hill, TX (Dallas County)", url: "https://www.tshaonline.org/handbook/entries/cedar-hill-tx-dallas-county" },
+  cedarHillNature: { label: "City of Cedar Hill: Nature & Open Space", url: "https://cedarhilltx.com/2905/Nature-Open-Space" },
+  cedarHillPreCon: { label: "City of Cedar Hill Public Works Pre-Construction Packet and ROW Permit Conditions (PDF)", url: "https://www.cedarhilltx.com/DocumentCenter/View/32234/Pre-Construction-Packet-2019-PDF" },
+  cedarHillForms: { label: "City of Cedar Hill Engineering: Forms, Permits and ROW permits", url: "https://www.cedarhilltx.com/658/Forms-Permits-Instructions" },
+  tshaBurleson: { label: "Handbook of Texas: Burleson, TX", url: "https://www.tshaonline.org/handbook/entries/burleson-tx" },
+  burlesonChisholmSummit: { label: "City of Burleson: Chisholm Summit", url: "https://www.burlesontx.com/2309/Chisholm-Summit" },
+  burlesonRow: { label: "City of Burleson: Right-of-Way Permits", url: "https://www.burlesontx.com/919/Right-of-Way-Permits" },
+  burlesonRowApplication: { label: "City of Burleson ROW Permit Application and Locate Request", url: "https://www.burlesontx.com/FormCenter/Public-Works-6/ROW-Permit-Application-136" },
+  burlesonForms: { label: "City of Burleson Development Engineering: Forms & Checklists", url: "https://www.burlesontx.com/495/Forms-Checklists" },
+  tshaRockwall: { label: "Handbook of Texas: Rockwall, TX (Rockwall County)", url: "https://www.tshaonline.org/handbook/entries/rockwall-tx-rockwall-county" },
+  rockwallConstructionNotes: { label: "City of Rockwall Construction Notes (Ordinance 05-45 working hours; inspections) (PDF)", url: "https://www.rockwall.com/documents/engineering/City%20Construction%20Notes.pdf" },
+  rockwallFill: { label: "City of Rockwall Fill Material Request Form and instructions (PDF)", url: "https://ra.rockwall.com/documents/Engineering/FillRequestrev2004_000.pdf" },
+  rockwallEngineering: { label: "City of Rockwall Engineering (ROW portal, floodplain, Saturday work requests)", url: "https://www.rockwall.com/engineering.asp" },
+  rockwallTakeline: { label: "City of Rockwall Building Inspections: Takeline (Lake Ray Hubbard)", url: "https://www.rockwall.com/buildinginspections_takeline.asp" },
 } satisfies Record<string, SourceLink>;
 
 // Guide links render only once the guide is published in resources.ts.
@@ -133,6 +155,14 @@ const shortVsLongGuideLink: CityGuideLink = {
 const utilityLocatesGuideLink: CityGuideLink = {
   slug: "utility-locates-before-digging",
   reason: "Line up Texas811 notice, City water and sewer locates and permits before the first dig.",
+};
+const generatorGuideLink: CityGuideLink = {
+  slug: "jobsite-generator-sizing",
+  reason: "Size temporary power by rated output and runtime, and set it up to OSHA rules.",
+};
+const trenchSafetyGuideLink: CityGuideLink = {
+  slug: "trench-safety-basics",
+  reason: "Know when trenches need sloping, shoring or a trench box before crews go in.",
 };
 const telehandlerForkliftGuideLink: CityGuideLink = {
   slug: "telehandler-vs-forklift",
@@ -207,7 +237,7 @@ export const arlington: CityEntry = {
     src: "/images/locations/arlington-tx-construction-equipment-rental.webp",
     alt: "Telehandler placing a pallet beside a steel-frame commercial building on a clay pad in Arlington, Texas",
   },
-  guides: [excavatorSizeGuide, compactGuide, boomLiftGuide, rentalChecklistGuideLink, utilityLocatesGuideLink],
+  guides: [excavatorSizeGuide, compactGuide, boomLiftGuide, rentalChecklistGuideLink, utilityLocatesGuideLink, generatorGuideLink],
 };
 
 export const irving: CityEntry = {
@@ -274,7 +304,7 @@ export const irving: CityEntry = {
     { question: "Do I need to call 811 for yard and dock work in Irving?", answer: "Yes, if you'll dig, trench or set anything below grade. Texas law requires notice to a one-call center no later than 48 hours before excavation, not counting weekends and holidays, and no earlier than 14 days before. Texas811 takes requests by phone at 811 or online." },
     { question: "Can I get a lift into a finished office or retail space?", answer: "Usually, with the right machine. Ask for an electric slab scissor or compact boom with non-marking tires, check door widths, ramp or elevator limits and floor load ratings, and plan delivery around tenant hours." },
   ],
-  nearbyCities: ["arlington", "grand-prairie", "carrollton", "euless", "dallas", "fort-worth"],
+  nearbyCities: ["arlington", "grand-prairie", "carrollton", "euless", "grapevine", "dallas", "fort-worth"],
   heroImage: {
     src: "/images/locations/irving-tx-construction-equipment-rental.webp",
     alt: "Telehandler and forklift moving pallets in the gravel yard of a new tilt-wall warehouse in Irving, Texas",
@@ -423,7 +453,7 @@ export const frisco: CityEntry = {
     src: "/images/locations/frisco-tx-construction-equipment-rental.webp",
     alt: "Excavator loading a dump truck beside a roller and wheel loader on a large graded development site in Frisco, Texas",
   },
-  guides: [excavatorSizeGuide, compactGuide, sitePrepGuide, shortVsLongGuideLink, utilityLocatesGuideLink],
+  guides: [excavatorSizeGuide, compactGuide, sitePrepGuide, shortVsLongGuideLink, utilityLocatesGuideLink, trenchSafetyGuideLink],
 };
 
 export const mckinney: CityEntry = {
@@ -495,7 +525,7 @@ export const mckinney: CityEntry = {
     src: "/images/locations/mckinney-tx-construction-equipment-rental.webp",
     alt: "Mini excavator trenching beside concrete forms and a skid steer next to historic brick buildings in McKinney, Texas",
   },
-  guides: [compactGuide, excavatorSizeGuide, sitePrepGuide],
+  guides: [compactGuide, excavatorSizeGuide, sitePrepGuide, trenchSafetyGuideLink],
 };
 
 export const garland: CityEntry = {
@@ -562,7 +592,7 @@ export const garland: CityEntry = {
     { question: "What hours can I work next to homes in Garland?", answer: "Garland's building code amendments allow outside work adjacent to occupied homes or apartments from 7 a.m. to 8 p.m., seven days a week. Right-of-way work has its own limits on lane closures and holidays, so check your permit as well." },
     { question: "What equipment suits converting an older industrial building in Garland?", answer: "Plan for material handling and work at height first: a forklift or telehandler for materials, electric scissor lifts for ceilings and overhead systems, and concrete saws and a mini excavator if new utilities go under the slab. Measure door openings and check the floor before choosing machine sizes." },
   ],
-  nearbyCities: ["richardson", "mesquite", "rowlett", "wylie", "dallas"],
+  nearbyCities: ["richardson", "mesquite", "rowlett", "wylie", "rockwall", "dallas"],
   heroImage: {
     src: "/images/locations/garland-tx-construction-equipment-rental.webp",
     alt: "Forklift carrying a pallet beside a scissor lift at the open warehouse bay of an older masonry building in Garland, Texas",
@@ -634,7 +664,7 @@ export const grandPrairie: CityEntry = {
     { question: "What equipment does a new warehouse build in Grand Prairie use?", answer: "Site work usually starts with excavators, wheel loaders and rollers for the pad and utilities. As the building goes up, telehandlers and boom lifts take over for walls and roofing, and forklifts handle racking and materials once the slab is in. Share the building height, yard surface and schedule with the provider." },
     { question: "Do I need FAA notice to use a boom lift or crane near the Grand Prairie airport?", answer: "It depends on height and distance. Because the municipal airport's runway is longer than 3,200 feet, FAA notice is required for anything that would exceed a 100:1 surface extending 20,000 feet from the runway, or that is more than 200 feet tall, and temporary cranes count. If you need to file, do it at least 45 days before work starts." },
   ],
-  nearbyCities: ["arlington", "irving", "mansfield", "desoto", "dallas"],
+  nearbyCities: ["arlington", "irving", "mansfield", "desoto", "cedar-hill", "dallas"],
   heroImage: {
     src: "/images/locations/grand-prairie-tx-construction-equipment-rental.webp",
     alt: "Telescopic boom lift and telehandler at a new tilt-wall concrete warehouse on a dirt pad in Grand Prairie, Texas",
@@ -711,7 +741,7 @@ export const mesquite: CityEntry = {
     src: "/images/locations/mesquite-tx-construction-equipment-rental.webp",
     alt: "Padfoot soil compactor on a prepared dirt pad with an excavator on a soil pile behind it in Mesquite, Texas",
   },
-  guides: [sitePrepGuide, excavatorSizeGuide],
+  guides: [sitePrepGuide, excavatorSizeGuide, trenchSafetyGuideLink],
 };
 
 export const carrollton: CityEntry = {
@@ -783,7 +813,7 @@ export const carrollton: CityEntry = {
     src: "/images/locations/carrollton-tx-construction-equipment-rental.webp",
     alt: "Telehandler lifting lumber to a wood-frame mid-rise building behind orange barriers in Carrollton, Texas",
   },
-  guides: [boomLiftGuide, compactGuide],
+  guides: [boomLiftGuide, compactGuide, generatorGuideLink],
 };
 
 export const richardson: CityEntry = {
@@ -855,7 +885,7 @@ export const richardson: CityEntry = {
     src: "/images/locations/richardson-tx-construction-equipment-rental.webp",
     alt: "Articulating boom lift behind safety cones at a glass office building at golden hour in Richardson, Texas",
   },
-  guides: [boomLiftGuide, compactGuide],
+  guides: [boomLiftGuide, compactGuide, generatorGuideLink],
 };
 
 export const denton: CityEntry = {
@@ -1134,7 +1164,7 @@ export const flowerMound: CityEntry = {
     { question: "What equipment suits a Lakeside Business District build?", answer: "Plan excavators and rollers for the pad, then telehandlers, boom lifts and forklifts as the building and warehouse areas come online. Confirm gate width, slab capacity and delivery routes on landscaped campuses." },
     { question: "Can I start early to beat the summer heat in Flower Mound?", answer: "Weekday work may start at 7 a.m., which is the Town's limit. Earlier starts are not allowed under the published construction hours, even in summer heat." },
   ],
-  nearbyCities: ["lewisville", "carrollton", "denton", "dallas"],
+  nearbyCities: ["lewisville", "carrollton", "denton", "grapevine", "dallas"],
   heroImage: {
     src: "/images/locations/flower-mound-tx-construction-equipment-rental.webp",
     alt: "Telehandler lifting lumber at a wood-frame house with tree-protection fencing around oaks in Flower Mound, Texas",
@@ -1205,7 +1235,7 @@ export const mansfield: CityEntry = {
     { question: "What equipment suits a new Mansfield subdivision?", answer: "Early phases usually need excavators, wheel loaders or skid steers, trenchers and rollers. Telehandlers and boom lifts arrive when framing and exterior finishes start. Share pad size, soil report and schedule with the provider." },
     { question: "Where is industrial construction concentrated in Mansfield?", answer: "The 2012 Land Use Plan places most industrial land south of downtown along S. Main Street and notes remaining industrial acreage whose readiness depends on water and sewer infrastructure. Confirm current zoning and utilities with the City before planning heavy equipment." },
   ],
-  nearbyCities: ["arlington", "grand-prairie", "desoto", "dallas", "fort-worth"],
+  nearbyCities: ["arlington", "grand-prairie", "desoto", "cedar-hill", "burleson", "dallas", "fort-worth"],
   heroImage: {
     src: "/images/locations/mansfield-tx-construction-equipment-rental.webp",
     alt: "Motor grader and smooth-drum roller working a large graded clay site with two workers in hi-vis in Mansfield, Texas",
@@ -1278,7 +1308,7 @@ export const northRichlandHills: CityEntry = {
     { question: "What are construction hours in North Richland Hills?", answer: "Outdoor construction is not allowed from 7 p.m. to 7 a.m. during Central Standard Time or 8 p.m. to 6 a.m. during daylight saving time, on Sundays, or on six listed holidays. Appeals go to the building official in writing." },
     { question: "What equipment suits work near the TEXRail station districts?", answer: "Compact machines for utilities and flatwork, plus telehandlers and boom lifts for multi-story mixed-use buildings. Share lot size, staging space and street access with the provider, since both station areas are planned around pedestrians." },
   ],
-  nearbyCities: ["fort-worth", "euless", "arlington", "dallas"],
+  nearbyCities: ["fort-worth", "euless", "arlington", "bedford", "dallas"],
   heroImage: {
     src: "/images/locations/north-richland-hills-tx-construction-equipment-rental.webp",
     alt: "Yellow telehandler lifting a lumber pallet onto a 3-story wood-framed building, mini excavator by a new sidewalk",
@@ -1349,7 +1379,7 @@ export const rowlett: CityEntry = {
     { question: "What are Rowlett's construction hours?", answer: "City sources give different figures, so confirm current hours for your permit type with Development Engineering or Building Inspections before planning early, late or Saturday work." },
     { question: "What equipment fits Rowlett's form-based districts?", answer: "Downtown and gateway districts lean toward telehandlers, boom lifts and compact utility equipment for mixed-use buildings. Larger North Shore and commerce district sites add excavators, wheel loaders and rollers." },
   ],
-  nearbyCities: ["garland", "wylie", "dallas"],
+  nearbyCities: ["garland", "wylie", "rockwall", "dallas"],
   heroImage: {
     src: "/images/locations/rowlett-tx-construction-equipment-rental.webp",
     alt: "Excavator and smooth-drum roller on a graded clay pad with silt fence, lake and tree line behind, overcast sky",
@@ -1420,7 +1450,7 @@ export const euless: CityEntry = {
     { question: "Can I use Euless utility maps instead of calling 811?", answer: "No. Engineering's water and sewer locator maps show general locations for planning. Texas law still requires one-call notice before excavating, at least 48 hours ahead excluding weekends and holidays." },
     { question: "What equipment suits commercial work near DFW Airport?", answer: "Telehandlers, boom lifts and forklifts for shell and fit-out work, plus scissor lifts inside. Share building height, lot layout and airport proximity with the provider." },
   ],
-  nearbyCities: ["irving", "arlington", "north-richland-hills", "dallas"],
+  nearbyCities: ["irving", "arlington", "north-richland-hills", "grapevine", "bedford", "dallas"],
   heroImage: {
     src: "/images/locations/euless-tx-construction-equipment-rental.webp",
     alt: "Telehandler and forklift staging materials at a steel building frame on a paved lot, jet overhead",
@@ -1491,7 +1521,7 @@ export const wylie: CityEntry = {
     { question: "Where do I file engineering and ROW permits in Wylie?", answer: "Online through the City's CitizenServe portal. Construction Permit and Contractor Registration applications for the right-of-way are filed there, registration is good for one year, and the old ROW permit email has been discontinued." },
     { question: "What equipment suits a new Wylie subdivision?", answer: "Excavators, trenchers, rollers and compact track loaders for early site work, then telehandlers for framing and roofing. Share pad size, soil report and delivery windows with the provider." },
   ],
-  nearbyCities: ["allen", "rowlett", "garland", "dallas"],
+  nearbyCities: ["allen", "rowlett", "garland", "rockwall", "dallas"],
   heroImage: {
     src: "/images/locations/wylie-tx-construction-equipment-rental.webp",
     alt: "Trencher and compact track loader beside a fresh utility trench in a subdivision with framed houses at golden hour",
@@ -1562,10 +1592,365 @@ export const desoto: CityEntry = {
     { question: "What compaction is required in DeSoto right-of-way?", answer: "The ROW permit conditions require mechanical compaction of all excavation in City right-of-way, with compaction test reports submitted to the Construction Management Division." },
     { question: "How much notice does DeSoto need for City line locates?", answer: "The ROW application asks for 48 hours' notice for City water, sewer and sign or signal locates, with all locates complete before the project starts. You still need to contact the one-call system separately." },
   ],
-  nearbyCities: ["grand-prairie", "mansfield", "dallas"],
+  nearbyCities: ["grand-prairie", "mansfield", "cedar-hill", "dallas"],
   heroImage: {
     src: "/images/locations/desoto-tx-construction-equipment-rental.webp",
     alt: "Excavator loading a dump truck and wheel loader on a graded pad, concrete tilt-wall panels behind",
   },
   guides: [sitePrepGuide, utilityLocatesGuideLink, telehandlerForkliftGuideLink],
+};
+
+export const grapevine: CityEntry = {
+  name: "Grapevine",
+  slug: "grapevine",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Grapevine is in the northeast corner of Tarrant County on State Highways 114 and 121, between Grapevine Lake and DFW International Airport.",
+  metaDescription:
+    "Construction equipment rentals in Grapevine, TX: mini excavators, compactors, lifts and telehandlers, plus the City's ROW rules, festival no-work weeks and airport limits.",
+  localIntro: [
+    "Grapevine sits on State Highways 114 and 121 in the northeast corner of Tarrant County, with small sections in Dallas and Denton counties. The Handbook of Texas places it on the edge of the Grapevine Prairie and the Eastern Cross Timbers, with Grapevine Lake extending north into Denton County and a sizable part of DFW International Airport inside the city limits.",
+    "Hospitality, retail and a historic Main Street sit alongside older neighborhoods, so much of the work here is utility, infill and commercial building work around sites that are already busy. Use this page to match machines to Grapevine work, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Utility and right-of-way work runs on a calendar unlike most DFW cities. The City's right-of-way notes stop work from noon Tuesday through Sunday during the weeks of Main Street Fest and GrapeFest, around Thanksgiving, and on most days between Dec. 22 and Jan. 1. Book mini excavators, compactors and traffic control around those blackout weeks, not through them.",
+    "Under pavement, the City requires directional boring rather than open cuts unless approved in advance, and City water, wastewater, drainage and telecom lines in the project area have to be potholed at 100-foot intervals and at each crossing. Compact excavators and backfill compaction equipment do the open work at bore pits, service connections and potholes.",
+    "Commercial and hospitality buildings near the airport and the lake bring boom lifts, telehandlers and scissor lifts. Because DFW Airport lies partly inside the city, tall equipment near the airport needs a Part 77 check before it goes up.",
+  ],
+  featuredEquipment: [
+    { slug: "mini-excavator-rental", reason: "Bore pits, potholing City lines and service connections in established neighborhoods and along Main Street." },
+    { slug: "compactor-rental", reason: "Backfill in 12-inch lifts to 95% Standard Proctor under the City's general notes." },
+    { slug: "excavator-rental", reason: "Larger utility runs and site work on commercial and hospitality projects." },
+    { slug: "boom-lift-rental", reason: "Exterior work on hotels, retail and office buildings around the SH 114/121 corridor." },
+    { slug: "telehandler-rental", reason: "Placing materials on commercial and multifamily buildings where cranes aren't practical." },
+    { slug: "skid-steer-rental", reason: "Cleanup, restoration and flatwork prep behind utility crews." },
+  ],
+  siteConsiderations: [
+    {
+      title: "Right-of-way permits",
+      text: "A City permit is required for any work in Grapevine rights-of-way, public easements or other City property. Where City utilities lie inside TxDOT right-of-way, a City permit is required in addition to the TxDOT permit. Complete applications with compliant plans are usually issued within five working days.",
+      sources: [sources.grapevineRowFaq],
+    },
+    {
+      title: "Festival, holiday and weekend no-work days",
+      text: "For right-of-way work, the City's permitting notes say no work on Saturdays without 48 hours' notice to the Chief Construction Inspector and none on Sundays. No work is done from noon Tuesday through the following Sunday in the weeks of Main Street Fest and GrapeFest, from the Wednesday before Thanksgiving through that weekend, or on Dec. 22–26, Dec. 30–31 and Jan. 1.",
+      sources: [sources.grapevineRowNotes],
+    },
+    {
+      title: "Working hours on public improvements",
+      text: "The City's general construction notes describe a normal work week of 8 a.m. to 5 p.m., Monday through Friday. The construction inspector overtime policy allows work from 7 a.m. to 7 p.m. Monday through Saturday, with overtime inspection charges outside the normal week. No work is allowed on Sundays.",
+      sources: [sources.grapevineGeneralNotes],
+    },
+    {
+      title: "Potholing, boring and pavement",
+      text: "Texas811 locates must be complete before work starts. City water, wastewater, drainage and telecom lines in the project area are potholed at 100-foot intervals and at each crossing, with the contractor supplying the potholing equipment. Directional boring is the required method under pavement, missiles are prohibited, and any pavement cut needs a call to the City first; plates are not allowed.",
+      sources: [sources.grapevineRowNotes, sources.utilitiesCode251, sources.texas811],
+    },
+    {
+      title: "Trenches, backfill, trees and floodplain fill",
+      text: "Trenches deeper than 5 feet need trench safety plans prepared by a licensed professional engineer before excavation. Embedment and backfill are compacted in 12-inch lifts to 95% Standard Proctor, with density tests every 5 feet of depth and every 100 feet of trench. A tree preservation inspection is requested before work begins, and no filling in the floodplain is allowed without an executed fill agreement.",
+      sources: [sources.grapevineGeneralNotes, sources.oshaTrenching],
+    },
+    {
+      title: "Airport airspace",
+      text: "FAA notice is required for construction or alteration more than 200 feet above ground, or that exceeds a 100:1 slope within 20,000 feet of a qualifying runway; temporary structures such as cranes are covered. File Form 7460-1 at least 45 days before work when it applies.",
+      sources: [sources.tshaGrapevine, sources.faaPart77, sources.faaForm7460],
+    },
+  ],
+  faqs: [
+    { question: "Can I work in Grapevine right-of-way during GrapeFest?", answer: "No. The City's right-of-way notes stop work from noon Tuesday through the following Sunday in the weeks when Main Street Fest or GrapeFest is held. Plan deliveries and digging around those weeks." },
+    { question: "Can I open-cut a Grapevine street for a utility line?", answer: "Generally not. Directional boring is the required method under pavement, open cuts need advance approval, and any pavement cut requires a call to the City first. Steel plates are not allowed." },
+    { question: "Do I need to pothole City lines in Grapevine?", answer: "Yes. City water, wastewater, drainage and telecom lines in the project area are potholed at 100-foot intervals and at every crossing, and each service or lateral is uncovered where it crosses. The contractor provides the potholing equipment." },
+    { question: "Is Saturday work allowed in Grapevine?", answer: "For right-of-way work, only with 48 hours' notice to the Chief Construction Inspector. The public-improvement overtime policy allows 7 a.m. to 7 p.m. Monday through Saturday, and there is no Sunday work." },
+  ],
+  nearbyCities: ["euless", "bedford", "irving", "flower-mound", "dallas"],
+  heroImage: {
+    src: "/images/locations/grapevine-tx-construction-equipment-rental.webp",
+    alt: "Mini excavator trenching along a curb beside a plate compactor and cones on a tree-lined street in Grapevine, Texas",
+  },
+  guides: [utilityLocatesGuideLink, trenchSafetyGuideLink, rentalChecklistGuideLink],
+};
+
+export const bedford: CityEntry = {
+  name: "Bedford",
+  slug: "bedford",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Bedford is a compact, largely built-up city in northeast Tarrant County, bisected by State Highway 121 between Fort Worth and Grapevine.",
+  metaDescription:
+    "Construction equipment rentals in Bedford, TX: compact loaders, mini excavators, compactors and lifts for redevelopment and utility work, plus City grading and ROW rules.",
+  localIntro: [
+    "Bedford is in the northeast quadrant of Tarrant County, north of the West Fork of the Trinity River and bisected by State Highway 121. The Handbook of Texas traces its growth from about two square miles in the mid-1950s to just over ten, with a building boom from the late 1970s through the mid-1980s that brought an industrial park, shopping centers and thousands of homes.",
+    "With a land area of about 10 square miles in the 2020 Census, much of the work now is on sites that already have neighbors: utility replacement, small commercial pads and rework of older buildings. Use this page to match machines to Bedford work, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Small sites favor compact machines. Compact track loaders, mini excavators and plate compactors fit between existing buildings and parking lots, and Bedford's general construction notes require work to stay inside the designated area, with no encroachment onto neighboring lots without written approval from the owner and the City.",
+    "Bedford treats grading strictly. Every soil-disturbing activity needs a grading permit, and the erosion controls in the stormwater plan must be installed and inspected by the City's Stormwater Inspector before construction starts. Silt fence, construction entrances and inlet protection go in before the first bucket of dirt moves.",
+    "Right-of-way work comes with traffic rules. Lane closures on major thoroughfares are limited to after 8:30 a.m. and before 4 p.m. unless approved, and no closure may last more than four hours unless the permit allows it, so schedule excavators and compactors to finish within the closure window.",
+  ],
+  featuredEquipment: [
+    { slug: "skid-steer-rental", reason: "Grading, base and cleanup on tight redevelopment pads and parking lots." },
+    { slug: "mini-excavator-rental", reason: "Water and sewer service work and footings between existing buildings." },
+    { slug: "compactor-rental", reason: "Fill under pavement in 6-inch lifts and ROW backfill to 95% Standard Proctor." },
+    { slug: "scissor-lift-rental", reason: "Interior and storefront work when older retail and office buildings are reworked." },
+    { slug: "boom-lift-rental", reason: "Facade, sign-band and roofline work on existing commercial buildings." },
+    { slug: "generator-rental", reason: "Temporary power on redevelopment sites before permanent service is connected." },
+  ],
+  siteConsiderations: [
+    {
+      title: "Grading permit and stormwater controls",
+      text: "Within Bedford, all soil-disturbing activities require a grading permit. Before the permit is issued, the contractor provides the TCEQ Construction Site Notice or Notice of Intent and a site-specific erosion control plan or SWPPP, and no grading starts until those controls are installed and inspected by the City's Stormwater Inspector.",
+      sources: [sources.bedfordGeneralNotes, sources.bedfordPermits, sources.tceqConstructionStormwater],
+    },
+    {
+      title: "Floodplain work and spoil disposal",
+      text: "Activities inside a 100-year floodplain need a floodplain permit or a documented waiver from the local floodplain administrator before construction. Off-site disposal areas for spoil need written verification that they lie outside the FEMA 100-year floodplain, included with the SWPPP.",
+      sources: [sources.bedfordGeneralNotes],
+    },
+    {
+      title: "Right-of-way permits and lane closures",
+      text: "Requests for a right-of-way permit are due at least ten working days before work, unless waived. Erosion controls and warning devices go in before work begins, lane closures on major thoroughfares run after 8:30 a.m. and before 4 p.m. unless approved, and closures may not last longer than four hours unless the permit says otherwise.",
+      sources: [sources.bedfordRowOrdinance],
+    },
+    {
+      title: "Notice, locates and Saturday work",
+      text: "Bedford's general notes ask for at least 48 hours' notice to Public Works-Engineering before work begins in public right-of-way, and Texas811 and affected utilities must verify field locations before excavation, with locates kept current. Saturday work requires advance written notice to the Engineering Inspector, and work on City-observed holidays needs express approval.",
+      sources: [sources.bedfordGeneralNotes, sources.utilitiesCode251, sources.texas811],
+    },
+    {
+      title: "Compaction and trench safety",
+      text: "Fill beneath pavement is compacted to 95% of Standard Proctor in lifts no thicker than 6 inches unless the geotechnical report says otherwise, and service-line backfill in right-of-way also reaches 95%. Water, sewer and storm work requires a trench safety plan submitted to the Engineering Inspector before the pre-construction meeting.",
+      sources: [sources.bedfordGeneralNotes, sources.oshaTrenching],
+    },
+    {
+      title: "Clay and storms",
+      text: "USDA describes Houston Black, the signature Blackland Prairie soil found from north of Dallas to San Antonio, as very high in shrink-swell. NWS Fort Worth notes spring and fall are the wettest seasons, which is when open pads and trenches lose the most days.",
+      sources: [sources.usdaHoustonBlack, sources.nwsDfwClimate],
+    },
+  ],
+  faqs: [
+    { question: "Do I need a grading permit for a small job in Bedford?", answer: "Bedford's general construction notes say all soil-disturbing activities within the City require a grading permit, with erosion controls installed and inspected by the City's Stormwater Inspector before construction." },
+    { question: "How long can a lane be closed in Bedford?", answer: "No more than four hours unless the permit allows a different period. Closures on major thoroughfares are limited to after 8:30 a.m. and before 4 p.m. unless the City approves otherwise." },
+    { question: "How far ahead should I apply for a Bedford ROW permit?", answer: "At least ten working days before the work starts, unless the City waives it. Give Public Works-Engineering at least 48 hours' notice before starting work in the right-of-way." },
+    { question: "What compaction does Bedford require under pavement?", answer: "95% of Standard Proctor density in lifts no thicker than 6 inches, unless the approved geotechnical report recommends otherwise." },
+  ],
+  nearbyCities: ["euless", "north-richland-hills", "grapevine", "fort-worth", "dallas"],
+  heroImage: {
+    src: "/images/locations/bedford-tx-construction-equipment-rental.webp",
+    alt: "Compact track loader spreading gravel base inside silt fence beside an older brick commercial building in Bedford, Texas",
+  },
+  guides: [sitePrepGuide, compactGuide, generatorGuideLink],
+};
+
+export const cedarHill: CityEntry = {
+  name: "Cedar Hill",
+  slug: "cedar-hill",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Cedar Hill is in the rolling hills of southwestern Dallas County on US 67, at the northern edge of the Balcones Escarpment beside Joe Pool Lake.",
+  metaDescription:
+    "Construction equipment rentals in Cedar Hill, TX: excavators, track loaders and compactors for hillside and residential work, plus City ROW conditions and site rules.",
+  localIntro: [
+    "Cedar Hill is on US Highway 67 in the rolling hills of southwestern Dallas County, two miles north of the Ellis County line. The City describes it as sitting at the northern edge of the Balcones Escarpment, where rugged limestone bluffs meet the soils of the Blackland Prairie, with the highest elevation in Dallas County.",
+    "Joe Pool Lake, shared with Dallas, Grand Prairie, Mansfield and Midlothian, borders the city, and the City Council has set a goal of preserving 25% of land in Cedar Hill as open space. Use this page to match machines to Cedar Hill work, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Terrain sets the equipment list. Lots near the escarpment can mean slopes, limestone and shallow rock instead of the deep clay found elsewhere in the county, so excavators sized for rock, compact track loaders for grip on slopes, and plans for spoil handling matter more than on flat prairie sites.",
+    "Utility and right-of-way work often happens beside occupied homes. The City's permit conditions require restoring sod, sprinklers and property pins, sweeping streets daily and fencing excavations every night, which keeps skid steers and compactors on the list after the digging is done.",
+    "Open space and preserves shape where sites sit. With large preserves and the lake nearby, expect erosion controls along creeks and slopes and plan staging so equipment stays off protected land.",
+  ],
+  featuredEquipment: [
+    { slug: "excavator-rental", reason: "Cuts on sloped lots and utility work where limestone sits close to the surface." },
+    { slug: "skid-steer-rental", reason: "Compact track loaders for grading on slopes, restoration and daily cleanup behind crews." },
+    { slug: "mini-excavator-rental", reason: "Service connections and trenching beside occupied homes." },
+    { slug: "compactor-rental", reason: "Mechanical compaction of every excavation in City right-of-way, with test reports." },
+    { slug: "wheel-loader-rental", reason: "Moving rock and spoil and loading trucks on larger graded sites." },
+    { slug: "trencher-rental", reason: "Long, narrow runs for irrigation and small utilities in softer soils." },
+  ],
+  siteConsiderations: [
+    {
+      title: "ROW work hours",
+      text: "Cedar Hill's right-of-way permit conditions set hours of work from 7 a.m. to 4 p.m., Monday through Friday, with no work on holidays. Contractors must comply with the City's Right-of-Way Management Ordinance No. 2001-54.",
+      sources: [sources.cedarHillPreCon],
+    },
+    {
+      title: "City line locates",
+      text: "ROW permits trigger City line locates, and the permit packet asks for 48 hours' notice. Contractors must confirm that City-owned facilities are located, marked and identified before starting and every 10 days during construction. Texas law separately requires one-call notice at least 48 hours before excavating, excluding weekends and holidays.",
+      sources: [sources.cedarHillPreCon, sources.cedarHillForms, sources.utilitiesCode251, sources.texas811],
+    },
+    {
+      title: "Traffic control and street cuts",
+      text: "ROW plans must include a traffic control plan signed and sealed by a licensed Texas professional engineer, and work areas follow MUTCD traffic control. The City's pre-construction packet states that open cutting of public streets is prohibited.",
+      sources: [sources.cedarHillPreCon],
+    },
+    {
+      title: "Compaction, fencing and cleanup",
+      text: "All excavation within City right-of-way requires mechanical compaction, with compaction test reports turned in to Public Works. At the end of each work day the contractor puts a temporary security fence around every excavation, sweeps the street, and keeps cleanup within 5 feet behind the excavation crew.",
+      sources: [sources.cedarHillPreCon],
+    },
+    {
+      title: "Erosion control and restoration",
+      text: "Contractors install and maintain erosion controls under the City's stormwater specifications and NCTCOG practices. Disturbed areas get 4 inches of topsoil with erosion matting and seed or hydromulch, sodded yards are re-sodded, and sprinklers and property pins are restored. Sites disturbing an acre or more generally also need TCEQ construction stormwater coverage.",
+      sources: [sources.cedarHillPreCon, sources.tceqConstructionStormwater],
+    },
+    {
+      title: "Escarpment terrain and storms",
+      text: "The City notes limestone bluffs bordering Blackland Prairie soils, which USDA describes as very high in shrink-swell. NWS Fort Worth notes spring and fall are the wettest seasons; slopes and creek crossings need erosion controls in place before storms.",
+      sources: [sources.cedarHillNature, sources.usdaHoustonBlack, sources.nwsDfwClimate],
+    },
+  ],
+  faqs: [
+    { question: "What are ROW work hours in Cedar Hill?", answer: "The City's right-of-way permit conditions allow work from 7 a.m. to 4 p.m., Monday through Friday, with no work on holidays." },
+    { question: "Can I open-cut a street in Cedar Hill?", answer: "The City's pre-construction packet says open cutting of public streets is prohibited. Plan to bore under pavement and confirm the method with Public Works." },
+    { question: "What has to happen at the end of each day on a Cedar Hill ROW job?", answer: "Sweep the street, keep cleanup close behind the excavation crew, and put a temporary security fence around every open excavation with the contractor's contact information posted." },
+    { question: "Why does terrain matter for equipment in Cedar Hill?", answer: "The City sits at the northern edge of the Balcones Escarpment, with limestone bluffs and the highest elevation in Dallas County. Slopes and rock can call for tracked loaders and excavators sized for harder digging." },
+  ],
+  nearbyCities: ["desoto", "grand-prairie", "mansfield", "dallas"],
+  heroImage: {
+    src: "/images/locations/cedar-hill-tx-construction-equipment-rental.webp",
+    alt: "Excavator cutting limestone and clay on a hillside lot beside a compact track loader in wooded hills in Cedar Hill, Texas",
+  },
+  guides: [excavatorSizeGuide, sitePrepGuide, trenchSafetyGuideLink],
+};
+
+export const burleson: CityEntry = {
+  name: "Burleson",
+  slug: "burleson",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Burleson is on Interstate 35W fourteen miles south of Fort Worth, in northern Johnson and southern Tarrant counties.",
+  metaDescription:
+    "Construction equipment rentals in Burleson, TX: excavators, trenchers, rollers and loaders for subdivision and corridor growth, plus City ROW, grading and floodplain rules.",
+  localIntro: [
+    "Burleson is on Interstate 35W, US 81 and State Highway 174, fourteen miles south of Fort Worth in northern Johnson and southern Tarrant counties, with Shannon and Village creeks running through it. The Handbook of Texas describes its turn from farm town to Fort Worth suburb after 1950.",
+    "New ground on the west side is a big part of today's work. The City describes Chisholm Summit, its first master-planned community, as expected to hold about 3,066 homes at build-out, with roads, sewer and lift stations built by the developer and direct access to Chisholm Trail Parkway. Use this page to match machines to Burleson work, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Master-planned and subdivision work runs in phases: clearing and mass grading, then water, sewer and storm lines, then street subgrade and paving, then houses. Excavators, trenchers, rollers and wheel loaders carry the early phases, and telehandlers and skid steers take over as homes go up.",
+    "Utility service on the west side is split among providers. The City notes Chisholm Summit's water comes from Johnson County Special Utility District, sewer from the City and electricity from United Cooperative, so locates and coordination involve more than one owner.",
+    "Grading and floodplain paperwork comes first. Development Engineering publishes an Early Grading Notification, a Floodplain Development Permit, a letter of permission for grading or concentrating flow onto a neighbor, and separate SWPPP checklists for large and small sites.",
+  ],
+  featuredEquipment: [
+    { slug: "excavator-rental", reason: "Mass grading, detention and sewer and water lines on new subdivision phases." },
+    { slug: "trencher-rental", reason: "Long, shallow runs for conduit and irrigation across new phases." },
+    { slug: "compactor-rental", reason: "Street subgrade, building pads and trench backfill on prairie clay." },
+    { slug: "wheel-loader-rental", reason: "Stockpiles, pipe bedding and truck loading on large graded sites." },
+    { slug: "skid-steer-rental", reason: "Lot grading, flatwork prep and right-of-way restoration." },
+    { slug: "telehandler-rental", reason: "Framing, roofing and masonry materials once homes and commercial buildings go vertical." },
+  ],
+  siteConsiderations: [
+    {
+      title: "ROW permits and locate requests",
+      text: "A right-of-way permit is required to disturb, excavate, block or place materials in a City road, right-of-way or easement. The City's online application doubles as a locate request, and contractors must call the ROW Inspector at least 48 hours before construction begins.",
+      sources: [sources.burlesonRow, sources.burlesonRowApplication],
+    },
+    {
+      title: "No street cuts; restore what you disturb",
+      text: "The application's special conditions state that street cuts are not permitted. Contractors are liable for damage to public infrastructure, including sidewalks and ramps, and must restore grass, driveways, fences and other amenities to as good or better condition. Lane closures need a site-specific traffic control plan with the application.",
+      sources: [sources.burlesonRowApplication],
+    },
+    {
+      title: "Grading, floodplain and stormwater forms",
+      text: "Development Engineering publishes an Early Grading Notification, a Floodplain Development Permit, a Letter of Permission for Grading or Concentration of Flow, a Storm Water Management Site Plan checklist and SWPPP checklists for large and small sites. Sites disturbing an acre or more generally also need TCEQ construction general permit coverage.",
+      sources: [sources.burlesonForms, sources.tceqConstructionStormwater],
+    },
+    {
+      title: "TxDOT corridors",
+      text: "Work along state highways such as I-35W involves TxDOT. The City's Development Engineering forms page links TxDOT business forms and a TxDOT utility permit questionnaire.",
+      sources: [sources.burlesonForms, sources.tshaBurleson],
+    },
+    {
+      title: "Call 811 before digging",
+      text: "Texas law requires one-call notice at least 48 hours before excavating, excluding weekends and holidays, in addition to the City's own locate request.",
+      sources: [sources.utilitiesCode251, sources.texas811],
+    },
+    {
+      title: "Trenches on new phases",
+      text: "Sewer and storm lines on subdivision phases often run deep. OSHA requires a protective system for trenches 5 feet deep or more unless they are entirely in stable rock, with spoil kept at least 2 feet from the edge and daily competent-person inspections.",
+      sources: [sources.oshaTrenching],
+    },
+  ],
+  faqs: [
+    { question: "Do I need a permit to work in a Burleson easement?", answer: "Yes. The City requires a right-of-way permit to disturb, excavate, block or place materials in a City road, right-of-way or easement. The same application serves as the locate request." },
+    { question: "Are street cuts allowed in Burleson?", answer: "The ROW application's special conditions say street cuts are not permitted. Plan to bore under pavement and restore anything disturbed." },
+    { question: "What forms come before grading in Burleson?", answer: "Development Engineering lists an Early Grading Notification, a Floodplain Development Permit where it applies, a letter of permission for grading or concentrating flow onto neighboring property, and SWPPP checklists for large and small sites." },
+    { question: "What equipment fits a new Burleson subdivision?", answer: "Excavators, trenchers, rollers and wheel loaders for grading and utilities, then telehandlers and skid steers as houses go up. Share phase size, soil report and access with the provider." },
+  ],
+  nearbyCities: ["fort-worth", "mansfield", "dallas"],
+  heroImage: {
+    src: "/images/locations/burleson-tx-construction-equipment-rental.webp",
+    alt: "Excavator setting sewer pipe in a trench box beside a smooth-drum roller on a new subdivision street in Burleson, Texas",
+  },
+  guides: [sitePrepGuide, trenchSafetyGuideLink, utilityLocatesGuideLink],
+};
+
+export const rockwall: CityEntry = {
+  name: "Rockwall",
+  slug: "rockwall",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Rockwall is the county seat of Rockwall County, at State Highways 66 and 205 on the eastern shore of Lake Ray Hubbard.",
+  metaDescription:
+    "Construction equipment rentals in Rockwall, TX: rollers, loaders, excavators and lifts for lakeside and growth-area work, plus City work hours, fill permits and takeline rules.",
+  localIntro: [
+    "Rockwall is the county seat of Rockwall County, at the intersection of State Highways 66 and 205 near the shores of Lake Ray Hubbard. The Handbook of Texas notes that growth sped up in the 1970s and 1980s, driven by jobs in Dallas and the construction of Lake Ray Hubbard.",
+    "Lakefront lots, residential subdivisions and commercial sites all bring equipment rentals here. Use this page to match machines to Rockwall work, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Rockwall manages dirt closely. Bringing in fill requires a Fill Material Request with an engineer's grading plan, staked limits, silt fence and compaction to 95% density with a sheepsfoot roller in 8- to 12-inch lifts, verified by a certified lab. Padfoot rollers, loaders and skid steers are the core of most fill jobs here.",
+    "Work hours cover more than the noise of digging. The City's construction-hours ordinance includes maintenance, servicing and fueling of equipment and the delivery of materials and equipment, so rental drop-offs and refueling have to land inside the same window as the work.",
+    "Along the lake, the City's Takeline Overlay governs development of property along the Lake Ray Hubbard shoreline. Seawalls, docks and other improvements there need a takeline lease and separate permits before equipment arrives.",
+  ],
+  featuredEquipment: [
+    { slug: "compactor-rental", reason: "Sheepsfoot or padfoot rollers for fill placed in 8- to 12-inch lifts to 95% density." },
+    { slug: "skid-steer-rental", reason: "Spreading fill, building stockpile slopes and finish grading on residential lots." },
+    { slug: "wheel-loader-rental", reason: "Moving stockpiles and loading trucks on larger fill and grading jobs." },
+    { slug: "excavator-rental", reason: "Utilities, detention and site grading on new subdivisions and commercial pads." },
+    { slug: "telehandler-rental", reason: "Framing and roofing materials on homes and commercial buildings." },
+    { slug: "boom-lift-rental", reason: "Exterior work on commercial buildings and lakeside structures." },
+  ],
+  siteConsiderations: [
+    {
+      title: "Construction hours, deliveries and fueling",
+      text: "Ordinance 05-45 limits construction and construction-related activity to 7 a.m.–7 p.m. Monday through Friday and 8 a.m.–7 p.m. Saturday, with no Sunday construction. The limit covers maintenance, servicing and fueling of construction equipment and the delivery of materials and equipment. The City requires a posted hours sign on commercial and residential development sites and may issue stop-work orders or citations.",
+      sources: [sources.rockwallConstructionNotes],
+    },
+    {
+      title: "Saturday and after-hours inspections",
+      text: "Saturday Engineering inspections must be requested in writing by noon on the Thursday before, using the City's Saturday request form, and before- or after-hours inspections are billed to the contractor. Build those deadlines into delivery plans for weekend work.",
+      sources: [sources.rockwallConstructionNotes, sources.rockwallEngineering],
+    },
+    {
+      title: "Fill material permits",
+      text: "Permanent fill needs an engineer's grading plan showing existing and proposed topography, creeks, floodplains and trees; limits staked in the field; silt fence around the fill; and no fill in drainage ways, floodplains or wetlands. Slopes are limited to 3:1, grass must be established within 21 days, and contractors delivering material must sign the permit and carry a copy.",
+      sources: [sources.rockwallFill],
+    },
+    {
+      title: "Temporary stockpiles",
+      text: "A temporary stockpile may stay up to six months and needs a dimension control plan and a grading or removal schedule approved before it goes in. Material may not be spread without City approval, and if it becomes permanent fill it is respread and compacted to the same standard.",
+      sources: [sources.rockwallFill],
+    },
+    {
+      title: "Lake Ray Hubbard takeline",
+      text: "The Takeline Overlay district governs development along the Lake Ray Hubbard shoreline. Property owners need a takeline lease from Building Inspections before applying for permits, and a seawall permit from Engineering, with a sealed structural design, comes before any boat-related structure.",
+      sources: [sources.rockwallTakeline, sources.tshaRockwall],
+    },
+    {
+      title: "ROW permits and 811",
+      text: "Engineering permits for work in City right-of-way are filed through the City's online portal, one permit per work address, with plans uploaded; work in TxDOT right-of-way also needs TxDOT documents. Texas law requires one-call notice at least 48 hours before excavating, excluding weekends and holidays.",
+      sources: [sources.rockwallEngineering, sources.utilitiesCode251, sources.texas811],
+    },
+  ],
+  faqs: [
+    { question: "What are construction hours in Rockwall?", answer: "7 a.m. to 7 p.m. Monday through Friday and 8 a.m. to 7 p.m. Saturday, with no Sunday construction under Ordinance 05-45. The hours also apply to equipment fueling and servicing and to deliveries." },
+    { question: "Do I need a permit to bring fill dirt to a Rockwall lot?", answer: "Yes. Rockwall's Fill Material Request requires an engineer's grading plan, staked limits, silt fence, 3:1 maximum slopes and compaction to 95% density in 8- to 12-inch lifts. Haulers must sign the permit and carry a copy." },
+    { question: "Can I deliver a rental on Saturday in Rockwall?", answer: "Deliveries fall under the same hours as the work: 8 a.m. to 7 p.m. on Saturday. If the job needs a City Engineering inspection that day, request it in writing by noon Thursday." },
+    { question: "What do I need before building a seawall on Lake Ray Hubbard in Rockwall?", answer: "A takeline lease from Building Inspections, then a seawall permit from the Engineering Department with a sealed structural design before any boat-related structure is permitted." },
+  ],
+  nearbyCities: ["rowlett", "garland", "wylie", "dallas"],
+  heroImage: {
+    src: "/images/locations/rockwall-tx-construction-equipment-rental.webp",
+    alt: "Padfoot roller and skid steer compacting a fenced fill pad on a lakeside lot in Rockwall, Texas",
+  },
+  guides: [sitePrepGuide, compactGuide, generatorGuideLink],
 };

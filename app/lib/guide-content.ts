@@ -40,6 +40,13 @@ const sources = {
   osha1910178: { label: "OSHA 29 CFR 1910.178, powered industrial trucks (operator training, operations and stability appendix)", url: "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-N/section-1910.178" },
   osha602c: { label: "OSHA 29 CFR 1926.602(c), lifting and hauling equipment", url: "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-O/section-1926.602" },
   wackerWp1550: { label: "Wacker Neuson single-direction vibratory plates, WP1550A (PDF)", url: "https://cdn.mediapool.wackerneusongroup.com/asset/491085414967/document_rfl1tjoc6h2in3n9glg6hf8g33" },
+  generacMdg25: { label: "Generac Mobile MDG25IF4 mobile diesel generator spec sheet (PDF)", url: "https://www.generac.com/globalassets/products/business/mobile-power--light-solutions/mobile-generators/spec-sheets/mdg25if4_diesel-generator_spec-sheet_english.pdf" },
+  generacMdg75: { label: "Generac Mobile MDG75DF4 mobile diesel generator spec sheet (PDF)", url: "https://www.generac.com/globalassets/products/business/mobile-power--light-solutions/mobile-generators/spec-sheets/mdg75df4_diesel-generator_spec-sheet_english.pdf" },
+  hondaEu7000: { label: "Honda EU7000iS generator specifications", url: "https://powerequipment.honda.com/generators/models/eu7000is" },
+  oshaGeneratorFactSheet: { label: "OSHA fact sheet: Using Portable Generators Safely (PDF)", url: "https://www.osha.gov/sites/default/files/publications/OSHA3286.pdf" },
+  osha404: { label: "OSHA 29 CFR 1926.404, wiring design and protection (GFCI, generator grounding)", url: "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-K/section-1926.404" },
+  oshaAppendixA: { label: "OSHA 29 CFR 1926 Subpart P, Appendix A: soil classification", url: "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-P/appendix-Appendix%20A%20to%20Subpart%20P%20of%20Part%201926" },
+  oshaAppendixB: { label: "OSHA 29 CFR 1926 Subpart P, Appendix B: sloping and benching", url: "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-P/appendix-Appendix%20B%20to%20Subpart%20P%20of%20Part%201926" },
 } satisfies Record<string, SourceLink>;
 
 const shared = {
@@ -1324,4 +1331,251 @@ export const utilityLocatesGuide: Guide = {
     { slug: "compactor-rental", reason: "Trench backfill to City specification after the line is installed." },
   ],
   relatedGuides: ["site-preparation-equipment", "what-size-excavator-do-i-need", "equipment-rental-checklist"],
+};
+
+export const generatorSizingGuide: Guide = {
+  slug: "jobsite-generator-sizing",
+  title: "Jobsite Generator Sizing: How to Choose the Right Rental Generator",
+  shortTitle: "Jobsite Generator Sizing",
+  metaTitle: "Jobsite Generator Sizing for Construction Rentals",
+  metaDescription:
+    "Size a rental generator for a jobsite: rated vs maximum output, prime vs standby ratings, runtime, receptacles and the OSHA rules for GFCI, grounding and carbon monoxide.",
+  summary:
+    "How to read generator ratings, add up the load, plan fuel and runtime, and set up temporary power that meets OSHA rules.",
+  intro: [
+    "Temporary power runs tools, lights, site trailers and charging before permanent service is live. Renting too small trips breakers and stalls work; renting far too large adds weight, fuel and trailer space for nothing.",
+    "This guide explains the ratings printed on generator spec sheets, how to total a jobsite load, what to ask about fuel and receptacles, and the OSHA rules that apply to generator power on construction sites. Figures come from the manufacturer pages cited in each section.",
+  ],
+  heroImage: {
+    src: "/images/resources/jobsite-generator-sizing.webp",
+    alt: "Towable diesel generator on gravel with cables to a power distribution box beside a steel building frame and light tower",
+  },
+  datePublished: "2026-10-29",
+  dateModified: "2026-10-29",
+  keyTakeaways: [
+    "Size to the rated output, not the maximum: Honda lists the EU7000iS at 7,000 W maximum and 5,500 W rated.",
+    "On towable diesel units, compare prime ratings for jobsite use. Generac defines prime power as supplying a varying load in place of utility power for unlimited running time; standby is for outages.",
+    "Total the nameplate watts or amps of everything that runs at once, and allow for motors that draw more when they start.",
+    "Use GFCIs or an assured equipment grounding conductor program, keep generators outdoors with 3 to 4 feet of clearance, and never back-feed a building without a transfer switch.",
+  ],
+  sections: [
+    {
+      id: "ratings",
+      heading: "Read the Ratings: Maximum, Rated, Prime and Standby",
+      blocks: [
+        { type: "p", text: "Portable generators usually list two outputs. Honda's EU7000iS, for example, is listed at 7,000 W maximum and 5,500 W rated at 120/240 V. Plan the steady load against the rated figure rather than the maximum." },
+        { type: "p", text: "Towable diesel units use prime and standby ratings instead. Generac Mobile's MDG25IF4 is rated 20 kW / 25 kVA prime and 25 kW / 31 kVA standby; the MDG75DF4 is rated 60 kW / 75 kVA prime and 68 kW / 85 kVA standby. Generac defines standby as serving a varying emergency load for the duration of a utility outage, and prime as supplying a varying load in lieu of utility power for an unlimited amount of running time. A jobsite running all day on generator power is a prime application." },
+        { type: "p", text: "kW is real power; kVA includes the effect of the load's power factor. Spec sheets list both because motor-heavy loads use more of a generator's capacity than their kW alone suggests." },
+      ],
+      sources: [sources.hondaEu7000, sources.generacMdg25, sources.generacMdg75],
+    },
+    {
+      id: "total-the-load",
+      heading: "Total the Load",
+      blocks: [
+        { type: "p", text: "List everything that will run at the same time: saws, drills, compressors, pumps, lighting, heaters or fans, site office equipment and battery chargers. Use the nameplate on each item. When the nameplate gives amps instead of watts, multiply amps by the circuit voltage (for example, a 120-volt tool at 10 amps draws about 1,200 watts)." },
+        {
+          type: "list",
+          items: [
+            "Add the running loads that overlap. Equipment that never runs together does not need to be added together.",
+            "Allow for motor starting. Compressors, pumps and other motor loads draw more current for a moment when they start; check the equipment manufacturer's starting requirement and stagger starts where possible.",
+            "Check voltage and phase. Small portables supply 120 V and 120/240 V single-phase; towable units such as the MDG25IF4 add a voltage selection switch and connection lugs.",
+            "Leave headroom so the generator is not running at its limit. OSHA warns that overloading a generator can lead to overheating and fire.",
+          ],
+        },
+      ],
+      sources: [sources.oshaGeneratorFactSheet, sources.generacMdg25],
+    },
+    {
+      id: "size-classes",
+      heading: "Size Classes from Published Specs",
+      blocks: [
+        {
+          type: "table",
+          caption: "Illustrative generator classes from cited spec sheets",
+          columns: ["Example", "Output", "Fuel and runtime", "Receptacles", "Typical fit"],
+          rows: [
+            ["Honda EU7000iS (portable inverter)", "5,500 W rated, 7,000 W max; 120/240 V", "5.1 gal; 6.4 h at rated load, 16 h at 1/4 load", "Two 20 A 120 V GFCI duplexes, 30 A 125 V and 30 A 125/250 V locking", "Hand tools, small crews, lighting, sensitive electronics"],
+            ["Generac Mobile MDG25IF4 (towable diesel)", "20 kW / 25 kVA prime; 25 kW / 31 kVA standby", "56 gal usable; 35 h at 75% load", "Two 120 V 20 A GFCI duplexes, three 120/240 V 50 A twist-lock, lugs", "Site trailers, multiple trades, small pumps and compressors"],
+            ["Generac Mobile MDG75DF4 (towable diesel)", "60 kW / 75 kVA prime; 68 kW / 85 kVA standby", "Up to 39 h at 75% load (standard tank)", "Two 120 V 20 A GFCI duplexes, three 120/240 V 50 A twist-lock, lugs", "Larger commercial sites, temporary distribution panels, bigger motor loads"],
+          ],
+          note: "Configurations vary by model year and options. Confirm the exact unit, voltage setup and tank with the provider.",
+        },
+        { type: "p", text: "Runtime figures assume a stated load. Honda lists 6.4 hours at rated load and 16 hours at a quarter load on one 5.1-gallon tank; Generac lists the MDG25IF4 at 35 hours on 56 usable gallons at 75% load. Plan refueling around the real load, not the best-case number." },
+      ],
+      sources: [sources.hondaEu7000, sources.generacMdg25, sources.generacMdg75],
+    },
+    {
+      id: "osha",
+      heading: "OSHA Rules for Generator Power on Construction Sites",
+      blocks: [
+        { type: "p", text: "On construction sites, all 120-volt, single-phase, 15- and 20-amp receptacles that aren't part of a building's permanent wiring and are in use by employees need GFCI protection, unless the employer runs an assured equipment grounding conductor program instead. Receptacles on a two-wire, single-phase portable or vehicle-mounted generator rated not more than 5 kW, with circuit conductors insulated from the frame, are exempt from the GFCI requirement." },
+        { type: "p", text: "The frame of a portable generator need not be grounded, and may serve as the grounding electrode, when it supplies only equipment mounted on it or cord-and-plug equipment through its own receptacles, and the receptacle grounding terminals are bonded to the frame. Feeding a temporary distribution system is a different case; plan that with a qualified electrician." },
+        {
+          type: "list",
+          items: [
+            "Never connect a generator to a building's electrical system without a transfer switch installed by a qualified electrician. Back-feeding can energize lines far from the site.",
+            "Use grounded, undamaged cords rated for the load.",
+            "Keep generators dry, or under a canopy in rain.",
+          ],
+        },
+      ],
+      sources: [sources.osha404, sources.oshaGeneratorFactSheet],
+    },
+    {
+      id: "placement",
+      heading: "Placement, Carbon Monoxide, Fuel and Noise",
+      blocks: [
+        { type: "p", text: "OSHA warns that carbon monoxide from generator exhaust is colorless and odorless. Never run a generator indoors or in enclosed spaces such as garages, crawl spaces and basements; open doors and windows may not prevent buildup. Keep 3 to 4 feet of clear space on all sides and above the unit, and keep it away from doors, windows and vents of occupied spaces." },
+        { type: "p", text: "Shut the generator down and let it cool before refueling, store fuel in approved containers away from the generator, and keep units as far as possible from work areas to limit noise and vibration exposure." },
+        { type: "p", text: "Local rules can also shape where and when generators run. [Carrollton](/locations/texas/carrollton) treats engine-generators running from 10 p.m. to 7 a.m. as unlawful noise, with an affirmative defense during power outages. [Rockwall](/locations/texas/rockwall) includes fueling and servicing of construction equipment within its construction hours. On occupied commercial sites in [Arlington](/locations/texas/arlington) and building-upgrade work in [Richardson](/locations/texas/richardson), placement away from entries and air intakes matters as much as size." },
+      ],
+      sources: [sources.oshaGeneratorFactSheet, shared.carrolltonNoise, citySources.rockwallConstructionNotes],
+    },
+    {
+      id: "before-you-book",
+      heading: "What to Tell the Provider",
+      blocks: [
+        {
+          type: "list",
+          items: [
+            "Your load list with nameplate watts or amps, which items run together, and any large motor starts.",
+            "Voltage and phase needed, plus any receptacles, distribution panel or lug connections.",
+            "Hours of operation per day and how you plan to refuel; ask about larger tanks or fuel service for long runs.",
+            "Where the unit will sit, how it will be delivered (pickup tow or truck) and any noise limits near homes.",
+          ],
+        },
+        { type: "p", text: "See also the [equipment rental checklist](/resources/equipment-rental-checklist) for delivery and site details, and [short-term vs long-term rentals](/resources/short-term-vs-long-term-rentals) when temporary power will stay for weeks." },
+      ],
+    },
+  ],
+  faqs: [
+    { question: "Should I size a generator by its maximum or rated output?", answer: "By rated output. Honda, for example, lists the EU7000iS at 7,000 watts maximum and 5,500 watts rated." },
+    { question: "What is the difference between prime and standby ratings?", answer: "Generac defines standby as serving a varying emergency load during a utility outage, and prime as supplying a varying load in place of utility power for unlimited running time. Use prime ratings for all-day jobsite power." },
+    { question: "Do generator outlets need GFCI protection on a jobsite?", answer: "OSHA requires GFCI protection on 120-volt, single-phase, 15- and 20-amp temporary receptacles in use by employees, unless an assured equipment grounding conductor program is used. Small two-wire generators rated 5 kW or less with insulated conductors are exempt." },
+    { question: "How far should a generator be from a building?", answer: "OSHA says to keep 3 to 4 feet of clear space on all sides and above a generator, never run it indoors or in enclosed spaces, and keep it away from doors, windows and vents where exhaust could enter." },
+  ],
+  relatedEquipment: [
+    { slug: "generator-rental", reason: "Portable and towable units sized to the jobsite load, voltage and runtime." },
+  ],
+  relatedGuides: ["equipment-rental-checklist", "short-term-vs-long-term-rentals", "how-to-choose-a-boom-lift"],
+};
+
+export const trenchSafetyGuide: Guide = {
+  slug: "trench-safety-basics",
+  title: "Trench Safety Basics: Sloping, Shoring and Trench Boxes for Rented Excavators",
+  shortTitle: "Trench Safety Basics",
+  metaTitle: "Trench Safety Basics: Sloping, Shoring and Trench Boxes",
+  metaDescription:
+    "OSHA trench safety basics for equipment renters: when protective systems are required, soil types, sloping ratios, shoring and trench boxes, access, spoil and inspections.",
+  summary:
+    "When OSHA requires a protective system, how soil type drives sloping, how shields and shoring work, and the daily rules for spoil, access and inspection.",
+  intro: [
+    "Renting an excavator, mini excavator or trencher puts a trench on the schedule, and the trench brings OSHA's excavation rules with it. Cave-ins happen fast, and the rules set out when a trench needs sloping, shoring or a shield before anyone goes in.",
+    "This guide summarizes 29 CFR 1926 Subpart P for planning purposes and points to the local plan requirements that many DFW cities add. It is not a substitute for a competent person on site or an engineer's design where one is required.",
+  ],
+  heroImage: {
+    src: "/images/resources/trench-safety-basics.webp",
+    alt: "Steel trench box with a ladder in a clay trench, spoil set back, an excavator and pipe stack behind orange fencing",
+  },
+  datePublished: "2026-10-29",
+  dateModified: "2026-10-29",
+  keyTakeaways: [
+    "Trenches 5 feet deep or more need a protective system unless they are entirely in stable rock; shallower trenches need one too if a competent person sees signs of a possible cave-in.",
+    "Trenches 20 feet deep or more need a protective system designed by a registered professional engineer or based on tabulated data.",
+    "Soil type sets the maximum slope: 3/4:1 for Type A, 1:1 for Type B and 1-1/2:1 for Type C, horizontal to vertical, for excavations 20 feet deep or less.",
+    "Keep spoil and equipment at least 2 feet from the edge, provide a way out within 25 feet in trenches 4 feet or deeper, and inspect daily and after rain.",
+  ],
+  sections: [
+    {
+      id: "when-required",
+      heading: "When a Protective System Is Required",
+      blocks: [
+        { type: "p", text: "OSHA requires each employee in an excavation to be protected from cave-ins by an adequate protective system, except when the excavation is made entirely in stable rock, or is less than 5 feet deep and a competent person examines the ground and finds no indication of a potential cave-in." },
+        { type: "p", text: "Depth changes who designs the system. OSHA's trenching fact sheet notes that trenches 20 feet deep or greater require a protective system designed by a registered professional engineer or based on tabulated data prepared or approved by one." },
+        { type: "p", text: "Cities often go further on public work. [Frisco](/locations/texas/frisco) requires a trench safety plan before the pre-construction meeting for storm, water and wastewater work; [McKinney](/locations/texas/mckinney) requires a City-accepted plan on site for right-of-way excavations deeper than 5 feet; and [Grapevine](/locations/texas/grapevine) requires plans prepared by a licensed professional engineer for trenches deeper than 5 feet." },
+      ],
+      sources: [sources.osha652, shared.oshaTrenching, shared.friscoGeneralNotes, shared.mckinneyRow, citySources.grapevineGeneralNotes],
+    },
+    {
+      id: "soil-types",
+      heading: "Soil Types: Stable Rock, Type A, B and C",
+      blocks: [
+        { type: "p", text: "Sloping and benching, and most tabulated shoring data, depend on soil classification. A competent person classifies each deposit using at least one visual and one manual test, and reclassifies it if conditions change." },
+        {
+          type: "columns",
+          columns: [
+            { title: "Type A", items: ["Cohesive soil with unconfined compressive strength of 1.5 tons per square foot or more", "Not Type A if fissured, subject to vibration from heavy traffic or pile driving, or previously disturbed"] },
+            { title: "Type B", items: ["Cohesive soil between 0.5 and 1.5 tsf", "Previously disturbed soils, and Type A-strength soil that is fissured or subject to vibration"] },
+            { title: "Type C", items: ["Cohesive soil at 0.5 tsf or less, and granular soils such as gravel and sand", "Submerged soil or soil with water freely seeping"] },
+          ],
+        },
+        { type: "p", text: "Rain changes the answer. OSHA's appendix says that if an excavation is later exposed to wetting, the classification must be changed accordingly. Blackland Prairie clays common across DFW are described by USDA as very high in shrink-swell, and NWS Fort Worth notes spring and fall are the wettest seasons, so a trench classified on a dry morning may need reclassifying after a storm. Old utility trenches and backfilled lots are previously disturbed soil, which can't be Type A." },
+      ],
+      sources: [sources.oshaAppendixA, shared.usdaHoustonBlack, shared.nwsDfw],
+    },
+    {
+      id: "sloping",
+      heading: "Sloping and Benching",
+      blocks: [
+        {
+          type: "table",
+          caption: "Maximum allowable slopes for excavations 20 feet deep or less (OSHA Appendix B)",
+          columns: ["Soil", "Maximum slope (H:V)", "Notes"],
+          rows: [
+            ["Stable rock", "Vertical", "Must remain intact while exposed"],
+            ["Type A", "3/4:1", "1/2:1 allowed for short-term excavations 12 ft deep or less, open 24 hours or less"],
+            ["Type B", "1:1", "Vertically sided lower portions must be shielded or supported"],
+            ["Type C", "1-1/2:1", "Vertically sided lower portions must be shielded or supported"],
+          ],
+          note: "Signs of distress require cutting the slope back at least 1/2H:1V flatter. Surcharge loads from spoil, equipment or traffic require a competent person to reduce the slope further.",
+        },
+        { type: "p", text: "Sloping takes room. A 10-foot-deep cut in Type C soil at 1-1/2:1 reaches back 15 feet on each side, which is often more than a residential lot or street right-of-way can give. That is when shoring or a trench box becomes the practical choice, and it affects what size excavator can reach and where spoil can go. See [what size excavator do I need](/resources/what-size-excavator-do-i-need) for reach and dig depth." },
+      ],
+      sources: [sources.oshaAppendixB],
+    },
+    {
+      id: "shields-and-shoring",
+      heading: "Trench Boxes and Shoring",
+      blocks: [
+        { type: "p", text: "Shield systems, often called trench boxes, protect workers inside them rather than holding the trench walls in place. OSHA requires shields to be installed in a way that restricts lateral or other hazardous movement, and no one may be inside a shield while it is installed, removed or moved vertically. Excavating up to 2 feet below the bottom of a shield is permitted only if the shield is designed for the full depth and there's no sign of soil loss from behind or below it." },
+        { type: "p", text: "Support systems such as hydraulic or timber shoring hold the walls. They are installed and removed in ways that protect workers, removal starts at the bottom, and backfill follows closely. Design options include OSHA's appendices for timber and aluminum hydraulic shoring, manufacturer tabulated data, and engineer-designed systems." },
+        { type: "p", text: "Renting a box or shoring means sizing it to trench depth, width and pipe length, and making sure the excavator can lift and set it. Get the manufacturer's tabulated data with the rental and keep it on site." },
+      ],
+      sources: [sources.osha652],
+    },
+    {
+      id: "daily-rules",
+      heading: "Daily Rules: Locates, Spoil, Access and Inspections",
+      blocks: [
+        {
+          type: "list",
+          items: [
+            "Locate utilities before opening the excavation, and find their exact location by safe means as digging approaches them. See [utility locates before digging](/resources/utility-locates-before-digging).",
+            "Keep spoil, materials and equipment at least 2 feet from the edge, or use retaining devices.",
+            "Provide a stairway, ladder, ramp or other safe exit in trenches 4 feet or deeper, within 25 feet of lateral travel for every worker.",
+            "Keep workers out from under loads handled by lifting or digging equipment, and away from vehicles being loaded.",
+            "Test the atmosphere in excavations deeper than 4 feet where oxygen deficiency or hazardous atmospheres could exist, such as near landfills or fuel storage.",
+            "Don't work in accumulated water unless precautions are taken; water removal is monitored by a competent person.",
+            "Have a competent person inspect excavations and protective systems daily before work, as needed during the shift, and after every rainstorm or other hazard-increasing event.",
+          ],
+        },
+        { type: "p", text: "Local permits add backfill and site rules. [Cedar Hill](/locations/texas/cedar-hill) requires a temporary security fence around every right-of-way excavation at the end of each day, and [Burleson](/locations/texas/burleson) doesn't permit street cuts in its right-of-way. Compaction equipment for backfill is covered in [site preparation equipment](/resources/site-preparation-equipment)." },
+      ],
+      sources: [sources.osha651, citySources.cedarHillPreCon, citySources.burlesonRowApplication],
+    },
+  ],
+  faqs: [
+    { question: "How deep can a trench be before it needs shoring or a trench box?", answer: "OSHA requires a protective system for trenches 5 feet deep or more unless they are entirely in stable rock. Shallower trenches also need protection if a competent person sees signs of a possible cave-in." },
+    { question: "What slope does OSHA allow for a trench in clay?", answer: "It depends on classification. For excavations 20 feet deep or less, the maximum slopes are 3/4:1 for Type A, 1:1 for Type B and 1-1/2:1 for Type C, horizontal to vertical. Previously disturbed or wet soil cannot be Type A." },
+    { question: "How far from the trench does spoil need to be?", answer: "At least 2 feet from the edge of the excavation, or held back by retaining devices, and the same applies to materials and equipment." },
+    { question: "How often does a trench need to be inspected?", answer: "A competent person inspects excavations, adjacent areas and protective systems daily before work starts, as needed during the shift, and after every rainstorm or other hazard-increasing event." },
+  ],
+  relatedEquipment: [
+    { slug: "excavator-rental", reason: "Digging deeper utility trenches and setting trench boxes within its lift capacity." },
+    { slug: "mini-excavator-rental", reason: "Shallow service trenches and tie-ins in tight spaces." },
+    { slug: "trencher-rental", reason: "Long, narrow, shallow runs where crews don't need to enter the trench." },
+    { slug: "compactor-rental", reason: "Rammers and plates for backfill in lifts after the pipe is set." },
+  ],
+  relatedGuides: ["utility-locates-before-digging", "what-size-excavator-do-i-need", "site-preparation-equipment"],
 };

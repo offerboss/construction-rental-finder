@@ -1,6 +1,6 @@
 # CRF Content Strategy
 
-Last updated: 2026-10-15 (Batch 4 + Resource Run 3; heroes deferred — GenerateImage unavailable to Grok Bot executor)
+Last updated: 2026-10-29 (Batch 6 + Resource Run 5, heroes shipped with pages)
 
 ## Goal
 
@@ -15,7 +15,8 @@ city actually needs to know, instead of scaling thin template pages. Quality ove
 | 2 | Frisco, McKinney | Shipped 2026-10-02 |
 | 3 | Garland, Grand Prairie, Mesquite, Carrollton, Richardson | Shipped 2026-10-08 |
 | 4 | Denton, Lewisville, Allen, Flower Mound, Mansfield | Shipped 2026-10-15 (navy headers; heroes deferred) |
-| 5 | North Richland Hills, Rowlett, Euless, Wylie, DeSoto | Shipped 2026-10-22 (navy headers; heroes deferred) |
+| 5 | North Richland Hills, Rowlett, Euless, Wylie, DeSoto | Shipped 2026-10-22; heroes added `bc045b1` |
+| 6 | Grapevine, Bedford, Cedar Hill, Burleson, Rockwall | Shipped 2026-10-29 with heroes |
 
 ## Phase 1 resources: the Resource Run
 
@@ -28,7 +29,9 @@ city actually needs to know, instead of scaling thin template pages. Quality ove
 | `/resources/equipment-rental-checklist` | Shipped 2026-10-15 (hero deferred) |
 | `/resources/short-term-vs-long-term-rentals` | Shipped 2026-10-15 (hero deferred) |
 | `/resources/telehandler-vs-forklift` | Shipped 2026-10-22 (hero deferred) |
-| `/resources/utility-locates-before-digging` | Shipped 2026-10-22 (hero deferred) |
+| `/resources/utility-locates-before-digging` | Shipped 2026-10-22 (hero added `bc045b1`) |
+| `/resources/jobsite-generator-sizing` | Shipped 2026-10-29 (Resource Run 5) |
+| `/resources/trench-safety-basics` | Shipped 2026-10-29 (Resource Run 5) |
 
 How a guide works (no CMS):
 
@@ -79,6 +82,12 @@ template unchanged.
   - Irving: Las Colinas offices and warehouse/logistics work next to DFW Airport; forklifts, telehandlers, scissor lifts.
   - Plano: a built-out suburb (about 6% of land left) redeveloping on tight lots; compact equipment.
 - Batch 2: Frisco (new ground in the north: grading, utilities, pads); McKinney (historic downtown infill and growth at the edges).
+- Batch 6 (next uncovered DFW cities below DeSoto by 2020 Census):
+  - Grapevine: ROW work calendar (Main Street Fest / GrapeFest and holiday no-work weeks), potholing and boring rules, DFW Airport airspace.
+  - Bedford: compact, built-up ~10 sq mi city; grading permit for all soil disturbance, stormwater inspection before work, 4-hour lane closures.
+  - Cedar Hill: Balcones Escarpment terrain and open-space goal; ROW conditions (7–4 weekdays, nightly fencing, no open street cuts).
+  - Burleson: I-35W growth and Chisholm Summit master-planned community; ROW locate request, no street cuts, grading/floodplain forms.
+  - Rockwall: Ordinance 05-45 hours incl. fueling and deliveries; fill material permits (sheepsfoot, 8–12 in lifts); Lake Ray Hubbard takeline.
 - Batch 3 (chosen by 2020 Census size among uncovered DFW cities; Denton skipped because its site couldn't be verified):
   - Garland: a largely built-out first-ring suburb converting older industrial buildings and repositioning aging retail; forklifts, scissor lifts, compact equipment.
   - Grand Prairie: Great Southwest Industrial District warehouse and distribution builds plus Joe Pool Lake residential; telehandlers, booms, rollers; TxDOT, floodplain and airport rules.

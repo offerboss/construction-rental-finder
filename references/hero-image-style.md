@@ -1,6 +1,6 @@
 # CRF Hero Image Style
 
-Last updated: 2026-10-15 (standard unchanged; Batch 4/Resource Run 3 heroes deferred)
+Last updated: 2026-10-29 (standard unchanged; Batch 6 / Resource Run 5 heroes shipped with pages)
 
 **Approval status:** Unattended mode (2026-10-05) allows publishing heroes that pass this standard without per-image approval. Batch 4 city and Resource Run 3 guide heroes are not shipped yet — GenerateImage was unavailable to the Grok Bot executor on 2026-10-15; regenerate and add `heroImage` when compliant WebPs are ready.
 
@@ -92,3 +92,17 @@ The older state images (`/images/*.png` backgrounds) predate this standard. Don'
 ### Deferred (2026-10-15)
 
 Denton, Lewisville, Allen, Flower Mound, Mansfield, equipment-rental-checklist, short-term-vs-long-term-rentals — pages live with navy headers until heroes pass QA.
+
+### Batch 6 + Resource Run 5 (2026-10-29, unattended; generated with GenerateImage, center-cropped to 3:2, checked by eye)
+
+| Slug | File | Size | Scene | Alt text |
+|---|---|---|---|---|
+| grapevine | public/images/locations/grapevine-tx-construction-equipment-rental.webp | 1080x720, 204 KB | Mini excavator trenching in a parkway strip along a curb, plate compactor, cones and orange fence, brick homes and live oaks, one small worker in hi-vis | Mini excavator trenching along a curb beside a plate compactor and cones on a tree-lined street in Grapevine, Texas |
+| bedford | public/images/locations/bedford-tx-construction-equipment-rental.webp | 1080x720, 162 KB | Compact track loader spreading gravel base inside silt fence beside an older brick commercial building, scissor lift parked, golden hour, no people | Compact track loader spreading gravel base inside silt fence beside an older brick commercial building in Bedford, Texas |
+| cedar-hill | public/images/locations/cedar-hill-tx-construction-equipment-rental.webp | 1080x720, 212 KB | Excavator cutting a limestone-and-clay slope, compact track loader on a graded bench, wooded hills, silt fence, no people (first version regenerated: worker near bucket) | Excavator cutting limestone and clay on a hillside lot beside a compact track loader in wooded hills in Cedar Hill, Texas |
+| burleson | public/images/locations/burleson-tx-construction-equipment-rental.webp | 1080x720, 142 KB | Excavator setting sewer pipe in a trench box, smooth-drum roller on new street subgrade, framed houses distant, two tiny workers outside the trench, golden hour | Excavator setting sewer pipe in a trench box beside a smooth-drum roller on a new subdivision street in Burleson, Texas |
+| rockwall | public/images/locations/rockwall-tx-construction-equipment-rental.webp | 1080x720, 183 KB | Padfoot roller and wheeled skid steer on a fenced clay fill pad, stockpile, lake and homes behind, no people | Padfoot roller and skid steer compacting a fenced fill pad on a lakeside lot in Rockwall, Texas |
+| jobsite-generator-sizing | public/images/resources/jobsite-generator-sizing.webp | 1080x720, 132 KB | White towable generator on gravel with cables to a distribution box, light tower, steel building frame, one small worker | Towable diesel generator on gravel with cables to a power distribution box beside a steel building frame and light tower |
+| trench-safety-basics | public/images/resources/trench-safety-basics.webp | 1080x720, 103 KB | Steel trench box with ladder in a clay trench, spoil set back, parked excavator, pipe stack, orange fencing, no people (first version regenerated: worker in trench under a suspended pipe) | Steel trench box with a ladder in a clay trench, spoil set back, an excavator and pipe stack behind orange fencing |
+
+Friday QA: zoom-check all seven for faint decals; generator control panel shows small unlabeled sockets only.

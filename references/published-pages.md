@@ -1,6 +1,6 @@
 # CRF Published Pages
 
-Last updated: 2026-10-15
+Last updated: 2026-10-29
 
 ## Batch Log
 
@@ -372,3 +372,55 @@ New guide links on existing pages: Arlington and Frisco (utility locates); Irvin
 ### Word counts (rendered <main>)
 
 NRH 1,201; Rowlett 977; Euless 1,015; Wylie 975; DeSoto 1,053 (four below the 1,200 target; not padded without sources). Telehandler vs forklift 2,021; utility locates 1,579.
+
+
+## Batch 6 + Resource Run 5 (2026-10-29)
+
+Cities (next uncovered DFW below DeSoto 56,145, 2020 Census via QuickFacts, fetched 2026-10-29): Grapevine 50,631; Bedford 49,928; Cedar Hill 49,148; Burleson 47,641; Rockwall 47,251. All five had readable official City sources, so none was skipped. Next in line for Batch 7 (verify first): Little Elm, Haltom City, Keller, The Colony, Coppell, Lancaster, Hurst, Duncanville, Waxahachie.
+QuickFacts: https://www.census.gov/quickfacts/fact/table/grapevinecitytexas,bedfordcitytexas,cedarhillcitytexas,burlesoncitytexas,rockwallcitytexas/POP010220
+Guides: jobsite-generator-sizing, trench-safety-basics (no prices; manufacturer specs and OSHA only).
+Heroes shipped with the pages (GenerateImage, 1080x720 WebP, see hero-image-style.md).
+Sitemap: 74 URLs expected (67 + 5 cities + 2 guides). Texas cities: 30 (25 rich DFW). Guides: 10.
+
+Nearby additions (reciprocal): Grapevine ↔ Euless, Bedford, Irving, Flower Mound, Dallas; Bedford ↔ Euless, North Richland Hills, Grapevine, Fort Worth, Dallas; Cedar Hill ↔ DeSoto, Grand Prairie, Mansfield, Dallas; Burleson ↔ Fort Worth, Mansfield, Dallas; Rockwall ↔ Rowlett, Garland, Wylie, Dallas.
+
+Featured equipment: Grapevine mini-excavator, compactor, excavator, boom-lift, telehandler, skid-steer; Bedford skid-steer, mini-excavator, compactor, scissor-lift, boom-lift, generator; Cedar Hill excavator, skid-steer, mini-excavator, compactor, wheel-loader, trencher; Burleson excavator, trencher, compactor, wheel-loader, skid-steer, telehandler; Rockwall compactor, skid-steer, wheel-loader, excavator, telehandler, boom-lift.
+
+City guides: Grapevine (utility locates, trench safety, checklist); Bedford (site prep, skid/mini, generator); Cedar Hill (excavator size, site prep, trench safety); Burleson (site prep, trench safety, utility locates); Rockwall (site prep, skid/mini, generator). New guide links on existing pages: Arlington, Carrollton, Richardson (generator); Frisco, McKinney, Mesquite (trench safety).
+
+Guide links: Generator sizing — equipment card generator-rental (reciprocal block on /equipment/generator-rental); inline Carrollton, Rockwall, Arlington, Richardson; checklist and short-term guides. Trench safety — equipment cards excavator, mini-excavator, trencher, compactor; inline Frisco, McKinney, Grapevine, Cedar Hill, Burleson; utility locates, excavator size, site prep guides.
+
+### Sources (fetched 2026-10-29)
+
+- Handbook of Texas: Grapevine (Tarrant County), Bedford, Cedar Hill (Dallas County), Burleson, Rockwall (Rockwall County) entries (location, highways, lake, airport, growth history).
+- Grapevine Public Works ROW FAQ (permit for ROW/easements/City property; City permit in addition to TxDOT; ~5 working days): https://www.grapevinetexas.gov/FAQ.aspx?QID=141
+- Grapevine ROW Permitting Notes & Requirements, 2/21/19 (Dig-Tess locates; pothole City lines at 100 ft and crossings; boring under pavement; no missiles/plates; Saturday 48 h notice; no Sundays; Main Street Fest/GrapeFest weeks noon Tue–Sun; Thanksgiving and Dec. 22–Jan. 1 dates): https://www.grapevinetexas.gov/DocumentCenter/View/45
+- Grapevine Construction Standard Details general notes (overtime policy 7–7 Mon–Sat, normal 8–5 M–F, no Sunday; trench safety plans by PE >5 ft; 12-in lifts 95% SP, tests per 5 ft/100 LF; tree preservation inspection; no floodplain fill without fill agreement; Appendix F erosion control): https://www.grapevinetexas.gov/DocumentCenter/View/5621/Construction-Standard-Details
+- Bedford General Construction Notes (grading permit for all soil disturbance; CSN/NOI + ECP/SWPPP; BMPs inspected by Stormwater Inspector; floodplain permit/waiver; disposal outside floodplain; 48 h notice to Engineering; Texas 811; Saturday advance written notice; trench safety plans; 95% SP, 6-in lifts under pavement): https://www.bedfordtx.gov/DocumentCenter/View/10989/General-Construction-Notes
+- Bedford Ordinance 17-3204 (Aug. 8, 2017), Ch. 96 ROW (permit 10 working days ahead; major-thoroughfare lane closures 8:30 a.m.–4 p.m.; closures ≤4 h): https://mcclibraryfunctions.azurewebsites.us/api/ordinanceDownload/14937/845485/pdf
+- Bedford Permits page (OpenGov portal; Public Works Grading and ROW permit applications): https://www.bedfordtx.gov/185/Permits-Applications-and-Information
+- Cedar Hill Nature & Open Space (northern edge of Balcones Escarpment; highest elevation in Dallas County; limestone bluffs and Blackland Prairie; 25% open space goal; Joe Pool Lake cities and creeks): https://cedarhilltx.com/2905/Nature-Open-Space
+- Cedar Hill Pre-Construction Packet 2019 / ROW permit conditions (verify City facilities before and every 10 days; 7 a.m.–4 p.m. M–F, no holidays; Ord. 2001-54; sealed TCP; erosion control/NCTCOG; restoration incl. 4 in topsoil; daily sweeping; cleanup within 5 ft; mechanical compaction + test reports; nightly security fence; 48 h City locates; open cutting of public streets prohibited): https://www.cedarhilltx.com/DocumentCenter/View/32234/Pre-Construction-Packet-2019-PDF
+- Cedar Hill Engineering forms page (ROW permits trigger line locates): https://www.cedarhilltx.com/658/Forms-Permits-Instructions
+- Burleson Chisholm Summit page (first master-planned community; ~3,066 units at build-out; developer-built roads, sewer, lift stations; Chisholm Trail Parkway access; Johnson County SUD water, City sewer, United Cooperative electric): https://www.burlesontx.com/2309/Chisholm-Summit
+- Burleson ROW Permits page and ROW Permit Application/Locate Request (permit to disturb/excavate/obstruct ROW or easement; 48 h call to ROW inspector; street cuts not permitted; restore amenities; TCP for lane closure): https://www.burlesontx.com/919/Right-of-Way-Permits ; https://www.burlesontx.com/FormCenter/Public-Works-6/ROW-Permit-Application-136
+- Burleson Forms & Checklists (Early Grading Notification, Floodplain Development Permit, Letter of Permission for Grading or Concentration of Flow, SWMSP and SWPPP checklists, TxDOT forms): https://www.burlesontx.com/495/Forms-Checklists
+- Rockwall City Construction Notes (Ord. 05-45: 7–7 M–F, 8–7 Sat, no Sunday; includes maintenance/servicing/fueling and deliveries; posted sign; stop-work/citations; Saturday inspections requested in writing by noon Thursday): https://www.rockwall.com/documents/engineering/City%20Construction%20Notes.pdf (WebFetch returned 500; read via Mac curl and search index)
+- Rockwall Fill Material Request instructions (4-7-2004; engineer grading plan; staked limits; silt fence; no fill in drainage ways/floodplains/wetlands; 3:1 max slope; grass within 21 days; 95% with sheepsfoot in 8–12 in lifts, lab-verified; stockpiles ≤6 months; haulers sign permit): https://ra.rockwall.com/documents/Engineering/FillRequestrev2004_000.pdf
+- Rockwall Engineering page (ROW portal, Saturday Work Request form, FEMA floodplain, flood damage prevention ordinance): https://www.rockwall.com/engineering.asp
+- Rockwall Takeline page (Takeline Overlay along Lake Ray Hubbard; takeline lease before permits; seawall permit from Engineering with sealed design before boat structures): https://www.rockwall.com/buildinginspections_takeline.asp
+- Resource Run 5: Generac Mobile MDG25IF4 and MDG75DF4 spec sheets (prime/standby ratings and definitions, tanks, runtime at 75% load, receptacles); Honda EU7000iS specs (7,000 W max / 5,500 W rated; 5.1 gal; 6.4 h rated / 16 h 1/4 load; receptacles); OSHA FS-3286 Using Portable Generators Safely; 29 CFR 1926.404(b)(1) GFCI/AEGCP and (f)(3) portable generator grounding; 29 CFR 1926.651, 1926.652; Subpart P Appendix A (soil classification) and Appendix B (sloping); OSHA trenching fact sheet; reused city sources (Frisco, McKinney, Carrollton, Grapevine, Cedar Hill, Burleson, Rockwall).
+
+### Source conflicts and omissions (Batch 6)
+
+- Bedford work hours: Ordinance 17-3204 (Ch. 96) sets ROW working hours of 9 a.m.–4 p.m. weekdays, while the City's current General Construction Notes say 7 a.m.–6 p.m. weekdays and Saturday 8 a.m.–6 p.m. with notice by Wednesday noon. Scopes overlap for public-improvement work in ROW, so the page states neither hours figure (only that Saturday work needs advance written notice).
+- Cedar Hill / Joe Pool Lake date: Handbook says the lake opened in 1989; City page says it was built in 1986. No date used.
+- Cedar Hill elevation: City says 880 ft (highest in Dallas County); a UT geology report cites about 820 ft for the escarpment high point. Page says only "highest elevation in Dallas County".
+- Burleson construction hours: a 2012 City noise-ordinance posting (search snippet: 7 a.m.–10 p.m. weekdays, 7–6 Sat, 10–6 Sun) now returns 404, and the current code wasn't loadable. No hours stated.
+- Rockwall holidays: the elaws.us copy of Code sec. 16-185 (third-party) lists Thanksgiving, Christmas and New Year's as no-work days; the City's own Construction Notes don't list holidays. Page omits holidays.
+- Grapevine overtime and Bedford/Rockwall inspection charges: dollar figures omitted (no prices rule).
+- Rockwall fill-permit fines and Grapevine inspection fee percentages omitted (prices/fees).
+
+### Word counts (rendered <main>)
+
+Grapevine 1,309; Bedford 1,229; Cedar Hill 1,206; Burleson 1,112; Rockwall 1,214. Generator sizing 1,889; trench safety 1,865. Not padded.
