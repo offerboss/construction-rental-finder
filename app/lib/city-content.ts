@@ -119,6 +119,7 @@ export const sources = {
   burlesonChisholmSummit: { label: "City of Burleson: Chisholm Summit", url: "https://www.burlesontx.com/2309/Chisholm-Summit" },
   burlesonRow: { label: "City of Burleson: Right-of-Way Permits", url: "https://www.burlesontx.com/919/Right-of-Way-Permits" },
   burlesonRowApplication: { label: "City of Burleson ROW Permit Application and Locate Request", url: "https://www.burlesontx.com/FormCenter/Public-Works-6/ROW-Permit-Application-136" },
+  burlesonNoise: { label: "City of Burleson Code of Ordinances sec. 34-191, Noise (construction work)", url: "https://ecode360.com/39930276" },
   burlesonForms: { label: "City of Burleson Development Engineering: Forms & Checklists", url: "https://www.burlesontx.com/495/Forms-Checklists" },
   tshaRockwall: { label: "Handbook of Texas: Rockwall, TX (Rockwall County)", url: "https://www.tshaonline.org/handbook/entries/rockwall-tx-rockwall-county" },
   rockwallConstructionNotes: { label: "City of Rockwall Construction Notes (Ordinance 05-45 working hours; inspections) (PDF)", url: "https://www.rockwall.com/documents/engineering/City%20Construction%20Notes.pdf" },
@@ -1843,6 +1844,11 @@ export const burleson: CityEntry = {
       title: "ROW permits and locate requests",
       text: "A right-of-way permit is required to disturb, excavate, block or place materials in a City road, right-of-way or easement. The City's online application doubles as a locate request, and contractors must call the ROW Inspector at least 48 hours before construction begins.",
       sources: [sources.burlesonRow, sources.burlesonRowApplication],
+    },
+    {
+      title: "Construction hours near homes",
+      text: "Burleson's noise ordinance prohibits construction noise within 300 feet of an occupied home before 7 a.m. or after 8 p.m. Monday through Friday, and before 9 a.m. or after 8 p.m. on Saturday and Sunday, unless the city manager or a designee authorizes other hours for a site-specific need.",
+      sources: [sources.burlesonNoise],
     },
     {
       title: "No street cuts; restore what you disturb",
