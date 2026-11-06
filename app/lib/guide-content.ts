@@ -1579,3 +1579,250 @@ export const trenchSafetyGuide: Guide = {
   ],
   relatedGuides: ["utility-locates-before-digging", "what-size-excavator-do-i-need", "site-preparation-equipment"],
 };
+
+export const scissorLiftGuide: Guide = {
+  slug: "how-to-choose-a-scissor-lift",
+  title: "How to Choose a Scissor Lift for Construction Rentals",
+  shortTitle: "How to Choose a Scissor Lift",
+  metaTitle: "How to Choose a Scissor Lift for Construction Rentals",
+  metaDescription:
+    "Choose a rental scissor lift by indoor vs outdoor height, capacity, width and floor loading, plus OSHA scaffold rules that differ from boom lifts.",
+  summary:
+    "Match platform height, capacity, width and floor loading to the work, and treat scissor lifts as scaffolds under OSHA—not as aerial lifts.",
+  intro: [
+    "Scissor lifts put a flat work platform straight up over the base. They fit interior fit-outs, warehouse racking and exterior work where you need deck space more than side reach.",
+    "This guide covers how manufacturer specs describe indoor and outdoor heights, capacity and machine width, when a boom lift is the better rental, and the OSHA rules that apply because scissor lifts are regulated as scaffolds rather than aerial lifts. Figures come from the Genie spec sheets cited in each section.",
+  ],
+  heroImage: {
+    src: "/images/resources/how-to-choose-a-scissor-lift.webp",
+    alt: "Electric slab scissor lift raised beside steel racking inside a commercial warehouse under construction",
+  },
+  datePublished: "2026-11-06",
+  dateModified: "2026-11-06",
+  keyTakeaways: [
+    "OSHA treats scissor lifts as scaffolds under Subpart L, not as aerial lifts under §1926.453; properly maintained guardrails are the fall protection, and employees are not required to tie off solely because the platform extends past the wheelbase.",
+    "Indoor and outdoor platform heights differ on the same model. A Genie GS-1930 lists 19 ft 3 in indoor and 14 ft 8 in outdoor platform height.",
+    "Capacity and occupancy change with height zone: the GS-1930 is rated 500 lb with 2 occupants indoors and 1 outdoors; the GS-3246 is rated 700 lb.",
+    "Check stowed width, floor loading and gradeability before delivery. Slab scissors are built for firm, level floors; rough-terrain models belong on unfinished site grades.",
+  ],
+  sections: [
+    {
+      id: "scissor-vs-boom",
+      heading: "Scissor Lift or Boom Lift?",
+      blocks: [
+        {
+          type: "columns",
+          columns: [
+            { title: "Scissor lift fits", items: ["Work directly above the base on a flat platform", "Interior fit-outs, painting, MEP and racking", "Jobs that need deck space for tools and materials", "Sites where side reach past obstacles is not required"] },
+            { title: "Boom lift fits", items: ["Work that reaches up and out over obstacles", "Facade, roof-edge and atrium work", "Sites that need articulating or telescopic reach", "Jobs where a compact scissor cannot get close enough"] },
+          ],
+        },
+        { type: "p", text: "If the work is straight overhead on a finished slab, start with a scissor. If you need to reach over a wall, trench or parked equipment, see [how to choose a boom lift](/resources/how-to-choose-a-boom-lift)." },
+      ],
+      sources: [sources.genieGs1930, sources.genieGs3246, shared.oshaScissorLifts],
+    },
+    {
+      id: "height-and-capacity",
+      heading: "Platform Height, Capacity and Occupancy",
+      blocks: [
+        { type: "p", text: "Spec sheets list platform height and working height separately. Genie notes that U.S. working height adds 6 feet to platform height. Always size to the platform height you need to stand on, not the working-height marketing number." },
+        {
+          type: "table",
+          caption: "Illustrative slab scissor classes from Genie 2026 ANSI specs",
+          columns: ["Example", "Platform height (in / out)", "Lift capacity", "Width", "Typical fit"],
+          rows: [
+            ["Genie GS-1930", "19 ft 3 in / 14 ft 8 in", "500 lb; 2 in / 1 out", "About 30 in (2 ft 6 in)", "Tight interior corridors, storefronts, light MEP"],
+            ["Genie GS-3246", "32 ft 1 in / 22 ft", "700 lb; 2 in / 1 out", "3 ft 10 in", "Higher interiors, warehouse work, more deck load"],
+          ],
+          note: "Outdoor ratings are lower on these models. Confirm indoor versus outdoor zoning, extension-deck capacity and options with the provider.",
+        },
+        { type: "p", text: "Extension decks carry less. Both examples list 250 lb on the slide-out deck when extended. Keep heavy materials on the main platform and stay inside the load chart for the height zone you are using." },
+      ],
+      sources: [sources.genieGs1930, sources.genieGs3246],
+    },
+    {
+      id: "site-fit",
+      heading: "Width, Floor Loading and Ground Conditions",
+      blocks: [
+        { type: "p", text: "Measure doorways, aisles and elevator cabs before you order. The GS-1930 stows about 30 inches wide; the GS-3246 is 3 ft 10 in wide. Stowed height with rails up is about 7 ft 1 in on the GS-1930 and 8 ft on the GS-3246, with lower heights when rails are folded." },
+        { type: "p", text: "Floor loading matters on upper levels and podium slabs. Genie lists occupied floor pressure around 287 psf for the GS-1930 and 210 psf for the GS-3246 in the cited configurations. Share those figures with the structural engineer or GC when the slab has posted limits." },
+        {
+          type: "list",
+          items: [
+            "Slab scissors use solid non-marking tires and pothole guards for firm, level floors.",
+            "Gradeability figures on these models (25% stowed) apply to driving, not to working on a slope; follow the operator manual for slope limits when elevated.",
+            "Rough, muddy or unfinished grades usually need a rough-terrain scissor or a boom lift instead of a slab machine.",
+            "In cities such as [Carrollton](/locations/texas/carrollton) and [Coppell](/locations/texas/coppell), interior commercial work is common; confirm delivery into the building and elevator or hoist plans.",
+          ],
+        },
+      ],
+      sources: [sources.genieGs1930, sources.genieGs3246],
+    },
+    {
+      id: "osha-rules",
+      heading: "OSHA Rules: Scaffolds, Not Aerial Lifts",
+      blocks: [
+        { type: "p", text: "OSHA's August 1, 2000 interpretation letter states that scissor lifts are not covered by the aerial lift requirements in §1926.453. They meet the definition of a scaffold, so employers must follow the applicable Subpart L scaffold rules, including the mobile scaffold provisions in §1926.452(w)." },
+        { type: "p", text: "Employees are not required to tie off when working from a scissor lift that has properly maintained guardrails, including when the platform extends beyond the wheelbase. That differs from aerial-lift practice, where §1926.453 requires a harness and lanyard attached to the boom or basket." },
+        { type: "p", text: "Training still applies. §1926.454 requires scaffold training by a qualified person covering electrical and fall hazards, falling-object hazards and load capacity. Keep the operator manual and the provider's familiarization on site." },
+        { type: "p", text: "Near overhead lines, Texas Health and Safety Code chapter 752 still applies: stay at least 6 feet from lines over 600 volts unless the operator has arranged de-energizing, relocation or barriers. See also [utility locates before digging](/resources/utility-locates-before-digging) when the job mixes aerial work with excavation." },
+      ],
+      sources: [shared.oshaScissorLifts, sources.osha454, shared.texasHighVoltage, shared.oshaAerialLifts],
+    },
+    {
+      id: "before-you-rent",
+      heading: "Before You Rent",
+      blocks: [
+        {
+          type: "list",
+          items: [
+            "Platform height needed indoors and outdoors, and whether the work stays in one zone.",
+            "Total weight of people, tools and materials, including anything on the extension deck.",
+            "Door, aisle and elevator clearances; stowed width and rail height.",
+            "Floor or ground condition, slope and any posted floor-load limits.",
+            "Power: electric slab machines for interiors; confirm charging access on multi-day rentals.",
+            "Operator authorization and the provider's familiarization before the first lift.",
+          ],
+        },
+        { type: "p", text: "For a broader rental walk-through, see the [equipment rental checklist](/resources/equipment-rental-checklist). For material handling at height instead of people, see [telehandler vs forklift](/resources/telehandler-vs-forklift)." },
+      ],
+      sources: [sources.genieGs1930, sources.genieGs3246],
+    },
+  ],
+  faqs: [
+    { question: "Do I have to wear a harness on a scissor lift?", answer: "OSHA's August 1, 2000 letter says employees are not required to tie off on a scissor lift that has properly maintained guardrails, including when the platform extends past the wheelbase. Employer or site rules may still require a harness." },
+    { question: "Why is outdoor height lower than indoor height on the same scissor?", answer: "Manufacturer ratings set separate indoor and outdoor zones. A Genie GS-1930, for example, lists 19 ft 3 in maximum platform height indoors and 14 ft 8 in outdoors, with occupancy dropping from two people to one." },
+    { question: "How wide is a typical slab scissor lift?", answer: "It varies by model. Genie's GS-1930 is about 30 inches wide; the GS-3246 is 3 ft 10 in. Measure doors and aisles before you order." },
+    { question: "When should I rent a boom lift instead?", answer: "When the work reaches up and out over obstacles, or when a scissor cannot get the platform close enough. See the boom lift guide for articulating and telescopic options." },
+  ],
+  relatedEquipment: [
+    { slug: "scissor-lift-rental", reason: "Slab and rough-terrain scissors for work directly overhead." },
+    { slug: "boom-lift-rental", reason: "When the job needs reach out over obstacles, not only straight up." },
+    { slug: "telehandler-rental", reason: "Moving materials at height rather than putting people on a platform." },
+    { slug: "forklift-rental", reason: "Pallet moves on firm, level floors when a work platform is not needed." },
+  ],
+  relatedGuides: ["how-to-choose-a-boom-lift", "telehandler-vs-forklift", "equipment-rental-checklist"],
+};
+
+export const compactionGuide: Guide = {
+  slug: "choosing-compaction-equipment",
+  title: "Choosing Compaction Equipment: Rammers, Plates and Rollers",
+  shortTitle: "Choosing Compaction Equipment",
+  metaTitle: "Choosing Compaction Equipment for Construction Rentals",
+  metaDescription:
+    "Choose a rental rammer, vibratory plate or roller for trenches, pads and clay soils, with manufacturer specs and DFW Blackland Prairie context.",
+  summary:
+    "Match rammer, plate or roller to trench width, pad size and soil type—especially cohesive clay common across North Texas.",
+  intro: [
+    "Compaction equipment turns loose fill into a surface that can carry a slab, pavement or pipe. The wrong machine leaves soft spots; the right one matches the lift thickness, moisture and space on the plans.",
+    "This guide compares rammers, vibratory plates and single-drum rollers using published manufacturer figures, and explains why drum type matters on Blackland Prairie clay. It complements [site preparation equipment](/resources/site-preparation-equipment), which covers the broader earthwork spread.",
+  ],
+  heroImage: {
+    src: "/images/resources/choosing-compaction-equipment.webp",
+    alt: "Padfoot single-drum roller and plate compactor on a clay building pad with silt fence in the background",
+  },
+  datePublished: "2026-11-06",
+  dateModified: "2026-11-06",
+  keyTakeaways: [
+    "Use a rammer in narrow trenches, a vibratory plate on wider small areas and a single-drum roller on pads and subgrade.",
+    "Smooth drums suit granular soils; padfoot drums are built for highly cohesive soils. BOMAG offers a padfoot segment kit for its BW 211 D-5 SL smooth drum.",
+    "Wacker rates its BS60-4As rammer at about 1,600 sq ft per hour and its WP1550A plate at 9,365 sq ft per hour—coverage is not interchangeable with impact force alone.",
+    "City specs often set lift thickness and density (for example 95% Standard Proctor). Confirm the geotechnical report before you choose a machine.",
+  ],
+  sections: [
+    {
+      id: "match-the-machine",
+      heading: "Match the Machine to the Space",
+      blocks: [
+        {
+          type: "columns",
+          columns: [
+            { title: "Rammer", items: ["Narrow trenches and bore pits", "Around pipes, structures and footings", "Cohesive soils in tight spots", "Slow coverage, high impact on a small shoe"] },
+            { title: "Vibratory plate", items: ["Wider trenches and small pads", "Base and patch work in confined areas", "Granular and mixed soils on flat ground", "Much higher area coverage than a rammer"] },
+            { title: "Single-drum roller", items: ["Building pads, streets and parking subgrade", "Smooth drum for granular soils", "Padfoot drum for highly cohesive clay", "Needs room to turn and stage"] },
+          ],
+        },
+        { type: "p", text: "Cities often specify both density and lift thickness. [Rockwall](/locations/texas/rockwall) fill instructions call for compaction to 95% density with a sheepsfoot roller in 8- to 12-inch lifts; [Coppell](/locations/texas/coppell) may require density tests in trench lines at the applicant's expense. Bring the spec to the provider, not just the machine name." },
+      ],
+      sources: [sources.wackerBs60, sources.wackerWp1550, sources.bomagBw211, citySources.rockwallFill, citySources.coppellRowPermit],
+    },
+    {
+      id: "spec-classes",
+      heading: "Size Classes from Published Specs",
+      blocks: [
+        {
+          type: "table",
+          caption: "Illustrative compaction classes from cited manufacturer data",
+          columns: ["Example", "Type", "Weight", "Force / power", "Width", "Area capacity"],
+          rows: [
+            ["Wacker Neuson BS60-4As 11in", "Rammer", "72 kg (about 159 lb)", "18.0 kN impact (about 4,050 lbf); 656 blows/min", "280 mm shoe (about 11 in)", "148 m²/h (about 1,600 sq ft/h)"],
+            ["Wacker Neuson WP1550A", "Vibratory plate", "198.4 lb", "3,372 lbf centrifugal", "19.7 × 22.9 in plate", "9,365 sq ft/h"],
+            ["BOMAG BW 211 D-5 SL", "Single-drum roller", "10,630 kg (about 23,400 lb)", "82 kW engine", "2,130 mm (about 84 in)", "Not listed as area/hour"],
+          ],
+          note: "Figures are from the cited manufacturer pages and datasheets. Options and model years vary; confirm the exact unit with the provider.",
+        },
+        { type: "p", text: "Rammers deliver hard, rapid blows through a small shoe. Plates vibrate a wider base and cover far more ground per hour; Wacker describes its single-direction plates as suited to tight corners and confined areas. Rollers take over when the pad or street is too large for walk-behind equipment." },
+      ],
+      sources: [sources.wackerBs60, sources.wackerWp1550, sources.bomagBw211],
+    },
+    {
+      id: "clay-and-drum-type",
+      heading: "Clay Soils and Drum Type",
+      blocks: [
+        { type: "p", text: "BOMAG describes smooth-drum single-drum rollers as ideal for sand, gravel, crushed rock and weakly cohesive soils, and padfoot models as designed for highly cohesive soils. A padfoot segment kit can convert the BW 211 D-5 SL smooth drum when the soil demands it." },
+        { type: "p", text: "Much of North Texas sits on Blackland Prairie clay. USDA describes Houston Black as very sticky and very plastic when wet, with very high shrink-swell potential. NWS Fort Worth notes spring and fall as the wettest seasons, so a pad that compacted cleanly on a dry afternoon can fail density tests after rain." },
+        { type: "p", text: "Moisture conditioning is part of the rental plan. If the geotechnical report sets a moisture window, you may need water trucks or drying time—not a bigger roller. For trench work deeper than a few feet, pair compaction with [trench safety basics](/resources/trench-safety-basics)." },
+      ],
+      sources: [sources.bomagBw211, shared.usdaHoustonBlack, shared.usdaOsd, shared.nwsDfw],
+    },
+    {
+      id: "trenches-and-pads",
+      heading: "Trenches, Pads and City Specs",
+      blocks: [
+        {
+          type: "list",
+          items: [
+            "Trenches: rammer first when the trench is narrow; switch to a plate when the trench widens and the pipe is bedded.",
+            "Keep spoil and the machine far enough from the edge to meet OSHA's 2-foot rule unless retaining devices are used.",
+            "Pads and subgrade: rollers for production; plates for edges, returns and around structures the roller cannot reach.",
+            "Ask whether the City requires density tests, and who pays for them, before backfill starts.",
+            "Erosion controls and construction entrances often go in before the first lift—see local grading rules on city pages such as [The Colony](/locations/texas/the-colony) and [Bedford](/locations/texas/bedford).",
+          ],
+        },
+      ],
+      sources: [shared.oshaTrenching, sources.osha651, citySources.theColonyEdm, citySources.bedfordGeneralNotes],
+    },
+    {
+      id: "before-you-rent",
+      heading: "Before You Rent",
+      blocks: [
+        {
+          type: "list",
+          items: [
+            "Soil type and whether the fill is cohesive clay, granular or mixed.",
+            "Lift thickness and density required by the plans or City notes.",
+            "Trench width, pad size and access for a walk-behind versus a roller.",
+            "Whether density testing is required and who schedules it.",
+            "Moisture conditioning: water available on site, or drying time after rain.",
+          ],
+        },
+        { type: "p", text: "For the machines that move the dirt before you compact it, see [site preparation equipment](/resources/site-preparation-equipment) and [what size excavator do I need](/resources/what-size-excavator-do-i-need)." },
+      ],
+      sources: [sources.bomagBw211, sources.wackerBs60, sources.wackerWp1550],
+    },
+  ],
+  faqs: [
+    { question: "Should I rent a rammer or a vibratory plate?", answer: "A rammer fits narrow trenches and tight spots around pipes and footings. A plate covers far more area on wider trenches and small pads: Wacker rates its WP1550A at 9,365 sq ft an hour against about 1,600 sq ft for its BS60-4As rammer." },
+    { question: "When do I need a padfoot roller instead of a smooth drum?", answer: "On highly cohesive soils. BOMAG designs padfoot drums for cohesive soils and offers a padfoot segment kit for its BW 211 D-5 SL smooth drum. Blackland Prairie clay across North Texas is a common reason to ask for padfoot." },
+    { question: "What does 95% Standard Proctor mean for equipment choice?", answer: "It is a density target set in the plans or City notes, not a machine setting. Choose equipment that can compact the specified lift thickness at the required moisture, and confirm with density tests when the City requires them." },
+    { question: "Can one roller handle both trench edges and a building pad?", answer: "Usually not efficiently. Rollers need room to turn on pads and streets; trench edges and returns still need a plate or rammer. Most jobs rent more than one compaction class." },
+  ],
+  relatedEquipment: [
+    { slug: "compactor-rental", reason: "Rammers, plates and rollers matched to trenches, pads and subgrade." },
+    { slug: "skid-steer-rental", reason: "Spreading fill and fine grading before compaction." },
+    { slug: "excavator-rental", reason: "Digging the trenches and pads that later need compaction." },
+    { slug: "trencher-rental", reason: "Long, narrow runs that backfill with a rammer or plate." },
+  ],
+  relatedGuides: ["site-preparation-equipment", "trench-safety-basics", "what-size-excavator-do-i-need"],
+};
+

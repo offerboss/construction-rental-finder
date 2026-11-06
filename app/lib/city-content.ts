@@ -126,6 +126,22 @@ export const sources = {
   rockwallFill: { label: "City of Rockwall Fill Material Request Form and instructions (PDF)", url: "https://ra.rockwall.com/documents/Engineering/FillRequestrev2004_000.pdf" },
   rockwallEngineering: { label: "City of Rockwall Engineering (ROW portal, floodplain, Saturday work requests)", url: "https://www.rockwall.com/engineering.asp" },
   rockwallTakeline: { label: "City of Rockwall Building Inspections: Takeline (Lake Ray Hubbard)", url: "https://www.rockwall.com/buildinginspections_takeline.asp" },
+  tshaLittleElm: { label: "Handbook of Texas: Little Elm, TX", url: "https://www.tshaonline.org/handbook/entries/little-elm-tx" },
+  littleElmRow: { label: "Town of Little Elm: Right-of-Way Permits", url: "https://www.littleelm.gov/365/Construction-Permit" },
+  littleElmEds: { label: "Town of Little Elm Engineering Design Standards (2024 revision) (PDF)", url: "https://www.littleelm.gov/DocumentCenter/View/19580/Engineering-Design-Standards-24-Revision" },
+  littleElmHandbook: { label: "Town of Little Elm Development Handbook (2024) (PDF)", url: "https://www.littleelm.gov/DocumentCenter/View/19811/2024-Little-Elm-Development-Handbok-v11" },
+  tshaHaltomCity: { label: "Handbook of Texas: Haltom City, TX", url: "https://www.tshaonline.org/handbook/entries/haltom-city-tx" },
+  haltomRowPermit: { label: "City of Haltom City: Right-of-Way Utility Construction Permit (PDF)", url: "https://haltomcitytx.com/DocumentCenter/View/959/Right-of-Way-Utility-Construction-Permit-PDF" },
+  tshaKeller: { label: "Handbook of Texas: Keller, TX", url: "https://www.tshaonline.org/handbook/entries/keller-tx" },
+  kellerHours: { label: "City of Keller: Allowable Construction Hours", url: "https://www.cityofkeller.com/services/code-compliance/allowable-construction-hours" },
+  kellerFaq: { label: "City of Keller Building Inspections: Frequently Asked Questions", url: "https://www.cityofkeller.com/services/community-development/building-inspections/frequently-asked-questions" },
+  tshaTheColony: { label: "Handbook of Texas: The Colony, TX", url: "https://www.tshaonline.org/handbook/entries/colony-tx" },
+  theColonyEdm: { label: "City of The Colony Engineering Design Manual and Checklists (PDF)", url: "https://www.thecolonytx.gov/DocumentCenter/View/405/Engineering-Design-Manual-and-Checklists-PDF" },
+  theColonyNoise: { label: "City of The Colony Ordinance No. 2014-2053 (noise; construction equipment 10 p.m.–7 a.m.) (PDF)", url: "https://mcclibraryfunctions.azurewebsites.us/api/ordinanceDownload/13892/634646/pdf" },
+  tshaCoppell: { label: "Handbook of Texas: Coppell, TX", url: "https://www.tshaonline.org/handbook/entries/coppell-tx" },
+  coppellRowPermit: { label: "City of Coppell Right-of-Way Use Permit Application (PDF)", url: "https://coppelltx.gov/DocumentCenter/View/793/Right-of-Way-Use-Permit-PDF" },
+  coppellCommercial: { label: "City of Coppell Commercial Construction Requirements (PDF)", url: "https://coppelltx.gov/DocumentCenter/View/4962/Commercial-Construction-All-Types" },
+  coppellEngineering: { label: "City of Coppell Engineering Permits", url: "https://coppelltx.gov/441/Engineering-Permits" },
 } satisfies Record<string, SourceLink>;
 
 // Guide links render only once the guide is published in resources.ts.
@@ -169,6 +185,18 @@ const telehandlerForkliftGuideLink: CityGuideLink = {
   slug: "telehandler-vs-forklift",
   reason: "Compare reach, ground conditions and operator rules for material handling.",
 };
+
+
+const scissorLiftGuideLink: CityGuideLink = {
+  slug: "how-to-choose-a-scissor-lift",
+  reason: "Indoor vs outdoor height, capacity and OSHA scaffold rules for scissor rentals.",
+};
+
+const compactionGuideLink: CityGuideLink = {
+  slug: "choosing-compaction-equipment",
+  reason: "Rammer, plate or roller selection for trenches, pads and clay soils.",
+};
+
 
 export const arlington: CityEntry = {
   name: "Arlington",
@@ -305,7 +333,7 @@ export const irving: CityEntry = {
     { question: "Do I need to call 811 for yard and dock work in Irving?", answer: "Yes, if you'll dig, trench or set anything below grade. Texas law requires notice to a one-call center no later than 48 hours before excavation, not counting weekends and holidays, and no earlier than 14 days before. Texas811 takes requests by phone at 811 or online." },
     { question: "Can I get a lift into a finished office or retail space?", answer: "Usually, with the right machine. Ask for an electric slab scissor or compact boom with non-marking tires, check door widths, ramp or elevator limits and floor load ratings, and plan delivery around tenant hours." },
   ],
-  nearbyCities: ["arlington", "grand-prairie", "carrollton", "euless", "grapevine", "dallas", "fort-worth"],
+  nearbyCities: ["arlington", "grand-prairie", "carrollton", "euless", "grapevine", "fort-worth", "coppell", "dallas"],
   heroImage: {
     src: "/images/locations/irving-tx-construction-equipment-rental.webp",
     alt: "Telehandler and forklift moving pallets in the gravel yard of a new tilt-wall warehouse in Irving, Texas",
@@ -449,7 +477,7 @@ export const frisco: CityEntry = {
     { question: "When can I close a lane in Frisco to deliver equipment?", answer: "Frisco's engineering general notes limit road closures to 9 a.m. to 3:30 p.m. on weekdays unless the City approves otherwise, with requests made through the Traffic Division at least 48 hours ahead. Lane closures in the right-of-way also need 24 hours' notice to police and fire." },
     { question: "Does my Frisco grading project need a stormwater permit?", answer: "If the project disturbs one acre or more, or is part of a larger plan of development that will, and its stormwater reaches surface waters, it falls under TCEQ's construction general permit, which requires a stormwater pollution prevention plan before construction. Frisco also requires erosion controls to be in place before any construction begins." },
   ],
-  nearbyCities: ["plano", "mckinney", "allen", "lewisville", "denton", "dallas"],
+  nearbyCities: ["plano", "mckinney", "allen", "lewisville", "denton", "little-elm", "the-colony", "dallas"],
   heroImage: {
     src: "/images/locations/frisco-tx-construction-equipment-rental.webp",
     alt: "Excavator loading a dump truck beside a roller and wheel loader on a large graded development site in Frisco, Texas",
@@ -809,7 +837,7 @@ export const carrollton: CityEntry = {
     { question: "What equipment fits a transit-oriented infill site in Carrollton?", answer: "Expect tight staging and buildings set close to the sidewalk. A telehandler for upper-floor materials, boom and scissor lifts for exterior and interior work, and a mini excavator and skid steer for utilities and grading cover most jobs. Measure staging space and overhead lines before choosing sizes." },
     { question: "How quickly do I have to restore a street cut in Carrollton?", answer: "In the right-of-way, excavations have to be filled and compacted within 24 hours and pavement fully restored within 14 days unless the City allows otherwise in writing. Streets, alleys and sidewalks less than three years old can't be cut without approval." },
   ],
-  nearbyCities: ["irving", "plano", "lewisville", "flower-mound", "dallas"],
+  nearbyCities: ["irving", "plano", "lewisville", "flower-mound", "the-colony", "coppell", "dallas"],
   heroImage: {
     src: "/images/locations/carrollton-tx-construction-equipment-rental.webp",
     alt: "Telehandler lifting lumber to a wood-frame mid-rise building behind orange barriers in Carrollton, Texas",
@@ -952,7 +980,7 @@ export const denton: CityEntry = {
     { question: "What equipment suits downtown Denton renovations?", answer: "Plan for lifts and compact handlers first: articulating boom lifts and scissor lifts for facades and interiors, and telehandlers for materials on tight lots. Measure gate width, overhead lines and staging space before you book." },
     { question: "When can I start grading a Denton site with public improvements?", answer: "After Civil Engineering Plans are approved, pre-construction steps are complete and the City issues Notice to Proceed. Public improvements generally have to be accepted before private building work proceeds. Confirm the sequence with your Development Project Facilitator." },
   ],
-  nearbyCities: ["lewisville", "frisco", "carrollton", "dallas"],
+  nearbyCities: ["lewisville", "frisco", "carrollton", "little-elm", "dallas"],
   heroImage: {
     src: "/images/locations/denton-tx-construction-equipment-rental.webp",
     alt: "Compact track loader and scissor lift on a gravel lot beside an old red-brick building under oak trees in Denton, Texas",
@@ -1023,7 +1051,7 @@ export const lewisville: CityEntry = {
     { question: "Where is larger site work happening in Lewisville?", answer: "City long-range plans focus larger mixed-use and redevelopment energy on the I-35E corridor and on Northern and Southern Gateway sites of roughly 300 and 325 acres. Those pads typically need excavators, rollers, boom lifts and telehandlers as buildings rise." },
     { question: "Do I need 811 before digging in Lewisville?", answer: "Yes. Texas law requires one-call notice at least 48 hours before excavating, excluding weekends and holidays. Private service lines on older lots are not marked by franchise locates, so plan to find them with plans or potholing." },
   ],
-  nearbyCities: ["denton", "carrollton", "frisco", "dallas"],
+  nearbyCities: ["denton", "carrollton", "frisco", "little-elm", "the-colony", "dallas"],
   heroImage: {
     src: "/images/locations/lewisville-tx-construction-equipment-rental.webp",
     alt: "Excavator loading a dump truck next to a wheel loader on a red clay pad by a frontage road in Lewisville, Texas",
@@ -1165,7 +1193,7 @@ export const flowerMound: CityEntry = {
     { question: "What equipment suits a Lakeside Business District build?", answer: "Plan excavators and rollers for the pad, then telehandlers, boom lifts and forklifts as the building and warehouse areas come online. Confirm gate width, slab capacity and delivery routes on landscaped campuses." },
     { question: "Can I start early to beat the summer heat in Flower Mound?", answer: "Weekday work may start at 7 a.m., which is the Town's limit. Earlier starts are not allowed under the published construction hours, even in summer heat." },
   ],
-  nearbyCities: ["lewisville", "carrollton", "denton", "grapevine", "dallas"],
+  nearbyCities: ["lewisville", "carrollton", "denton", "grapevine", "keller", "coppell", "dallas"],
   heroImage: {
     src: "/images/locations/flower-mound-tx-construction-equipment-rental.webp",
     alt: "Telehandler lifting lumber at a wood-frame house with tree-protection fencing around oaks in Flower Mound, Texas",
@@ -1309,7 +1337,7 @@ export const northRichlandHills: CityEntry = {
     { question: "What are construction hours in North Richland Hills?", answer: "Outdoor construction is not allowed from 7 p.m. to 7 a.m. during Central Standard Time or 8 p.m. to 6 a.m. during daylight saving time, on Sundays, or on six listed holidays. Appeals go to the building official in writing." },
     { question: "What equipment suits work near the TEXRail station districts?", answer: "Compact machines for utilities and flatwork, plus telehandlers and boom lifts for multi-story mixed-use buildings. Share lot size, staging space and street access with the provider, since both station areas are planned around pedestrians." },
   ],
-  nearbyCities: ["fort-worth", "euless", "arlington", "bedford", "dallas"],
+  nearbyCities: ["fort-worth", "euless", "arlington", "bedford", "haltom-city", "keller", "dallas"],
   heroImage: {
     src: "/images/locations/north-richland-hills-tx-construction-equipment-rental.webp",
     alt: "Yellow telehandler lifting a lumber pallet onto a 3-story wood-framed building, mini excavator by a new sidewalk",
@@ -1451,7 +1479,7 @@ export const euless: CityEntry = {
     { question: "Can I use Euless utility maps instead of calling 811?", answer: "No. Engineering's water and sewer locator maps show general locations for planning. Texas law still requires one-call notice before excavating, at least 48 hours ahead excluding weekends and holidays." },
     { question: "What equipment suits commercial work near DFW Airport?", answer: "Telehandlers, boom lifts and forklifts for shell and fit-out work, plus scissor lifts inside. Share building height, lot layout and airport proximity with the provider." },
   ],
-  nearbyCities: ["irving", "arlington", "north-richland-hills", "grapevine", "bedford", "dallas"],
+  nearbyCities: ["irving", "arlington", "north-richland-hills", "grapevine", "bedford", "haltom-city", "dallas"],
   heroImage: {
     src: "/images/locations/euless-tx-construction-equipment-rental.webp",
     alt: "Telehandler and forklift staging materials at a steel building frame on a paved lot, jet overhead",
@@ -1664,7 +1692,7 @@ export const grapevine: CityEntry = {
     { question: "Do I need to pothole City lines in Grapevine?", answer: "Yes. City water, wastewater, drainage and telecom lines in the project area are potholed at 100-foot intervals and at every crossing, and each service or lateral is uncovered where it crosses. The contractor provides the potholing equipment." },
     { question: "Is Saturday work allowed in Grapevine?", answer: "For right-of-way work, only with 48 hours' notice to the Chief Construction Inspector. The public-improvement overtime policy allows 7 a.m. to 7 p.m. Monday through Saturday, and there is no Sunday work." },
   ],
-  nearbyCities: ["euless", "bedford", "irving", "flower-mound", "dallas"],
+  nearbyCities: ["euless", "bedford", "irving", "flower-mound", "keller", "coppell", "dallas"],
   heroImage: {
     src: "/images/locations/grapevine-tx-construction-equipment-rental.webp",
     alt: "Mini excavator trenching along a curb beside a plate compactor and cones on a tree-lined street in Grapevine, Texas",
@@ -1735,7 +1763,7 @@ export const bedford: CityEntry = {
     { question: "How far ahead should I apply for a Bedford ROW permit?", answer: "At least ten working days before the work starts, unless the City waives it. Give Public Works-Engineering at least 48 hours' notice before starting work in the right-of-way." },
     { question: "What compaction does Bedford require under pavement?", answer: "95% of Standard Proctor density in lifts no thicker than 6 inches, unless the approved geotechnical report recommends otherwise." },
   ],
-  nearbyCities: ["euless", "north-richland-hills", "grapevine", "fort-worth", "dallas"],
+  nearbyCities: ["euless", "north-richland-hills", "grapevine", "fort-worth", "haltom-city", "dallas"],
   heroImage: {
     src: "/images/locations/bedford-tx-construction-equipment-rental.webp",
     alt: "Compact track loader spreading gravel base inside silt fence beside an older brick commercial building in Bedford, Texas",
@@ -1959,4 +1987,359 @@ export const rockwall: CityEntry = {
     alt: "Padfoot roller and skid steer compacting a fenced fill pad on a lakeside lot in Rockwall, Texas",
   },
   guides: [sitePrepGuide, compactGuide, generatorGuideLink],
+};
+
+export const littleElm: CityEntry = {
+  name: "Little Elm",
+  slug: "little-elm",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Little Elm is on Farm Road 720 and an arm of Lewisville Lake in east central Denton County.",
+  metaDescription:
+    "Construction equipment rentals in Little Elm, TX: excavators, compactors and loaders for lake-area growth, plus Town ROW permits, locates and stormwater rules.",
+  localIntro: [
+    "Little Elm sits on Farm Road 720 and an arm of Lewisville Lake in extreme east central Denton County. The Handbook of Texas traces it from a creek-side settlement in the 1840s through incorporation in the 1970s, with growth tied to lake access and road links toward Denton and Dallas.",
+    "Much of the work here is new residential and commercial building on land that drains toward the lake, plus utility and street work that touches Town right-of-way. Use this page to match machines to Little Elm work, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Right-of-way and easement work needs a Town permit before anything starts. Engineering typically processes complete applications in about 10 business days, and Town water and sewer lines in the work area have to be located by calling the Town at least 48 hours before construction, in addition to Texas811 notice under state law.",
+    "Stormwater rules kick in early on larger sites. The Town's Engineering Design Standards require a sealed drainage plan when land disturbance is 1 acre or more, or less than an acre as part of a larger common plan. Graders, excavators and silt-fence installs often land before the first lift of fill.",
+    "Subdivision and commercial pads favor excavators, trenchers, rollers and wheel loaders for earthwork, then compact track loaders and telehandlers as buildings go up. Share soil reports, pad size and lake or floodplain adjacency when you request equipment.",
+  ],
+  featuredEquipment: [
+    { slug: "excavator-rental", reason: "Utilities, detention and site grading on new residential and commercial pads near the lake." },
+    { slug: "compactor-rental", reason: "Trench backfill and pad compaction once lift thickness and density are set in the plans." },
+    { slug: "skid-steer-rental", reason: "Fine grading, spreading and cleanup on tight lots and behind utility crews." },
+    { slug: "wheel-loader-rental", reason: "Moving stockpiles and loading trucks on larger subdivision and commercial sites." },
+    { slug: "trencher-rental", reason: "Long, narrow utility and irrigation runs once locates are complete." },
+    { slug: "telehandler-rental", reason: "Framing and roofing materials as houses and commercial buildings rise." },
+  ],
+  siteConsiderations: [
+    {
+      title: "Right-of-way permits",
+      text: "The Town requires a right-of-way permit before any construction in the right-of-way or easements. Applications go through MyGov or by email to Engineering with signed plans. Complete applications are typically processed within 10 business days.",
+      sources: [sources.littleElmRow],
+    },
+    {
+      title: "Town utility locates",
+      text: "Before work in the right-of-way, existing utilities must be located. For Town water and sewer lines, call 214-618-3102 at least 48 hours before construction starts. State law still requires Texas811 notice at least 48 hours before excavating, excluding weekends and holidays.",
+      sources: [sources.littleElmRow, sources.utilitiesCode251, sources.texas811],
+    },
+    {
+      title: "Stormwater and drainage plans",
+      text: "Storm drainage plans sealed by a Texas licensed professional engineer are required for land-disturbing activity or platting of 1.0 acre or more, and for smaller disturbances that are part of a common plan of 1.0 acre or more. Incomplete submittals are rejected without further review.",
+      sources: [sources.littleElmEds],
+    },
+    {
+      title: "Grading plans",
+      text: "The Engineering Design Standards require grading plans for land disturbance activities, showing existing and proposed conditions. Pair grading with erosion controls before dirt moves.",
+      sources: [sources.littleElmEds],
+    },
+    {
+      title: "Development permitting",
+      text: "The Town's Development Handbook routes zoning, civil and building permits through MyGov. Development Services counters are open Monday–Thursday 7:30 a.m.–5:30 p.m. and Friday 7:30–11:30 a.m.",
+      sources: [sources.littleElmHandbook],
+    },
+    {
+      title: "Climate and clay soils",
+      text: "NWS Fort Worth notes July and August highs often in the 90s and above 100, with spring and fall the wettest seasons. USDA describes Houston Black and similar Blackland Prairie clays as sticky when wet with very high shrink-swell, so tracked machines and padfoot compaction are common asks on wet pads.",
+      sources: [sources.nwsDfwClimate, sources.usdaHoustonBlack],
+    },
+  ],
+  faqs: [
+    { question: "Do I need a permit to dig in a Little Elm street or easement?", answer: "Yes. The Town requires a right-of-way permit before construction in the right-of-way or easements. Complete applications are typically processed within 10 business days." },
+    { question: "How do I get Little Elm water and sewer lines marked?", answer: "Call the Town at 214-618-3102 at least 48 hours before starting right-of-way work, and file Texas811 notice as required by state law." },
+    { question: "When does Little Elm require a sealed drainage plan?", answer: "When land disturbance or platting is 1.0 acre or more, or when a smaller disturbance is part of a common plan of 1.0 acre or more. Plans must be sealed by a Texas licensed professional engineer." },
+    { question: "What equipment fits a new Little Elm subdivision pad?", answer: "Excavators, trenchers, rollers and wheel loaders for grading and utilities, then skid steers and telehandlers as buildings go up. Share phase size, soil report and lake or floodplain adjacency with the provider." },
+  ],
+  nearbyCities: ["lewisville", "frisco", "the-colony", "denton", "dallas"],
+  heroImage: {
+    src: "/images/locations/little-elm-tx-construction-equipment-rental.webp",
+    alt: "Excavator and smooth-drum roller grading a suburban building pad near a tree line in Little Elm, Texas",
+  },
+  guides: [sitePrepGuide, trenchSafetyGuideLink, compactionGuideLink],
+};
+
+export const haltomCity: CityEntry = {
+  name: "Haltom City",
+  slug: "haltom-city",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Haltom City is on U.S. Highway 377 about four miles northeast of Fort Worth in central Tarrant County.",
+  metaDescription:
+    "Construction equipment rentals in Haltom City, TX: compact excavators, compactors and lifts for infill and utility work, plus City ROW utility permit rules.",
+  localIntro: [
+    "Haltom City lies on U.S. Highway 377 about four miles northeast of Fort Worth in central Tarrant County. The Handbook of Texas notes rapid postwar growth and a long manufacturing base, from sheet metal and plastics to a denser mix of commercial and residential corridors today.",
+    "Much of the rental work is utility replacement, small commercial pads and rework of older buildings between established streets. Use this page to match machines to Haltom City work, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Utility construction in City right-of-way runs through a Public Works permit that asks for engineering plans, an aerial of the project limits, restoration details and a work schedule. A $5,000 surety bond and certificate of insurance are part of the request.",
+    "Haltom City is not connected to a one-call service for its own public utilities. After the permit is approved, no digging or boring may start until the contractor contacts both 811 and the Public Works Dispatcher at least 48 hours ahead; permit approval includes marking of City public utilities.",
+    "Tight corridors favor mini excavators, compactors and skid steers. Boom and scissor lifts show up on commercial facade and interior work along the US 377 corridor. Share street width, bore versus open-cut plans and inspection timing when you request machines.",
+  ],
+  featuredEquipment: [
+    { slug: "mini-excavator-rental", reason: "Service connections, bore pits and tight utility work between existing streets and buildings." },
+    { slug: "compactor-rental", reason: "Trench backfill and pavement restoration after utility cuts." },
+    { slug: "skid-steer-rental", reason: "Cleanup, base and grading on small commercial and residential pads." },
+    { slug: "excavator-rental", reason: "Larger utility runs and site work where a compact machine is not enough." },
+    { slug: "boom-lift-rental", reason: "Facade and exterior work on commercial buildings along established corridors." },
+    { slug: "scissor-lift-rental", reason: "Interior and storefront work when older buildings are reworked." },
+  ],
+  siteConsiderations: [
+    {
+      title: "Utility construction permit in the right-of-way",
+      text: "Public Works requires a Utility Construction Permit for right-of-way utility work. Incomplete requests delay approval. Required items include a $5,000 surety bond, certificate of insurance, proposed engineering plans, an aerial of the project limits, restoration details and a schedule.",
+      sources: [sources.haltomRowPermit],
+    },
+    {
+      title: "48-hour notice to 811 and Public Works",
+      text: "After the City approves the permit, no construction, digging or boring may begin until the contractor has contacted both 811 and the Public Works Dispatcher (dispatch@haltomcitytx.com / 817-834-9036) 48 hours before start. The Dispatcher must also be contacted 48 hours before work that needs a Public Works Construction Inspector, such as tapping a public main or cutting a roadway.",
+      sources: [sources.haltomRowPermit, sources.utilitiesCode251, sources.texas811],
+    },
+    {
+      title: "City utility marking",
+      text: "Haltom City is not connected with a one-call service. Approval of the utility construction permit includes marking of the City's public utilities. Keep the 811 ticket reference on the permit form when available.",
+      sources: [sources.haltomRowPermit],
+    },
+    {
+      title: "Adjacent notice and site controls",
+      text: "Before work begins, other utility providers in the area must be notified, occupants of property adjacent to the work must be notified, and a 3-foot by 3-foot information sign, traffic barricades and arrow boards must be in place. Erosion control measures must be on site, and the contractor must keep general notes, approved permits and plans on site.",
+      sources: [sources.haltomRowPermit],
+    },
+    {
+      title: "Standards and ordinance",
+      text: "All construction under the permit must follow City Standard Details and Specifications and Ordinance No. O-2000-054-16, as amended.",
+      sources: [sources.haltomRowPermit],
+    },
+    {
+      title: "Climate",
+      text: "NWS Fort Worth describes DFW summers with highs often in the 90s and above 100, and spring and fall as the wettest seasons. Plan deliveries and compaction around wet clay and heat the same way you would elsewhere in Tarrant County.",
+      sources: [sources.nwsDfwClimate],
+    },
+  ],
+  faqs: [
+    { question: "Can I dig in a Haltom City street as soon as the ROW permit is approved?", answer: "No. After approval, you still must contact both 811 and the Public Works Dispatcher 48 hours before any digging or boring starts." },
+    { question: "Does Haltom City mark its own utilities through 811?", answer: "No. The City is not connected with a one-call service; permit approval includes marking of City public utilities, and you still file 811 for other operators." },
+    { question: "What bond does Haltom City require for a utility construction permit?", answer: "A $5,000 surety bond and a certificate of insurance must be provided for review with the permit request." },
+    { question: "What equipment fits Haltom City utility work?", answer: "Mini excavators, compactors and skid steers for service work and restoration in established streets; larger excavators when the run outgrows a compact machine. Share bore plans, street width and inspection timing with the provider." },
+  ],
+  nearbyCities: ["north-richland-hills", "fort-worth", "bedford", "euless", "dallas"],
+  heroImage: {
+    src: "/images/locations/haltom-city-tx-construction-equipment-rental.webp",
+    alt: "Mini excavator and plate compactor working in a coned utility cut on an established street in Haltom City, Texas",
+  },
+  guides: [utilityLocatesGuideLink, trenchSafetyGuideLink, compactionGuideLink],
+};
+
+export const keller: CityEntry = {
+  name: "Keller",
+  slug: "keller",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Keller is on U.S. Highway 377 about fifteen miles north of Fort Worth in northeast Tarrant County.",
+  metaDescription:
+    "Construction equipment rentals in Keller, TX: excavators, compactors and lifts for residential and commercial work, plus City construction hours and ROW rules.",
+  localIntro: [
+    "Keller sits on U.S. Highway 377 about fifteen miles north of Fort Worth in northeast Tarrant County. The Handbook of Texas places it in the Eastern Cross Timbers, with open prairie to the west, and traces the town from a Texas and Pacific Railway stop in the 1880s.",
+    "Today's work mixes residential building, commercial pads and right-of-way repairs in a largely built-up suburb. Use this page to match machines to Keller work, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Construction hours are early and broad. The City prohibits construction activity in residential and nonresidential districts—except inside work in an enclosed building in a nonresidential district—outside 6 a.m. to 7 p.m. Monday through Friday and 8 a.m. to 6 p.m. Saturday and Sunday, unless a permit covers urgent public-safety work.",
+    "Dirt work is tightly controlled. Building Services notes that tree removal and grading not completed with a building permit need their own permits, and a right-of-way permit is required for work in the public right-of-way from the curb through the sidewalk.",
+    "Loading next to residential development is limited to 6 a.m. to 10 p.m. daily, so schedule rental deliveries inside that window. Compact excavators, rollers and lifts cover most residential and small commercial jobs here.",
+  ],
+  featuredEquipment: [
+    { slug: "excavator-rental", reason: "Site grading, utilities and detention on residential and commercial pads." },
+    { slug: "mini-excavator-rental", reason: "Service lines, footings and tight lots between existing homes." },
+    { slug: "compactor-rental", reason: "Pad and trench compaction once lift thickness is set in the plans." },
+    { slug: "skid-steer-rental", reason: "Fine grading, base and cleanup on residential lots." },
+    { slug: "telehandler-rental", reason: "Framing and roofing materials on houses and small commercial buildings." },
+    { slug: "boom-lift-rental", reason: "Exterior work on commercial buildings along US 377 and local arterials." },
+  ],
+  siteConsiderations: [
+    {
+      title: "Allowable construction hours",
+      text: "Construction activity in residential and nonresidential districts, excluding inside work done in an enclosed building in a nonresidential district, is limited to 6 a.m.–7 p.m. Monday through Friday and 8 a.m.–6 p.m. Saturday and Sunday, except for urgent necessity in the interest of public safety with a permit.",
+      sources: [sources.kellerHours],
+    },
+    {
+      title: "Loading area hours",
+      text: "Loading areas adjacent to residential development or zoning districts may load and unload only between 6 a.m. and 10 p.m. daily. Plan equipment deliveries inside that window.",
+      sources: [sources.kellerHours],
+    },
+    {
+      title: "Right-of-way permits",
+      text: "A right-of-way permit is required for any work in the public right-of-way, typically from the curb up to and including the sidewalk.",
+      sources: [sources.kellerFaq],
+    },
+    {
+      title: "Grading and tree removal permits",
+      text: "Building Services lists tree removal and grading that are not completed with a building permit among the work that needs a separate permit before it starts.",
+      sources: [sources.kellerFaq],
+    },
+    {
+      title: "Utility notice before excavating",
+      text: "Texas law requires excavators to give notice through Texas811 at least 48 hours before digging, excluding weekends and holidays. Confirm City utility marks and any separate ROW conditions on the permit.",
+      sources: [sources.utilitiesCode251, sources.texas811],
+    },
+    {
+      title: "Climate",
+      text: "NWS Fort Worth notes summer highs often in the 90s and above 100, with spring and fall the wettest seasons. Eastern Cross Timbers soils and wet spells both affect traction and compaction scheduling.",
+      sources: [sources.nwsDfwClimate, sources.tshaKeller],
+    },
+  ],
+  faqs: [
+    { question: "What are construction hours in Keller?", answer: "6 a.m. to 7 p.m. Monday through Friday and 8 a.m. to 6 p.m. Saturday and Sunday for outdoor construction activity, unless a permit covers urgent public-safety work. Inside work in an enclosed nonresidential building is treated separately." },
+    { question: "When can I deliver a rental next to homes in Keller?", answer: "Loading areas adjacent to residential development or zoning are limited to 6 a.m. to 10 p.m. daily." },
+    { question: "Do I need a permit to work in a Keller sidewalk or parkway?", answer: "Yes. A right-of-way permit is required for work in the public right-of-way, typically from the curb through the sidewalk." },
+    { question: "Do I need a separate permit for grading in Keller?", answer: "Tree removal and grading that are not completed with a building permit need their own permits before work starts." },
+  ],
+  nearbyCities: ["north-richland-hills", "fort-worth", "grapevine", "flower-mound", "dallas"],
+  heroImage: {
+    src: "/images/locations/keller-tx-construction-equipment-rental.webp",
+    alt: "Compact track loader and mini excavator fine-grading a residential lot behind orange fencing in Keller, Texas",
+  },
+  guides: [sitePrepGuide, compactionGuideLink, rentalChecklistGuideLink],
+};
+
+export const theColony: CityEntry = {
+  name: "The Colony",
+  slug: "the-colony",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "The Colony sits by Lake Lewisville near State Highway 121 and Farm Road 423 in southeastern Denton County.",
+  metaDescription:
+    "Construction equipment rentals in The Colony, TX: excavators, rollers and lifts for lake-area growth, plus grading, SWPPP and ROW rules.",
+  localIntro: [
+    "The Colony sits by Lake Lewisville near the intersection of State Highway 121 and Farm Road 423 in southeastern Denton County. The Handbook of Texas notes its name from Peters' colony and its start as a Fox and Jacobs housing development in the 1970s that incorporated later that decade.",
+    "Growth still means grading, utilities and commercial pads, much of it near the lake and along the SH 121 and FM 423 corridors. Use this page to match machines to The Colony work, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Any ground disturbance needs a City Grading and Storm Water Pollution Control Permit before dirt moves. The Engineering Design Manual also requires a separate grading permit for grading-only work and for early grading before final construction plans are approved, with plans and a tree survey.",
+    "Work in public right-of-way, public property or easements needs City Engineer approval. Non-franchised users need a Council-approved license, encroachment or landscape agreement. Driveways on FM 423/Main Street and SH 121 also need TxDOT approval after the City accepts the design.",
+    "Construction equipment that annoys neighbors is restricted overnight. Ordinance 2014-2053 treats loud construction equipment between 10 p.m. and 7 a.m. as a noise nuisance unless City Council grants a special exception.",
+  ],
+  featuredEquipment: [
+    { slug: "excavator-rental", reason: "Utilities, detention and site grading on residential and commercial pads." },
+    { slug: "compactor-rental", reason: "Pad and trench compaction after grading permits and SWPPP controls are in place." },
+    { slug: "wheel-loader-rental", reason: "Moving stockpiles and loading trucks on larger graded sites." },
+    { slug: "skid-steer-rental", reason: "Fine grading and cleanup on lots and commercial pads." },
+    { slug: "telehandler-rental", reason: "Material placement as houses and commercial buildings go up." },
+    { slug: "boom-lift-rental", reason: "Exterior work on commercial buildings along SH 121 and FM 423." },
+  ],
+  siteConsiderations: [
+    {
+      title: "Grading and stormwater control permit",
+      text: "A City Grading and Storm Water Pollution Control Permit is required before any grading or ground disturbance inside the City limits. There is no unauthorized dumping or grading; earth-disturbing work needs the permit first.",
+      sources: [sources.theColonyEdm],
+    },
+    {
+      title: "Early grading and floodplain permits",
+      text: "A grading permit is required for grading-only projects and for early grading before final construction plans are approved, with seven sets of plans including a tree survey. A floodplain development permit is required for work in the fully developed 100-year floodplain; any required Corps Section 10 or 404 permit must be approved before construction begins.",
+      sources: [sources.theColonyEdm],
+    },
+    {
+      title: "SWPPP booklets before work starts",
+      text: "Where TCEQ acreage rules require a SWPPP, the contractor submits two completed bound SWPPP booklets. No work may start until the City approves the plan. The Primary Operator site notice must be posted in laminate on site, and proof of a filed NOI is included when TCEQ requires it.",
+      sources: [sources.theColonyEdm, sources.tceqConstructionStormwater],
+    },
+    {
+      title: "Right-of-way and state highways",
+      text: "Work on public property, right-of-way or easements needs City Engineer approval with plans. Driveways on FM 423/Main Street and SH 121 must meet City criteria and TxDOT approval; after the City accepts the design, the City Engineer submits the TxDOT permit application.",
+      sources: [sources.theColonyEdm],
+    },
+    {
+      title: "Construction equipment noise",
+      text: "Ordinance 2014-2053 declares the use of construction equipment that annoys persons of ordinary sensibilities, particularly between 10 p.m. and 7 a.m., to be a noise nuisance, unless City Council grants a special exception. Separate construction-hour rules in the Code may also apply; confirm current hours with the City before scheduling night work.",
+      sources: [sources.theColonyNoise],
+    },
+    {
+      title: "Building pad drainage",
+      text: "Finished floor must be at least one foot above top of curb or edge of asphalt, or at a 1.0% slope from the street to the building, whichever is higher. Ground next to pads must slope away at least 2% in paved areas and 5% in landscaped areas, and no public drainage may drain onto private property.",
+      sources: [sources.theColonyEdm],
+    },
+  ],
+  faqs: [
+    { question: "Do I need a permit before grading a lot in The Colony?", answer: "Yes. A City Grading and Storm Water Pollution Control Permit is required before any ground disturbance, and a separate grading permit covers grading-only or early grading before final plans are approved." },
+    { question: "Can I run loud construction equipment at night in The Colony?", answer: "Ordinance 2014-2053 treats construction equipment that annoys neighbors, particularly between 10 p.m. and 7 a.m., as a noise nuisance unless City Council grants a special exception." },
+    { question: "What do I need before starting a site that needs a SWPPP?", answer: "Two City-approved SWPPP booklets, a posted Primary Operator site notice, and proof of a filed TCEQ NOI when acreage rules require it. No work starts until the City approves the plan." },
+    { question: "Do driveways on SH 121 or FM 423 need TxDOT approval?", answer: "Yes. After the City accepts the driveway design, the City Engineer submits a permit application to TxDOT." },
+  ],
+  nearbyCities: ["lewisville", "frisco", "little-elm", "carrollton", "dallas"],
+  heroImage: {
+    src: "/images/locations/the-colony-tx-construction-equipment-rental.webp",
+    alt: "Excavator and padfoot roller compacting a fenced commercial pad near a divided highway corridor in The Colony, Texas",
+  },
+  guides: [sitePrepGuide, compactionGuideLink, generatorGuideLink],
+};
+
+export const coppell: CityEntry = {
+  name: "Coppell",
+  slug: "coppell",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Coppell is in the northwest corner of Dallas County near DFW International Airport, the Elm Fork of the Trinity River and major freeways.",
+  metaDescription:
+    "Construction equipment rentals in Coppell, TX: lifts, excavators and compactors for commercial and ROW work, plus City work hours and lane-closure rules.",
+  localIntro: [
+    "Coppell occupies the extreme northwest corner of Dallas County near DFW International Airport, the Elm Fork of the Trinity River and the junctions of Interstate 635, State Highway 121 and Interstate 35. The Handbook of Texas notes Grapevine Creek, Denton Creek and Cottonwood Branch flowing through the city, and a history that runs from a railroad depot renamed for financier George Coppell to a modern airport-adjacent suburb.",
+    "Commercial fit-outs, light industrial pads and right-of-way utility work drive most equipment rentals here. Use this page to match machines to Coppell work, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Right-of-way work runs on a strict clock. The City's ROW Use Permit allows work activity from 7 a.m. to 7 p.m. Monday through Friday only, and traffic lane closures are limited to 9:30 a.m. to 3:30 p.m. unless the City Engineer approves otherwise. Weekend and holiday work needs a prior written request.",
+    "Building construction noise near homes follows a related schedule: 7 a.m. to 7 p.m. Monday through Friday and 9 a.m. to 7 p.m. on Saturdays, Sundays and listed legal holidays, unless the City Manager issues a written permit for urgent public necessity.",
+    "Warehouse and commercial buildings near the airport corridor bring telehandlers, forklifts and scissor lifts. Utility cuts need density testing when required, OSHA trench safety on site, and Texas811 locates before digging.",
+  ],
+  featuredEquipment: [
+    { slug: "scissor-lift-rental", reason: "Interior and warehouse work on commercial and light-industrial buildings." },
+    { slug: "telehandler-rental", reason: "Placing materials on commercial pads and buildings near the SH 121 corridor." },
+    { slug: "forklift-rental", reason: "Unloading and stocking on paved commercial and warehouse sites." },
+    { slug: "mini-excavator-rental", reason: "Utility services and tight ROW work under the City's weekday-only hours." },
+    { slug: "compactor-rental", reason: "Trench backfill where density tests may be required at the applicant's expense." },
+    { slug: "boom-lift-rental", reason: "Exterior facade and height work on commercial buildings." },
+  ],
+  siteConsiderations: [
+    {
+      title: "ROW work hours and lane closures",
+      text: "Under the Right-of-Way Use Permit, work activity is permitted from 7 a.m. to 7 p.m. Monday through Friday only. Traffic lane closures are allowed from 9:30 a.m. until 3:30 p.m. only unless the City Engineer approves otherwise, and no work is to be done in collector roadways before 9:30 a.m. or after 3:30 p.m. Prior written request is required for weekends and holidays.",
+      sources: [sources.coppellRowPermit],
+    },
+    {
+      title: "Construction noise near residences",
+      text: "Commercial construction requirements limit construction activity related to buildings and accessory structures on or adjacent to a residential district or structure to 7 a.m.–7 p.m. Monday through Friday and 9 a.m.–7 p.m. on Saturdays, Sundays and listed legal holidays, unless the City Manager or designee issues a written permit for urgent public necessity.",
+      sources: [sources.coppellCommercial],
+    },
+    {
+      title: "ROW permit, notice and erosion control",
+      text: "A valid approved City permit must stay on site. Adjacent property owners must be notified of the timeline and contractor contacts. Erosion controls must follow Ordinance No. 91-514, traffic control must follow Texas MUTCD standards, and lane closures need a flashing arrow board. Grading is restored or improved and sod replaced when necessary.",
+      sources: [sources.coppellRowPermit],
+    },
+    {
+      title: "Locates, trench safety and density tests",
+      text: "Utility locates must be done in advance through 811 or the Texas811 portal. The permit summary requires following OSHA trench safety guidelines at all times, and density tests may be required in trench lines at the applicant's expense.",
+      sources: [sources.coppellRowPermit, sources.utilitiesCode251, sources.texas811, sources.oshaTrenching],
+    },
+    {
+      title: "Airport airspace",
+      text: "Coppell sits northeast of DFW International Airport. FAA notice is required for construction or alteration more than 200 feet above ground, or that exceeds a 100:1 slope within 20,000 feet of a qualifying runway; temporary structures such as cranes are covered. File Form 7460-1 at least 45 days before work when it applies.",
+      sources: [sources.tshaCoppell, sources.faaPart77, sources.faaForm7460],
+    },
+    {
+      title: "Engineering permits",
+      text: "Engineering permits, including Chapter 284 submissions, are handled through the Engineering Department and the City's online Citizen Self-Service portal.",
+      sources: [sources.coppellEngineering],
+    },
+  ],
+  faqs: [
+    { question: "Can I work in a Coppell right-of-way on Saturday?", answer: "Only with a prior written request. The ROW Use Permit allows work activity 7 a.m. to 7 p.m. Monday through Friday only unless weekend or holiday work is requested in writing and approved." },
+    { question: "When are lane closures allowed in Coppell?", answer: "Traffic lane closures are limited to 9:30 a.m. to 3:30 p.m. unless the City Engineer approves otherwise, and collector roadways follow the same daytime window." },
+    { question: "What are construction noise hours next to homes in Coppell?", answer: "7 a.m. to 7 p.m. Monday through Friday and 9 a.m. to 7 p.m. on Saturdays, Sundays and listed legal holidays, unless the City Manager issues a written permit for urgent public necessity." },
+    { question: "Do I need density tests on a Coppell utility trench?", answer: "The ROW permit summary says density tests may be required in trench lines at the applicant's expense. Confirm what the approved plans require before backfill." },
+  ],
+  nearbyCities: ["grapevine", "irving", "carrollton", "flower-mound", "dallas"],
+  heroImage: {
+    src: "/images/locations/coppell-tx-construction-equipment-rental.webp",
+    alt: "Scissor lift and telehandler on a commercial building pad beside a warehouse shell in Coppell, Texas",
+  },
+  guides: [scissorLiftGuideLink, compactionGuideLink, utilityLocatesGuideLink],
 };

@@ -1,6 +1,6 @@
 # CRF Published Pages
 
-Last updated: 2026-10-29
+Last updated: 2026-11-06
 
 ## Batch Log
 
@@ -424,3 +424,29 @@ Guide links: Generator sizing — equipment card generator-rental (reciprocal bl
 ### Word counts (rendered <main>)
 
 Grapevine 1,309; Bedford 1,229; Cedar Hill 1,206; Burleson 1,112; Rockwall 1,214. Generator sizing 1,889; trench safety 1,865. Not padded.
+
+## Batch 7 + Resource Run 6 (2026-11-06)
+
+Cities (next uncovered DFW below Rockwall by 2020 Census roadmap; verified first): Little Elm, Haltom City, Keller, The Colony, Coppell. No swaps. Sitemap target: previous 74 + 5 cities + 2 guides = 81.
+
+Featured equipment: Little Elm excavator, compactor, skid-steer, wheel-loader, trencher, telehandler; Haltom City mini-excavator, compactor, skid-steer, excavator, boom-lift, scissor-lift; Keller excavator, mini-excavator, compactor, skid-steer, telehandler, boom-lift; The Colony excavator, compactor, wheel-loader, skid-steer, telehandler, boom-lift; Coppell scissor-lift, telehandler, forklift, mini-excavator, compactor, boom-lift.
+
+City guides: Little Elm (site prep, trench safety, compaction); Haltom City (utility locates, trench safety, compaction); Keller (site prep, compaction, checklist); The Colony (site prep, compaction, generator); Coppell (scissor lift, compaction, utility locates).
+
+Resource Run 6: `/resources/how-to-choose-a-scissor-lift` (Genie GS-1930 / GS-3246 2026 specs; OSHA Aug. 1, 2000 scissor=scaffold interpretation; §1926.454; Texas HSC ch. 752); `/resources/choosing-compaction-equipment` (Wacker BS60-4As / WP1550A; BOMAG BW 211 D-5 SL; USDA Houston Black; NWS DFW; Rockwall fill / Coppell ROW density notes).
+
+### Sources (fetched 2026-11-06)
+- TSHA Handbook: Little Elm, Haltom City, Keller, The Colony (colony-tx), Coppell
+- Little Elm ROW permits; Engineering Design Standards 2024; Development Handbook 2024
+- Haltom City Right-of-Way Utility Construction Permit PDF
+- Keller Allowable Construction Hours; Building Inspections FAQ (verified via Wayback capture of live City pages; cityofkeller.com returned 403 to direct fetch)
+- The Colony Engineering Design Manual; Ordinance 2014-2053 noise
+- Coppell ROW Use Permit PDF; Commercial Construction Requirements PDF; Engineering Permits page
+- Shared: Texas811; Utilities Code ch. 251; NWS DFW; TCEQ TXR150000; FAA Part 77 / Form 7460-1; OSHA trenching / Subpart L
+
+### Source conflicts and omissions (Batch 7)
+- Haltom City construction hours: omitted. Third-party summaries disagree; municode Ch. 66 not loadable this turn (JS/Cloudflare).
+- Little Elm §70-55 noise hours: omitted. Municode JS-blocked this turn.
+- The Colony: noise ordinance restricts annoying construction equipment particularly 10 p.m.–7 a.m.; page notes separate Code construction-hour rules may also apply and should be confirmed with the City.
+- Keller hours cited to official City URLs; live site blocked automated fetch (Akamai 403); content confirmed via Wayback snapshot of the same URLs.
+

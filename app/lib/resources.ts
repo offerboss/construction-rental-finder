@@ -1,5 +1,5 @@
 import type { CategorySlug } from "./categories";
-import { boomLiftGuide, excavatorSizeGuide, rentalChecklistGuide, shortVsLongGuide, sitePrepGuide, skidSteerVsMiniExcavator, telehandlerVsForkliftGuide, utilityLocatesGuide, generatorSizingGuide, trenchSafetyGuide } from "./guide-content";
+import { boomLiftGuide, excavatorSizeGuide, rentalChecklistGuide, shortVsLongGuide, sitePrepGuide, skidSteerVsMiniExcavator, telehandlerVsForkliftGuide, utilityLocatesGuide, generatorSizingGuide, trenchSafetyGuide, scissorLiftGuide, compactionGuide } from "./guide-content";
 import type { SourceLink } from "./locations";
 import type { Faq } from "./seo";
 
@@ -48,7 +48,7 @@ export type Guide = {
 };
 
 /** Published guides, each with a live /resources/<slug> route and a sitemap entry. */
-export const guides: Guide[] = [skidSteerVsMiniExcavator, excavatorSizeGuide, boomLiftGuide, sitePrepGuide, rentalChecklistGuide, shortVsLongGuide, telehandlerVsForkliftGuide, utilityLocatesGuide, generatorSizingGuide, trenchSafetyGuide];
+export const guides: Guide[] = [skidSteerVsMiniExcavator, excavatorSizeGuide, boomLiftGuide, sitePrepGuide, rentalChecklistGuide, shortVsLongGuide, telehandlerVsForkliftGuide, utilityLocatesGuide, generatorSizingGuide, trenchSafetyGuide, scissorLiftGuide, compactionGuide];
 
 export function getGuide(slug: string) {
   return guides.find((guide) => guide.slug === slug);

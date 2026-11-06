@@ -88,6 +88,9 @@ template unchanged.
   - Cedar Hill: Balcones Escarpment terrain and open-space goal; ROW conditions (7–4 weekdays, nightly fencing, no open street cuts).
   - Burleson: I-35W growth and Chisholm Summit master-planned community; ROW locate request, no street cuts, grading/floodplain forms.
   - Rockwall: Ordinance 05-45 hours incl. fueling and deliveries; fill material permits (sheepsfoot, 8–12 in lifts); Lake Ray Hubbard takeline.
+- Batch 7 (2026-11-06): Little Elm (lake-area growth, Town ROW + 48 h water/sewer locate, 1-acre drainage plans); Haltom City (ROW utility permit, City not on one-call, 48 h PW dispatcher); Keller (6 a.m.–7 p.m. weekdays / 8–6 weekends, loading 6 a.m.–10 p.m., ROW + grading permits); The Colony (grading/SWPPP before dirt moves, floodplain, SH 121/FM 423 TxDOT driveways, overnight equipment noise); Coppell (ROW Mon–Fri 7–7 only, lane closures 9:30–3:30, residential construction noise, DFW airspace).
+- Resource Run 6: how-to-choose-a-scissor-lift; choosing-compaction-equipment.
+
 - Batch 3 (chosen by 2020 Census size among uncovered DFW cities; Denton skipped because its site couldn't be verified):
   - Garland: a largely built-out first-ring suburb converting older industrial buildings and repositioning aging retail; forklifts, scissor lifts, compact equipment.
   - Grand Prairie: Great Southwest Industrial District warehouse and distribution builds plus Joe Pool Lake residential; telehandlers, booms, rollers; TxDOT, floodplain and airport rules.
