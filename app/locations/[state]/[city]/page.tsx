@@ -7,16 +7,26 @@ import CtaBanner from "../../../components/CtaBanner";
 import FaqSection from "../../../components/FaqSection";
 import PageHeader from "../../../components/PageHeader";
 import SectionHeading from "../../../components/SectionHeading";
+import CityProviderSection from "../../../components/providers/CityProviderSection";
 import { getCategories, getCategory } from "../../../lib/categories";
 import { cityPopularEquipment, getCity, getState, states, type City, type State } from "../../../lib/locations";
 import { projectTypes } from "../../../lib/projects";
+import { cityPageRegions } from "../../../lib/regions";
 import { getPublishedGuide } from "../../../lib/resources";
 import { pageMetadata, type Faq } from "../../../lib/seo";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return states.flatMap((state) => state.cities.map((city) => ({ state: state.slug, city: city.slug })));
+  const params = states.flatMap((state) => state.cities.map((city) => ({ state: state.slug, city: city.slug })));
+  // Build-time check: every city page needs a directory region for its provider fallback.
+  const unmapped = params.filter(({ state, city }) => !cityPageRegions[`${state}/${city}`]);
+  if (unmapped.length) {
+    throw new Error(
+      `City pages missing from cityPageRegions in app/lib/regions.ts: ${unmapped.map(({ state, city }) => `${state}/${city}`).join(", ")}`,
+    );
+  }
+  return params;
 }
 
 function resolve(stateSlug: string, citySlug: string) {
@@ -265,6 +275,8 @@ function RichCityPage({ city, state }: { city: City; state: State }) {
         </section>
       )}
 
+      <CityProviderSection stateSlug={state.slug} citySlug={city.slug} cityName={city.name} />
+
       {city.faqs && city.faqs.length > 0 && (
         <FaqSection title={`Questions About Renting in ${city.name}`} faqs={city.faqs} />
       )}
@@ -381,6 +393,8 @@ export default async function CityPage({ params }: PageProps<"/locations/[state]
       </section>
 
       <NearbySection city={city} state={state} title={`More ${state.name} Locations`} />
+
+      <CityProviderSection stateSlug={state.slug} citySlug={city.slug} cityName={city.name} />
 
       <FaqSection title={`Questions About Renting in ${city.name}`} faqs={cityFaqs(city, state)} />
 

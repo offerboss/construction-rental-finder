@@ -28,6 +28,30 @@
   }
 }
 
+/* Provider directory rows. Shared utilities keep 370 listings' markup small. */
+@utility provider-chip {
+  border-radius: 0.125rem;
+  border: 1px solid color-mix(in oklab, var(--color-navy) 10%, transparent);
+  background-color: var(--color-white);
+  padding: 0.125rem 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: color-mix(in oklab, var(--color-ink) 80%, transparent);
+}
+
+@utility provider-link {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--color-navy);
+  text-underline-offset: 2px;
+  &:hover {
+    text-decoration-line: underline;
+  }
+}
+
 /* Yellow/navy caution stripe used as an industrial accent */
 @utility bg-hazard {
   background-image: repeating-linear-gradient(

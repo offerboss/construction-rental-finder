@@ -11,6 +11,7 @@ import SectionHeading from "../../components/SectionHeading";
 import { equipmentCategories, getCategories, getCategory } from "../../lib/categories";
 import { categoryContent, rentalDurationConsideration } from "../../lib/category-content";
 import { states } from "../../lib/locations";
+import { filterProviders } from "../../lib/provider-directory";
 import { getGuidesForCategory } from "../../lib/resources";
 import { pageMetadata } from "../../lib/seo";
 
@@ -41,6 +42,7 @@ export default async function CategoryPage({ params }: PageProps<"/equipment/[sl
   const content = categoryContent[category.slug];
   const considerations = [...content.considerations, rentalDurationConsideration];
   const related = getCategories(content.related);
+  const providerCount = filterProviders({ category: category.slug }).length;
   const guides = getGuidesForCategory(category.slug);
 
   return (
@@ -148,6 +150,15 @@ export default async function CategoryPage({ params }: PageProps<"/equipment/[sl
               </li>
             ))}
           </ul>
+          {providerCount > 0 && (
+            <p className="mt-8 leading-relaxed text-ink/80">
+              {providerCount} rental companies in our directory list {category.name.toLowerCase()}.{" "}
+              <Link href="/providers" className="inline-flex items-center gap-1.5 font-heading font-bold text-navy hover:underline">
+                Browse the provider directory by region
+                <ArrowRight aria-hidden className="size-4" />
+              </Link>
+            </p>
+          )}
         </div>
       </section>
 

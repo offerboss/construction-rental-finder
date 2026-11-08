@@ -6,8 +6,11 @@ import CtaBanner from "../../components/CtaBanner";
 import FaqSection from "../../components/FaqSection";
 import PageHeader from "../../components/PageHeader";
 import SectionHeading from "../../components/SectionHeading";
+import RegionAccordions from "../../components/providers/RegionAccordions";
 import { getCategories } from "../../lib/categories";
 import { getState, statePopularEquipment, states } from "../../lib/locations";
+import { groupProvidersByRegion, providerCountByState } from "../../lib/provider-directory";
+import type { StateSlug } from "../../lib/regions";
 import { pageMetadata } from "../../lib/seo";
 
 export const dynamicParams = false;
@@ -37,6 +40,9 @@ export default async function StatePage({ params }: PageProps<"/locations/[state
 
   const popular = getCategories(statePopularEquipment);
   const otherStates = states.filter((other) => other.slug !== state.slug);
+  const directoryState = state.slug as StateSlug;
+  const providerCount = providerCountByState(directoryState);
+  const regionCount = groupProvidersByRegion(directoryState).filter((group) => group.providers.length > 0).length;
 
   return (
     <>
@@ -122,7 +128,34 @@ export default async function StatePage({ params }: PageProps<"/locations/[state
         </div>
       </section>
 
-      <FaqSection title={`Common Questions About Renting in ${state.name}`} faqs={state.faqs} className="bg-sand" />
+      <section aria-labelledby="state-providers-heading" className="bg-sand py-14 sm:py-16 lg:py-20">
+        <div className="container-page">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <SectionHeading
+              id="state-providers-heading"
+              eyebrow="Rental Companies"
+              title={`Construction Equipment Rental Companies in ${state.name}`}
+            />
+            <Link
+              href={`/providers#${state.slug}`}
+              className="inline-flex items-center gap-2 font-heading text-sm font-bold text-navy hover:underline"
+            >
+              View the full provider directory
+              <ArrowRight aria-hidden className="size-4" />
+            </Link>
+          </div>
+          <p className="mt-4 max-w-3xl leading-relaxed text-ink/80">
+            {providerCount} companies across {regionCount} regions. Expand a region to see each
+            company&apos;s location, contact details and equipment categories, and confirm
+            availability directly with the company.
+          </p>
+          <div className="mt-8">
+            <RegionAccordions stateSlug={directoryState} />
+          </div>
+        </div>
+      </section>
+
+      <FaqSection title={`Common Questions About Renting in ${state.name}`} faqs={state.faqs} className="bg-white" />
 
       <CtaBanner
         title={`Find Construction Equipment Rentals in ${state.name}`}

@@ -1,0 +1,635 @@
+{
+  "_about": "Public display names, keyed by business_id. 'from' must equal the source business_name or the import fails, so a renamed source record is re-reviewed. Rules: drop internal chain branch/store numbers and codes; spell out 'fka'; drop '(HQ)'; format a bare location as ' - City'; where branches would otherwise share a name, add the verified street. Divisions (Aerial, Earth Moving, Trench Safety), street/area distinctions, trade-name aliases and 'formerly' names are kept. Evidence-based renames live in overrides.json instead.",
+  "names": {
+    "CRF-AZ-0001": {
+      "from": "Sunbelt Rentals - Gilbert (4031)",
+      "to": "Sunbelt Rentals - Gilbert",
+      "rule": "branch number removed"
+    },
+    "CRF-AZ-0003": {
+      "from": "Sunbelt Rentals - Mesa (1009)",
+      "to": "Sunbelt Rentals - Mesa",
+      "rule": "branch number removed"
+    },
+    "CRF-AZ-0004": {
+      "from": "Sunbelt Rentals - Goodyear (1450)",
+      "to": "Sunbelt Rentals - Goodyear",
+      "rule": "branch number removed"
+    },
+    "CRF-AZ-0005": {
+      "from": "Sunbelt Rentals - Chandler (119)",
+      "to": "Sunbelt Rentals - Chandler",
+      "rule": "branch number removed"
+    },
+    "CRF-AZ-0006": {
+      "from": "Sunbelt Rentals - Phoenix (4032)",
+      "to": "Sunbelt Rentals - Phoenix (E Indian School Rd)",
+      "rule": "branch number removed; street added to distinguish same-city branches"
+    },
+    "CRF-AZ-0007": {
+      "from": "Sunbelt Rentals - Phoenix (358)",
+      "to": "Sunbelt Rentals - Phoenix (W Melinda Ln)",
+      "rule": "branch number removed; street added to distinguish same-city branches"
+    },
+    "CRF-AZ-0008": {
+      "from": "Sunbelt Rentals - Phoenix (4033)",
+      "to": "Sunbelt Rentals - Phoenix (N 32nd St)",
+      "rule": "branch number removed; street added to distinguish same-city branches"
+    },
+    "CRF-AZ-0010": {
+      "from": "Sunbelt Rentals - Tempe (332)",
+      "to": "Sunbelt Rentals - Tempe",
+      "rule": "branch number removed"
+    },
+    "CRF-AZ-0011": {
+      "from": "Sunbelt Rentals - Phoenix (523)",
+      "to": "Sunbelt Rentals - Phoenix (W McDowell Rd)",
+      "rule": "branch number removed; street added to distinguish same-city branches"
+    },
+    "CRF-AZ-0012": {
+      "from": "Sunbelt Rentals Earth Moving - El Mirage (1763)",
+      "to": "Sunbelt Rentals Earth Moving - El Mirage",
+      "rule": "branch number removed"
+    },
+    "CRF-AZ-0013": {
+      "from": "Sunbelt Rentals Aerial - Phoenix (1394)",
+      "to": "Sunbelt Rentals Aerial - Phoenix",
+      "rule": "branch number removed"
+    },
+    "CRF-AZ-0015": {
+      "from": "Sunstate Equipment - Mesa (MES)",
+      "to": "Sunstate Equipment - Mesa",
+      "rule": "branch code removed"
+    },
+    "CRF-AZ-0016": {
+      "from": "Sunstate Equipment - Buckeye (BUC)",
+      "to": "Sunstate Equipment - Buckeye",
+      "rule": "branch code removed"
+    },
+    "CRF-AZ-0017": {
+      "from": "Sunstate Equipment - Peoria (PEO)",
+      "to": "Sunstate Equipment - Peoria",
+      "rule": "branch code removed"
+    },
+    "CRF-AZ-0018": {
+      "from": "Sunstate Equipment - Deer Valley (DRV)",
+      "to": "Sunstate Equipment - Deer Valley",
+      "rule": "branch code removed"
+    },
+    "CRF-AZ-0019": {
+      "from": "Sunstate Equipment - Scottsdale (SDL)",
+      "to": "Sunstate Equipment - Scottsdale",
+      "rule": "branch code removed"
+    },
+    "CRF-AZ-0020": {
+      "from": "Sunstate Equipment - Apache Junction (APA)",
+      "to": "Sunstate Equipment - Apache Junction",
+      "rule": "branch code removed"
+    },
+    "CRF-AZ-0021": {
+      "from": "United Rentals - Phoenix (905)",
+      "to": "United Rentals - Phoenix",
+      "rule": "branch number removed"
+    },
+    "CRF-AZ-0022": {
+      "from": "United Rentals - Gilbert (J90)",
+      "to": "United Rentals - Gilbert",
+      "rule": "branch code removed"
+    },
+    "CRF-AZ-0023": {
+      "from": "EquipmentShare - Phoenix (#15970)",
+      "to": "EquipmentShare - Phoenix",
+      "rule": "branch number removed"
+    },
+    "CRF-AZ-0024": {
+      "from": "EquipmentShare - Chandler (#124703)",
+      "to": "EquipmentShare - Chandler",
+      "rule": "branch number removed"
+    },
+    "CRF-AZ-0025": {
+      "from": "EquipmentShare - Glendale (#107531)",
+      "to": "EquipmentShare - Glendale",
+      "rule": "branch number removed"
+    },
+    "CRF-AZ-0045": {
+      "from": "Summit Rentals (Phoenix)",
+      "to": "Summit Rentals - Phoenix",
+      "rule": "location formatted as ' - City'"
+    },
+    "CRF-AZ-0062": {
+      "from": "Sunbelt Rentals - Tucson (554)",
+      "to": "Sunbelt Rentals - Tucson",
+      "rule": "branch number removed"
+    },
+    "CRF-AZ-0063": {
+      "from": "Sunbelt Rentals Aerial - Tucson (1458)",
+      "to": "Sunbelt Rentals Aerial - Tucson",
+      "rule": "branch number removed"
+    },
+    "CRF-AZ-0086": {
+      "from": "Sunstate Equipment - Flagstaff (FLG)",
+      "to": "Sunstate Equipment - Flagstaff",
+      "rule": "branch code removed"
+    },
+    "CRF-AZ-0087": {
+      "from": "Sunstate Equipment - Prescott Valley (PRS)",
+      "to": "Sunstate Equipment - Prescott Valley",
+      "rule": "branch code removed"
+    },
+    "CRF-AZ-0088": {
+      "from": "Sunbelt Rentals - Dewey-Humboldt (1457)",
+      "to": "Sunbelt Rentals - Dewey-Humboldt",
+      "rule": "branch number removed"
+    },
+    "CRF-CO-0004": {
+      "from": "Sunbelt Rentals - Denver (Branch 543)",
+      "to": "Sunbelt Rentals - Denver",
+      "rule": "branch number removed"
+    },
+    "CRF-CO-0006": {
+      "from": "United Rentals - Denver Zuni St (Q91)",
+      "to": "United Rentals - Denver Zuni St",
+      "rule": "branch code removed"
+    },
+    "CRF-CO-0007": {
+      "from": "United Rentals - Denver E 40th Ave (Q90)",
+      "to": "United Rentals - Denver E 40th Ave",
+      "rule": "branch code removed"
+    },
+    "CRF-CO-0033": {
+      "from": "EquipmentShare - Denver Centennial (#7328)",
+      "to": "EquipmentShare - Denver Centennial",
+      "rule": "branch number removed"
+    },
+    "CRF-CO-0034": {
+      "from": "Sunbelt Rentals - Aurora (Branch 717)",
+      "to": "Sunbelt Rentals - Aurora",
+      "rule": "branch number removed"
+    },
+    "CRF-CO-0035": {
+      "from": "Sunbelt Rentals - Centennial (Branch 192)",
+      "to": "Sunbelt Rentals - Centennial",
+      "rule": "branch number removed"
+    },
+    "CRF-CO-0036": {
+      "from": "Sunbelt Rentals - Commerce City Aerial (Branch 1264)",
+      "to": "Sunbelt Rentals - Commerce City Aerial",
+      "rule": "branch number removed"
+    },
+    "CRF-CO-0037": {
+      "from": "United Rentals - Denver Washington St (DE5)",
+      "to": "United Rentals - Denver Washington St",
+      "rule": "branch code removed"
+    },
+    "CRF-CO-0038": {
+      "from": "United Rentals - Littleton (253)",
+      "to": "United Rentals - Littleton",
+      "rule": "branch number removed"
+    },
+    "CRF-CO-0043": {
+      "from": "Sunbelt Rentals - Littleton (Branch 395)",
+      "to": "Sunbelt Rentals - Littleton",
+      "rule": "branch number removed"
+    },
+    "CRF-CO-0045": {
+      "from": "Sunbelt Rentals - Colorado Springs (Branch 337)",
+      "to": "Sunbelt Rentals - Colorado Springs",
+      "rule": "branch number removed"
+    },
+    "CRF-CO-0046": {
+      "from": "United Rentals - Colorado Springs (J03)",
+      "to": "United Rentals - Colorado Springs",
+      "rule": "branch code removed"
+    },
+    "CRF-CO-0056": {
+      "from": "Affordable Rentals (Falcon)",
+      "to": "Affordable Rentals - Falcon",
+      "rule": "location formatted as ' - City'"
+    },
+    "CRF-CO-0065": {
+      "from": "United Rentals - Pueblo (025)",
+      "to": "United Rentals - Pueblo",
+      "rule": "branch number removed"
+    },
+    "CRF-CO-0073": {
+      "from": "Sunbelt Rentals - Fort Collins (Branch 1344)",
+      "to": "Sunbelt Rentals - Fort Collins",
+      "rule": "branch number removed"
+    },
+    "CRF-CO-0074": {
+      "from": "Sunbelt Rentals - Johnstown (Branch 1580)",
+      "to": "Sunbelt Rentals - Johnstown",
+      "rule": "branch number removed"
+    },
+    "CRF-CO-0075": {
+      "from": "United Rentals - Fort Collins (J00)",
+      "to": "United Rentals - Fort Collins",
+      "rule": "branch code removed"
+    },
+    "CRF-CO-0092": {
+      "from": "United Rentals - Grand Junction (B25)",
+      "to": "United Rentals - Grand Junction",
+      "rule": "branch code removed"
+    },
+    "CRF-CO-0095": {
+      "from": "EquipmentShare - Grand Junction (#73062)",
+      "to": "EquipmentShare - Grand Junction",
+      "rule": "branch number removed"
+    },
+    "CRF-CO-0104": {
+      "from": "Sunbelt Rentals - Boulder (Branch 541)",
+      "to": "Sunbelt Rentals - Boulder",
+      "rule": "branch number removed"
+    },
+    "CRF-CO-0105": {
+      "from": "Sunbelt Rentals - Dacono Earth Moving (Branch 716)",
+      "to": "Sunbelt Rentals - Dacono Earth Moving",
+      "rule": "branch number removed"
+    },
+    "CRF-CO-0106": {
+      "from": "Sunbelt Rentals - Lafayette Trench Safety (Branch 1137)",
+      "to": "Sunbelt Rentals - Lafayette Trench Safety",
+      "rule": "branch number removed"
+    },
+    "CRF-CO-0107": {
+      "from": "United Rentals - Longmont (94D)",
+      "to": "United Rentals - Longmont",
+      "rule": "branch code removed"
+    },
+    "CRF-CO-0118": {
+      "from": "United Rentals - Eagle (F09)",
+      "to": "United Rentals - Eagle",
+      "rule": "branch code removed"
+    },
+    "CRF-TX-0001": {
+      "from": "Sunbelt Rentals Aerial - Arlington (1083)",
+      "to": "Sunbelt Rentals Aerial - Arlington",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0002": {
+      "from": "Sunbelt Rentals - Arlington (318)",
+      "to": "Sunbelt Rentals - Arlington",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0003": {
+      "from": "Sunbelt Rentals - Dallas (271)",
+      "to": "Sunbelt Rentals - Dallas (N Stemmons Fwy)",
+      "rule": "branch number removed; street added to distinguish same-city branches"
+    },
+    "CRF-TX-0004": {
+      "from": "Sunbelt Rentals - Dallas (278)",
+      "to": "Sunbelt Rentals - Dallas (S Hampton Rd)",
+      "rule": "branch number removed; street added to distinguish same-city branches"
+    },
+    "CRF-TX-0005": {
+      "from": "Sunbelt Rentals - Denton (274)",
+      "to": "Sunbelt Rentals - Denton",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0006": {
+      "from": "Sunbelt Rentals - Fort Worth (270)",
+      "to": "Sunbelt Rentals - Fort Worth (N Beach St)",
+      "rule": "branch number removed; street added to distinguish same-city branches"
+    },
+    "CRF-TX-0007": {
+      "from": "Sunbelt Rentals - Fort Worth (282)",
+      "to": "Sunbelt Rentals - Fort Worth (Benbrook Hwy)",
+      "rule": "branch number removed; street added to distinguish same-city branches"
+    },
+    "CRF-TX-0008": {
+      "from": "Sunbelt Rentals - Garland (277)",
+      "to": "Sunbelt Rentals - Garland",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0009": {
+      "from": "Sunbelt Rentals - Grand Prairie (349)",
+      "to": "Sunbelt Rentals - Grand Prairie",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0010": {
+      "from": "Sunbelt Rentals Earth Moving - Grapevine (1761)",
+      "to": "Sunbelt Rentals Earth Moving - Grapevine",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0011": {
+      "from": "Sunbelt Rentals - Grapevine (276)",
+      "to": "Sunbelt Rentals - Grapevine",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0012": {
+      "from": "Sunbelt Rentals - Irving (273)",
+      "to": "Sunbelt Rentals - Irving",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0013": {
+      "from": "Sunbelt Rentals - Lewisville (565)",
+      "to": "Sunbelt Rentals - Lewisville",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0014": {
+      "from": "Sunbelt Rentals - McKinney (1115)",
+      "to": "Sunbelt Rentals - McKinney",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0015": {
+      "from": "Sunbelt Rentals - Plano (275)",
+      "to": "Sunbelt Rentals - Plano",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0016": {
+      "from": "Sunbelt Rentals - Weatherford (724)",
+      "to": "Sunbelt Rentals - Weatherford",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0017": {
+      "from": "Sunstate Equipment - Carrollton (CAR)",
+      "to": "Sunstate Equipment - Carrollton",
+      "rule": "branch code removed"
+    },
+    "CRF-TX-0018": {
+      "from": "Sunstate Equipment - Dallas - Duncanville Rd (DUN)",
+      "to": "Sunstate Equipment - Dallas - Duncanville Rd",
+      "rule": "branch code removed"
+    },
+    "CRF-TX-0020": {
+      "from": "Sunstate Equipment - Fort Worth South (FW2)",
+      "to": "Sunstate Equipment - Fort Worth South",
+      "rule": "branch code removed"
+    },
+    "CRF-TX-0021": {
+      "from": "Sunstate Equipment - McKinney (MKN)",
+      "to": "Sunstate Equipment - McKinney",
+      "rule": "branch code removed"
+    },
+    "CRF-TX-0023": {
+      "from": "Sunstate Equipment - Balch Springs (BSP)",
+      "to": "Sunstate Equipment - Balch Springs",
+      "rule": "branch code removed"
+    },
+    "CRF-TX-0024": {
+      "from": "EquipmentShare - Dallas - Grand Prairie #3",
+      "to": "EquipmentShare - Dallas - Grand Prairie",
+      "rule": "store number removed"
+    },
+    "CRF-TX-0025": {
+      "from": "EquipmentShare - Fort Worth - Keller #10328",
+      "to": "EquipmentShare - Fort Worth - Keller",
+      "rule": "store number removed"
+    },
+    "CRF-TX-0026": {
+      "from": "EquipmentShare - Dallas - McKinney #78800",
+      "to": "EquipmentShare - Dallas - McKinney",
+      "rule": "store number removed"
+    },
+    "CRF-TX-0027": {
+      "from": "EquipmentShare - Weatherford #171602",
+      "to": "EquipmentShare - Weatherford",
+      "rule": "store number removed"
+    },
+    "CRF-TX-0054": {
+      "from": "Sunbelt Rentals - Houston (262)",
+      "to": "Sunbelt Rentals - Houston (Hempstead Rd)",
+      "rule": "branch number removed; street added to distinguish same-city branches"
+    },
+    "CRF-TX-0055": {
+      "from": "Sunbelt Rentals - Houston (393)",
+      "to": "Sunbelt Rentals - Houston (Westpark Dr)",
+      "rule": "branch number removed; street added to distinguish same-city branches"
+    },
+    "CRF-TX-0056": {
+      "from": "Sunbelt Rentals - Houston (555)",
+      "to": "Sunbelt Rentals - Houston (Lamar St)",
+      "rule": "branch number removed; street added to distinguish same-city branches"
+    },
+    "CRF-TX-0057": {
+      "from": "Sunbelt Rentals - Houston (559)",
+      "to": "Sunbelt Rentals - Houston (South Fwy)",
+      "rule": "branch number removed; street added to distinguish same-city branches"
+    },
+    "CRF-TX-0058": {
+      "from": "Sunbelt Rentals - Pasadena (231)",
+      "to": "Sunbelt Rentals - Pasadena",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0059": {
+      "from": "Sunbelt Rentals - Katy (33)",
+      "to": "Sunbelt Rentals - Katy",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0060": {
+      "from": "Sunbelt Rentals - Spring (385)",
+      "to": "Sunbelt Rentals - Spring",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0061": {
+      "from": "Sunbelt Rentals - Tomball (1029)",
+      "to": "Sunbelt Rentals - Tomball",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0062": {
+      "from": "Sunbelt Rentals - Webster (557)",
+      "to": "Sunbelt Rentals - Webster",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0063": {
+      "from": "Sunbelt Rentals - Rosenberg (1127)",
+      "to": "Sunbelt Rentals - Rosenberg",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0064": {
+      "from": "Sunbelt Rentals - Conroe (234)",
+      "to": "Sunbelt Rentals - Conroe",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0065": {
+      "from": "Sunbelt Rentals - Baytown (586)",
+      "to": "Sunbelt Rentals - Baytown",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0066": {
+      "from": "Sunbelt Rentals Aerial - Houston (341)",
+      "to": "Sunbelt Rentals Aerial - Houston (Kopman Dr)",
+      "rule": "branch number removed; street added to distinguish same-city branches"
+    },
+    "CRF-TX-0067": {
+      "from": "Sunbelt Rentals Aerial - Houston (569)",
+      "to": "Sunbelt Rentals Aerial - Houston (Treaschwig Rd)",
+      "rule": "branch number removed; street added to distinguish same-city branches"
+    },
+    "CRF-TX-0068": {
+      "from": "Sunbelt Rentals Earth Moving - Houston (4018)",
+      "to": "Sunbelt Rentals Earth Moving - Houston",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0105": {
+      "from": "Sunbelt Rentals - Austin (279)",
+      "to": "Sunbelt Rentals - Austin (E Highway 290)",
+      "rule": "branch number removed; street added to distinguish same-city branches"
+    },
+    "CRF-TX-0106": {
+      "from": "Sunbelt Rentals - Austin (342)",
+      "to": "Sunbelt Rentals - Austin (S Interstate 35)",
+      "rule": "branch number removed; street added to distinguish same-city branches"
+    },
+    "CRF-TX-0107": {
+      "from": "Sunbelt Rentals - Austin (281)",
+      "to": "Sunbelt Rentals - Austin (N Interstate 35)",
+      "rule": "branch number removed; street added to distinguish same-city branches"
+    },
+    "CRF-TX-0131": {
+      "from": "Sunbelt Rentals - San Antonio (255)",
+      "to": "Sunbelt Rentals - San Antonio (Austin Hwy)",
+      "rule": "branch number removed; street added to distinguish same-city branches"
+    },
+    "CRF-TX-0132": {
+      "from": "Sunbelt Rentals - San Antonio (347)",
+      "to": "Sunbelt Rentals - San Antonio (Interstate 10 E)",
+      "rule": "branch number removed; street added to distinguish same-city branches"
+    },
+    "CRF-TX-0209": {
+      "from": "Bobcat of Austin (Round Rock)",
+      "to": "Bobcat of Austin - Round Rock",
+      "rule": "location formatted as ' - City'"
+    },
+    "CRF-TX-0263": {
+      "from": "Sunbelt Rentals - Corpus Christi (Branch 357)",
+      "to": "Sunbelt Rentals - Corpus Christi",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0274": {
+      "from": "Sunbelt Rentals - Harlingen (Branch 1284)",
+      "to": "Sunbelt Rentals - Harlingen",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0298": {
+      "from": "Sunbelt Rentals - Laredo (Branch 1576)",
+      "to": "Sunbelt Rentals - Laredo",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0309": {
+      "from": "Sunbelt Rentals - Tyler (Branch 1145)",
+      "to": "Sunbelt Rentals - Tyler",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0310": {
+      "from": "Sunbelt Rentals - Longview (Branch 235)",
+      "to": "Sunbelt Rentals - Longview",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0331": {
+      "from": "Sunbelt Rentals - Waco (Branch 280)",
+      "to": "Sunbelt Rentals - Waco",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0347": {
+      "from": "Sunbelt Rentals - Port Arthur (Branch 232)",
+      "to": "Sunbelt Rentals - Port Arthur",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0354": {
+      "from": "Sunbelt Rentals - Earth Moving Solutions (Branch 1854)",
+      "to": "Sunbelt Rentals Earth Moving - Beaumont",
+      "rule": "branch number removed; city added and division placed like other Sunbelt Earth Moving branches"
+    },
+    "CRF-TX-0360": {
+      "from": "Sunbelt Rentals - Victoria (556)",
+      "to": "Sunbelt Rentals - Victoria",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0375": {
+      "from": "Sunbelt Rentals - Texas City (233)",
+      "to": "Sunbelt Rentals - Texas City",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0386": {
+      "from": "Sunbelt Rentals - Angleton (1020)",
+      "to": "Sunbelt Rentals - Angleton",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0393": {
+      "from": "Sunbelt Rentals - Bryan (#286)",
+      "to": "Sunbelt Rentals - Bryan",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0394": {
+      "from": "EquipmentShare - Bryan (#83551)",
+      "to": "EquipmentShare - Bryan",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0403": {
+      "from": "Sunbelt Rentals - Sherman (#1079)",
+      "to": "Sunbelt Rentals - Sherman",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0404": {
+      "from": "EquipmentShare - Sherman (#104583, Core Solutions)",
+      "to": "EquipmentShare - Sherman (Core Solutions)",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0420": {
+      "from": "Sunbelt Rentals - Wichita Falls (#1047)",
+      "to": "Sunbelt Rentals - Wichita Falls",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0438": {
+      "from": "Sunbelt Rentals - New Braunfels (Branch 1311)",
+      "to": "Sunbelt Rentals - New Braunfels",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0439": {
+      "from": "Sunbelt Rentals - New Braunfels Power & HVAC (Branch 578)",
+      "to": "Sunbelt Rentals - New Braunfels Power & HVAC",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0442": {
+      "from": "Sunbelt Rentals - Lubbock (Branch 137)",
+      "to": "Sunbelt Rentals - Lubbock",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0449": {
+      "from": "Sunbelt Rentals - Amarillo Washington (Branch 643)",
+      "to": "Sunbelt Rentals - Amarillo Washington",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0450": {
+      "from": "Sunbelt Rentals - Amarillo SW 34th (Branch 4207)",
+      "to": "Sunbelt Rentals - Amarillo SW 34th",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0451": {
+      "from": "Sunbelt Rentals - Hereford (Branch 4208)",
+      "to": "Sunbelt Rentals - Hereford",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0505": {
+      "from": "Sunbelt Rentals - Greenville (Branch 1223)",
+      "to": "Sunbelt Rentals - Greenville",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0519": {
+      "from": "Sunbelt Rentals - Huntsville (1272)",
+      "to": "Sunbelt Rentals - Huntsville",
+      "rule": "branch number removed"
+    },
+    "CRF-TX-0521": {
+      "from": "Sunstate Equipment - Killeen (KLN)",
+      "to": "Sunstate Equipment - Killeen",
+      "rule": "branch code removed"
+    },
+    "CRF-TX-0525": {
+      "from": "U.S. Rentals - Stephenville (HQ)",
+      "to": "U.S. Rentals - Stephenville",
+      "rule": "HQ label removed"
+    },
+    "CRF-TX-0556": {
+      "from": "Texas First Rentals - Van Alstyne (fka Rental One)",
+      "to": "Texas First Rentals - Van Alstyne (formerly Rental One)",
+      "rule": "'fka' spelled out"
+    },
+    "CRF-TX-0559": {
+      "from": "Texas First Rentals - Granbury (fka Rental One)",
+      "to": "Texas First Rentals - Granbury (formerly Rental One)",
+      "rule": "'fka' spelled out"
+    }
+  }
+}

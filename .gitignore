@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# raw provider research exports (internal notes; never commit or serve)
+/data/atlas-import/**/*_verified_contacts.csv
+/public/*_verified_contacts.csv
+# import reports and research-based overrides hold internal review notes; the
+# public repo only needs the generated dataset, region map and display names
+/data/atlas-import/**/reports/
+/data/atlas-import/**/overrides.json
