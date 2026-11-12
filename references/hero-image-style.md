@@ -1,8 +1,10 @@
 # CRF Hero Image Style
 
-Last updated: 2026-10-29 (standard unchanged; Batch 6 / Resource Run 5 heroes shipped with pages)
+Last updated: 2026-11-12 (standard unchanged; Batch 8 / Resource Run 7 heroes shipped)
 
 **Approval status:** Unattended mode (2026-10-05) allows publishing heroes that pass this standard without per-image approval. Batch 4 city and Resource Run 3 guide heroes are not shipped yet — GenerateImage was unavailable to the Grok Bot executor on 2026-10-15; regenerate and add `heroImage` when compliant WebPs are ready.
+
+**Batch 8 / Resource Run 7 (2026-11-12, unattended):** heroes generated with GenerateImage, center-cropped 4:3 to 3:2, checked by eye. Filenames: `public/images/locations/<city>-tx-construction-equipment-rental.webp` and `public/images/resources/<slug>.webp`. See the table at the bottom of this file.
 
 ---
 
@@ -106,3 +108,17 @@ Denton, Lewisville, Allen, Flower Mound, Mansfield, equipment-rental-checklist, 
 | trench-safety-basics | public/images/resources/trench-safety-basics.webp | 1080x720, 103 KB | Steel trench box with ladder in a clay trench, spoil set back, parked excavator, pipe stack, orange fencing, no people (first version regenerated: worker in trench under a suspended pipe) | Steel trench box with a ladder in a clay trench, spoil set back, an excavator and pipe stack behind orange fencing |
 
 Friday QA: zoom-check all seven for faint decals; generator control panel shows small unlabeled sockets only.
+
+### Batch 8 + Resource Run 7 (2026-11-12, unattended; generated with GenerateImage, center-cropped to 3:2, checked by eye)
+
+| Slug | File | Size | Scene | Alt text |
+|---|---|---|---|---|
+| lancaster | public/images/locations/lancaster-tx-construction-equipment-rental.webp | 1080x720, 183 KB | Excavator placing reddish-brown clay fill, yellow padfoot roller, silt fence, tree-lined creek, three cones, daylight, no people | Excavator placing clay fill beside a padfoot roller on a graded tract near a tree-lined creek in Lancaster, Texas |
+| waxahachie | public/images/locations/waxahachie-tx-construction-equipment-rental.webp | 1080x720, 173 KB | Wheel loader working a clay stockpile and a tracked excavator on a large graded pad, wood-framed houses in the distance, silt fence, late afternoon | Wheel loader and excavator on a large graded clay pad with wood-framed houses under construction in Waxahachie, Texas |
+| duncanville | public/images/locations/duncanville-tx-construction-equipment-rental.webp | 1080x720, 207 KB | Mini excavator in a shallow street-and-gutter cut, walk-behind concrete saw with water hose, plate compactor, cones, brick ranch homes | Mini excavator in a shallow street cut beside a walk-behind concrete saw and plate compactor in Duncanville, Texas |
+| hurst | public/images/locations/hurst-tx-construction-equipment-rental.webp | 1080x720, 148 KB | White compact articulating boom lift with outriggers down and empty basket, yellow skid steer on a torn-up patch between plain brick commercial buildings | Compact articulating boom lift with outriggers down and a skid steer on a commercial lot in Hurst, Texas |
+| farmers-branch | public/images/locations/farmers-branch-tx-construction-equipment-rental.webp | 1080x720, 73 KB | Gray scissor lift with empty platform slightly raised and a yellow forklift holding a lumber pallet at an open unbranded warehouse bay | Scissor lift and forklift carrying a lumber pallet at an open warehouse bay in Farmers Branch, Texas |
+| wheel-loader-vs-skid-steer | public/images/resources/wheel-loader-vs-skid-steer.webp | 1080x720, 244 KB | Mid-size articulated wheel loader scooping a clay stockpile beside a clearly smaller wheeled skid steer, silt fence and trees, no people | Mid-size wheel loader scooping a clay stockpile beside a compact skid steer on a graded dirt jobsite |
+| choosing-concrete-equipment | public/images/resources/choosing-concrete-equipment.webp | 1080x720, 102 KB | Towable drum mixer on dirt beside a formed slab holding an idle walk-behind power trowel and a cut-off saw on a board, no people | Towable drum mixer beside a walk-behind power trowel and a cut-off saw on a formed concrete slab |
+
+Faint marks removed before encoding: a small model-number stamp on the Lancaster excavator counterweight, a logo badge on the Hurst skid-steer rear arm, and faint numerals on the Farmers Branch scissor-lift platform. Duncanville plate-compactor and concrete-saw engines are generic; no readable wordmarks at 1080×720.

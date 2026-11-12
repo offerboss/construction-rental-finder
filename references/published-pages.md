@@ -1,6 +1,6 @@
 # CRF Published Pages
 
-Last updated: 2026-11-06
+Last updated: 2026-11-12
 
 ## Batch Log
 
@@ -450,3 +450,37 @@ Resource Run 6: `/resources/how-to-choose-a-scissor-lift` (Genie GS-1930 / GS-32
 - The Colony: noise ordinance restricts annoying construction equipment particularly 10 p.m.–7 a.m.; page notes separate Code construction-hour rules may also apply and should be confirmed with the City.
 - Keller hours cited to official City URLs; live site blocked automated fetch (Akamai 403); content confirmed via Wayback snapshot of the same URLs.
 
+## Batch 8 + Resource Run 7 (2026-11-12)
+
+Cities (next uncovered DFW below Coppell by 2020 Census via QuickFacts, fetched 2026-11-12): Lancaster 41,275; Waxahachie 41,140; Duncanville 40,706; Hurst 40,413; Farmers Branch 35,991 (Texas places ranked between Hurst and Farmers Branch — Weslaco, Rosenberg, Mission Bend, Copperas Cove, Texarkana — are outside DFW). No swaps. Next in line (verify first): Midlothian 35,125, Cleburne, Southlake, Weatherford, Prosper.
+Sitemap target: 81 + 5 cities + 2 guides = 88. Heroes shipped with the pages (GenerateImage, 1080x720 WebP, see hero-image-style.md).
+
+Featured equipment: Lancaster excavator, mini-excavator, compactor, trencher, skid-steer, wheel-loader; Waxahachie excavator, wheel-loader, compactor, skid-steer, trencher, mini-excavator; Duncanville mini-excavator, compactor, concrete-equipment, skid-steer, trencher, excavator; Hurst mini-excavator, skid-steer, compactor, boom-lift, trencher, excavator; Farmers Branch mini-excavator, concrete-equipment, compactor, skid-steer, scissor-lift, forklift.
+
+City guides: Lancaster (utility locates, trench safety, compaction); Waxahachie (site prep, wheel loader vs skid steer, compaction); Duncanville (utility locates, trench safety, concrete); Hurst (utility locates, skid/mini, checklist); Farmers Branch (concrete, utility locates, scissor lift).
+
+Nearby (reciprocal): Lancaster ↔ DeSoto, Duncanville, Cedar Hill, Waxahachie, Dallas; Waxahachie ↔ Lancaster, DeSoto, Cedar Hill, Dallas; Duncanville ↔ Cedar Hill, DeSoto, Grand Prairie, Lancaster, Dallas; Hurst ↔ Bedford, Euless, North Richland Hills, Haltom City, Fort Worth, Dallas; Farmers Branch ↔ Carrollton, Irving, Coppell, Dallas.
+
+Guide links: Wheel loader vs skid steer — equipment cards wheel-loader, skid-steer, excavator, compactor (reciprocal blocks); inline Duncanville, Farmers Branch, Waxahachie, Lancaster; site prep, skid/mini, compaction guides. Concrete equipment — equipment cards concrete-equipment (first guide for that page), compactor, generator, skid-steer; inline Farmers Branch, Duncanville, Hurst; compaction, utility locates, generator guides.
+
+### Sources (fetched 2026-11-12)
+- Census QuickFacts (POP010220) for Lancaster, Waxahachie, Duncanville, Hurst, Farmers Branch; Handbook of Texas entries for all five.
+- Lancaster: Code ch. 24 art. 24.09 div. 2 ROW Management (ecode360 38712781: secs. 24.09.034, .042, .044, .045, .049); ROW Permits general information (DocumentCenter 2759: registration, 48 h inspector notice, TCP within 36 in of pavement/curb, lane closures approved 48 h ahead); Grading Permit Form (2798); Construction Site Erosion Control (2766: CSN/NOI to Director of Public Works for ≥1 acre); Floodplain Development Guidelines (3371: CLOMR, 95% SP ±3%, 180 days); Code art. 14.04 Noise (ecode360 38713210: construction equipment 7–7 exemption; same text as 2024 noise ordinance PDF); Development Handbook 2024.
+- Waxahachie: Construction Activities & Grading (/417); Development in the Floodplain (/411); Development & Construction (/507); Permits & Forms (/413); Thoroughfare Standards and Pavement Design Methods PDF (after-hours inspection expense; NCTCOG specs).
+- Duncanville: Right-of-Way Permits (/178: 14-day validity, City locates within 5 days, 811 for franchise, TCP/route plans); ROW Inspections Process & FAQ (DocumentCenter 1587); ROW Application Checklist (1586: MGO, Ordinance 17-50); Administration & Engineering (/176); Ord. 1794R (Feb. 1, 2022) sec. 12-3 noise.
+- Hurst: Right-of-Way & Construction Permitting page (ROWay, COI, bonds); Public Works FAQ (construction permit scope, line locates, floodplain permit); Forms, Regulations and Fees (grading permit application, After Hours Construction Permit & Standards, annual contractor registration); Final Plat / Final Engineering Plans checklist (secs. 26-183 and 26-184, iSWM). Hurst site blocks curl (403); read via WebFetch.
+- Farmers Branch: ROW Permit General Permit Provisions PDF; Ordinance 3839 (Dec. 12, 2023) sec. 34-248; Engineering page.
+- Resource Run 7: deere.ca 318 P, 334 P, 244 P, 344 P, 644 P pages (key specs as listed 2026-11-12); eCFR 29 CFR 1926.602(a), 1926.600; TxDMV size/weight; Multiquip MC94P and J36B65 pages; Husqvarna K 770 page; eCFR 1926.701, 1926.702, 1926.1153 (Table 1, housekeeping, written plan).
+
+### Source conflicts and omissions (Batch 8 / Resource Run 7)
+- Hurst ROW work hours: search-index copies of Code ch. 20.5 (municode) give 9 a.m.–4 p.m. weekdays with Saturday by 24 h approval and no Sundays/holidays, but municode wouldn't load (Cloudflare/500) and hursttx.gov returns 403 to curl, so no hours were stated. Verify on library.municode.com/tx/hurst before adding.
+- Hurst general construction hours: a third-party permit guide cites 7 a.m.–6 p.m. (CST) / 7 a.m.–8 p.m. (DST); not verified on an official source. Omitted.
+- Waxahachie noise: Code sec. 20-7 (Ord. 1343, 1982) restricts disturbing construction noise 10 p.m.–6 a.m., but the only copy found is a 2021 municode printout inside a Lancaster council packet; current official code not loadable. Omitted. Waxahachie ROW permit forms are "temporarily unavailable" on the City site, so no ROW hours were stated.
+- Duncanville separation/diameter conflict: the ROW Application Checklist gives 24 in minimum separation from City lines and a 6 in water/wastewater threshold for profiles, while the Inspections FAQ gives 48 in separation and 8 in for "high-risk" lines. Both omitted; only the 36 in depth (same in both) is stated.
+- Farmers Branch Sunday hours: the Ord. 3839 PDF scan is garbled for the Sunday start time ("1:59 am" in OCR; search snippets say 11:59 a.m.). Page says only that Sunday hours are shorter and end at 5 p.m.
+- John Deere 644 P: deere.ca now lists 39,537–40,135 lb and 4.00–4.25 cu yd; the site-preparation guide (2026-10-08) still shows 41,246–41,324 lb and 4.0–4.75 cu yd. Not changed this run; update in Friday QA.
+- Multiquip MC94P: page lists "800 lb | 1763 kg" (unit conflict); weight omitted.
+- Fees omitted under the no-prices rule: Hurst construction permit percentage and bond amounts, Hurst contractor registration fee, Duncanville "no cost" permit note, Lancaster Saturday inspection fee.
+
+### Word counts (rendered <main>, box build)
+Lancaster 1,499; Waxahachie 1,371; Duncanville 1,380; Hurst 1,306; Farmers Branch 1,406. Wheel loader vs skid steer 1,817; concrete equipment 1,637. Not padded.

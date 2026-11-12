@@ -142,6 +142,36 @@ export const sources = {
   coppellRowPermit: { label: "City of Coppell Right-of-Way Use Permit Application (PDF)", url: "https://coppelltx.gov/DocumentCenter/View/793/Right-of-Way-Use-Permit-PDF" },
   coppellCommercial: { label: "City of Coppell Commercial Construction Requirements (PDF)", url: "https://coppelltx.gov/DocumentCenter/View/4962/Commercial-Construction-All-Types" },
   coppellEngineering: { label: "City of Coppell Engineering Permits", url: "https://coppelltx.gov/441/Engineering-Permits" },
+  tshaLancaster: { label: "Handbook of Texas: Lancaster, TX (Dallas County)", url: "https://www.tshaonline.org/handbook/entries/lancaster-tx-dallas-county" },
+  lancasterRowCode: { label: "City of Lancaster Code ch. 24, art. 24.09, div. 2, Right-of-Way Management", url: "https://ecode360.com/38712781" },
+  lancasterRowInfo: { label: "City of Lancaster Engineering: ROW Permits general information (PDF)", url: "https://www.lancaster-tx.com/DocumentCenter/View/2759" },
+  lancasterGrading: { label: "City of Lancaster Grading Permit Form (PDF)", url: "https://www.lancaster-tx.com/DocumentCenter/Home/View/2798" },
+  lancasterErosion: { label: "City of Lancaster Construction Site Erosion Control (PDF)", url: "https://www.lancaster-tx.com/DocumentCenter/Home/View/2766" },
+  lancasterFloodplain: { label: "City of Lancaster Floodplain Development Guidelines (PDF)", url: "https://www.lancaster-tx.com/DocumentCenter/View/3371" },
+  lancasterNoise: { label: "City of Lancaster Code art. 14.04, Noise", url: "https://ecode360.com/38713210" },
+  lancasterDevHandbook: { label: "City of Lancaster Development Handbook (updated Aug. 19, 2024) (PDF)", url: "https://www.lancaster-tx.com/DocumentCenter/View/18286/Development-Handbook---Updated-08-19-2024" },
+  tshaWaxahachie: { label: "Handbook of Texas: Waxahachie, TX", url: "https://www.tshaonline.org/handbook/entries/waxahachie-tx" },
+  censusWaxahachie: { label: "U.S. Census Bureau QuickFacts: Waxahachie city, Texas", url: "https://www.census.gov/quickfacts/waxahachiecitytexas" },
+  waxahachieGrading: { label: "City of Waxahachie: Construction Activities & Grading", url: "https://www.waxahachietx.gov/417/Construction-Activities-Grading" },
+  waxahachieFloodplain: { label: "City of Waxahachie: Development in the Floodplain", url: "https://www.waxahachietx.gov/411/Development-in-the-Floodplain" },
+  waxahachieDevelopment: { label: "City of Waxahachie: Development & Construction", url: "https://www.waxahachietx.gov/507/Development-Construction" },
+  waxahachiePermits: { label: "City of Waxahachie Public Works: Permits & Forms", url: "https://www.waxahachietx.gov/413/Permits-Forms" },
+  waxahachieThoroughfare: { label: "City of Waxahachie Thoroughfare Standards and Pavement Design Methods (PDF)", url: "https://www.waxahachietx.gov/DocumentCenter/View/777/Thoroughfare-Standards-and-Pavement-Design-Methods-PDF" },
+  tshaDuncanville: { label: "Handbook of Texas: Duncanville, TX", url: "https://www.tshaonline.org/handbook/entries/duncanville-tx" },
+  duncanvilleRow: { label: "City of Duncanville Public Works: Right-of-Way Permits", url: "https://www.duncanvilletx.gov/178/Right-of-Way-Permits" },
+  duncanvilleRowInspections: { label: "City of Duncanville Right-of-Way Inspections Process & FAQ (PDF)", url: "https://www.duncanvilletx.gov/DocumentCenter/View/1587" },
+  duncanvilleRowChecklist: { label: "City of Duncanville Right of Way Application Checklist (PDF)", url: "https://www.duncanvilletx.gov/DocumentCenter/View/1586" },
+  duncanvilleEngineering: { label: "City of Duncanville Public Works: Administration & Engineering", url: "https://www.duncanvilletx.gov/176/Administration-Engineering" },
+  duncanvilleNoise: { label: "City of Duncanville Ordinance No. 1794R (Feb. 1, 2022), sec. 12-3 loud and raucous noise (PDF)", url: "https://mcclibraryfunctions.azurewebsites.us/api/ordinanceDownload/13711/1132456/pdf" },
+  tshaHurst: { label: "Handbook of Texas: Hurst, TX", url: "https://www.tshaonline.org/handbook/entries/hurst-tx" },
+  hurstRow: { label: "City of Hurst: Right-of-Way & Construction Permitting", url: "https://www.hursttx.gov/about-us/departments/public-works/engineering-construction/right-of-way-construction-permitting" },
+  hurstPwFaq: { label: "City of Hurst Public Works: Frequently Asked Questions", url: "https://www.hursttx.gov/about-us/departments/public-works/frequently-asked-questions" },
+  hurstForms: { label: "City of Hurst Engineering: Forms, Regulations and Fees", url: "https://www.hursttx.gov/about-us/departments/public-works/engineering-construction/engineering-forms-regulations-and-fees" },
+  hurstEngChecklist: { label: "City of Hurst Final Plat and Final Engineering Plans Checklist (PDF)", url: "https://www.hursttx.gov/home/showpublisheddocument/9754/638259838713900000" },
+  tshaFarmersBranch: { label: "Handbook of Texas: Farmers Branch, TX", url: "https://www.tshaonline.org/handbook/entries/farmers-branch-tx" },
+  farmersBranchRow: { label: "City of Farmers Branch Right-of-Way Permit General Permit Provisions (PDF)", url: "https://content.civicplus.com/api/assets/tx-farmersbranch/9faa2e43-2749-40f1-8db2-be0e74a6c48f/rights-of-way-general-permit-provisions-pdf-.pdf?scope=all&sq=27d3b73b-8d77-75c5-99c5-f85d3ce55e26" },
+  farmersBranchNoise: { label: "City of Farmers Branch Ordinance No. 3839 (Dec. 12, 2023), sec. 34-248 construction (PDF)", url: "https://mcclibraryfunctions.azurewebsites.us/api/ordinanceDownload/12996/1253268/pdf" },
+  farmersBranchEngineering: { label: "City of Farmers Branch Engineering", url: "https://www.farmersbranchtx.gov/engineering" },
 } satisfies Record<string, SourceLink>;
 
 // Guide links render only once the guide is published in resources.ts.
@@ -333,7 +363,7 @@ export const irving: CityEntry = {
     { question: "Do I need to call 811 for yard and dock work in Irving?", answer: "Yes, if you'll dig, trench or set anything below grade. Texas law requires notice to a one-call center no later than 48 hours before excavation, not counting weekends and holidays, and no earlier than 14 days before. Texas811 takes requests by phone at 811 or online." },
     { question: "Can I get a lift into a finished office or retail space?", answer: "Usually, with the right machine. Ask for an electric slab scissor or compact boom with non-marking tires, check door widths, ramp or elevator limits and floor load ratings, and plan delivery around tenant hours." },
   ],
-  nearbyCities: ["arlington", "grand-prairie", "carrollton", "euless", "grapevine", "fort-worth", "coppell", "dallas"],
+  nearbyCities: ["arlington", "grand-prairie", "carrollton", "euless", "grapevine", "coppell", "farmers-branch", "fort-worth", "dallas"],
   heroImage: {
     src: "/images/locations/irving-tx-construction-equipment-rental.webp",
     alt: "Telehandler and forklift moving pallets in the gravel yard of a new tilt-wall warehouse in Irving, Texas",
@@ -693,7 +723,7 @@ export const grandPrairie: CityEntry = {
     { question: "What equipment does a new warehouse build in Grand Prairie use?", answer: "Site work usually starts with excavators, wheel loaders and rollers for the pad and utilities. As the building goes up, telehandlers and boom lifts take over for walls and roofing, and forklifts handle racking and materials once the slab is in. Share the building height, yard surface and schedule with the provider." },
     { question: "Do I need FAA notice to use a boom lift or crane near the Grand Prairie airport?", answer: "It depends on height and distance. Because the municipal airport's runway is longer than 3,200 feet, FAA notice is required for anything that would exceed a 100:1 surface extending 20,000 feet from the runway, or that is more than 200 feet tall, and temporary cranes count. If you need to file, do it at least 45 days before work starts." },
   ],
-  nearbyCities: ["arlington", "irving", "mansfield", "desoto", "cedar-hill", "dallas"],
+  nearbyCities: ["arlington", "irving", "mansfield", "desoto", "cedar-hill", "duncanville", "dallas"],
   heroImage: {
     src: "/images/locations/grand-prairie-tx-construction-equipment-rental.webp",
     alt: "Telescopic boom lift and telehandler at a new tilt-wall concrete warehouse on a dirt pad in Grand Prairie, Texas",
@@ -837,7 +867,7 @@ export const carrollton: CityEntry = {
     { question: "What equipment fits a transit-oriented infill site in Carrollton?", answer: "Expect tight staging and buildings set close to the sidewalk. A telehandler for upper-floor materials, boom and scissor lifts for exterior and interior work, and a mini excavator and skid steer for utilities and grading cover most jobs. Measure staging space and overhead lines before choosing sizes." },
     { question: "How quickly do I have to restore a street cut in Carrollton?", answer: "In the right-of-way, excavations have to be filled and compacted within 24 hours and pavement fully restored within 14 days unless the City allows otherwise in writing. Streets, alleys and sidewalks less than three years old can't be cut without approval." },
   ],
-  nearbyCities: ["irving", "plano", "lewisville", "flower-mound", "the-colony", "coppell", "dallas"],
+  nearbyCities: ["irving", "plano", "lewisville", "flower-mound", "the-colony", "coppell", "farmers-branch", "dallas"],
   heroImage: {
     src: "/images/locations/carrollton-tx-construction-equipment-rental.webp",
     alt: "Telehandler lifting lumber to a wood-frame mid-rise building behind orange barriers in Carrollton, Texas",
@@ -1337,7 +1367,7 @@ export const northRichlandHills: CityEntry = {
     { question: "What are construction hours in North Richland Hills?", answer: "Outdoor construction is not allowed from 7 p.m. to 7 a.m. during Central Standard Time or 8 p.m. to 6 a.m. during daylight saving time, on Sundays, or on six listed holidays. Appeals go to the building official in writing." },
     { question: "What equipment suits work near the TEXRail station districts?", answer: "Compact machines for utilities and flatwork, plus telehandlers and boom lifts for multi-story mixed-use buildings. Share lot size, staging space and street access with the provider, since both station areas are planned around pedestrians." },
   ],
-  nearbyCities: ["fort-worth", "euless", "arlington", "bedford", "haltom-city", "keller", "dallas"],
+  nearbyCities: ["euless", "arlington", "bedford", "haltom-city", "keller", "hurst", "fort-worth", "dallas"],
   heroImage: {
     src: "/images/locations/north-richland-hills-tx-construction-equipment-rental.webp",
     alt: "Yellow telehandler lifting a lumber pallet onto a 3-story wood-framed building, mini excavator by a new sidewalk",
@@ -1479,7 +1509,7 @@ export const euless: CityEntry = {
     { question: "Can I use Euless utility maps instead of calling 811?", answer: "No. Engineering's water and sewer locator maps show general locations for planning. Texas law still requires one-call notice before excavating, at least 48 hours ahead excluding weekends and holidays." },
     { question: "What equipment suits commercial work near DFW Airport?", answer: "Telehandlers, boom lifts and forklifts for shell and fit-out work, plus scissor lifts inside. Share building height, lot layout and airport proximity with the provider." },
   ],
-  nearbyCities: ["irving", "arlington", "north-richland-hills", "grapevine", "bedford", "haltom-city", "dallas"],
+  nearbyCities: ["irving", "arlington", "north-richland-hills", "grapevine", "bedford", "haltom-city", "hurst", "dallas"],
   heroImage: {
     src: "/images/locations/euless-tx-construction-equipment-rental.webp",
     alt: "Telehandler and forklift staging materials at a steel building frame on a paved lot, jet overhead",
@@ -1621,7 +1651,7 @@ export const desoto: CityEntry = {
     { question: "What compaction is required in DeSoto right-of-way?", answer: "The ROW permit conditions require mechanical compaction of all excavation in City right-of-way, with compaction test reports submitted to the Construction Management Division." },
     { question: "How much notice does DeSoto need for City line locates?", answer: "The ROW application asks for 48 hours' notice for City water, sewer and sign or signal locates, with all locates complete before the project starts. You still need to contact the one-call system separately." },
   ],
-  nearbyCities: ["grand-prairie", "mansfield", "cedar-hill", "dallas"],
+  nearbyCities: ["grand-prairie", "mansfield", "cedar-hill", "lancaster", "duncanville", "waxahachie", "dallas"],
   heroImage: {
     src: "/images/locations/desoto-tx-construction-equipment-rental.webp",
     alt: "Excavator loading a dump truck and wheel loader on a graded pad, concrete tilt-wall panels behind",
@@ -1763,7 +1793,7 @@ export const bedford: CityEntry = {
     { question: "How far ahead should I apply for a Bedford ROW permit?", answer: "At least ten working days before the work starts, unless the City waives it. Give Public Works-Engineering at least 48 hours' notice before starting work in the right-of-way." },
     { question: "What compaction does Bedford require under pavement?", answer: "95% of Standard Proctor density in lifts no thicker than 6 inches, unless the approved geotechnical report recommends otherwise." },
   ],
-  nearbyCities: ["euless", "north-richland-hills", "grapevine", "fort-worth", "haltom-city", "dallas"],
+  nearbyCities: ["euless", "north-richland-hills", "grapevine", "haltom-city", "hurst", "fort-worth", "dallas"],
   heroImage: {
     src: "/images/locations/bedford-tx-construction-equipment-rental.webp",
     alt: "Compact track loader spreading gravel base inside silt fence beside an older brick commercial building in Bedford, Texas",
@@ -1834,7 +1864,7 @@ export const cedarHill: CityEntry = {
     { question: "What has to happen at the end of each day on a Cedar Hill ROW job?", answer: "Sweep the street, keep cleanup close behind the excavation crew, and put a temporary security fence around every open excavation with the contractor's contact information posted." },
     { question: "Why does terrain matter for equipment in Cedar Hill?", answer: "The City sits at the northern edge of the Balcones Escarpment, with limestone bluffs and the highest elevation in Dallas County. Slopes and rock can call for tracked loaders and excavators sized for harder digging." },
   ],
-  nearbyCities: ["desoto", "grand-prairie", "mansfield", "dallas"],
+  nearbyCities: ["desoto", "grand-prairie", "mansfield", "lancaster", "duncanville", "waxahachie", "dallas"],
   heroImage: {
     src: "/images/locations/cedar-hill-tx-construction-equipment-rental.webp",
     alt: "Excavator cutting limestone and clay on a hillside lot beside a compact track loader in wooded hills in Cedar Hill, Texas",
@@ -2123,7 +2153,7 @@ export const haltomCity: CityEntry = {
     { question: "What bond does Haltom City require for a utility construction permit?", answer: "A $5,000 surety bond and a certificate of insurance must be provided for review with the permit request." },
     { question: "What equipment fits Haltom City utility work?", answer: "Mini excavators, compactors and skid steers for service work and restoration in established streets; larger excavators when the run outgrows a compact machine. Share bore plans, street width and inspection timing with the provider." },
   ],
-  nearbyCities: ["north-richland-hills", "fort-worth", "bedford", "euless", "dallas"],
+  nearbyCities: ["north-richland-hills", "bedford", "euless", "hurst", "fort-worth", "dallas"],
   heroImage: {
     src: "/images/locations/haltom-city-tx-construction-equipment-rental.webp",
     alt: "Mini excavator and plate compactor working in a coned utility cut on an established street in Haltom City, Texas",
@@ -2336,10 +2366,395 @@ export const coppell: CityEntry = {
     { question: "What are construction noise hours next to homes in Coppell?", answer: "7 a.m. to 7 p.m. Monday through Friday and 9 a.m. to 7 p.m. on Saturdays, Sundays and listed legal holidays, unless the City Manager issues a written permit for urgent public necessity." },
     { question: "Do I need density tests on a Coppell utility trench?", answer: "The ROW permit summary says density tests may be required in trench lines at the applicant's expense. Confirm what the approved plans require before backfill." },
   ],
-  nearbyCities: ["grapevine", "irving", "carrollton", "flower-mound", "dallas"],
+  nearbyCities: ["grapevine", "irving", "carrollton", "flower-mound", "farmers-branch", "dallas"],
   heroImage: {
     src: "/images/locations/coppell-tx-construction-equipment-rental.webp",
     alt: "Scissor lift and telehandler on a commercial building pad beside a warehouse shell in Coppell, Texas",
   },
   guides: [scissorLiftGuideLink, compactionGuideLink, utilityLocatesGuideLink],
+};
+
+const concreteGuideLink: CityGuideLink = {
+  slug: "choosing-concrete-equipment",
+  reason: "Mixer, power trowel and saw choices, plus OSHA silica rules for cutting.",
+};
+
+const wheelLoaderGuideLink: CityGuideLink = {
+  slug: "wheel-loader-vs-skid-steer",
+  reason: "Pick the right loader for stockpiles, truck loading and tight lots.",
+};
+
+export const lancaster: CityEntry = {
+  name: "Lancaster",
+  slug: "lancaster",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Lancaster is in southern Dallas County, about fourteen miles south of Dallas, with Ten Mile Creek and its tributaries running through the area.",
+  metaDescription:
+    "Construction equipment rentals in Lancaster, TX: excavators, compactors and trenchers, plus City ROW work hours, grading permits and floodplain fill rules.",
+  localIntro: [
+    "Lancaster sits at the junction of State Highway 342 and Pleasant Run Road in southern Dallas County. The Handbook of Texas notes that Ten Mile Creek and its tributaries run throughout the area, and points to Lancaster Airport and a town square renovated in the mid-1970s.",
+    "Utility work in the right-of-way, grading on open tracts and fill near creeks shape a lot of equipment choices here. Use this page to match machines to Lancaster rules, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Lancaster writes its right-of-way hours into its Code. Nonemergency excavation and boring run from 7 a.m. to 7 p.m. unless the City grants permission, and other work that needs an inspection runs Monday through Friday from 7 a.m. until thirty minutes before sundown, with no work on City holidays. Saturday ROW work needs the right-of-way manager's approval and notice by noon on the Thursday before.",
+    "Creek corridors matter for earthwork. The City's grading permit form asks whether the site is in a FEMA Special Flood Hazard Area, and its floodplain guidelines set compaction for fill under new buildings and require FEMA approval of a CLOMR, when one is needed, before construction in the floodplain.",
+    "Excavators, trenchers and compactors fit the utility and site work; skid steers and wheel loaders handle spreading, cleanup and loading. Plan Texas811 locates, the City's 48-hour notices and OSHA trench protection into the schedule before the machines arrive.",
+  ],
+  featuredEquipment: [
+    { slug: "excavator-rental", reason: "Utility mains and site grading where creek tributaries cross open tracts." },
+    { slug: "mini-excavator-rental", reason: "Service lines and ROW cuts inside the City's daytime work window." },
+    { slug: "compactor-rental", reason: "Floodplain fill held to 95% Standard Proctor under new buildings." },
+    { slug: "trencher-rental", reason: "Long utility runs once ROW permits and locates are in place." },
+    { slug: "skid-steer-rental", reason: "Spreading fill, restoring disturbed ground and daily cleanup." },
+    { slug: "wheel-loader-rental", reason: "Loading trucks and moving stockpiles on larger graded sites." },
+  ],
+  siteConsiderations: [
+    {
+      title: "ROW work hours and Saturdays",
+      text: "Under Code sec. 24.09.049, nonemergency excavation and boring in the right-of-way take place between 7 a.m. and 7 p.m. unless the City grants permission. Other work requiring an inspection is done between 7 a.m. and thirty minutes before sundown, Monday through Friday, and no work is performed on holidays. Saturday work needs the right-of-way manager's approval, with notice no later than noon on the Thursday before. These hours apply to ROW work, not to work on private lots.",
+      sources: [sources.lancasterRowCode],
+    },
+    {
+      title: "ROW permits, registration and notices",
+      text: "A permit is required for any work in the City right-of-way, every contractor must be registered with the City, and the Public Works inspector needs 48 hours' notice before work starts. Applications for excavation deeper than five feet must include a trench safety design sealed by a licensed professional engineer, and the City issues or denies a permit within ten days of a complete application. The ROW user also notifies the City after initial backfill and at completion.",
+      sources: [sources.lancasterRowInfo, sources.lancasterRowCode, sources.lancasterDevHandbook],
+    },
+    {
+      title: "Traffic control and lane closures",
+      text: "A Traffic Control Plan meeting the Texas MUTCD is required when working closer than 36 inches to the edge of pavement or back of curb. Lane closures must be approved 48 hours in advance so public safety notifications can be made.",
+      sources: [sources.lancasterRowInfo],
+    },
+    {
+      title: "Grading permits and erosion control",
+      text: "The City's grading permit form asks for the estimated disturbed area, whether a SWPPP has been prepared and whether the site is in a FEMA flood zone, and requires an erosion control plan sealed by a licensed engineer plus a copy of the Notice of Intent when one applies. Projects disturbing one acre or more must send a copy of the Construction Site Notice or Notice of Intent to the Director of Public Works.",
+      sources: [sources.lancasterGrading, sources.lancasterErosion, sources.tceqConstructionStormwater],
+    },
+    {
+      title: "Floodplain fill and permits",
+      text: "The Handbook of Texas notes Ten Mile Creek and its tributaries running throughout the Lancaster area. The City's floodplain guidelines require City-approved construction plans before site work, FEMA approval of a Conditional Letter of Map Revision before construction when one is required, and fill for new buildings compacted to 95% Standard Proctor density within 3% of optimum moisture unless the approved plans say otherwise. The permit expires if no work starts within 180 days.",
+      sources: [sources.lancasterFloodplain, sources.tshaLancaster],
+    },
+    {
+      title: "Equipment noise hours",
+      text: "Lancaster's noise article exempts construction equipment operating between 7 a.m. and 7 p.m. Outside those hours, construction equipment falls under the City's general noise rules, so plan night work only after checking with the City.",
+      sources: [sources.lancasterNoise],
+    },
+    {
+      title: "Locates and trench safety",
+      text: "The City's ROW rules require utility locates under the state's Underground Facility Damage Prevention and Safety Act. Texas law requires notice to the one-call center at least 48 hours before digging, not counting weekends and holidays. OSHA requires a protective system for trenches 5 feet deep or more unless the excavation is in stable rock.",
+      sources: [sources.lancasterRowCode, sources.utilitiesCode251, sources.texas811, sources.oshaTrenching],
+    },
+  ],
+  faqs: [
+    { question: "What are right-of-way work hours in Lancaster?", answer: "Nonemergency excavation and boring run 7 a.m. to 7 p.m. unless the City grants permission. Other inspected ROW work runs 7 a.m. to thirty minutes before sundown, Monday through Friday, with no work on holidays." },
+    { question: "Can I work in a Lancaster right-of-way on Saturday?", answer: "Only with approval from the right-of-way manager. Notice must reach the City no later than noon on the Thursday before the Saturday." },
+    { question: "When does a Lancaster ROW application need an engineered trench design?", answer: "When the excavation will be deeper than five feet. The application must then include a trench safety design sealed by a licensed professional engineer unless the law provides otherwise." },
+    { question: "How must fill be compacted in a Lancaster floodplain?", answer: "The City's floodplain guidelines call for fill under new buildings to reach 95% Standard Proctor density within 3% of optimum moisture, unless the City-approved plans specify something else." },
+  ],
+  nearbyCities: ["desoto", "duncanville", "cedar-hill", "waxahachie", "dallas"],
+  heroImage: {
+    src: "/images/locations/lancaster-tx-construction-equipment-rental.webp",
+    alt: "Excavator placing clay fill beside a padfoot roller on a graded tract near a tree-lined creek in Lancaster, Texas",
+  },
+  guides: [utilityLocatesGuideLink, trenchSafetyGuideLink, compactionGuideLink],
+};
+
+export const waxahachie: CityEntry = {
+  name: "Waxahachie",
+  slug: "waxahachie",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Waxahachie is the Ellis County seat, on Interstate 35E and U.S. Highway 287 about thirty miles south of Dallas.",
+  metaDescription:
+    "Construction equipment rentals in Waxahachie, TX: excavators, loaders and compactors for growth-area site work, plus City grading and floodplain rules.",
+  localIntro: [
+    "Waxahachie is the county seat of Ellis County, on Interstate 35E and U.S. Highway 287 about thirty miles south of Dallas. The Handbook of Texas calls it the Gingerbread City for its pre-1900 homes and notes the 1897 courthouse on the square and some 300 local structures on the National Register of Historic Places.",
+    "Census counts show the city growing from 29,621 people in 2010 to 41,140 in 2020, and new subdivisions and commercial pads drive much of the earthwork. Use this page to match machines to Waxahachie rules, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Grading is where Waxahachie's rules bite first. Before any grading, tree clearing or soil disturbance of an acre or more, the City requires a grading plan, an erosion control plan, a stormwater pollution prevention plan, a posted construction sign and erosion controls installed and inspected by the Public Works inspector. Grading can't start until the Public Works Director issues a letter of authorization.",
+    "Floodplains add a second check. The City says any development in the floodplain without a permit is illegal, and points builders on Zone A properties to FEMA's Base Level Engineering viewer for the 1% annual chance flood elevation.",
+    "Excavators, wheel loaders and compactors carry the subdivision and pad work; skid steers and trenchers fill in on utilities and finish grading. Near the historic square, compact machines fit tighter lots better than production equipment.",
+  ],
+  featuredEquipment: [
+    { slug: "excavator-rental", reason: "Mass grading, detention and utility mains on new subdivision tracts." },
+    { slug: "wheel-loader-rental", reason: "Stockpiles and truck loading on larger graded sites." },
+    { slug: "compactor-rental", reason: "Building pads and street subgrade built to NCTCOG-based City standards." },
+    { slug: "skid-steer-rental", reason: "Finish grading, erosion-control installs and cleanup." },
+    { slug: "trencher-rental", reason: "Long utility and irrigation runs in growing neighborhoods." },
+    { slug: "mini-excavator-rental", reason: "Tight lots and service work near the historic downtown." },
+  ],
+  siteConsiderations: [
+    {
+      title: "Historic core, growing edges",
+      text: "The Handbook of Texas counts some 300 Waxahachie structures on the National Register of Historic Places, including the 1897 courthouse on the square, while Census counts show the population rising from 29,621 in 2010 to 41,140 in 2020. Expect tight infill near downtown and new-ground grading on the edges, and size equipment to each.",
+      sources: [sources.tshaWaxahachie, sources.censusWaxahachie],
+    },
+    {
+      title: "Grading one acre or more",
+      text: "Under Chapter 33, Article XII, Division 3 (Erosion Control), soil disturbance of one acre or more requires a grading plan, an erosion control plan, a stormwater pollution prevention plan, a posted construction sign with the operator's contact information and the SWPPP location, and erosion controls installed and inspected by the Public Works inspector. Submit the Early Grading Form to the City Engineer and inspector; grading can't begin until the Public Works Director issues a letter of authorization. Sites of 5 acres or more also submit a Notice of Intent to TCEQ.",
+      sources: [sources.waxahachieGrading, sources.tceqConstructionStormwater],
+    },
+    {
+      title: "Sites under one acre",
+      text: "Building permits on smaller sites require an erosion control plan. The City says it doesn't regulate grading that doesn't require a building permit and treats problems from that grading as civil matters, so erosion controls still protect you and your neighbors.",
+      sources: [sources.waxahachieGrading],
+    },
+    {
+      title: "Floodplain development",
+      text: "All development in the City requires local and state permits, and the City says development in the floodplain without a permit is illegal. Contact Planning before building or filling. On Zone A properties, FEMA's Base Level Engineering viewer gives the 1% annual chance flood elevation, and the USGS Waxahachie Creek gauge offers water-level alerts.",
+      sources: [sources.waxahachieFloodplain],
+    },
+    {
+      title: "Public infrastructure standards and inspection",
+      text: "Public works construction follows the City's Standard Construction Details and the NCTCOG Standard Specifications for Public Works Construction. City staff inspect public improvements, and the developer is responsible for additional City inspection expense after normal business hours; the Public Works forms list a Saturday overtime inspection request for public infrastructure.",
+      sources: [sources.waxahachieThoroughfare, sources.waxahachiePermits],
+    },
+    {
+      title: "ROW permits and master plans",
+      text: "Public Works issues Franchise Right-of-Way and Water & Sewer Right-of-Way permits. While those forms are being updated, the City asks applicants to request copies from Public Works by email. Developers should also check the City's Water and Wastewater Master Plans and thoroughfare plan, which can affect layout, access and dedications.",
+      sources: [sources.waxahachiePermits, sources.waxahachieDevelopment],
+    },
+    {
+      title: "Locates and trench safety",
+      text: "Texas law requires notice to the one-call center at least 48 hours before digging, not counting weekends and holidays. OSHA requires a protective system for trenches 5 feet deep or more unless the excavation is in stable rock.",
+      sources: [sources.utilitiesCode251, sources.texas811, sources.oshaTrenching],
+    },
+  ],
+  faqs: [
+    { question: "Do I need City approval before grading in Waxahachie?", answer: "For soil disturbance of one acre or more, yes. The City requires grading and erosion control plans, a SWPPP, a posted sign and inspected erosion controls, and grading can't begin until the Public Works Director issues a letter of authorization." },
+    { question: "What about grading under an acre in Waxahachie?", answer: "Building permits require an erosion control plan. The City says it doesn't regulate grading that doesn't require a building permit, and treats resulting problems as civil matters." },
+    { question: "Can I fill land in a Waxahachie floodplain?", answer: "Only with permits. The City says any development in the floodplain without a permit is illegal and asks builders to contact Planning before building, filling or otherwise developing." },
+    { question: "Can City inspectors work outside normal hours in Waxahachie?", answer: "Inspection after normal business hours can be arranged, but the developer is responsible for the City's additional inspection expense. Public Works lists a Saturday overtime inspection request for public infrastructure." },
+  ],
+  nearbyCities: ["lancaster", "desoto", "cedar-hill", "dallas"],
+  heroImage: {
+    src: "/images/locations/waxahachie-tx-construction-equipment-rental.webp",
+    alt: "Wheel loader and excavator on a large graded clay pad with wood-framed houses under construction in Waxahachie, Texas",
+  },
+  guides: [sitePrepGuide, wheelLoaderGuideLink, compactionGuideLink],
+};
+
+export const duncanville: CityEntry = {
+  name: "Duncanville",
+  slug: "duncanville",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Duncanville is a southwestern Dallas County suburb west of the intersection of Interstate 20 and U.S. Highway 67.",
+  metaDescription:
+    "Construction equipment rentals in Duncanville, TX: mini excavators, compactors and concrete tools for ROW and infill work, plus City permit and trench rules.",
+  localIntro: [
+    "Duncanville lies west of the intersection of Interstate 20 and U.S. Highway 67 in southwestern Dallas County. The Handbook of Texas traces it from an 1880 railroad switch to a Dallas suburb whose commerce spread from Main Street to west-side shopping centers and the U.S. 67 corridor.",
+    "In an established city, much of the equipment work is utility service, street and sidewalk restoration and redevelopment on existing lots. Use this page to match machines to Duncanville rules, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Duncanville's right-of-way permit is short-lived and detailed. Any work, excavation, service installation or blocking in City right-of-way or easements needs a permit, which is valid for only 14 days. The City locates its own utilities and returns the permit within five days, weather permitting, while franchise utility locates go through 811.",
+    "The City's ROW inspection rules read like a jobsite checklist: a safety inspection before work starts, a fence around any excavation left open overnight, excavated material hauled off the same day and restoration within ten business days of substantial completion.",
+    "Mini excavators, compactors and concrete tools handle most ROW and service work; skid steers and trenchers help with longer runs and cleanup. Size the crew and equipment so trenches can be backfilled the same day.",
+  ],
+  featuredEquipment: [
+    { slug: "mini-excavator-rental", reason: "Service connections and ROW cuts on established residential streets." },
+    { slug: "compactor-rental", reason: "Trench backfill that must pass the City's density testing." },
+    { slug: "concrete-equipment-rental", reason: "Saws and finishing tools for pavement, curb and sidewalk restoration." },
+    { slug: "skid-steer-rental", reason: "Same-day removal of excavated material and site cleanup." },
+    { slug: "trencher-rental", reason: "Longer utility runs, opened only as far as crews can backfill each day." },
+    { slug: "excavator-rental", reason: "Larger mains and redevelopment sites along the commercial corridors." },
+  ],
+  siteConsiderations: [
+    {
+      title: "An established suburb",
+      text: "Duncanville incorporated in 1947 and grew as a Dallas suburb, with commerce spreading from Main Street to west-side shopping centers and U.S. 67. Work on its established streets, alleys and easements falls under the City's right-of-way rules below.",
+      sources: [sources.tshaDuncanville],
+    },
+    {
+      title: "ROW permits, locates and traffic plans",
+      text: "Any company or utility that plans to work, excavate, install services, block or otherwise disturb City right-of-way or easements needs a Right-of-Way Permit, which is valid for 14 days. The City locates City utilities in the work area and returns the permit within five days, weather permitting; request franchise locates through 811. If work reroutes traffic, Traffic Control and Proposed Route Plans must be approved before work begins.",
+      sources: [sources.duncanvilleRow],
+    },
+    {
+      title: "Online applications and inspections",
+      text: "ROW applications are filed online in My Government Online by a company pre-registered as a ROW utility provider or contractor. Schedule a safety inspection at least two business days before construction starts, and again before resuming if work pauses more than a week. A copy of the approved permit and plans stays on site, and a competent person who is fluent in English must be present during active work.",
+      sources: [sources.duncanvilleRowChecklist, sources.duncanvilleRowInspections],
+    },
+    {
+      title: "Notice and 811 timing",
+      text: "Notify adjacent property owners at least 48 hours before construction, and do it before requesting locates. The City's FAQ asks for 811 requests no less than 48 hours and no more than 14 days before excavation, and excavation can't begin until the locate process is complete.",
+      sources: [sources.duncanvilleRowInspections, sources.utilitiesCode251, sources.texas811],
+    },
+    {
+      title: "Boring and excavation rules",
+      text: "Missile or similar impact boring is prohibited. Bores and underground facilities must sit at least 36 inches below top of curb. Don't store dirt or debris on traveled lanes or paved surfaces, and haul excavated material away the same day. Excavations left open overnight need an anchored safety fence (caution tape isn't a substitute), excavations can't stay open more than 72 hours without cover, and an open trench can't run more than 200 feet ahead of installation.",
+      sources: [sources.duncanvilleRowInspections],
+    },
+    {
+      title: "Backfill, plates and restoration",
+      text: "The permittee provides density testing for trench backfill in the right-of-way. Steel plates over pavement cuts must be at least 1 inch thick and extend at least 1 foot beyond the trench on all sides. Restoration is due within ten business days of substantial completion and before the permit expires, followed by a two-year warranty period.",
+      sources: [sources.duncanvilleRowInspections],
+    },
+    {
+      title: "Night noise",
+      text: "Duncanville's noise ordinance prohibits loud and disturbing noise from construction or combustion engines that may disturb a reasonable person between 10 p.m. and 7 a.m.",
+      sources: [sources.duncanvilleNoise],
+    },
+  ],
+  faqs: [
+    { question: "How long is a Duncanville right-of-way permit valid?", answer: "Fourteen days. Call the City for an extension, and request one in writing if work and restoration won't be finished within ten business days of the permit's expiration date." },
+    { question: "Who locates City utilities in Duncanville?", answer: "The City locates its own utilities in the permitted work area and returns the permit within five days, weather permitting. Franchise utility locates are requested through 811." },
+    { question: "Can I use a missile to bore under a Duncanville street?", answer: "No. The City's ROW rules prohibit missiles and similar impact boring methods, and bores must sit at least 36 inches below top of curb." },
+    { question: "How long can an excavation stay open in Duncanville's right-of-way?", answer: "No more than 72 hours unless it's covered with plywood or approved material and secured with safety fencing. Trenches shouldn't be opened farther than crews can backfill the same day." },
+  ],
+  nearbyCities: ["cedar-hill", "desoto", "grand-prairie", "lancaster", "dallas"],
+  heroImage: {
+    src: "/images/locations/duncanville-tx-construction-equipment-rental.webp",
+    alt: "Mini excavator in a shallow street cut beside a walk-behind concrete saw and plate compactor in Duncanville, Texas",
+  },
+  guides: [utilityLocatesGuideLink, trenchSafetyGuideLink, concreteGuideLink],
+};
+
+export const hurst: CityEntry = {
+  name: "Hurst",
+  slug: "hurst",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Hurst is a Mid-Cities community in northeast Tarrant County on State Highways 121 and 10, north of the West Fork of the Trinity River.",
+  metaDescription:
+    "Construction equipment rentals in Hurst, TX: mini excavators, skid steers and lifts for infill and ROW work, plus City permit, locate and floodplain rules.",
+  localIntro: [
+    "Hurst is on State Highways 121 and 10, north of the West Fork of the Trinity River in northeast Tarrant County. The Handbook of Texas describes a Mid-Cities community that grew around the Rock Island line, Bell Helicopter, North East Mall and the opening of DFW Airport, and had nearly reached the limits of expansion by the 1970s.",
+    "With little open land left, most equipment work here is redevelopment, utility service and right-of-way work on established lots. Use this page to match machines to Hurst rules, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Hurst ties a lot of work to one permit. The City's construction permit covers work in public right-of-way and easements and also land disturbance or development on private property, and every dig or aerial job in the right-of-way, including tree trimming, needs a ROW permit through the City's online system.",
+    "Locates follow the permit. City water and sewer line locates are issued only after a permit number is in hand, with a map, address and stakes or markings, and the City asks for 24 to 48 hours.",
+    "Mini excavators, skid steers and compactors fit infill and service work; boom lifts cover aerial work over streets and easements. Floodplain permits apply to grading, paving and even equipment storage inside mapped flood zones.",
+  ],
+  featuredEquipment: [
+    { slug: "mini-excavator-rental", reason: "Service lines and utility repairs on built-out residential lots." },
+    { slug: "skid-steer-rental", reason: "Demolition cleanup, grading and backfill on redevelopment sites." },
+    { slug: "compactor-rental", reason: "Backfill and subgrade under restored streets, curbs and drive approaches." },
+    { slug: "boom-lift-rental", reason: "Aerial ROW work, including tree trimming, under a City permit." },
+    { slug: "trencher-rental", reason: "Utility runs in easements once locates are marked." },
+    { slug: "excavator-rental", reason: "Larger redevelopment pads and drainage work near creeks." },
+  ],
+  siteConsiderations: [
+    {
+      title: "ROW permits for ground and aerial work",
+      text: "All work in the public right-of-way (street and/or easement) requires a ROW permit, applied for through the City's ROWay platform. That includes digging and aerial work such as tree trimming, for private development or franchise utilities. Permittees provide a certificate of liability insurance, and subcontractors working in City easements or right-of-way must be listed as additional insureds or apply for their own permit.",
+      sources: [sources.hurstRow],
+    },
+    {
+      title: "Construction permits and bonds",
+      text: "Public Works says a construction permit is required for work in public right-of-way and easements and also covers land disturbance and development on private property. Cutting public streets, curbs, sidewalks or drive approaches, or tapping public utilities, needs a bond in addition to the ROW permit. Contractors register with the City annually.",
+      sources: [sources.hurstPwFaq, sources.hurstRow, sources.hurstForms],
+    },
+    {
+      title: "City line locates",
+      text: "City water and sewer locates require a permit from the Engineering Division first; the request needs the permit number, a map, the address and stakes or markings, and the City asks for 24 to 48 hours. Traffic signal lines are located separately. Texas law also requires one-call notice at least 48 hours before digging, not counting weekends and holidays.",
+      sources: [sources.hurstPwFaq, sources.utilitiesCode251, sources.texas811],
+    },
+    {
+      title: "Floodplain development",
+      text: "Hurst lies north of the West Fork of the Trinity River. A floodplain permit is required before any development inside the FEMA-mapped Special Flood Hazard Area. The City's definition of development includes filling, grading, paving, excavation and drilling, and the storage of equipment or materials, so a staging yard in the floodplain needs the same review as fill.",
+      sources: [sources.hurstPwFaq, sources.tshaHurst],
+    },
+    {
+      title: "Erosion control and stormwater plans",
+      text: "Engineering plans for development must include an Erosion and Sediment Control Plan under Code sec. 26-183 and a post-construction stormwater management plan under sec. 26-184, with drainage designed to the City's iSWM Criteria Manual. The Engineering forms page also lists a grading permit application.",
+      sources: [sources.hurstEngChecklist, sources.hurstForms],
+    },
+    {
+      title: "After-hours work",
+      text: "The Engineering Division publishes an After Hours Construction Permit and standards. Check those requirements before planning night or weekend work in the right-of-way.",
+      sources: [sources.hurstForms],
+    },
+  ],
+  faqs: [
+    { question: "Do I need a Hurst permit to trim trees over the right-of-way?", answer: "Yes. The City requires a ROW permit for all work in the public right-of-way, including aerial work such as tree trimming, for private development or franchise utilities." },
+    { question: "How do I get City water and sewer locates in Hurst?", answer: "Get a permit from the Engineering Division first. The locate request needs the permit number, a map, the address and stakes or markings, and the City asks for 24 to 48 hours." },
+    { question: "Does storing equipment in a Hurst floodplain need a permit?", answer: "It can. The City requires a floodplain permit before any development in the mapped flood zone, and its definition of development includes the storage of equipment or materials." },
+    { question: "When does Hurst require a bond for ROW work?", answer: "When the work cuts public streets, curbs, sidewalks or drive approaches, or makes taps on public utilities. The bond is required in addition to the ROW permit." },
+  ],
+  nearbyCities: ["bedford", "euless", "north-richland-hills", "haltom-city", "fort-worth", "dallas"],
+  heroImage: {
+    src: "/images/locations/hurst-tx-construction-equipment-rental.webp",
+    alt: "Compact articulating boom lift with outriggers down and a skid steer on a commercial lot in Hurst, Texas",
+  },
+  guides: [utilityLocatesGuideLink, compactGuide, rentalChecklistGuideLink],
+};
+
+export const farmersBranch: CityEntry = {
+  name: "Farmers Branch",
+  slug: "farmers-branch",
+  region: "the Dallas–Fort Worth area",
+  shortDescription:
+    "Farmers Branch is in northwestern Dallas County on Interstate 35 and State Highway 77, about twelve miles north of downtown Dallas.",
+  metaDescription:
+    "Construction equipment rentals in Farmers Branch, TX: mini excavators, saws and lifts for ROW and commercial work, plus City work hours and street-cut rules.",
+  localIntro: [
+    "Farmers Branch sits on Interstate 35 and State Highway 77 about twelve miles north of downtown Dallas. The Handbook of Texas traces it to the Peters Colony's first office in 1845 and, by the 1990s, to dozens of manufacturers, Fortune 500 companies and Brookhaven Community College within the city limits.",
+    "Utility work in streets and easements, commercial renovation and industrial upkeep account for much of the equipment demand. Use this page to match machines to Farmers Branch rules, then confirm availability, delivery and terms with providers that serve your site.",
+  ],
+  useCaseContext: [
+    "Right-of-way work in Farmers Branch keeps to a short weekday window. The City's general permit provisions allow work from 7 a.m. to 4 p.m. Monday through Friday, limit thoroughfare lane closures to 9 a.m. to 3:30 p.m. and prohibit weekend and holiday work without prior written permission.",
+    "Street cuts come with exact restoration rules: full-depth saw cuts, temporary repairs within two business days and permanent concrete within 14 working days, plated until it reaches strength. Boring has to be traceable and steerable, and trenchless methods are required under driveways, streets and landscaped areas.",
+    "Mini excavators, compactors and concrete saws fit the ROW work; scissor lifts and forklifts serve office and industrial interiors. Construction near homes follows separate noise hours.",
+  ],
+  featuredEquipment: [
+    { slug: "mini-excavator-rental", reason: "Utility work in streets and easements inside the 7 a.m.–4 p.m. ROW window." },
+    { slug: "concrete-equipment-rental", reason: "Full-depth saw cuts and high-early-strength pavement repairs." },
+    { slug: "compactor-rental", reason: "Backfill to 95% under paving and 90% elsewhere." },
+    { slug: "skid-steer-rental", reason: "Daily removal of debris and excess excavated material." },
+    { slug: "scissor-lift-rental", reason: "Interior renovation in office and commercial buildings." },
+    { slug: "forklift-rental", reason: "Material handling at manufacturing and warehouse sites." },
+  ],
+  siteConsiderations: [
+    {
+      title: "ROW work hours and lane closures",
+      text: "The City's ROW permit provisions set work hours of 7 a.m. to 4 p.m., Monday through Friday. Construction is prohibited on weekends and holidays at any hour without prior written permission, and thoroughfare lanes may be blocked only from 9 a.m. to 3:30 p.m. on weekdays. Requests for exceptions go in at least two business days ahead. No more than one lane of a two-lane street, or one lane per direction on four-lane streets, may be closed without City authorization.",
+      sources: [sources.farmersBranchRow],
+    },
+    {
+      title: "City locates and facility clearances",
+      text: "Request locates of City water, sewer, storm sewer, traffic signal and irrigation lines at least three business days ahead; non-City facilities are located through the one-call system. New facilities must stay at least 3 feet from the back of curb and from City facilities such as meters, valves and manholes, and at least 5 feet from fire hydrants.",
+      sources: [sources.farmersBranchRow, sources.utilitiesCode251, sources.texas811],
+    },
+    {
+      title: "Boring and backfill",
+      text: "Borings must use traceable, steerable equipment, with bore marks and depths placed as the bore progresses. Trenchless methods are required under driveways, streets and landscaped areas, and bores 4 inches or larger are pressure grouted. Backfill must be compacted to 95% under paving and 90% elsewhere.",
+      sources: [sources.farmersBranchRow],
+    },
+    {
+      title: "Street cuts and restoration",
+      text: "Where trenches cross streets, saw-cut the pavement full depth and remove at least 3 feet wider than the trench. Temporary repairs are due within two business days, and permanent pavement within 14 working days using concrete that reaches 3,600 psi within 72 hours, covered with a steel plate until it gets there. Trenches are plated at the end of each workday, debris and unused spoil are removed daily, and signs, trees and landscaping are restored within 21 days.",
+      sources: [sources.farmersBranchRow],
+    },
+    {
+      title: "Construction noise near homes",
+      text: "Ordinance 3839 (2023) prohibits construction activities involving the erection, excavation, demolition, alteration or repair of buildings or structures in a residential district or within 500 feet of an occupied home before 7 a.m. or after 7 p.m. on weekdays and Saturday. Sunday hours are shorter and end at 5 p.m. The City Manager can permit urgent public-safety work.",
+      sources: [sources.farmersBranchNoise],
+    },
+    {
+      title: "Industrial and office buildings",
+      text: "The Handbook of Texas records Farmers Branch manufacturers making steel products, tile, cement, asphalt, machine parts and food products, and later printing and publishing firms. Older plants and office buildings bring interior lift work and forklift moves on paved yards; OSHA requires forklift operators to be trained and evaluated before they run the truck.",
+      sources: [sources.tshaFarmersBranch, sources.oshaMaterialHandling],
+    },
+    {
+      title: "City design standards",
+      text: "ROW construction follows the latest NCTCOG Standard Specifications for Public Works Construction unless the permit or approved plans say otherwise. Engineering publishes the City's design manual for water, sanitary sewer and paving and its standard construction details.",
+      sources: [sources.farmersBranchRow, sources.farmersBranchEngineering],
+    },
+  ],
+  faqs: [
+    { question: "What are right-of-way work hours in Farmers Branch?", answer: "7 a.m. to 4 p.m., Monday through Friday. Weekend and holiday work needs prior written permission, and exception requests go in at least two business days ahead." },
+    { question: "When can I close a thoroughfare lane in Farmers Branch?", answer: "From 9 a.m. to 3:30 p.m., Monday through Friday. Normally only one lane of a two-lane street, or one lane in each direction on four-lane streets, may be closed at a time." },
+    { question: "How fast must a Farmers Branch street cut be repaired?", answer: "Temporary repairs within two business days and permanent pavement within 14 working days, using concrete that reaches 3,600 psi within 72 hours and stays plated until it does." },
+    { question: "What are construction hours near homes in Farmers Branch?", answer: "Within a residential district or 500 feet of an occupied home, construction is prohibited before 7 a.m. or after 7 p.m. on weekdays and Saturday. Sunday hours are shorter and end at 5 p.m." },
+  ],
+  nearbyCities: ["carrollton", "irving", "coppell", "dallas"],
+  heroImage: {
+    src: "/images/locations/farmers-branch-tx-construction-equipment-rental.webp",
+    alt: "Scissor lift and forklift carrying a lumber pallet at an open warehouse bay in Farmers Branch, Texas",
+  },
+  guides: [concreteGuideLink, utilityLocatesGuideLink, scissorLiftGuideLink],
 };

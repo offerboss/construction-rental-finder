@@ -110,6 +110,11 @@ export const cityPageRegions: Record<string, RegionSlug> = {
   "texas/keller": "dfw-metro",
   "texas/the-colony": "dfw-metro",
   "texas/coppell": "dfw-metro",
+  "texas/lancaster": "dfw-metro",
+  "texas/waxahachie": "dfw-metro",
+  "texas/duncanville": "dfw-metro",
+  "texas/hurst": "dfw-metro",
+  "texas/farmers-branch": "dfw-metro",
 };
 
 export function getRegion(slug: string) {

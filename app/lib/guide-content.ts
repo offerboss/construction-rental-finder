@@ -47,6 +47,14 @@ const sources = {
   osha404: { label: "OSHA 29 CFR 1926.404, wiring design and protection (GFCI, generator grounding)", url: "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-K/section-1926.404" },
   oshaAppendixA: { label: "OSHA 29 CFR 1926 Subpart P, Appendix A: soil classification", url: "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-P/appendix-Appendix%20A%20to%20Subpart%20P%20of%20Part%201926" },
   oshaAppendixB: { label: "OSHA 29 CFR 1926 Subpart P, Appendix B: sloping and benching", url: "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-P/appendix-Appendix%20B%20to%20Subpart%20P%20of%20Part%201926" },
+  deere244p: { label: "John Deere 244 P-Tier compact wheel loader", url: "https://www.deere.ca/en/loaders/wheel-loaders/compact-wheel-loaders/244-p-wheel-loader/" },
+  osha602a: { label: "OSHA 29 CFR 1926.602(a), earthmoving equipment (seat belts, brakes, alarms, scissor points)", url: "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-O/section-1926.602" },
+  multiquipMc94: { label: "Multiquip MC94P Series 9 cu ft concrete mixer specifications", url: "https://www.multiquip.com/multiquip/MC94P.htm" },
+  whitemanJ36: { label: "Multiquip Whiteman J36B65 36-inch walk-behind trowel specifications", url: "https://www.multiquip.com/multiquip/J36B65.htm" },
+  husqvarnaK770: { label: "Husqvarna K 770 power cutter specifications", url: "https://www.husqvarna.com/us/power-cutters/k770/" },
+  osha701: { label: "OSHA 29 CFR 1926.701, concrete and masonry general requirements", url: "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-Q/section-1926.701" },
+  osha702: { label: "OSHA 29 CFR 1926.702, requirements for concrete equipment and tools", url: "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-Q/section-1926.702" },
+  osha1153: { label: "OSHA 29 CFR 1926.1153, respirable crystalline silica (Table 1)", url: "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-Z/section-1926.1153" },
 } satisfies Record<string, SourceLink>;
 
 const shared = {
@@ -1826,3 +1834,314 @@ export const compactionGuide: Guide = {
   relatedGuides: ["site-preparation-equipment", "trench-safety-basics", "what-size-excavator-do-i-need"],
 };
 
+export const wheelLoaderVsSkidSteerGuide: Guide = {
+  slug: "wheel-loader-vs-skid-steer",
+  title: "Wheel Loader vs Skid Steer: Which Loader Should You Rent?",
+  shortTitle: "Wheel Loader vs Skid Steer",
+  metaTitle: "Wheel Loader vs Skid Steer Rental: How to Choose",
+  metaDescription:
+    "Compare wheel loaders and skid steers for rental: capacity ratings, steering, ground, hauling and OSHA rules, with John Deere spec examples.",
+  summary:
+    "When a compact skid steer is enough, and when stockpiles, truck loading and travel distance call for a wheel loader.",
+  intro: [
+    "Skid steers and wheel loaders both carry a bucket, and both load, carry and spread material. They're built for different amounts of material, different distances and different ground, and they're rated in different ways, which is where rental mix-ups start.",
+    "This guide compares the two with published John Deere figures, explains why a skid steer's rated operating capacity and a wheel loader's bucket size aren't the same kind of number, and lists the OSHA rules that apply on site. For the wider earthwork spread, see [site preparation equipment](/resources/site-preparation-equipment).",
+  ],
+  heroImage: {
+    src: "/images/resources/wheel-loader-vs-skid-steer.webp",
+    alt: "Mid-size wheel loader scooping a clay stockpile beside a compact skid steer on a graded dirt jobsite",
+  },
+  datePublished: "2026-11-12",
+  dateModified: "2026-11-12",
+  keyTakeaways: [
+    "Skid steers suit tight lots, attachment work and small volumes; wheel loaders suit stockpiles, truck loading and longer carries.",
+    "Skid steers are rated by rated operating capacity (Deere's 318 P: 1,945 lb); wheel loaders are usually specified by bucket volume (Deere's 344 P: 2.0 to 2.6 cu yd).",
+    "Deere's compact wheel loaders run from 12,258 lb (244 P) to 19,533 lb (344 P); its 644 P lists 39,537 to 40,135 lb, which changes delivery and site access.",
+    "OSHA's earthmoving rules in 1926.602(a) cover loaders; specific rules for rubber-tired skid-steer equipment are reserved, so follow the manufacturer's manual and general equipment rules.",
+  ],
+  sections: [
+    {
+      id: "quick-comparison",
+      heading: "The Short Comparison",
+      blocks: [
+        {
+          type: "columns",
+          columns: [
+            { title: "Skid steer", items: ["Tight residential and infill lots", "Attachment work: forks, augers, brooms, grapples", "Small piles, backfill and cleanup", "Short carries inside the site"] },
+            { title: "Wheel loader", items: ["Stockpiles and truck loading", "Larger buckets and longer carries", "Firm, open yards and graded pads", "Hours of repetitive loading"] },
+          ],
+        },
+        { type: "p", text: "A [skid steer](/equipment/skid-steer-rental) earns its place where space is tight and the job changes during the day. A [wheel loader](/equipment/wheel-loader-rental) earns its place when the same material moves in volume, over distance, into trucks. Many sites use both: a wheel loader on the stockpile and a skid steer at the edges." },
+      ],
+      sources: [sources.deere318p, sources.deere344p],
+    },
+    {
+      id: "size-classes",
+      heading: "Size Classes from Published Specs",
+      blocks: [
+        {
+          type: "table",
+          caption: "Illustrative loader sizes from John Deere product pages (checked 2026-11-12)",
+          columns: ["Example", "Type", "Operating weight", "Capacity as published", "Net power"],
+          rows: [
+            ["John Deere 318 P", "Skid steer", "6,542 lb", "1,945 lb rated operating capacity", "61 hp"],
+            ["John Deere 334 P", "Skid steer", "10,264 lb", "4,000 lb rated operating capacity (with one standard counterweight set)", "114.7 hp net peak"],
+            ["John Deere 244 P", "Compact wheel loader", "12,258 lb", "1.0 to 1.4 cu yd bucket", "71 hp"],
+            ["John Deere 344 P", "Compact wheel loader", "19,533 lb", "2.0 to 2.6 cu yd bucket", "103 hp"],
+            ["John Deere 644 P", "Mid-size wheel loader", "39,537 to 40,135 lb", "4.00 to 4.25 cu yd bucket", "227 hp"],
+          ],
+          note: "Figures are as listed on the cited Deere pages on the date checked. Configurations and model years vary; confirm the exact unit and bucket with the provider.",
+        },
+        { type: "p", text: "The heaviest skid steer in the table weighs less than the smallest wheel loader. Between Deere's 318 P and its 644 P, operating weight rises more than sixfold, and that weight is what carries a bigger bucket without tipping." },
+      ],
+      sources: [sources.deere318p, sources.deere334p, sources.deere244p, sources.deere344p, sources.deere644p],
+    },
+    {
+      id: "capacity-ratings",
+      heading: "Why Capacity Numbers Don't Compare Directly",
+      blocks: [
+        { type: "p", text: "Skid steer makers publish rated operating capacity, a weight the machine is rated to carry. Wheel loader pages usually lead with bucket volume in cubic yards. A cubic yard of wet clay and a cubic yard of mulch weigh very different amounts, so a bucket size alone doesn't tell you how much weight you're lifting." },
+        {
+          type: "list",
+          items: [
+            "Start from the material: what it is, how much of it there is and where it goes.",
+            "For a skid steer, compare the load you'll carry with the published rated operating capacity, and remember that attachments change it.",
+            "For a wheel loader, ask the provider which bucket comes with the machine and what material it's sized for.",
+            "If trucks are being loaded, match bucket size and dump height to the trucks on the job.",
+          ],
+        },
+        { type: "p", text: "Deere lists the 334 P's 4,000 lb rating with one standard counterweight set, a reminder that published capacity depends on configuration. Ask for the exact spec of the unit you'll get, not the model family." },
+      ],
+      sources: [sources.deere318p, sources.deere334p, sources.deere344p],
+    },
+    {
+      id: "steering-and-ground",
+      heading: "Steering, Ground and Turning Room",
+      blocks: [
+        { type: "p", text: "A skid steer turns by driving the wheels on each side at different speeds, which lets it spin in its own length but drags the tires sideways. On turf, finished concrete or soft ground, that scuffing can leave a mess. Ground protection mats, a tracked compact loader or a wheel loader may be better choices on surfaces you have to restore." },
+        { type: "p", text: "Wheel loaders steer by articulating in the middle. Deere's Articulation Plus steering on its compact models combines 30 degrees of articulation with 10 degrees of rear-wheel steering for tighter turns, and Deere says it gives a higher full-turn tipping load without excessive articulation. A wheel loader still needs more room to turn and stage than a skid steer." },
+        { type: "p", text: "North Texas clay changes the answer after rain. On wet sites, tracked machines often keep working when tires can't; the [site preparation guide](/resources/site-preparation-equipment) compares compact track loaders for that reason." },
+      ],
+      sources: [sources.deere244p, sources.deere344p, shared.usdaHoustonBlack],
+    },
+    {
+      id: "local-rules",
+      heading: "Local Rules That Change the Loader Choice",
+      blocks: [
+        { type: "p", text: "City rules on spoil and grading often decide how much loader you need. In right-of-way work, [Duncanville](/locations/texas/duncanville) prohibits storing dirt or debris on traveled lanes or paved surfaces and requires excavated material to be removed the same day, and [Farmers Branch](/locations/texas/farmers-branch) requires debris and unused excavated material to be removed daily. A skid steer and a truck often cover that." },
+        { type: "p", text: "Larger earthwork brings permits first. [Waxahachie](/locations/texas/waxahachie) requires grading and erosion control plans, inspected erosion controls and a letter of authorization before grading an acre or more, and [Lancaster](/locations/texas/lancaster) asks for an engineer-sealed erosion control plan with its grading permit. Once grading is approved, a wheel loader keeps stockpiles and trucks moving." },
+      ],
+      sources: [citySources.duncanvilleRowInspections, citySources.farmersBranchRow, citySources.waxahachieGrading, citySources.lancasterGrading],
+    },
+    {
+      id: "safety-and-transport",
+      heading: "Safety Rules and Getting the Machine There",
+      blocks: [
+        {
+          type: "list",
+          items: [
+            "OSHA 1926.602(a) covers loaders and similar earthmoving equipment. Specific rules for rubber-tired skid-steer equipment are reserved, so follow the manufacturer's manual and OSHA's general equipment rules.",
+            "Seat belts are required on covered equipment that has rollover protection; operators should wear them.",
+            "Bidirectional machines such as front-end loaders need a horn that can be heard over the site and is used as needed.",
+            "Equipment with an obstructed view to the rear can't back up unless it has a working reverse alarm or someone signals that it's safe.",
+            "Scissor points on front-end loaders that are a hazard to the operator during normal operation must be guarded.",
+          ],
+        },
+        { type: "p", text: "Weight drives delivery. A machine in the 6,000 to 10,000 lb class and one around 40,000 lb need very different trailers, and Texas sets size and weight limits and permits for oversize or overweight loads. Ask the provider what the delivery truck needs for access, turning and unloading room." },
+      ],
+      sources: [sources.osha602a, sources.osha600, sources.txdmvSize],
+    },
+    {
+      id: "before-you-rent",
+      heading: "Before You Rent",
+      blocks: [
+        {
+          type: "list",
+          items: [
+            "Material type, volume and where it goes: on site, into trucks or off site.",
+            "Site access: gate width, overhead clearance, turning room and surfaces to protect.",
+            "Ground conditions after rain, and whether tracks make more sense than tires.",
+            "Attachments needed, such as forks, grapple or broom, and their effect on rated capacity.",
+            "Bucket supplied with the machine, and dump height for the trucks you'll load.",
+            "Delivery: trailer type, unloading space and any City or ROW limits on staging.",
+          ],
+        },
+        { type: "p", text: "For digging rather than loading, compare [skid steers and mini excavators](/resources/skid-steer-vs-mini-excavator). For the finish work after the loader, see [choosing compaction equipment](/resources/choosing-compaction-equipment)." },
+      ],
+      sources: [sources.deere318p, sources.deere344p],
+    },
+  ],
+  faqs: [
+    { question: "Is a wheel loader or a skid steer better for loading trucks?", answer: "A wheel loader usually is, especially for repeated loading from a stockpile. Deere's 344 P compact wheel loader carries a 2.0 to 2.6 cu yd bucket, while skid steers are rated by carrying weight, such as 1,945 lb for Deere's 318 P. Match bucket size and dump height to the trucks on the job." },
+    { question: "Can I compare a skid steer's capacity with a wheel loader's bucket size?", answer: "Not directly. Skid steers are rated by rated operating capacity, a weight, while wheel loaders are usually listed by bucket volume. How much a bucket weighs full depends on the material, so start from the material and ask for the exact unit's specs." },
+    { question: "Will a skid steer damage a lawn or finished surface?", answer: "It can. A skid steer turns by dragging its tires sideways. On turf or finished surfaces, use ground protection or consider a tracked or articulated machine, and plan restoration." },
+    { question: "What OSHA rules apply to loaders on a construction site?", answer: "OSHA 1926.602(a) covers loaders and similar earthmoving equipment: seat belts on machines with rollover protection, service brakes, a horn on bidirectional machines, a reverse alarm or signaler when the rear view is obstructed and guarded scissor points on front-end loaders. Specific skid-steer rules are reserved." },
+  ],
+  relatedEquipment: [
+    { slug: "wheel-loader-rental", reason: "Stockpiles, truck loading and long carries on open sites." },
+    { slug: "skid-steer-rental", reason: "Tight lots, attachments, backfill and cleanup." },
+    { slug: "excavator-rental", reason: "Digging the material the loaders move and load." },
+    { slug: "compactor-rental", reason: "Compacting fill after the loader spreads it." },
+  ],
+  relatedGuides: ["site-preparation-equipment", "skid-steer-vs-mini-excavator", "choosing-compaction-equipment"],
+};
+
+export const concreteEquipmentGuide: Guide = {
+  slug: "choosing-concrete-equipment",
+  title: "Choosing Concrete Equipment: Mixers, Power Trowels and Saws",
+  shortTitle: "Choosing Concrete Equipment",
+  metaTitle: "Choosing Concrete Equipment Rentals: Mixers, Trowels, Saws",
+  metaDescription:
+    "Choose rental concrete mixers, power trowels and saws with manufacturer specs, OSHA concrete equipment rules and silica Table 1 controls for cutting.",
+  summary:
+    "Match mixer, trowel and saw to the pour or cut, and plan OSHA silica controls before anyone cuts concrete.",
+  intro: [
+    "Concrete rentals fall into three jobs: mixing small batches, placing and finishing the slab, and cutting hardened concrete or pavement. Each has its own equipment and its own safety rules.",
+    "This guide uses published manufacturer figures to show what common rental units do, then covers the OSHA rules that apply to concrete tools and to silica dust from cutting. It also points to city rules for street cuts and pavement repair in the right-of-way.",
+  ],
+  heroImage: {
+    src: "/images/resources/choosing-concrete-equipment.webp",
+    alt: "Towable drum mixer beside a walk-behind power trowel and a cut-off saw on a formed concrete slab",
+  },
+  datePublished: "2026-11-12",
+  dateModified: "2026-11-12",
+  keyTakeaways: [
+    "A towable drum mixer such as Multiquip's MC94P holds 9 cu ft, a one-bag batch, which suits small pours and repairs.",
+    "Walk-behind power trowels are sized by ring diameter; Whiteman's J36 has a 36-inch ring and four blades, and OSHA requires a dead-man control on manually guided trowels.",
+    "Husqvarna's K 770 cuts up to 5 inches deep with a 14-inch blade; deeper cuts call for a walk-behind saw.",
+    "OSHA Table 1 requires water-fed saws for concrete cutting, and respirators indoors or for handheld cutting over four hours a shift outdoors.",
+  ],
+  sections: [
+    {
+      id: "three-jobs",
+      heading: "Three Jobs, Three Kinds of Equipment",
+      blocks: [
+        {
+          type: "columns",
+          columns: [
+            { title: "Mixing", items: ["Drum mixers for footings, posts and repairs", "Electric and gas models", "Towable units for moving between sites", "Ready-mix trucks for larger pours"] },
+            { title: "Placing and finishing", items: ["Buggies and chutes to move concrete", "Bull floats for early finishing", "Walk-behind power trowels on slabs", "Vibrators to consolidate in forms"] },
+            { title: "Cutting", items: ["Handheld power cutters for shallow cuts", "Walk-behind saws for longer, deeper cuts", "Joint cutting in new slabs", "Pavement cuts for utility work"] },
+          ],
+        },
+        { type: "p", text: "Most rental [concrete equipment](/equipment/concrete-equipment-rental) orders mix all three. Plan the pour from the subgrade up: a slab that cracks over soft fill isn't an equipment problem, so pair this guide with [choosing compaction equipment](/resources/choosing-compaction-equipment)." },
+      ],
+      sources: [sources.multiquipMc94, sources.whitemanJ36, sources.husqvarnaK770],
+    },
+    {
+      id: "spec-examples",
+      heading: "What Common Rental Units Do",
+      blocks: [
+        {
+          type: "table",
+          caption: "Illustrative concrete equipment from manufacturer spec pages (checked 2026-11-12)",
+          columns: ["Example", "Type", "Key capacity", "Other published specs"],
+          rows: [
+            ["Multiquip MC94P series", "Towable drum mixer", "9 cu ft drum (one bag)", "Manual dump; 23 in discharge height; B78x13 tires; 106 × 51 × 72 in overall"],
+            ["Whiteman J36B65", "Walk-behind power trowel", "36 in ring, 4 blades", "60 to 115 RPM rotor speed; 184 lb operating weight"],
+            ["Husqvarna K 770 (14 in)", "Handheld power cutter", "5 in maximum cutting depth", "14 in maximum blade; 5 hp; 22.4 lb"],
+            ["Husqvarna K 770 (12 in)", "Handheld power cutter", "4 in maximum cutting depth", "12 in maximum blade; 5 hp; 22 lb"],
+          ],
+          note: "Figures are as published on the cited pages on the date checked. Multiquip's MC94P page lists conflicting operating-weight units, so weight is omitted. Confirm the exact unit with the provider.",
+        },
+        { type: "p", text: "Read the capacity before the brand. A 9 cu ft drum mixes about one bag at a time, so it fits post holes, steps and patch work, not a driveway. A 36-inch trowel finishes slabs that a crew can reach while the concrete is workable. A handheld cutter's 4 or 5 inches of depth covers many sidewalk and slab cuts, while thicker pavement needs a larger saw." },
+      ],
+      sources: [sources.multiquipMc94, sources.whitemanJ36, sources.husqvarnaK770],
+    },
+    {
+      id: "mixing-and-placing",
+      heading: "Mixing and Placing Safely",
+      blocks: [
+        { type: "p", text: "OSHA's concrete rules in Subpart Q apply to the tools around the pour. Mixers with loading skips of one cubic yard or more need a mechanical device to clear the skip and guardrails on each side of it. Concrete buggy handles can't extend beyond the wheels, and concrete buckets with hydraulic or pneumatic gates need positive safety latches to prevent accidental dumping." },
+        {
+          type: "list",
+          items: [
+            "Guard protruding rebar that workers could fall onto, to eliminate the impalement hazard.",
+            "Don't let anyone ride concrete buckets or work under them while they're raised or lowered.",
+            "Bull float handles used where they could touch energized conductors must be nonconductive or insulated.",
+            "Lock out and tag mixers and pumps before maintenance or repair.",
+          ],
+        },
+      ],
+      sources: [sources.osha702, sources.osha701],
+    },
+    {
+      id: "finishing",
+      heading: "Power Trowels and Finishing",
+      blocks: [
+        { type: "p", text: "Manually guided power trowels must have a control switch that shuts off power automatically when the operator's hands leave the handles. Test it before the slab is ready, not during finishing." },
+        { type: "p", text: "Whiteman lists the J36's rotor speed at 60 to 115 RPM and its operating weight at 184 lb. Ask the provider which blades or pans come with the trowel, since float and finish passes use different setups, and confirm fuel type for indoor work." },
+      ],
+      sources: [sources.osha702, sources.whitemanJ36],
+    },
+    {
+      id: "cutting-and-silica",
+      heading: "Cutting Concrete: Silica Rules",
+      blocks: [
+        { type: "p", text: "Cutting concrete makes respirable crystalline silica dust, and OSHA's construction silica standard applies. Following Table 1 for the tool is the simplest way to comply." },
+        {
+          type: "table",
+          caption: "OSHA Table 1 controls for common concrete saws (29 CFR 1926.1153)",
+          columns: ["Tool", "Engineering control", "Respirator, 4 hours or less per shift", "Respirator, more than 4 hours per shift"],
+          rows: [
+            ["Handheld power saw, outdoors", "Integrated water delivery feeding the blade continuously", "None", "APF 10"],
+            ["Handheld power saw, indoors or enclosed", "Integrated water delivery feeding the blade continuously", "APF 10", "APF 10"],
+            ["Walk-behind saw, outdoors", "Integrated water delivery feeding the blade continuously", "None", "None"],
+            ["Walk-behind saw, indoors or enclosed", "Integrated water delivery feeding the blade continuously", "APF 10", "APF 10"],
+          ],
+          note: "Tools must also be operated and maintained to the manufacturer's instructions to minimize dust. APF is the assigned protection factor of the required respirator.",
+        },
+        {
+          type: "list",
+          items: [
+            "Don't dry sweep or dry brush silica dust where wet sweeping or HEPA vacuuming is feasible.",
+            "Don't use compressed air to clean clothing or surfaces unless it's paired with a ventilation system that captures the dust, or no alternative is feasible.",
+            "Employers need a written exposure control plan for tasks that create silica exposure.",
+            "Stationary masonry saws need a semicircular blade guard that retains blade fragments.",
+          ],
+        },
+      ],
+      sources: [sources.osha1153, sources.osha702],
+    },
+    {
+      id: "street-cuts",
+      heading: "Street Cuts and Pavement Repairs",
+      blocks: [
+        { type: "p", text: "In the right-of-way, the city decides how pavement is cut and restored. [Farmers Branch](/locations/texas/farmers-branch) requires full-depth saw cuts, removal at least 3 feet wider than the trench, temporary repairs within two business days and permanent concrete within 14 working days that reaches 3,600 psi within 72 hours, plated until it does. [Duncanville](/locations/texas/duncanville) requires steel plates at least 1 inch thick that extend 1 foot past the trench. In [Hurst](/locations/texas/hurst), cutting streets, curbs, sidewalks or drive approaches needs a bond as well as a ROW permit." },
+        { type: "p", text: "A saw cut is still digging once the pavement comes out. Call 811 before excavating, and see [utility locates before digging](/resources/utility-locates-before-digging) for City locate requirements." },
+      ],
+      sources: [citySources.farmersBranchRow, citySources.duncanvilleRowInspections, citySources.hurstRow, shared.texas811],
+    },
+    {
+      id: "before-you-rent",
+      heading: "Before You Rent",
+      blocks: [
+        {
+          type: "list",
+          items: [
+            "Pour size and whether a drum mixer or ready-mix delivery fits it.",
+            "Slab area and finish, and the trowel ring size and blades needed.",
+            "Cut depth and length, indoors or outdoors, and the matching Table 1 controls.",
+            "Water supply for wet cutting and a plan for slurry cleanup.",
+            "Power: electric tools need a suitable source; see [jobsite generator sizing](/resources/jobsite-generator-sizing).",
+            "City ROW rules for street cuts, plates and restoration timing.",
+          ],
+        },
+      ],
+      sources: [sources.osha1153, sources.multiquipMc94],
+    },
+  ],
+  faqs: [
+    { question: "What size concrete mixer should I rent?", answer: "Match it to the batch. Multiquip's MC94P drum holds 9 cu ft, a one-bag batch, which suits footings, posts and repairs. Larger pours are usually better served by ready-mix delivery." },
+    { question: "How deep can a handheld concrete saw cut?", answer: "Husqvarna lists 5 inches maximum for its K 770 with a 14-inch blade and 4 inches with a 12-inch blade. Deeper cuts need a walk-behind saw." },
+    { question: "Do I need a respirator to cut concrete outdoors?", answer: "Under OSHA Table 1, a handheld saw with continuous water feed needs no respirator outdoors for four hours or less per shift and an APF 10 respirator beyond that. Indoors or in enclosed areas, APF 10 is required regardless of time." },
+    { question: "What safety feature must a rental power trowel have?", answer: "OSHA requires manually guided power trowels to have a control switch that automatically shuts off power when the operator's hands leave the handles." },
+  ],
+  relatedEquipment: [
+    { slug: "concrete-equipment-rental", reason: "Mixers, trowels and saws for pours, finishing and cutting." },
+    { slug: "compactor-rental", reason: "Compacting subgrade and base before the pour." },
+    { slug: "generator-rental", reason: "Power for electric mixers, saws and lights." },
+    { slug: "skid-steer-rental", reason: "Moving materials and clearing debris around the pour." },
+  ],
+  relatedGuides: ["choosing-compaction-equipment", "jobsite-generator-sizing", "equipment-rental-checklist"],
+};

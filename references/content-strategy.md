@@ -1,6 +1,6 @@
 # CRF Content Strategy
 
-Last updated: 2026-10-29 (Batch 6 + Resource Run 5, heroes shipped with pages)
+Last updated: 2026-11-12 (Batch 8 + Resource Run 7; heroes shipped)
 
 ## Goal
 
@@ -17,6 +17,8 @@ city actually needs to know, instead of scaling thin template pages. Quality ove
 | 4 | Denton, Lewisville, Allen, Flower Mound, Mansfield | Shipped 2026-10-15 (navy headers; heroes deferred) |
 | 5 | North Richland Hills, Rowlett, Euless, Wylie, DeSoto | Shipped 2026-10-22; heroes added `bc045b1` |
 | 6 | Grapevine, Bedford, Cedar Hill, Burleson, Rockwall | Shipped 2026-10-29 with heroes |
+| 7 | Little Elm, Haltom City, Keller, The Colony, Coppell | Shipped `d6e78b5` with heroes |
+| 8 | Lancaster, Waxahachie, Duncanville, Hurst, Farmers Branch | Shipped 2026-11-12 with heroes |
 
 ## Phase 1 resources: the Resource Run
 
@@ -32,6 +34,10 @@ city actually needs to know, instead of scaling thin template pages. Quality ove
 | `/resources/utility-locates-before-digging` | Shipped 2026-10-22 (hero added `bc045b1`) |
 | `/resources/jobsite-generator-sizing` | Shipped 2026-10-29 (Resource Run 5) |
 | `/resources/trench-safety-basics` | Shipped 2026-10-29 (Resource Run 5) |
+| `/resources/how-to-choose-a-scissor-lift` | Shipped `d6e78b5` (Resource Run 6) |
+| `/resources/choosing-compaction-equipment` | Shipped `d6e78b5` (Resource Run 6) |
+| `/resources/wheel-loader-vs-skid-steer` | Shipped 2026-11-12 (Resource Run 7) with hero |
+| `/resources/choosing-concrete-equipment` | Shipped 2026-11-12 (Resource Run 7) with hero |
 
 How a guide works (no CMS):
 
@@ -90,6 +96,13 @@ template unchanged.
   - Rockwall: Ordinance 05-45 hours incl. fueling and deliveries; fill material permits (sheepsfoot, 8–12 in lifts); Lake Ray Hubbard takeline.
 - Batch 7 (2026-11-06): Little Elm (lake-area growth, Town ROW + 48 h water/sewer locate, 1-acre drainage plans); Haltom City (ROW utility permit, City not on one-call, 48 h PW dispatcher); Keller (6 a.m.–7 p.m. weekdays / 8–6 weekends, loading 6 a.m.–10 p.m., ROW + grading permits); The Colony (grading/SWPPP before dirt moves, floodplain, SH 121/FM 423 TxDOT driveways, overnight equipment noise); Coppell (ROW Mon–Fri 7–7 only, lane closures 9:30–3:30, residential construction noise, DFW airspace).
 - Resource Run 6: how-to-choose-a-scissor-lift; choosing-compaction-equipment.
+- Batch 8 (2026-11-12; next uncovered DFW cities below Coppell 42,983 by 2020 Census: Lancaster 41,275, Waxahachie 41,140, Duncanville 40,706, Hurst 40,413, Farmers Branch 35,991; the Texas places ranked between Hurst and Farmers Branch are outside DFW):
+  - Lancaster: Code sec. 24.09.049 ROW hours (excavation/boring 7–7; inspected work 7 a.m. to 30 min before sundown M–F; Saturday by Thursday-noon notice), PE-sealed trench design over 5 ft, grading permit + floodplain fill 95% SP, construction-equipment noise exemption 7–7.
+  - Waxahachie: Ellis County seat, historic core vs growth; 1-acre grading rules (plans, SWPPP, sign, inspected BMPs, letter of authorization), floodplain permits, after-hours inspection cost.
+  - Duncanville: built-out suburb; 14-day ROW permits, City locates within 5 days, MGO safety inspections, no missile boring, 36 in bore depth, 72 h open-excavation limit, same-day spoil removal, 1 in plates, 10-business-day restoration; 10 p.m.–7 a.m. noise.
+  - Hurst: built-out Mid-Cities; ROW permits for ground and aerial work (ROWay), construction permit covers private land disturbance, bonds for street/curb cuts, permit-number locates, floodplain permit includes equipment storage.
+  - Farmers Branch: ROW 7–4 M–F, lanes 9–3:30, 3-business-day City locates, steerable bores, 95/90% backfill, street-cut restoration (3,600 psi in 72 h, plated), Ord. 3839 construction hours near homes.
+- Resource Run 7: wheel-loader-vs-skid-steer (Deere 318 P/334 P/244 P/344 P/644 P pages; OSHA 1926.602(a); TxDMV); choosing-concrete-equipment (Multiquip MC94P, Whiteman J36B65, Husqvarna K 770; OSHA 1926.701/.702 and 1926.1153 Table 1). Concrete equipment had no guide before this run; wheel loaders had one.
 
 - Batch 3 (chosen by 2020 Census size among uncovered DFW cities; Denton skipped because its site couldn't be verified):
   - Garland: a largely built-out first-ring suburb converting older industrial buildings and repositioning aging retail; forklifts, scissor lifts, compact equipment.
@@ -150,3 +163,8 @@ template unchanged.
 
 - Guide word counts still run slightly over target (report only).
 - Boom lift guide hero decal is still open (minor).
+
+## Batch 8 notes — 2026-11-12
+
+- Heroes shipped with the pages (GenerateImage, 1080x720 WebP, see hero-image-style.md).
+- Provider data (`provider-data.generated.ts`) was not regenerated; new pages get the DFW Metro regional fallback via `cityPageRegions`. Re-run `node scripts/import-providers.mjs` only when Adam updates the directory.
