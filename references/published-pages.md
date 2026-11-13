@@ -484,3 +484,29 @@ Guide links: Wheel loader vs skid steer — equipment cards wheel-loader, skid-s
 
 ### Word counts (rendered <main>, box build)
 Lancaster 1,499; Waxahachie 1,371; Duncanville 1,380; Hurst 1,306; Farmers Branch 1,406. Wheel loader vs skid steer 1,817; concrete equipment 1,637. Not padded.
+
+## Launch-city rebuilds — 2026-11-13 (Friday QA, uniqueness rule)
+
+Mesa, Tempe and Fort Collins moved from the shared simple template to the rich layout (`localIntro` etc. in `city-content.ts`; inline entries in `locations.ts` replaced). Heroes deferred (no compliant image generator available to the Friday run); pages render the navy header like the other launch cities.
+
+Similarity gate (`/workspace/uniqueness-audit/scripts`, TF-IDF cosine / 5-gram Jaccard / % sentence words repeated on 3+ city pages, after city/state normalization):
+| Page | Before (cosine, closest, Jaccard, repeated) | After |
+|---|---|---|
+| Mesa | 0.980 vs Tempe, 0.938, 78.4% | 0.392 vs Mesquite, 0.032, 2.6% |
+| Tempe | 0.980 vs Mesa, 0.938, 78.1% | 0.387 vs Mesa (new), 0.037, 2.7% |
+| Fort Collins | 0.980 vs Greeley, 0.938, 78.7% | 0.350 vs Hurst, 0.033, 3.3% |
+
+Sources
+- Mesa: Engineering & Design Standards (Oct. 2023: 117.4, 119.3–119.5 ROW permits/ROC license/other-agency permits; 504.3–504.5 City gas, check-and-wrap note; 704.4/804.2 pavement cuts ≤2 yr prohibited, <5 yr restoration fee; 814.3 ADEQ NOI ≥1 acre); Temporary Traffic Control Permits page; TTC Manual PDF served at the official URL (First Edition; the page says a Second Edition took effect July 2026 — the Second Edition draft in a council packet has the same peak hours 6:30–8:30/4–6, permit exception and Nov 15–Jan 1 holiday moratorium; it splits closure notice by street class, so only the 10-day full-arterial notice is stated); Ord. 5750 secs. 6-12-3, 6-12-6(F); Select Mesa Gateway Area and ERTC pages; A.R.S. 40-360.22, 9-500.52; Maricopa County Rule 310 permit page; 14 CFR 77.9.
+- Tempe: Right-of-Way Permits page (permit types); Utility Plan Review & Inspection page (pavement restoration policy, pavement cut restriction map); Code App. A sec. 29-19 (permit 1-year life, as-builts, <7 yr / <3 yr pavement surcharge; this copy predates the 7/1/2026 fee update — no fees stated); Off Hours Construction Application page; Transportation Permits page (annual barricading permit, haul permit sec. 19-50, OS/OW thresholds, 5 working days); Valley Metro track access page; A.R.S. 40-360.22; Maricopa County.
+- Fort Collins: Engineering Permits page (excavation permit + ROW Contractor's License, encroachment, stockpiling, oversized vehicle, DCP, inspections, 811); Code Compliance page (construction noise 7 a.m.–8 p.m. unless variance; dust rules incl. >5 acre plan and 30 mph wind; required C&D recycling; 14,000 lb idling); Colorado 811 professional excavators page.
+
+### Source conflicts and omissions (launch-city rebuilds)
+- Tempe weekday construction start times conflict: Municode copy of Code sec. 20-8 (search index; municode returned 500) says Apr 15–Oct 15 no earlier than 6 a.m. within 500 ft of residential (5 a.m. concrete) and Oct 16–Apr 14 7 a.m. (6 a.m. concrete); the City's Off Hours Construction Application page says May 1–Oct 15 weekdays 5 a.m. (4 a.m. concrete) and Oct 16–Apr 30 7 a.m. (6 a.m. concrete). Page states only the shared facts (7 p.m. stop; weekends/holidays 7 a.m., 6 a.m. concrete; written authorization). Flag for Adam.
+- Mesa weekend construction vs state law: Mesa's noise exemption covers weekend construction only at a person's own residence, while A.R.S. 9-500.52 bars cities from prohibiting permitted general construction 7 a.m.–7 p.m. Saturdays (and 5 a.m.–7 p.m. business days) May 1–Oct 15. Page states both without resolving.
+- Tempe oversize travel windows (6–8:30, 11–1, 4–7 weekdays) are worded ambiguously on the City page; omitted.
+- Tempe "landlocked"/infill framing: only found in ballot-pamphlet arguments and third-party copies of the General Plan 2050; omitted.
+- Fees omitted under the no-prices rule (Fort Collins permit fees, Tempe haul/OS-OW/pavement surcharges, Mesa pavement restoration fee).
+
+### Site-prep guide (2026-11-13)
+- John Deere 644 P row updated to deere.ca (39,537–40,135 lb; 4.00–4.25 cu yd); width and hinge pin height no longer listed on Deere's page, shown as "Not listed". Bucket comparison sentence and FAQ updated. dateModified 2026-11-13.

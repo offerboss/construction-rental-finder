@@ -35,6 +35,9 @@ import {
   duncanville,
   hurst,
   farmersBranch,
+  mesa,
+  tempe,
+  fortCollins,
 } from "./city-content";
 import type { Faq } from "./seo";
 
@@ -135,7 +138,7 @@ export const states: State[] = [
     cities: cities("colorado", [
       { name: "Denver", slug: "denver", region: "the Denver metro area", shortDescription: "Denver is Colorado's capital and largest city, at the center of the Front Range." },
       { name: "Colorado Springs", slug: "colorado-springs", region: "the Pikes Peak region", shortDescription: "Colorado Springs sits at the base of Pikes Peak along the southern Front Range." },
-      { name: "Fort Collins", slug: "fort-collins", region: "Northern Colorado", shortDescription: "Fort Collins is a Northern Colorado city and home to Colorado State University." },
+      fortCollins,
       { name: "Greeley", slug: "greeley", region: "Northern Colorado", shortDescription: "Greeley is the Weld County seat, east of the Front Range in Northern Colorado." },
       { name: "Grand Junction", slug: "grand-junction", region: "the Western Slope", shortDescription: "Grand Junction is the largest city on Colorado's Western Slope." },
     ]),
@@ -167,9 +170,9 @@ export const states: State[] = [
     cities: cities("arizona", [
       { name: "Phoenix", slug: "phoenix", region: "the Phoenix metro area", shortDescription: "Phoenix is Arizona's capital and largest city, at the center of the Valley of the Sun." },
       { name: "Tucson", slug: "tucson", region: "Southern Arizona", shortDescription: "Tucson is Southern Arizona's largest city and home to the University of Arizona." },
-      { name: "Mesa", slug: "mesa", region: "the East Valley", shortDescription: "Mesa is a major East Valley city in the Phoenix metro area." },
+      mesa,
       { name: "Scottsdale", slug: "scottsdale", region: "the Phoenix metro area", shortDescription: "Scottsdale stretches from Old Town into the desert on the Phoenix metro's northeast side." },
-      { name: "Tempe", slug: "tempe", region: "the East Valley", shortDescription: "Tempe is an East Valley city and home to Arizona State University's main campus." },
+      tempe,
     ]),
     faqs: [
       { question: "What construction equipment is commonly rented in Arizona?", answer: "Excavators, skid steers and compaction equipment are common for site prep, while telehandlers, scissor lifts, boom lifts and forklifts support vertical construction and material handling." },

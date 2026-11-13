@@ -1,6 +1,6 @@
 # CRF Content Strategy
 
-Last updated: 2026-11-12 (Batch 8 + Resource Run 7; heroes shipped)
+Last updated: 2026-11-13 (launch-city rebuilds: Mesa, Tempe, Fort Collins)
 
 ## Goal
 
@@ -19,6 +19,19 @@ city actually needs to know, instead of scaling thin template pages. Quality ove
 | 6 | Grapevine, Bedford, Cedar Hill, Burleson, Rockwall | Shipped 2026-10-29 with heroes |
 | 7 | Little Elm, Haltom City, Keller, The Colony, Coppell | Shipped `d6e78b5` with heroes |
 | 8 | Lancaster, Waxahachie, Duncanville, Hurst, Farmers Branch | Shipped 2026-11-12 with heroes |
+
+## Launch-city rebuilds (uniqueness rule, 2026-11-12)
+
+The 15 launch cities (2026-09-27) used the shared simple template and scored as near-duplicates (cosine 0.93–0.98 after name swap). They are being rebuilt onto the rich layout, 3–5 per Friday, highest similarity first, with official sources only.
+
+| City | Status |
+|---|---|
+| Mesa | Rebuilt 2026-11-13 (pavement-cut age rules, City gas check-and-wrap, TTC peak hours + Nov 15–Jan 1 moratorium, noise 6-12-6(F), Gateway Area) |
+| Tempe | Rebuilt 2026-11-13 (ROW permit types, permit life/as-builts, sec. 20-8 hours + off-hours authorization, barricading/haul/OS-OW permits, pavement surcharge, Valley Metro track access) |
+| Fort Collins | Rebuilt 2026-11-13 (excavation permit + ROW contractor license, encroachment/stockpiling permits, DCP, noise 7–8, dust rules, required C&D recycling) |
+| Greeley, Austin, San Antonio, Houston, Fort Worth, Dallas, Phoenix, Tucson, Scottsdale, Denver, Colorado Springs, Grand Junction | Pending (simple template) |
+
+Run the similarity gate before each rebuild ships; record before/after in `published-pages.md`.
 
 ## Phase 1 resources: the Resource Run
 

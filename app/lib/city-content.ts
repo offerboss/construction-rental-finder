@@ -172,6 +172,26 @@ export const sources = {
   farmersBranchRow: { label: "City of Farmers Branch Right-of-Way Permit General Permit Provisions (PDF)", url: "https://content.civicplus.com/api/assets/tx-farmersbranch/9faa2e43-2749-40f1-8db2-be0e74a6c48f/rights-of-way-general-permit-provisions-pdf-.pdf?scope=all&sq=27d3b73b-8d77-75c5-99c5-f85d3ce55e26" },
   farmersBranchNoise: { label: "City of Farmers Branch Ordinance No. 3839 (Dec. 12, 2023), sec. 34-248 construction (PDF)", url: "https://mcclibraryfunctions.azurewebsites.us/api/ordinanceDownload/12996/1253268/pdf" },
   farmersBranchEngineering: { label: "City of Farmers Branch Engineering", url: "https://www.farmersbranchtx.gov/engineering" },
+  mesaEds: { label: "City of Mesa Engineering & Design Standards (Oct. 2023, PDF)", url: "https://www.mesaaz.gov/files/assets/public/v/2/business-development/engineering/designstandards/2023engdesignstandards.pdf" },
+  mesaRowGroup: { label: "City of Mesa: Right of Way Management Group", url: "https://www.mesaaz.gov/Business-Development/Right-of-Way-Management-Group" },
+  mesaTtcPermits: { label: "City of Mesa: Temporary Traffic Control Permits", url: "https://www.mesaaz.gov/Business-Development/Temporary-Traffic-Control-Permits" },
+  mesaTtcManual: { label: "City of Mesa Temporary Traffic Control Manual (PDF)", url: "https://www.mesaaz.gov/files/assets/public/v/2/business-development/ttc/temporary-traffic-control-manual.pdf" },
+  mesaNoise: { label: "Mesa City Code Title 6, Ch. 12 (Ord. 5750), secs. 6-12-3 and 6-12-6 noise (PDF)", url: "https://mcclibraryfunctions.azurewebsites.us/api/ordinanceDownload/15749/1188566/pdf" },
+  mesaGateway: { label: "Select Mesa (City of Mesa Office of Economic Development): Gateway Area", url: "https://selectmesa.com/business-districts-maps/gateway-area/" },
+  mesaErtc: { label: "Select Mesa: Elliot Road Technology Corridor / Overlay Opt-In", url: "https://selectmesa.com/business-environment/incentives-programs/mesa-incentives-programs/elliot-road-technology-corridor/" },
+  tempeRowPermits: { label: "City of Tempe: Right-of-Way Permits", url: "https://www.tempe.gov/government/public-works/engineering/right-of-way-permits" },
+  tempeUtilityPermits: { label: "City of Tempe: Utility Plan Review & Inspection", url: "https://www.tempe.gov/government/public-works/engineering/utility-plan-review-inspection" },
+  tempeEngFees: { label: "Tempe City Code Appendix A, sec. 29-19 engineering fees and permit terms (PDF)", url: "https://mcclibraryfunctions.azurewebsites.us/api/ordinanceDownload/15458/1294770/pdf" },
+  tempeOffHours: { label: "City of Tempe: Off Hours Construction Application", url: "https://www.tempe.gov/government/city-manager-s-office/neighborhood-services/off-hours-construction-application" },
+  tempeNoiseCode: { label: "Tempe City Code Ch. 20, sec. 20-8 construction of buildings and projects", url: "https://library.municode.com/az/tempe/codes/city_code?nodeId=CH20NO" },
+  tempeStreetPermits: { label: "City of Tempe Transportation: Permits (barricading, haul, oversize/overweight)", url: "https://www.tempe.gov/government/transportation-and-sustainability/transportation/permits" },
+  valleyMetroAccess: { label: "Valley Metro Track Access: Access permit requests", url: "https://rwp.valleymetro.org/Home/Access" },
+  arsExcavation: { label: "A.R.S. 40-360.22, excavations and underground facility marking", url: "https://www.azleg.gov/ars/40/00360-22.htm" },
+  arsSummerHours: { label: "A.R.S. 9-500.52, summertime construction hours", url: "https://www.azleg.gov/ars/9/00500-52.htm" },
+  maricopaDustPermit: { label: "Maricopa County Air Quality: Do I Need an Air Permit? (Rule 310 Dust Control Permit)", url: "https://www.maricopa.gov/2274/Do-I-Need-an-Air-Permit" },
+  fortCollinsEngPermits: { label: "City of Fort Collins: Engineering Permits", url: "https://www.fortcollins.gov/Business/Permits-and-Licensing/Other-Licenses-and-Permits/Engineering-Permits" },
+  fortCollinsCodeCompliance: { label: "City of Fort Collins: Code Compliance (construction noise, dust, required recycling, idling)", url: "https://www.fortcollins.gov/Services/Housing/In-Your-Neighborhood/Code-Compliance" },
+  colorado811Excavators: { label: "Colorado 811: Professional Excavators", url: "https://www.colorado811.org/professional-excavators" },
 } satisfies Record<string, SourceLink>;
 
 // Guide links render only once the guide is published in resources.ts.
@@ -2757,4 +2777,235 @@ export const farmersBranch: CityEntry = {
     alt: "Scissor lift and forklift carrying a lumber pallet at an open warehouse bay in Farmers Branch, Texas",
   },
   guides: [concreteGuideLink, utilityLocatesGuideLink, scissorLiftGuideLink],
+};
+
+// Launch-city rebuilds (2026-11-13): Mesa and Tempe moved from the shared template to rich pages.
+export const mesa: CityEntry = {
+  name: "Mesa",
+  slug: "mesa",
+  region: "the East Valley",
+  shortDescription: "Mesa is a major East Valley city in the Phoenix metro area.",
+  metaDescription:
+    "Construction equipment rentals in Mesa, AZ: excavators, loaders and lifts for Gateway Area sites and older streets, plus Mesa pavement-cut, traffic and noise rules.",
+  localIntro: [
+    "Mesa stretches across much of the East Valley, from established neighborhoods around downtown to the Gateway Area in the southeast. The City's economic development office describes that district as a 35-square-mile aerotropolis anchored by Mesa Gateway Airport, built around aerospace, logistics and advanced manufacturing.",
+    "Equipment work splits along the same line: big-parcel grading, utilities and building shells near the airport, and street, utility and redevelopment work on the older grid closer to Main Street. The sections below cover the Mesa rules that most often decide which machine fits and when it can work.",
+  ],
+  useCaseContext: [
+    "In the Gateway Area and the Elliot Road Technology Corridor, the City points to large development sites, redundant Salt River Project power on 69 kV, 230 kV and 500 kV transmission lines, and an overlay that allows buildings up to 150 feet. Those projects lean on excavators, wheel loaders and rollers for pads and underground work, then telehandlers and boom lifts once steel goes up.",
+    "Older parts of the city put more of the work inside public streets. Mesa owns its natural gas system, restricts cuts in newer pavement and reviews almost every lane restriction through its Temporary Traffic Control program, so compact excavators, saws and plate compactors sized for a short off-peak window are common picks there.",
+    "Across Maricopa County, any dust-generating activity that disturbs 0.1 acre (4,356 square feet) or more needs a county Dust Control Permit, which shapes how grading and site preparation are staged on both kinds of jobs.",
+  ],
+  featuredEquipment: [
+    { slug: "excavator-rental", reason: "Mass excavation and deep utility runs on large Gateway Area parcels." },
+    { slug: "wheel-loader-rental", reason: "Moving stockpiles and loading trucks on big industrial pad sites in southeast Mesa." },
+    { slug: "compactor-rental", reason: "Trench backfill and pavement replacement under Mesa's trench backfilling policy and standard details." },
+    { slug: "mini-excavator-rental", reason: "Potholing and service connections in existing streets, where every pavement cut needs a City permit." },
+    { slug: "telehandler-rental", reason: "Placing materials around new industrial, logistics and campus buildings near the airport." },
+    { slug: "boom-lift-rental", reason: "Steel, cladding and MEP work on tall industrial shells; check FAA notice rules near both airports." },
+  ],
+  siteConsiderations: [
+    {
+      title: "Right-of-way permits",
+      text: "Mesa's Engineering and Design Standards require a right-of-way permit for public infrastructure and for non-City improvements within or across public rights-of-way and utility easements. Permits are issued only to contractors licensed by the Arizona Registrar of Contractors with insurance shown on the City's current certificate form, and copies of any other agency's permits must be on file before Mesa issues its own.",
+      sources: [sources.mesaEds],
+    },
+    {
+      title: "Pavement cuts in newer streets",
+      text: "Every pavement cut, including potholes, needs an approved permit and restoration to City standards. Mesa City Code adds a restoration fee for cutting pavement newer than five years and prohibits cuts in pavement two years old or less except under limited conditions, so check pavement age before planning an open cut.",
+      sources: [sources.mesaEds],
+    },
+    {
+      title: "City-owned gas lines",
+      text: "Mesa's Energy Resources Department owns and installs the City's natural gas mains and services. Mesa plan sets with underground excavation carry a standard note: when a gas main or service is exposed, call the City to inspect the pipe and coating before the trench is backfilled.",
+      sources: [sources.mesaEds],
+    },
+    {
+      title: "Lane restrictions and peak hours",
+      text: "Most traffic restrictions need a Temporary Traffic Control (TTC) permit. Restrictions on arterial and collector streets aren't allowed from 6:30 to 8:30 a.m. or 4 to 6 p.m. on weekdays unless TTC staff approve, and a full arterial closure needs at least 10 full calendar days of advance public notice, usually on portable message signs.",
+      sources: [sources.mesaTtcPermits, sources.mesaTtcManual],
+    },
+    {
+      title: "Holiday moratorium",
+      text: "From November 15 through January 1, restrictions that would interfere with traffic near major shopping areas and transportation hubs on arterial and collector streets are normally denied. The manual's examples include downtown, the Fiesta District, Superstition Springs, Mesa Riverview, Mesa Gateway Airport and Falcon Field.",
+      sources: [sources.mesaTtcManual, sources.mesaTtcPermits],
+    },
+    {
+      title: "Construction noise hours",
+      text: "Mesa's noise code exempts construction, demolition, drilling and excavation from 6 a.m. to 8 p.m. Monday through Friday; the weekend exemption covers only work at a person's own residence. Separately, state law bars Arizona cities from prohibiting permitted general construction from 5 a.m. to 7 p.m. on business days and 7 a.m. to 7 p.m. on Saturdays between May 1 and October 15. Confirm weekend and early-start plans with the City.",
+      sources: [sources.mesaNoise, sources.arsSummerHours],
+    },
+    {
+      title: "Locates, dust and stormwater",
+      text: "Arizona law requires excavators to outline the planned dig area in white before requesting a locate, and facility operators have two working days to mark. Maricopa County requires a Dust Control Permit before disturbing 0.1 acre or more, and Mesa projects disturbing one contiguous acre or more must give the City an ADEQ stormwater authorization, waiver or no-discharge certification before construction or right-of-way permits are issued.",
+      sources: [sources.arsExcavation, sources.mesaRowGroup, sources.maricopaDustPermit, sources.mesaEds],
+    },
+    {
+      title: "Two airports",
+      text: "Mesa Gateway and Falcon Field both sit inside the city. Federal rules require FAA notice for construction or alteration more than 200 feet above ground, or above an imaginary slope that reaches up to 20,000 feet from an airport's runways, so check before raising a crane or tall boom near either field.",
+      sources: [sources.mesaTtcManual, sources.faaPart77, sources.faaForm7460],
+    },
+  ],
+  faqs: [
+    { question: "Can I cut a newly paved street in Mesa?", answer: "Usually not if the pavement is two years old or less; Mesa City Code prohibits those cuts except under limited conditions. Cuts in pavement newer than five years carry a restoration fee, and every pavement cut, including a pothole, needs a permit." },
+    { question: "When can I restrict a lane on a Mesa arterial?", answer: "Outside weekday peak hours of 6:30 to 8:30 a.m. and 4 to 6 p.m., under a Temporary Traffic Control permit. A short single-lane restriction can skip the permit only if it lasts under an hour, stays at least 300 feet from a signalized intersection, avoids peak hours and doesn't happen after dark." },
+    { question: "What are construction noise hours in Mesa?", answer: "The noise code exempts construction and excavation from 6 a.m. to 8 p.m. on weekdays. On weekends the exemption applies only to work at a person's own residence; state law separately protects permitted early-morning and Saturday work from May 1 to October 15." },
+    { question: "Does Mesa limit road work during the holidays?", answer: "Yes. From November 15 through January 1, restrictions that would slow traffic near major shopping areas and transportation hubs on arterial and collector streets are normally denied, including around downtown, Superstition Springs, Mesa Riverview and both Mesa airports." },
+  ],
+  guides: [sitePrepGuide, wheelLoaderGuideLink, trenchSafetyGuideLink, boomLiftGuide],
+};
+
+export const tempe: CityEntry = {
+  name: "Tempe",
+  slug: "tempe",
+  region: "the East Valley",
+  shortDescription: "Tempe is an East Valley city and home to Arizona State University's main campus.",
+  metaDescription:
+    "Construction equipment rentals in Tempe, AZ: compact excavators, lifts and telehandlers for infill and campus-area work, plus Tempe work-hour, haul and permit rules.",
+  localIntro: [
+    "Tempe sits between Phoenix and Mesa and is home to Arizona State University's main campus. Much of its equipment work happens on occupied blocks beside homes, campus buildings and busy streets, where City rules on work hours, hauling and right-of-way permits set the schedule.",
+    "Plan the permits and the delivery along with the machine. The sections below summarize what Tempe's codes and permit pages say about each.",
+  ],
+  useCaseContext: [
+    "Tempe's construction-hour code is organized around distance from homes. Its tightest limits apply in or within 500 feet of a residential zone, start times shift with the season, and concrete pours may begin earlier than other work. Anything outside the allowed hours needs a written letter of authorization, requested at least four working days ahead, with notices delivered to every resident and business within 500 feet at least 48 hours before the work.",
+    "Getting machines and spoil in and out is regulated too. Hauling construction waste fill or excavation material on City right-of-way takes a special haul permit, and loads over 80,000 pounds, 65 feet long, 8 feet 6 inches wide or 13 feet 6 inches high need an oversize/overweight permit; both requests are due at least five working days ahead. That matters when a large excavator or loader arrives on a lowboy.",
+    "For tight infill and campus-area jobs, mini excavators, skid steers, scissor lifts and telehandlers are common picks. On larger redevelopment sites, Maricopa County's Dust Control Permit applies once 0.1 acre or more is disturbed.",
+  ],
+  featuredEquipment: [
+    { slug: "mini-excavator-rental", reason: "Trenching, potholing and utility work under Tempe's separate right-of-way permit types." },
+    { slug: "skid-steer-rental", reason: "Cleanup and spoil loading that has to follow a haul permit's route and conditions." },
+    { slug: "scissor-lift-rental", reason: "Interior fit-outs and renovations in downtown and campus-area buildings." },
+    { slug: "telehandler-rental", reason: "Placing materials on multistory infill sites with little room to stage." },
+    { slug: "concrete-equipment-rental", reason: "Early-start pours allowed by Tempe's hour rules, plus saw cutting for pavement restoration." },
+    { slug: "compactor-rental", reason: "Trench backfill to the Tempe Supplement to the MAG specifications." },
+  ],
+  siteConsiderations: [
+    {
+      title: "Right-of-way permit types",
+      text: "Tempe takes separate online applications for utility permits, right-of-way trenching permits, pothole permits, encroachment permits and special use permits. Construction in the right-of-way follows the latest MAG Uniform Standard Specifications and Details, the City of Tempe Supplement and the Tempe Traffic Barricade Manual.",
+      sources: [sources.tempeRowPermits, sources.tempeEngFees],
+    },
+    {
+      title: "Permit life and as-builts",
+      text: "Tempe engineering permits are valid for one year from issuance. As-builts and an approved final inspection are due within that year or the permits expire, and extensions are available for a fee.",
+      sources: [sources.tempeEngFees],
+    },
+    {
+      title: "Work hours",
+      text: "Tempe City Code sec. 20-8 limits outside construction and the operation of construction equipment to set hours unless the City authorizes other times in writing. Work must stop by 7 p.m. On Saturdays, Sundays and holidays it can't start before 7 a.m. (6 a.m. for concrete). Weekday start times depend on the season and on distance from residential zones, so confirm the current window with the City before scheduling an early start.",
+      sources: [sources.tempeOffHours, sources.tempeNoiseCode],
+    },
+    {
+      title: "Off-hours authorization",
+      text: "Requests to work outside the allowed hours go to Neighborhood Services at least four working days ahead. The application asks for a map of everything within 500 feet of the work zone, a description of the work (jackhammering, saw cutting, backup alarms and so on), mitigation measures and a copy of the notice that goes to every resident and business in that zone 48 hours ahead.",
+      sources: [sources.tempeOffHours, sources.tempeStreetPermits],
+    },
+    {
+      title: "Barricades and traffic control",
+      text: "Barricade companies need an annual Tempe barricading permit, which requires ATSSA certification for designers, field supervisors, foremen and operations managers, before they can submit traffic control plan permit applications. Build that company's lead time into any job that needs a lane or sidewalk.",
+      sources: [sources.tempeStreetPermits],
+    },
+    {
+      title: "Haul permit conditions",
+      text: "A haul permit can designate routes, haul hours or days, access points to the right-of-way and traffic control such as barricades or flaggers. The permittee is responsible for removing spilled fill or excavation material from streets and sidewalks.",
+      sources: [sources.tempeStreetPermits],
+    },
+    {
+      title: "Newer pavement",
+      text: "Tempe's pavement management program aims to avoid cutting new or newly overlaid streets. When a cut can't be avoided, the City's fee schedule adds a surcharge for new or resurfaced pavement less than seven years old, with a higher rate under three years, and Engineering publishes a pavement cut restriction map and pavement restoration policy.",
+      sources: [sources.tempeEngFees, sources.tempeUtilityPermits],
+    },
+    {
+      title: "Rail right-of-way",
+      text: "Work inside Valley Metro rail right-of-way needs an access permit request submitted by 3 p.m. Tuesday the week before, Track Access Training and attendance at the weekly Thursday Track Allocation meeting, with a new request each week. Questions about boring or excavation near Valley Metro infrastructure go to its utility group.",
+      sources: [sources.valleyMetroAccess],
+    },
+    {
+      title: "Locates and dust",
+      text: "Arizona law requires white-lining the dig area before a locate request, and marks stay valid for 15 working days. Maricopa County requires a Dust Control Permit before disturbing 0.1 acre or more.",
+      sources: [sources.arsExcavation, sources.maricopaDustPermit],
+    },
+  ],
+  faqs: [
+    { question: "Can I start construction before 7 a.m. in Tempe?", answer: "Sometimes. Concrete pours can start earlier than other work, and weekday start times depend on the season and on distance from homes. On weekends and holidays, work can't start before 7 a.m. (6 a.m. for concrete) without a letter of authorization requested at least four working days ahead." },
+    { question: "Do I need a permit to haul dirt from a Tempe site?", answer: "Hauling construction waste fill or excavation material on City right-of-way takes a special haul permit. Submit the application, a route map and a certificate of insurance at least five working days before you need it." },
+    { question: "When does an equipment delivery need an oversize permit in Tempe?", answer: "When the load is over 80,000 pounds, 65 feet long, 8 feet 6 inches wide or 13 feet 6 inches high, or has a front or rear extension. Requests are due at least five working days ahead." },
+    { question: "How long is a Tempe engineering permit good for?", answer: "One year from issuance. As-builts and an approved final inspection are due within that year, or the permit expires." },
+  ],
+  guides: [compactGuide, scissorLiftGuideLink, telehandlerForkliftGuideLink, concreteGuideLink],
+};
+
+export const fortCollins: CityEntry = {
+  name: "Fort Collins",
+  slug: "fort-collins",
+  region: "Northern Colorado",
+  shortDescription: "Fort Collins is a Northern Colorado city and home to Colorado State University.",
+  metaDescription:
+    "Construction equipment rentals in Fort Collins, CO: excavators, skid steers and loaders, plus City excavation and encroachment permits, dust rules and C&D recycling.",
+  localIntro: [
+    "Fort Collins, home to Colorado State University, puts several everyday parts of an equipment job under City rules. A dumpster or pallet of material set in the street needs a permit, any cut or bore in City right-of-way needs another, and construction debris such as concrete, metal and clean wood has to be recycled.",
+    "Those rules affect what you rent and how you stage it. Here is what the City's engineering and code compliance pages require before machines arrive.",
+  ],
+  useCaseContext: [
+    "New public infrastructure starts with a Development Construction Permit. Building or modifying water or sewer mains, public streets, sidewalks or drainage facilities requires one, and grading and utility work can't begin until it's issued. Smaller jobs in existing streets run on Engineering's right-of-way permits instead, and the contractor doing the cutting needs a City Right-of-Way Contractor's License for that category of work.",
+    "Dust gets as much attention as digging. Construction dust must stay on the property, sites larger than five acres keep a Dust Prevention and Control Plan on site, and crews are expected to stop work when wind exceeds 30 miles per hour. That favors planning water, covered hauling and stockpile locations along with the excavator or loader.",
+    "Disposal planning matters too. Concrete and aggregates, metal, untreated wood and cardboard from construction and demolition are on the City's required-recycling list, so demolition and site-clearing jobs may need to pair a skid steer or loader with separate containers for each material.",
+  ],
+  featuredEquipment: [
+    { slug: "mini-excavator-rental", reason: "Service work and short street cuts under an Engineering excavation permit." },
+    { slug: "skid-steer-rental", reason: "Sorting concrete, metal and clean wood into separate piles for required recycling." },
+    { slug: "excavator-rental", reason: "Grading and utility work that starts once a Development Construction Permit is issued." },
+    { slug: "wheel-loader-rental", reason: "Managing stockpiles that have to sit well back from property lines on larger sites." },
+    { slug: "compactor-rental", reason: "Backfill and subgrade for public streets and sidewalks built to City standards." },
+    { slug: "trencher-rental", reason: "Utility runs on development sites, coordinated with 811 positive response before digging." },
+  ],
+  siteConsiderations: [
+    {
+      title: "Excavation permits and contractor licensing",
+      text: "Fort Collins requires an Engineering Excavation Permit any time cutting is done in City right-of-way, including sidewalks, boring and street cuts. Applications include a site plan, and the contractor must hold a valid City Right-of-Way Contractor's License for that work category. Sidewalk and driveway approach work has its own permit with the same license requirement.",
+      sources: [sources.fortCollinsEngPermits],
+    },
+    {
+      title: "Equipment and materials in the street",
+      text: "Storing equipment or material, or doing any work, in public right-of-way needs a permit. An Encroachment Permit covers obstructions such as dumpsters, storage units and landscaping material, and a separate Stockpiling Permit allows temporary storage of suitable fill for future construction use.",
+      sources: [sources.fortCollinsEngPermits],
+    },
+    {
+      title: "Development Construction Permit",
+      text: "A Development Construction Permit is required before any work that builds or modifies public infrastructure: water or sewer mains, public streets or sidewalks, and public drainage facilities. Grading and utility work can't begin until it's issued, and projects with public infrastructure need Engineering inspections.",
+      sources: [sources.fortCollinsEngPermits],
+    },
+    {
+      title: "Oversize equipment moves",
+      text: "Vehicles exceeding legal size or weight limits on City streets, including large equipment loads, need an Oversized Vehicle Permit from Engineering.",
+      sources: [sources.fortCollinsEngPermits],
+    },
+    {
+      title: "Construction noise",
+      text: "Construction noise is allowed from 7 a.m. to 8 p.m. unless a variance is granted. Complaints go to Code Compliance, which also has an environmental inspector focused on construction sites, waste and air quality.",
+      sources: [sources.fortCollinsCodeCompliance],
+    },
+    {
+      title: "Dust control",
+      text: "Dust from construction or landscaping must not leave the property, and sites larger than five acres must keep a Dust Prevention and Control Plan on site. Required measures include covering trucks hauling dirt or debris, reducing speeds on unpaved roads, minimizing excavator bucket drop height, stopping work when wind exceeds 30 mph, restricting site access and keeping stockpiles back from property lines by ten times the pile height.",
+      sources: [sources.fortCollinsCodeCompliance],
+    },
+    {
+      title: "Required recycling and idling",
+      text: "Construction and demolition debris, including aggregates and concrete, metal, untreated wood and cardboard, is on the City's required-recycling list. Trucks over 14,000 pounds may not idle for more than five minutes.",
+      sources: [sources.fortCollinsCodeCompliance],
+    },
+    {
+      title: "Colorado 811",
+      text: "Colorado law requires a locate request at least two business days, not counting the day of notice, before excavation or demolition, and Colorado 811 advises allowing three full business days. Premark the dig area with white paint, flags or stakes, have each excavating company get its own ticket, and check for positive response before digging. Private lines aren't located through 811.",
+      sources: [sources.colorado811Excavators, sources.fortCollinsEngPermits],
+    },
+  ],
+  faqs: [
+    { question: "Do I need a permit to put a dumpster in a Fort Collins street?", answer: "Yes. Dumpsters, storage units and landscaping material placed in City right-of-way need an Encroachment Permit from Engineering, with a site plan, map or sketch showing the location." },
+    { question: "Who can cut or bore in Fort Collins right-of-way?", answer: "A contractor with a valid City Right-of-Way Contractor's License for that category of work, under an Engineering Excavation Permit. That covers sidewalk cuts, boring and street cuts." },
+    { question: "What are construction noise hours in Fort Collins?", answer: "Construction noise is allowed from 7 a.m. to 8 p.m. unless the City grants a variance." },
+    { question: "Does construction debris have to be recycled in Fort Collins?", answer: "Aggregates and concrete, metal, untreated wood and cardboard from construction and demolition are on the City's required-recycling list, so plan separate loads or containers for them." },
+  ],
+  guides: [sitePrepGuide, compactGuide, wheelLoaderGuideLink, trenchSafetyGuideLink],
 };
