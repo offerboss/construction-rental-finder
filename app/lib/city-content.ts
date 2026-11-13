@@ -2852,6 +2852,10 @@ export const mesa: CityEntry = {
     { question: "What are construction noise hours in Mesa?", answer: "The noise code exempts construction and excavation from 6 a.m. to 8 p.m. on weekdays. On weekends the exemption applies only to work at a person's own residence; state law separately protects permitted early-morning and Saturday work from May 1 to October 15." },
     { question: "Does Mesa limit road work during the holidays?", answer: "Yes. From November 15 through January 1, restrictions that would slow traffic near major shopping areas and transportation hubs on arterial and collector streets are normally denied, including around downtown, Superstition Springs, Mesa Riverview and both Mesa airports." },
   ],
+  heroImage: {
+    src: "/images/locations/mesa-az-construction-equipment-rental.webp",
+    alt: "Wheel loader and excavator moving desert soil on a graded pad beside a steel building shell in Mesa, Arizona",
+  },
   guides: [sitePrepGuide, wheelLoaderGuideLink, trenchSafetyGuideLink, boomLiftGuide],
 };
 
@@ -2932,6 +2936,10 @@ export const tempe: CityEntry = {
     { question: "When does an equipment delivery need an oversize permit in Tempe?", answer: "When the load is over 80,000 pounds, 65 feet long, 8 feet 6 inches wide or 13 feet 6 inches high, or has a front or rear extension. Requests are due at least five working days ahead." },
     { question: "How long is a Tempe engineering permit good for?", answer: "One year from issuance. As-builts and an approved final inspection are due within that year, or the permit expires." },
   ],
+  heroImage: {
+    src: "/images/locations/tempe-az-construction-equipment-rental.webp",
+    alt: "Mini excavator digging a shallow trench beside a telehandler carrying lumber on a tight infill lot in Tempe, Arizona",
+  },
   guides: [compactGuide, scissorLiftGuideLink, telehandlerForkliftGuideLink, concreteGuideLink],
 };
 
@@ -3007,5 +3015,9 @@ export const fortCollins: CityEntry = {
     { question: "What are construction noise hours in Fort Collins?", answer: "Construction noise is allowed from 7 a.m. to 8 p.m. unless the City grants a variance." },
     { question: "Does construction debris have to be recycled in Fort Collins?", answer: "Aggregates and concrete, metal, untreated wood and cardboard from construction and demolition are on the City's required-recycling list, so plan separate loads or containers for them." },
   ],
+  heroImage: {
+    src: "/images/locations/fort-collins-co-construction-equipment-rental.webp",
+    alt: "Mini excavator and compact track loader beside sorted concrete and lumber piles on a jobsite in Fort Collins, Colorado",
+  },
   guides: [sitePrepGuide, compactGuide, wheelLoaderGuideLink, trenchSafetyGuideLink],
 };

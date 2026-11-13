@@ -1,6 +1,6 @@
 # CRF Hero Image Style
 
-Last updated: 2026-11-12 (standard unchanged; Batch 8 / Resource Run 7 heroes shipped)
+Last updated: 2026-11-13 (standard unchanged; Mesa, Tempe, Fort Collins heroes added; Lancaster hero regenerated)
 
 **Approval status:** Unattended mode (2026-10-05) allows publishing heroes that pass this standard without per-image approval. Batch 4 city and Resource Run 3 guide heroes are not shipped yet — GenerateImage was unavailable to the Grok Bot executor on 2026-10-15; regenerate and add `heroImage` when compliant WebPs are ready.
 
@@ -122,3 +122,17 @@ Friday QA: zoom-check all seven for faint decals; generator control panel shows 
 | choosing-concrete-equipment | public/images/resources/choosing-concrete-equipment.webp | 1080x720, 102 KB | Towable drum mixer on dirt beside a formed slab holding an idle walk-behind power trowel and a cut-off saw on a board, no people | Towable drum mixer beside a walk-behind power trowel and a cut-off saw on a formed concrete slab |
 
 Faint marks removed before encoding: a small model-number stamp on the Lancaster excavator counterweight, a logo badge on the Hurst skid-steer rear arm, and faint numerals on the Farmers Branch scissor-lift platform. Duncanville plate-compactor and concrete-saw engines are generic; no readable wordmarks at 1080×720.
+
+
+### Launch-city heroes + Lancaster regen (2026-11-13, unattended; generated with GenerateImage, 4:3 center-cropped with slight downward bias to 3:2, checked by eye)
+
+Arizona and Colorado paths use `-az-` and `-co-` instead of the Texas `-tx-` pattern.
+
+| Slug | File | Size | Scene | Alt text |
+|---|---|---|---|---|
+| mesa | public/images/locations/mesa-az-construction-equipment-rental.webp | 1080x720, 200 KB | Yellow wheel loader and excavator moving pale desert soil on a large graded pad beside a steel building shell, palo verde trees, distant mountains, one small worker in hi-vis, late-afternoon light | Wheel loader and excavator moving desert soil on a graded pad beside a steel building shell in Mesa, Arizona |
+| tempe | public/images/locations/tempe-az-construction-equipment-rental.webp | 1080x720, 201 KB | Yellow mini excavator digging a shallow utility trench, telehandler carrying lumber on forks, tight infill lot between tan commercial buildings, palo verde, sidewalk and cones, one small worker | Mini excavator digging a shallow trench beside a telehandler carrying lumber on a tight infill lot in Tempe, Arizona |
+| fort-collins | public/images/locations/fort-collins-co-construction-equipment-rental.webp | 1080x720, 195 KB | Yellow mini excavator and compact track loader beside separate piles of broken concrete and lumber, Front Range foothills, evergreens, one small worker in hi-vis, cool daylight | Mini excavator and compact track loader beside sorted concrete and lumber piles on a jobsite in Fort Collins, Colorado |
+| lancaster (regen) | public/images/locations/lancaster-tx-construction-equipment-rental.webp | 1080x720, 205 KB | Same scene as the 2026-11-12 hero (excavator placing clay fill, padfoot roller, silt fence, tree-lined creek, cones) regenerated so the counterweight is clean unmarked paint; no people | Excavator placing clay fill beside a padfoot roller on a graded tract near a tree-lined creek in Lancaster, Texas |
+
+A first Lancaster attempt was discarded (invented "DEAPSOOT" lettering on a smooth-drum roller). The shipped image has a padfoot drum and no lettering. Faint model stamps on the excavator house were clone-stamped from adjacent yellow paint before encoding. The Tempe telehandler door shows ordinary hardware (handles), not logos, at 1080×720.

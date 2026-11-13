@@ -1,6 +1,6 @@
 # CRF Content Strategy
 
-Last updated: 2026-11-13 (launch-city rebuilds: Mesa, Tempe, Fort Collins)
+Last updated: 2026-11-13 (Mesa, Tempe, Fort Collins heroes added; Lancaster hero regenerated)
 
 ## Goal
 
@@ -26,9 +26,9 @@ The 15 launch cities (2026-09-27) used the shared simple template and scored as 
 
 | City | Status |
 |---|---|
-| Mesa | Rebuilt 2026-11-13 (pavement-cut age rules, City gas check-and-wrap, TTC peak hours + Nov 15–Jan 1 moratorium, noise 6-12-6(F), Gateway Area) |
-| Tempe | Rebuilt 2026-11-13 (ROW permit types, permit life/as-builts, sec. 20-8 hours + off-hours authorization, barricading/haul/OS-OW permits, pavement surcharge, Valley Metro track access) |
-| Fort Collins | Rebuilt 2026-11-13 (excavation permit + ROW contractor license, encroachment/stockpiling permits, DCP, noise 7–8, dust rules, required C&D recycling) |
+| Mesa | Rebuilt 2026-11-13 (pavement-cut age rules, City gas check-and-wrap, TTC peak hours + Nov 15–Jan 1 moratorium, noise 6-12-6(F), Gateway Area); hero added 2026-11-13 |
+| Tempe | Rebuilt 2026-11-13 (ROW permit types, permit life/as-builts, sec. 20-8 hours + off-hours authorization, barricading/haul/OS-OW permits, pavement surcharge, Valley Metro track access); hero added 2026-11-13 |
+| Fort Collins | Rebuilt 2026-11-13 (excavation permit + ROW contractor license, encroachment/stockpiling permits, DCP, noise 7–8, dust rules, required C&D recycling); hero added 2026-11-13 |
 | Greeley, Austin, San Antonio, Houston, Fort Worth, Dallas, Phoenix, Tucson, Scottsdale, Denver, Colorado Springs, Grand Junction | Pending (simple template) |
 
 Run the similarity gate before each rebuild ships; record before/after in `published-pages.md`.

@@ -487,7 +487,7 @@ Lancaster 1,499; Waxahachie 1,371; Duncanville 1,380; Hurst 1,306; Farmers Branc
 
 ## Launch-city rebuilds — 2026-11-13 (Friday QA, uniqueness rule)
 
-Mesa, Tempe and Fort Collins moved from the shared simple template to the rich layout (`localIntro` etc. in `city-content.ts`; inline entries in `locations.ts` replaced). Heroes deferred (no compliant image generator available to the Friday run); pages render the navy header like the other launch cities.
+Mesa, Tempe and Fort Collins moved from the shared simple template to the rich layout (`localIntro` etc. in `city-content.ts`; inline entries in `locations.ts` replaced). Heroes added 2026-11-13 (GenerateImage, 1080×720 WebP; Lancaster hero also regenerated to remove a faint counterweight smudge). See hero-image-style.md.
 
 Similarity gate (`/workspace/uniqueness-audit/scripts`, TF-IDF cosine / 5-gram Jaccard / % sentence words repeated on 3+ city pages, after city/state normalization):
 | Page | Before (cosine, closest, Jaccard, repeated) | After |
